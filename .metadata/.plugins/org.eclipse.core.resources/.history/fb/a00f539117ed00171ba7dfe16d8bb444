@@ -1,0 +1,32 @@
+package reverseInt;
+
+import java.util.Arrays;
+
+public class ReverseInt {
+
+	private int reverseInt(int n) {
+		
+		char[] temp = Integer.toString(n).toCharArray();
+		
+		Arrays.sort(temp);
+		
+		String temp2= Arrays.toString(temp);
+		
+		System.out.println(temp2.join(""));
+		
+		return 0;
+		
+		//return Integer.parseInt(new StringBuilder(temp).reverse().toString());
+
+	}
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+		ReverseInt reverseInt = new ReverseInt();
+
+		System.out.println(reverseInt.reverseInt(118372));
+
+	}
+
+}

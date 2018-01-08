@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Delete resource &apos;Q0019_ReverseInt&apos;" deleteContents="true" description="Delete resource &apos;Q0019_ReverseInt&apos;" element1="/Q0019_ReverseInt" flags="7" id="org.eclipse.ltk.core.refactoring.delete.resources" resources="1" stamp="1514605293912"/>
+</session>

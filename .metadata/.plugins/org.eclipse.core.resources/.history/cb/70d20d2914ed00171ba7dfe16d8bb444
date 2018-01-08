@@ -1,0 +1,19 @@
+package reverseInt;
+
+public class ReverseInt {
+
+	private int reverseInt(int n) {
+
+		return n;
+	}
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+		ReverseInt reverseInt = new ReverseInt();
+
+		System.out.println(reverseInt.reverseInt(118372));
+
+	}
+
+}

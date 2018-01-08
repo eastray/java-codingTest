@@ -21,6 +21,7 @@ public class Collatz {
 		count = 0;
 		
 		for(int i = 1; i <= limited; i++) {
+			
 			if(num == 1)
 				return count;
 			
@@ -30,7 +31,6 @@ public class Collatz {
 		}
 		
 		return -1;
-		
 	}
 
 	public static void main(String[] args) {
