@@ -1,0 +1,32 @@
+package noContinuous;
+
+import java.util.ArrayList;
+import java.util.Arrays;
+
+public class NoContinuous {
+
+	private int[] noContinuous(String str) {
+
+		ArrayList<Integer> list = new ArrayList<Integer>();
+		int temp = 0;
+		
+		System.out.println(str.toCharArray().toString());
+
+		for (char ele : str.toCharArray()) {
+			
+			System.out.println(ele);
+		}
+
+		return null;
+	}
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+		NoContinuous nc = new NoContinuous();
+
+		System.out.println(Arrays.toString(nc.noContinuous("133303")));
+
+	}
+
+}

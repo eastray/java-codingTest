@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Delete 22 resources" deleteContents="false" description="Delete 22 resources" element1="/Q0002_GCDLCM" element10="/Q0026_ChooseCity" element11="/Q0027_ExpressionsOfNumber" element12="/Q0028_Hopscotch" element13="/Q0029_FindLargestSquare" element14="/Q0030_BestSet" element15="/Q0031_Change124" element16="/Q0032_LineCombination" element17="/Q0033_2xnTiling" element18="/Q0034_Hanoi" element19="/Q0035_SortDictionary" element2="/Q0003_Anypung" element20="/Q0036_NumberGenerator" element21="/Q0037_PrintReversedTriangle" element22="/Q0038_NextSqaure" element3="/Q0019_ReverseInt" element4="/Q0020_GetDayName" element5="/Q0021_Caesar" element6="/Q0022_JumpCase" element7="/Q0023_NoOvertime" element8="/Q0024_NextBigNumber" element9="/Q0025_NLCM" flags="7" id="org.eclipse.ltk.core.refactoring.delete.resources" resources="22" stamp="1516259330990"/>
+</session>

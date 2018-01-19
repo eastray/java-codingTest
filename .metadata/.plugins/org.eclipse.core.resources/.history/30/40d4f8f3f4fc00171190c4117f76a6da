@@ -1,0 +1,32 @@
+package jadenCase;
+
+import java.util.Arrays;
+
+public class JadenCase {
+
+	public String jadenCase(String str) {
+
+		if (str == null)
+			return str;
+
+		String[] result = str.split("\\s");
+
+		if (result.length == 1)
+			return result[0].toString();
+
+		return Character.toUpperCase(result[0].charAt(0)) + result[0].substring(1, result[0].length()) + " "
+				+ jadenCase(str.substring(result[0].length() + 1));
+
+	}
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+		JadenCase jc = new JadenCase();
+
+		System.out.println(jc.jadenCase("yes i can do"));
+		// System.out.println(jc.jadenCase("a b c d e f"));
+		System.out.println(jc.jadenCase("3people unFollowed me for the last week"));
+	}
+
+}

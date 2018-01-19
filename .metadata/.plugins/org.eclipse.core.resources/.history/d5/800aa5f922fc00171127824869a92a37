@@ -1,0 +1,28 @@
+package digitReverse;
+
+import java.util.Arrays;
+
+public class DigitReverse {
+
+	private int[] digitReverse(int n) {
+		int[] arr = new int[n];
+		for (int i = 0; i < arr.length; i++) {
+			arr[i] = n % 10;
+			n /= 10;
+		}
+		
+		System.out.println(Arrays.toString(arr));
+
+		return null;
+
+	}
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+		DigitReverse dr = new DigitReverse();
+
+		System.out.println(Arrays.toString(dr.digitReverse(12345)));
+	}
+
+}

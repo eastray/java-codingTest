@@ -1,0 +1,21 @@
+package noContinuous;
+
+import java.util.Set;
+
+public class NoContinuous {
+	
+	private int[] noContinuous(String str){
+		
+		Set<Integer> set = new Set<>;
+		
+		
+		
+		return null;
+	}
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+
+}

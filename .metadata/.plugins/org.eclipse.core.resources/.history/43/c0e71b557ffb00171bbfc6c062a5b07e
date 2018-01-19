@@ -1,0 +1,28 @@
+package strangeSort;
+
+import java.util.Arrays;
+
+public class StrangeSort {
+	
+	private String[] swap(String[] str,int i, int j ){
+		String temp = str[i];
+		str[i] = str	[j];
+		str[j] = temp;
+		F}
+
+	private String[] strangeSort(String[] strings, int n) {
+		
+		Arrays.sort(strings);
+
+		return null;
+	}
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+		StrangeSort ss = new StrangeSort();
+
+		System.out.println(Arrays.toString(ss.strangeSort(new String[] { "car", "let", "zoo" }, 1)));
+	}
+
+}

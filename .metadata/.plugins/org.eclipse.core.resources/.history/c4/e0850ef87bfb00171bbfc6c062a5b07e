@@ -1,0 +1,20 @@
+package alphaString46;
+
+public class AlphaString46 {
+
+	public boolean alphaString46(String str) {
+		// 4, 6, numberic
+		
+		int temp = Integer.parseInt(str);
+		
+System.out.println(temp);		
+		
+		return true;
+	}
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+
+}

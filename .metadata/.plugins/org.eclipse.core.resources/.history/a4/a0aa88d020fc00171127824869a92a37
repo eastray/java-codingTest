@@ -1,0 +1,20 @@
+package digitReverse;
+
+import java.util.Arrays;
+
+public class DigitReverse {
+	
+	private int[] digitReverse(int n) {
+		
+		return new StringBuilder( new String(Arrays.toString(Integer.toString(n).toCharArray()))).reverse().toString();
+	}
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+		DigitReverse dr = new DigitReverse();
+		
+		System.out.println(Arrays.toString(dr.digitReverse(12345)));
+	}
+
+}

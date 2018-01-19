@@ -1,0 +1,10 @@
+package digitReverse;
+
+public class DigitReverse {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+
+}

@@ -1,0 +1,21 @@
+package numPY;
+
+public class NumPY {
+	
+	private boolean numPY(String str) {
+		
+		
+		return true;
+	}
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+		NumPY py = new NumPY();
+		
+		System.out.println(py.numPY("pPoooyY"));
+		System.out.println(py.numPY("Pyy"));
+		
+	}
+
+}

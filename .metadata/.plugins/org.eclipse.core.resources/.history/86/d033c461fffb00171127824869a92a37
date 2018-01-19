@@ -1,0 +1,22 @@
+package removeSmallNumber;
+
+import java.util.Arrays;
+
+public class RemoveSmallNumber {
+	
+	private int[] removeSmallNumber (int[] array ){
+		
+		
+		
+		return a;
+	}
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+		RemoveSmallNumber rsn = new RemoveSmallNumber();
+		
+		System.out.println(Arrays.toString(rsn.removeSmallNumber({4, 3, 2, 1})));
+	}
+
+}

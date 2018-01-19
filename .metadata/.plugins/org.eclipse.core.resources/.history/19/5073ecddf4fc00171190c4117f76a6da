@@ -1,0 +1,38 @@
+package jadenCase;
+
+import java.util.Arrays;
+
+public class JadenCase {
+
+	public String jadenCase(String str) {
+		
+		if (str == null)
+			return str;
+		
+		String[] result = str.split("\\s");
+		
+		if(result.length == 1)
+			return result[0].toString();
+		
+		return Character.toUpperCase(result[0].charAt(0)) + jadenCase(str.substring(result[0].length()+1));
+		
+//		System.out.println("length: " + str.split("\\s").length);
+//		String prefix = str.substring(0, str.split("\\s").length);
+//		String surfix = str.substring(str.split("\\s").length + 1, str.length());
+//		System.out.println("prefix: " + prefix);
+//		System.out.println("surfix: " + surfix);
+//
+//		return Character.toUpperCase(prefix.charAt(0)) + str.substring(1, str.split("\\s").length) + jadenCase(surfix);
+	}
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+		JadenCase jc = new JadenCase();
+
+		System.out.println(jc.jadenCase("yes i can do"));
+		//System.out.println(jc.jadenCase("a b c d e f"));
+		System.out.println(jc.jadenCase("3people unFollowed me for the last week"));
+	}
+
+}

@@ -1,0 +1,42 @@
+package longesPalindrom;
+
+public class LongesPalindrom {
+
+	public int longesPalindrom(String str) {
+		int count = 0;
+		int result = 0;
+
+		for(int i = 0 ; i < str.length();){
+			for(int j = str.length()-1; j > i;){
+				if(str.charAt(i) == str.charAt(j)){
+					count += 2;
+					i++;
+					j--;
+				}
+				
+				if(i == j && str.charAt(i) == str.charAt(j)){
+					count+=1;
+					result = count;
+					break;
+				}
+					
+				
+			}
+		}
+		
+		return result;
+	}
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+		LongesPalindrom lp = new LongesPalindrom();
+
+		System.out.println(lp.longesPalindrom("abcba"));
+//		System.out.println(lp.longesPalindrom("abcbaddef"));
+//		 System.out.println(lp.longesPalindrom("abcbaddaf"));
+//		 System.out.println(lp.longesPalindrom("bbabcbaddaf"));
+//		 System.out.println(lp.longesPalindrom("aaabcbaaddaf"));
+	}
+
+}
