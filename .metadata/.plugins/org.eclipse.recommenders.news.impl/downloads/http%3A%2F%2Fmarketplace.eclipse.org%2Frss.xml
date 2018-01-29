@@ -8,319 +8,111 @@
       <item>
     <title>Appium Studio for Eclipse</title>
     <link>http://marketplace.eclipse.org/content/appium-studio-eclipse</link>
-    <description>&lt;div class=&quot;field field-name-field-resource-image field-type-image field-label-hidden&quot;&gt;&lt;div class=&quot;field-items&quot;&gt;&lt;div class=&quot;field-item even&quot;&gt;&lt;img typeof=&quot;foaf:Image&quot; class=&quot;img-responsive&quot; src=&quot;http://marketplace.eclipse.org/sites/default/files/default_images/default_2.png&quot; width=&quot;110&quot; height=&quot;80&quot; alt=&quot;&quot; /&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;&lt;div class=&quot;field field-name-shared-date-created field-type-text field-label-inline clearfix&quot;&gt;&lt;div class=&quot;field-label&quot;&gt;Date Created:&amp;nbsp;&lt;/div&gt;&lt;div class=&quot;field-items&quot;&gt;&lt;div class=&quot;field-item even&quot;&gt;Thu, 2018-01-18 02:59&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;&lt;div class=&quot;field field-name-shared-date-updated field-type-text field-label-inline clearfix&quot;&gt;&lt;div class=&quot;field-label&quot;&gt;Date Updated:&amp;nbsp;&lt;/div&gt;&lt;div class=&quot;field-items&quot;&gt;&lt;div class=&quot;field-item even&quot;&gt;Thu, 2018-01-18 15:24&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;&lt;a href=&quot;/search/content/%22Experitest%22&quot;&gt;Experitest&lt;/a&gt;&lt;div class=&quot;field field-name-shared-submitted-by field-type-text field-label-inline clearfix&quot;&gt;&lt;div class=&quot;field-label&quot;&gt;Submitted by:&amp;nbsp;&lt;/div&gt;&lt;div class=&quot;field-items&quot;&gt;&lt;div class=&quot;field-item even&quot;&gt;&lt;a href=&quot;/user/rzamir/listings&quot; title=&quot;ruth zamir&quot;&gt;ruth zamir&lt;/a&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;&lt;!-- google_ad_section_start --&gt;&lt;div class=&quot;field field-name-body field-type-text-with-summary field-label-hidden&quot;&gt;&lt;div class=&quot;field-items&quot;&gt;&lt;div class=&quot;field-item even&quot; property=&quot;content:encoded&quot;&gt;&lt;h2&gt;
-	&lt;strong&gt;Perform end-to-end Appium/Selenium test automation directly from within Eclipse&lt;/strong&gt;&lt;/h2&gt;
-&lt;h3&gt;
-	Easily develop, automate, analyze and debug your tests on physical devices and browsers&lt;/h3&gt;
-&lt;p&gt; &lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;End-to-end web &amp;amp; mobile test automation from Eclipse&lt;/strong&gt;&lt;br /&gt;
-	Perform test development, automation project development, and test execution on remote devices in the Digital Device Lab with a single tool with rich views and editors fully embedded in Eclipse for digital test automation.&lt;/p&gt;
+    <description>&lt;div class=&quot;field field-name-field-resource-image field-type-image field-label-hidden&quot;&gt;&lt;div class=&quot;field-items&quot;&gt;&lt;div class=&quot;field-item even&quot;&gt;&lt;img typeof=&quot;foaf:Image&quot; class=&quot;img-responsive&quot; src=&quot;http://marketplace.eclipse.org/sites/default/files/appium%20studio%20for%20eclipse%20logo.png&quot; width=&quot;110&quot; height=&quot;80&quot; alt=&quot;&quot; /&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;&lt;div class=&quot;field field-name-shared-date-created field-type-text field-label-inline clearfix&quot;&gt;&lt;div class=&quot;field-label&quot;&gt;Date Created:&amp;nbsp;&lt;/div&gt;&lt;div class=&quot;field-items&quot;&gt;&lt;div class=&quot;field-item even&quot;&gt;Thu, 2018-01-18 02:59&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;&lt;div class=&quot;field field-name-shared-date-updated field-type-text field-label-inline clearfix&quot;&gt;&lt;div class=&quot;field-label&quot;&gt;Date Updated:&amp;nbsp;&lt;/div&gt;&lt;div class=&quot;field-items&quot;&gt;&lt;div class=&quot;field-item even&quot;&gt;Sun, 2018-01-28 10:48&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;&lt;a href=&quot;/search/content/%22Experitest%22&quot;&gt;Experitest&lt;/a&gt;&lt;div class=&quot;field field-name-shared-submitted-by field-type-text field-label-inline clearfix&quot;&gt;&lt;div class=&quot;field-label&quot;&gt;Submitted by:&amp;nbsp;&lt;/div&gt;&lt;div class=&quot;field-items&quot;&gt;&lt;div class=&quot;field-item even&quot;&gt;&lt;a href=&quot;/user/rzamir/listings&quot; title=&quot;ruth zamir&quot;&gt;ruth zamir&lt;/a&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;&lt;!-- google_ad_section_start --&gt;&lt;div class=&quot;field field-name-body field-type-text-with-summary field-label-hidden&quot;&gt;&lt;div class=&quot;field-items&quot;&gt;&lt;div class=&quot;field-item even&quot; property=&quot;content:encoded&quot;&gt;&lt;h2&gt;
+	Easily develop, automate, analyze and debug your tests on physical devices and browsers&lt;/h2&gt;
+&lt;p&gt;&lt;strong&gt;End-to-end web &amp;amp; mobile test automation from Eclipse&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;Perform test development, automation project development, and test execution on remote devices in the Digital Device Lab with a single tool with rich views and editors fully embedded in Eclipse for digital test automation.&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;Immediate visual feedback&lt;/strong&gt;&lt;br /&gt;
 	Easily create robust and maintainable tests with a dynamic device reflection that provides immediate visual feedback on all actions. Project development is further streamlined with code snippets and automatically generated Eclipse framework assets such as properties &amp;amp; configuration files.&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;Powerful object identification&lt;/strong&gt;&lt;br /&gt;
 	Enjoy powerful object identification and management, that identify objects by their native/web properties, including image/OCR and customized UI. Write scripts with drag and drop script editor.&lt;/p&gt;
-&lt;p&gt; &lt;/p&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;&lt;!-- google_ad_section_end --&gt;</description>
+&lt;p&gt;
+	&lt;strong&gt;Create stable automation&lt;/strong&gt;&lt;br /&gt;
+	Leverage pre-configured Eclipse project framework assets for mobile including code snippets, properties &amp;amp; configuration files to reduce errors and easily create stable projects.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Maximize your test coverage rates&lt;/strong&gt;&lt;br /&gt;
+	Achieve high coverage rates by testing outside of your app (SMS, network, settings, Facebook) and 3rd party integrations for complex use cases such as code scanning or fingerprint authentication. Guaranteed rapid version and beta support.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Seamlessly integrate with any testing &amp;amp; CI environment&lt;/strong&gt;&lt;br /&gt;
+	Create Appium, Selenium and SeeTest test automation, and integrate with any Eclipse plug-in such as Python or Ruby. Integrate with any continuous integration environment to trigger continuous testing as part of the CI process.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Parallel test execution&lt;/strong&gt;&lt;br /&gt;
+	Intelligent grid execution management allows you to see executions in the real-time view of all executions. Dynamically schedule tests, executions, and distribution. Run multiple CI projects in parallel (multiple applications).&lt;/p&gt;
+&lt;p&gt; &lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Appium Studio for Eclipse&lt;/strong&gt; allows you to develop and execute tests on remote devices located in the &lt;strong&gt;&lt;a href=&quot;https://experitest.com/mobile-cloud-testing/seetestcloud-online/?utm_source=Eclipse_marketplace&quot; rel=&quot;nofollow&quot;&gt;SaaS Digital Assurance Lab&lt;/a&gt;.&lt;/strong&gt; The Digital Assurance Lab provides access hundreds of browsers &amp;amp; mobile devices (physical / emulated) hosted in Experitest data centers, from anywhere at anytime. &lt;a href=&quot;https://goo.gl/MSFcFb&quot; rel=&quot;nofollow&quot;&gt;Register&lt;/a&gt; to the Digital Assurance lab for &lt;a href=&quot;https://goo.gl/MSFcFb&quot; rel=&quot;nofollow&quot;&gt;free&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;30 day free trial.&lt;/p&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;&lt;!-- google_ad_section_end --&gt;</description>
      <pubDate>Thu, 18 Jan 2018 07:59:34 +0000</pubDate>
  <dc:creator>rzamir</dc:creator>
  <guid isPermaLink="false">3879315 at http://marketplace.eclipse.org</guid>
  <comments>http://marketplace.eclipse.org/content/appium-studio-eclipse#comments</comments>
   </item>
   <item>
-    <title>eclox</title>
-    <link>http://marketplace.eclipse.org/content/eclox</link>
-    <description>&lt;div class=&quot;field field-name-field-resource-image field-type-image field-label-hidden&quot;&gt;&lt;div class=&quot;field-items&quot;&gt;&lt;div class=&quot;field-item even&quot;&gt;&lt;img typeof=&quot;foaf:Image&quot; class=&quot;img-responsive&quot; src=&quot;http://marketplace.eclipse.org/sites/default/files/ecloxH_0.png&quot; width=&quot;110&quot; height=&quot;80&quot; alt=&quot;&quot; /&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;&lt;div class=&quot;field field-name-shared-date-created field-type-text field-label-inline clearfix&quot;&gt;&lt;div class=&quot;field-label&quot;&gt;Date Created:&amp;nbsp;&lt;/div&gt;&lt;div class=&quot;field-items&quot;&gt;&lt;div class=&quot;field-item even&quot;&gt;Fri, 2014-03-07 03:42&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;&lt;div class=&quot;field field-name-shared-date-updated field-type-text field-label-inline clearfix&quot;&gt;&lt;div class=&quot;field-label&quot;&gt;Date Updated:&amp;nbsp;&lt;/div&gt;&lt;div class=&quot;field-items&quot;&gt;&lt;div class=&quot;field-item even&quot;&gt;Thu, 2018-01-18 13:15&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;&lt;a href=&quot;/search/content/%22anb0s%22&quot;&gt;anb0s&lt;/a&gt;&lt;div class=&quot;field field-name-shared-submitted-by field-type-text field-label-inline clearfix&quot;&gt;&lt;div class=&quot;field-label&quot;&gt;Submitted by:&amp;nbsp;&lt;/div&gt;&lt;div class=&quot;field-items&quot;&gt;&lt;div class=&quot;field-item even&quot;&gt;&lt;a href=&quot;/user/ipajuelo/listings&quot; title=&quot;Ivan Pajuelo&quot;&gt;Ivan Pajuelo&lt;/a&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;&lt;!-- google_ad_section_start --&gt;&lt;div class=&quot;field field-name-body field-type-text-with-summary field-label-hidden&quot;&gt;&lt;div class=&quot;field-items&quot;&gt;&lt;div class=&quot;field-item even&quot; property=&quot;content:encoded&quot;&gt;&lt;p&gt;Eclox is a simple doxygen frontend plug-in for eclipse.&lt;/p&gt;
-&lt;p&gt;It aims to provide a slim and sleek integration of the code documentation process into eclipse by providing a high-level graphical user interface over doxygen.&lt;/p&gt;
-&lt;p&gt;Features:&lt;br /&gt;
-- graphical edition of doxyfile settings&lt;br /&gt;
-- integrated doxygen invocation&lt;br /&gt;
-- doxygen outputs logging and&lt;br /&gt;
-- optional packaged doxygen binaries (for windows and linux)&lt;/p&gt;
-&lt;p&gt;Eclox is a free software distributed under the term of the:&lt;br /&gt;
-- Eclipse Public Licence v 1.0 from version 0-10-0&lt;br /&gt;
-- GNU General Public Licence (GPL) for version 0-8-x and older&lt;/p&gt;
-&lt;p&gt;Project page and update site: &lt;a href=&quot;http://anb0s.github.io/eclox&quot;&gt;http://anb0s.github.io/eclox&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;eclox-0.12.1: Bug fixes for the second minor release @github&lt;br /&gt;
-Fixed issues (&lt;a href=&quot;https://github.com/anb0s/eclox/milestone/6?closed=1&quot;&gt;https://github.com/anb0s/eclox/milestone/6?closed=1&lt;/a&gt;):&lt;br /&gt;
-- [x] #220: Cannot get eclox doxygen to run in the code composer studio&lt;br /&gt;
-eclipse package&lt;br /&gt;
-- [x] #222: bundled doxygen cannot be used&lt;br /&gt;
-- [x] #223: create bundled doxygen with all needed files&lt;/p&gt;
-&lt;p&gt;eclox-0.12.0: Second minor release @github&lt;br /&gt;
-Fixed issues (&lt;a href=&quot;https://github.com/anb0s/eclox/milestone/3?closed=1&quot;&gt;https://github.com/anb0s/eclox/milestone/3?closed=1&lt;/a&gt;):&lt;br /&gt;
-- [x]  #18 Support doxygen upgrade feature&lt;br /&gt;
-- [x]  #83 context menu entry shown unnecessarily&lt;br /&gt;
-- [x]  #91 Implement saveas feature&lt;br /&gt;
-- [x] #108 improve detection of warnings concerning undocumented&lt;br /&gt;
-parameters&lt;br /&gt;
-- [x] #195 java.lang.IllegalArgumentException in&lt;br /&gt;
-createMarkersForResource&lt;br /&gt;
-- [x] #196 terminate build is not working like expected&lt;br /&gt;
-- [x] #197 doxygen history menu shows multiple entries for same file&lt;br /&gt;
-- [x] #198 doxyfile selection dialog does not show nested elements&lt;br /&gt;
-- [x] #199 add &amp;quot;clear history&amp;quot; to history menu&lt;br /&gt;
-- [x] #200 invalid custom doxygen identifier found&lt;br /&gt;
-- [x] #201 Doxygen Build Console: stderr and stdin are not synchronized&lt;br /&gt;
-- [x] #203 remove from history if &amp;quot;eclox.core.doxygen.RunException:&lt;br /&gt;
-Missing or bad doxyfile&amp;quot;&lt;br /&gt;
-- [x] #206 [v0.12] console icons are not shown&lt;br /&gt;
-- [x] #207 [v0.12] exception if new file created&lt;br /&gt;
-- [x] #208 [v0.12] java.lang.NullPointerException in Advanced tab&lt;br /&gt;
-- [x] #211 add support for the += operator&lt;br /&gt;
-- [x] #212 add support for multiple lines (lists) concatenated by&lt;br /&gt;
-backslash (\)&lt;br /&gt;
-- [x] #214 add support for TAG and VALUE format #214&lt;br /&gt;
-- [x] #215 add support for line separator&lt;/p&gt;
-&lt;p&gt;v0.11.2: Bug fixes for the first minor release @GitHub&lt;br /&gt;
-Fixed issues (&lt;a href=&quot;https://github.com/anb0s/eclox/milestone/5?closed=1&quot;&gt;https://github.com/anb0s/eclox/milestone/5?closed=1&lt;/a&gt;):&lt;br /&gt;
-- #191 exception after build if OUTPUT_DIRECTORY is an absolute path&lt;br /&gt;
-- #192 add Eclipse 4.2 target platform&lt;br /&gt;
-- #193 fix feature and plugin provider-name&lt;/p&gt;
-&lt;p&gt;v0.11.1: Bug fixes for the first release @GitHub!&lt;br /&gt;
-Fixed issues (&lt;a href=&quot;https://github.com/anb0s/eclox/milestone/4?closed=1&quot;&gt;https://github.com/anb0s/eclox/milestone/4?closed=1&lt;/a&gt;):&lt;br /&gt;
-- #175 java.lang.IllegalArgumentException: endRule without matching beginRule&lt;br /&gt;
-- #186 NPE when trying to create new Doxyfile&lt;br /&gt;
-- #187 obsolete settings are not marked&lt;br /&gt;
-- #189 Doxygen binaries 1.8.13.v20170413-1543&lt;/p&gt;
-&lt;p&gt;v0.11.0: First official release at GitHub!&lt;br /&gt;
-Main changes:&lt;br /&gt;
-- migrate to GitHub #161&lt;br /&gt;
-- support configurable working directory #87&lt;br /&gt;
-- support relative or project-based path to doxygen.exe #75&lt;br /&gt;
-- open a file that is not a resource in eclipse #15, #68&lt;br /&gt;
-- support resources in linked folders #176 **Thanks to Corderbollie**&lt;br /&gt;
-- scrollbar for input directories in graphical editor #167&lt;br /&gt;
-- sorting column in advanced tab #171&lt;br /&gt;
-- add update site with bundled Doxygen executables #182&lt;br /&gt;
-- updated project structure and build process&lt;br /&gt;
-- added composite site to support testing and release update streams Fixed execution of bundled linux x86_64 binary.&lt;/p&gt;
-&lt;p&gt;All fixed issues (&lt;a href=&quot;https://github.com/anb0s/eclox/milestone/1?closed=1&quot;&gt;https://github.com/anb0s/eclox/milestone/1?closed=1&lt;/a&gt;):&lt;br /&gt;
-- #11 muliple Doxyfiles - editing&lt;br /&gt;
-- #12 Import of existing configuration files&lt;br /&gt;
-- #15 Add ability to use Doxyfile not in project scope&lt;br /&gt;
-- #68 open a file that is not a resource in eclipse&lt;br /&gt;
-- #75 relative or project-based path to doxygen.exe&lt;br /&gt;
-- #86 environment variables needed for some doxyfiles&lt;br /&gt;
-- #87 working directory not configurable&lt;br /&gt;
-- #114 Improvement static declaration of plugin relative identifier&lt;br /&gt;
-- #144 Tell more about the directory where eclox is stared&lt;br /&gt;
-- #161 migrate to GitHub&lt;br /&gt;
-- #162 prepare release 0.11.0&lt;br /&gt;
-- #163 Unable to use GraphViz&lt;br /&gt;
-- #164 Unable to create the selected preference page. eclox/core/ui/PreferencePage : Unsupported major.minor version 52.0&lt;br /&gt;
-- #165 new GitHub update site shows only one version &amp;amp;quot;Eclox 0.10.2.201508272130&amp;amp;quot;&lt;br /&gt;
-- #167 Scrollbar missing for Input Directories in Graphical Editor&lt;br /&gt;
-- #170 Graphviz and PlantUML on Windows&lt;br /&gt;
-- #171 Sorting column in Advanced tab&lt;br /&gt;
-- #173 [v0.11] invalid custom doxygen identifier found&lt;br /&gt;
-- #174 [v0.11] endRule without matching beginRule&lt;br /&gt;
-- #175 java.lang.IllegalArgumentException: endRule without matching beginRule&lt;br /&gt;
-- #178 No groups on advanced tab&lt;br /&gt;
-- #176 Support resources in linked folders&lt;br /&gt;
-- #182 [v0.11] add update site with bundled Doxygen executables&lt;br /&gt;
-- #184 [v0.11] bundled Doxygen binaries are not working (not executable) at Linux Known issues:&lt;br /&gt;
-- #166 freeze of build with Grep Console installed --&amp;amp;gt; **related to other plugin, please apply the described workaround**&lt;/p&gt;
-&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;&lt;!-- google_ad_section_end --&gt;</description>
-     <pubDate>Fri, 07 Mar 2014 08:42:41 +0000</pubDate>
- <dc:creator>ipajuelo</dc:creator>
- <guid isPermaLink="false">1536329 at http://marketplace.eclipse.org</guid>
- <comments>http://marketplace.eclipse.org/content/eclox#comments</comments>
-  </item>
-  <item>
-    <title>JRebel for Eclipse</title>
-    <link>http://marketplace.eclipse.org/content/jrebel-eclipse</link>
-    <description>&lt;div class=&quot;field field-name-field-resource-image field-type-image field-label-hidden&quot;&gt;&lt;div class=&quot;field-items&quot;&gt;&lt;div class=&quot;field-item even&quot;&gt;&lt;img typeof=&quot;foaf:Image&quot; class=&quot;img-responsive&quot; src=&quot;http://marketplace.eclipse.org/sites/default/files/JRebel_EclipseMarketplace_110x80.png&quot; width=&quot;110&quot; height=&quot;80&quot; alt=&quot;&quot; /&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;&lt;div class=&quot;field field-name-shared-date-created field-type-text field-label-inline clearfix&quot;&gt;&lt;div class=&quot;field-label&quot;&gt;Date Created:&amp;nbsp;&lt;/div&gt;&lt;div class=&quot;field-items&quot;&gt;&lt;div class=&quot;field-item even&quot;&gt;Tue, 2011-01-25 08:59&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;&lt;div class=&quot;field field-name-shared-date-updated field-type-text field-label-inline clearfix&quot;&gt;&lt;div class=&quot;field-label&quot;&gt;Date Updated:&amp;nbsp;&lt;/div&gt;&lt;div class=&quot;field-items&quot;&gt;&lt;div class=&quot;field-item even&quot;&gt;Thu, 2018-01-18 10:11&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;&lt;a href=&quot;/search/content/%22ZeroTurnaround%22&quot;&gt;ZeroTurnaround&lt;/a&gt;&lt;div class=&quot;field field-name-shared-submitted-by field-type-text field-label-inline clearfix&quot;&gt;&lt;div class=&quot;field-label&quot;&gt;Submitted by:&amp;nbsp;&lt;/div&gt;&lt;div class=&quot;field-items&quot;&gt;&lt;div class=&quot;field-item even&quot;&gt;&lt;a href=&quot;/user/owhite/listings&quot; title=&quot;JRebel ZeroTurnaround&quot;&gt;JRebel ZeroTurnaround&lt;/a&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;&lt;!-- google_ad_section_start --&gt;&lt;div class=&quot;field field-name-body field-type-text-with-summary field-label-hidden&quot;&gt;&lt;div class=&quot;field-items&quot;&gt;&lt;div class=&quot;field-item even&quot; property=&quot;content:encoded&quot;&gt;&lt;p&gt;JRebel is a productivity tool that allows developers to reload code changes instantly. It skips the rebuild, restart, and redeploy cycle common in Java development. JRebel enables developers to get more done in the same amount of time and stay in the flow while coding. JRebel supports a majority of real-world enterprise java stacks and is easy to install into existing development environments.&lt;/p&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;&lt;!-- google_ad_section_end --&gt;</description>
-     <pubDate>Tue, 25 Jan 2011 13:59:21 +0000</pubDate>
- <dc:creator>owhite</dc:creator>
- <guid isPermaLink="false">29591 at http://marketplace.eclipse.org</guid>
- <comments>http://marketplace.eclipse.org/content/jrebel-eclipse#comments</comments>
-  </item>
-  <item>
-    <title>Paraformance</title>
-    <link>http://marketplace.eclipse.org/content/paraformance</link>
-    <description>&lt;div class=&quot;field field-name-field-resource-image field-type-image field-label-hidden&quot;&gt;&lt;div class=&quot;field-items&quot;&gt;&lt;div class=&quot;field-item even&quot;&gt;&lt;img typeof=&quot;foaf:Image&quot; class=&quot;img-responsive&quot; src=&quot;http://marketplace.eclipse.org/sites/default/files/ParaFormanceTM.jpg&quot; width=&quot;89&quot; height=&quot;80&quot; alt=&quot;&quot; /&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;&lt;div class=&quot;field field-name-shared-date-created field-type-text field-label-inline clearfix&quot;&gt;&lt;div class=&quot;field-label&quot;&gt;Date Created:&amp;nbsp;&lt;/div&gt;&lt;div class=&quot;field-items&quot;&gt;&lt;div class=&quot;field-item even&quot;&gt;Wed, 2017-09-06 08:14&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;&lt;div class=&quot;field field-name-shared-date-updated field-type-text field-label-inline clearfix&quot;&gt;&lt;div class=&quot;field-label&quot;&gt;Date Updated:&amp;nbsp;&lt;/div&gt;&lt;div class=&quot;field-items&quot;&gt;&lt;div class=&quot;field-item even&quot;&gt;Wed, 2018-01-17 11:07&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;&lt;a href=&quot;/search/content/%22University%20of%20St.%20Andrews%22&quot;&gt;University of St. Andrews&lt;/a&gt;&lt;div class=&quot;field field-name-shared-submitted-by field-type-text field-label-inline clearfix&quot;&gt;&lt;div class=&quot;field-label&quot;&gt;Submitted by:&amp;nbsp;&lt;/div&gt;&lt;div class=&quot;field-items&quot;&gt;&lt;div class=&quot;field-item even&quot;&gt;&lt;a href=&quot;/user/ddeyxuq/listings&quot; title=&quot;Dibayendu Dey&quot;&gt;Dibayendu Dey&lt;/a&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;&lt;!-- google_ad_section_start --&gt;&lt;div class=&quot;field field-name-body field-type-text-with-summary field-label-hidden&quot;&gt;&lt;div class=&quot;field-items&quot;&gt;&lt;div class=&quot;field-item even&quot; property=&quot;content:encoded&quot;&gt;&lt;p&gt;ParaFormance is a software tool-chain that allows software developers to quickly and easily write multi-core software. ParaFormance enables software developers to find the sources of parallelism within their code, automatically (through user-controlled guidance) inserting the parallel business logic, and checking that the parallelised code is thread-safe.&lt;/p&gt;
+    <title>Notepad4e</title>
+    <link>http://marketplace.eclipse.org/content/notepad4e</link>
+    <description>&lt;div class=&quot;field field-name-field-resource-image field-type-image field-label-hidden&quot;&gt;&lt;div class=&quot;field-items&quot;&gt;&lt;div class=&quot;field-item even&quot;&gt;&lt;img typeof=&quot;foaf:Image&quot; class=&quot;img-responsive&quot; src=&quot;http://marketplace.eclipse.org/sites/default/files/note.png&quot; width=&quot;80&quot; height=&quot;80&quot; alt=&quot;&quot; /&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;&lt;div class=&quot;field field-name-shared-date-created field-type-text field-label-inline clearfix&quot;&gt;&lt;div class=&quot;field-label&quot;&gt;Date Created:&amp;nbsp;&lt;/div&gt;&lt;div class=&quot;field-items&quot;&gt;&lt;div class=&quot;field-item even&quot;&gt;Sat, 2016-10-08 08:14&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;&lt;div class=&quot;field field-name-shared-date-updated field-type-text field-label-inline clearfix&quot;&gt;&lt;div class=&quot;field-label&quot;&gt;Date Updated:&amp;nbsp;&lt;/div&gt;&lt;div class=&quot;field-items&quot;&gt;&lt;div class=&quot;field-item even&quot;&gt;Sat, 2018-01-27 08:56&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;&lt;div class=&quot;field field-name-shared-submitted-by field-type-text field-label-inline clearfix&quot;&gt;&lt;div class=&quot;field-label&quot;&gt;Submitted by:&amp;nbsp;&lt;/div&gt;&lt;div class=&quot;field-items&quot;&gt;&lt;div class=&quot;field-item even&quot;&gt;&lt;a href=&quot;/user/pybigourdan/listings&quot; title=&quot;Pierre-Yves B.&quot;&gt;Pierre-Yves B.&lt;/a&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;&lt;!-- google_ad_section_start --&gt;&lt;div class=&quot;field field-name-body field-type-text-with-summary field-label-hidden&quot;&gt;&lt;div class=&quot;field-items&quot;&gt;&lt;div class=&quot;field-item even&quot; property=&quot;content:encoded&quot;&gt;&lt;p&gt;&lt;strong&gt;Create highly customisable notes in Eclipse, and never lose track of your thoughts, ideas or code snippets!&lt;/strong&gt;&lt;/p&gt;
 &lt;ul&gt;&lt;li&gt;
-		ParaFormance works with C and C++&lt;/li&gt;
+		Create as many notes as you like in an Eclipse editor view.&lt;/li&gt;
 &lt;li&gt;
-		ParaFormance works on source code and is compiler independent&lt;/li&gt;
+		Modify the text style (font, colour, bold, italic, underlined, strikeout, etc.).&lt;/li&gt;
 &lt;li&gt;
-		ParaFormance checks code for correctness - automatically - and highlights potential issues&lt;/li&gt;
+		Customise the appearance and functionality of the plugin via its preference page.&lt;/li&gt;
 &lt;li&gt;
-		ParaFormance detects candidates for parallelization within sequential code using extremely sophisticated pattern analysis and recognition&lt;/li&gt;
+		Create lists of elements.&lt;/li&gt;
 &lt;li&gt;
-		ParaFormance suggests code repairs and fixes for parallelism, enabling them to be implemented automatically or with developer intervention&lt;/li&gt;
+		Automatically save the contents of your notes between workspace launches.&lt;/li&gt;
 &lt;li&gt;
-		ParaFormance enables roll-back of any changes to code&lt;/li&gt;
-&lt;/ul&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;&lt;!-- google_ad_section_end --&gt;</description>
-     <pubDate>Wed, 06 Sep 2017 12:14:07 +0000</pubDate>
- <dc:creator>ddeyxuq</dc:creator>
- <guid isPermaLink="false">3638821 at http://marketplace.eclipse.org</guid>
- <comments>http://marketplace.eclipse.org/content/paraformance#comments</comments>
+		Use editable shortcuts to boost your productivity.&lt;/li&gt;
+&lt;li&gt;
+		Export notes as text files.&lt;/li&gt;
+&lt;li&gt;
+		Lightweight and user-friendly interface.&lt;/li&gt;
+&lt;li&gt;
+		Free, no user tracking, no ads. &lt;/li&gt;
+&lt;li&gt;
+		Source code fully available.&lt;/li&gt;
+&lt;li&gt;
+		Available in English and French.&lt;/li&gt;
+&lt;li&gt;
+		More to discover and to come in future updates!&lt;/li&gt;
+&lt;/ul&gt;&lt;p&gt;Support the project: star Notepad4e on the marketplace or on &lt;strong&gt;&lt;a href=&quot;https://github.com/PyvesB/Notepad4e&quot; rel=&quot;nofollow&quot;&gt;GitHub&lt;/a&gt;&lt;/strong&gt;!&lt;/p&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;&lt;!-- google_ad_section_end --&gt;</description>
+     <pubDate>Sat, 08 Oct 2016 12:14:08 +0000</pubDate>
+ <dc:creator>pybigourdan</dc:creator>
+ <guid isPermaLink="false">3108021 at http://marketplace.eclipse.org</guid>
+ <comments>http://marketplace.eclipse.org/content/notepad4e#comments</comments>
   </item>
   <item>
-    <title>Training and Consulting for QF-Test - The Java (incl. Eclipse) &amp; Web GUI Testing Tool</title>
-    <link>http://marketplace.eclipse.org/content/training-and-consulting-qf-test-java-incl-eclipse-web-gui-testing-tool</link>
-    <description>&lt;div class=&quot;field field-name-field-consulting-image field-type-image field-label-hidden&quot;&gt;&lt;div class=&quot;field-items&quot;&gt;&lt;div class=&quot;field-item even&quot;&gt;&lt;img typeof=&quot;foaf:Image&quot; class=&quot;img-responsive&quot; src=&quot;http://marketplace.eclipse.org/sites/default/files/qf-test-eclipse_0.png&quot; width=&quot;110&quot; height=&quot;80&quot; alt=&quot;&quot; /&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;&lt;!-- google_ad_section_start --&gt;&lt;div class=&quot;field field-name-shared-submitted-by field-type-text field-label-inline clearfix&quot;&gt;&lt;div class=&quot;field-label&quot;&gt;Submitted by:&amp;nbsp;&lt;/div&gt;&lt;div class=&quot;field-items&quot;&gt;&lt;div class=&quot;field-item even&quot;&gt;&lt;a href=&quot;/user/cbaur/listings&quot; title=&quot;Claudia Baur&quot;&gt;Claudia Baur&lt;/a&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;&lt;div class=&quot;field field-name-shared-date-created field-type-text field-label-inline clearfix&quot;&gt;&lt;div class=&quot;field-label&quot;&gt;Date Created:&amp;nbsp;&lt;/div&gt;&lt;div class=&quot;field-items&quot;&gt;&lt;div class=&quot;field-item even&quot;&gt;Thu, 2017-04-27 05:08&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;&lt;div class=&quot;field field-name-shared-date-updated field-type-text field-label-inline clearfix&quot;&gt;&lt;div class=&quot;field-label&quot;&gt;Date Updated:&amp;nbsp;&lt;/div&gt;&lt;div class=&quot;field-items&quot;&gt;&lt;div class=&quot;field-item even&quot;&gt;Wed, 2018-01-17 08:10&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;&lt;div class=&quot;field field-name-body field-type-text-with-summary field-label-hidden&quot;&gt;&lt;div class=&quot;field-items&quot;&gt;&lt;div class=&quot;field-item even&quot; property=&quot;content:encoded&quot;&gt;&lt;h2&gt;
-	QF-Test: The Java (incl. Eclipse) &amp;amp; Web GUI Testing Tool&lt;/h2&gt;
-&lt;p&gt;
-	&lt;a href=&quot;https://www.qfs.de/en/qf-test/test-automation-with-qf-test.html&quot; rel=&quot;nofollow&quot;&gt;QF-Test&lt;/a&gt; is the tool for the automation of Java &amp;amp; Web GUIs. It has been developed since 2002 and has now more than 1,000 customers in over 50 countries. Fore these we offer different Training &amp;amp; Consulting possibilities.&lt;/p&gt;
-&lt;p&gt;
-	You can create very robust and stable regression and load tests with QF-Test for several GUI technologies:&lt;br /&gt;
-	Swing, JavaFX, AWT, SWT, Eclipse Plugins, RCP, WebStart, Applets, RIA, ULC, Captain Casa, Web (including AJAX-toolkits like GWT, Vaadin etc. &amp;amp; HTML5. Cross-browser for IE, Firefox, Chrome, Safari, Edge).&lt;/p&gt;
-&lt;p&gt;QF-Test is GUI testing tool for developers and testers which allows you to crate tests without programming knowledge. Additionally you can extend it with Jython, Groovy or Javascript scripts. A Jenkins Plugin for QF-Test is available. Tests can be executed unattendedly and produce detailed logfiles and XML or HTML reports.&lt;/p&gt;
-&lt;p&gt;
-	QF-Test is cross platform for Windows, Linux/Unix and macOS (macOS for Swing, FX and Web)&lt;/p&gt;
-&lt;p&gt;Since QF-Test version 4.2 released in January 2018 QF-Test can also do PDF Testing.&lt;/p&gt;
-&lt;h3&gt;
-	Detailed advantages concerning &lt;a href=&quot;https://www.qfs.de/en/qf-test/java-testing.html&quot; rel=&quot;nofollow&quot;&gt;Eclipse&lt;/a&gt;:&lt;/h3&gt;
-&lt;p&gt;• very robust test automation based on &quot;soft&quot; events at Windows/Gtk level&lt;br /&gt;
-	• support for native dialogs like FileDialog&lt;br /&gt;
-	• excellent component recognition, including automatic naming for Eclipse/RCP components&lt;br /&gt;
-	• supports testing combined SWT/Swing andSWT/FX applications&lt;br /&gt;
-	• Developers can integrate QF-Test in their launch configuration.&lt;br /&gt;
-	• replaces the org.eclipse.swt plugin (corresponding patches are available, could be applied automatically as part of daily builds)&lt;br /&gt;
-	• also supports GEF/GMF&lt;/p&gt;
-&lt;h3&gt;
-	A variety of support possibilities are offered:&lt;/h3&gt;
-&lt;p&gt;A guide for &lt;a href=&quot;https://www.qfs.de/en/get-started-with-qf-test.html&quot; rel=&quot;nofollow&quot;&gt;How to get started with QF-Test&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;&lt;a href=&quot;https://www.qfs.de/en/qf-test-support.html&quot; rel=&quot;nofollow&quot;&gt;Support&lt;/a&gt; as well as a large &lt;a href=&quot;https://www.qfs.de/en/qf-test-support/documentation/manual.html&quot; rel=&quot;nofollow&quot;&gt;documentation&lt;/a&gt; such as manual, tutorial, searchable archive and videos.&lt;br /&gt;
-	Don’t hesitate to ask for a &lt;a href=&quot;https://www.qfs.de/en/qf-test/free-trial.html&quot; rel=&quot;nofollow&quot;&gt;supported evaluation license&lt;/a&gt;&lt;/p&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;&lt;!-- google_ad_section_end --&gt;&lt;div class=&quot;field field-name-field-trainingdesc field-type-text-long field-label-hidden&quot;&gt;&lt;div class=&quot;field-items&quot;&gt;&lt;div class=&quot;field-item even&quot;&gt;&lt;h2&gt;
-	&lt;a href=&quot;https://www.qfs.de/en/qf-test-support/webinars-reviews.html&quot; rel=&quot;nofollow&quot;&gt;QF-Test Trainings&lt;/a&gt;&lt;/h2&gt;
-&lt;p&gt;For the Java &amp;amp; Web Testing Tool QF-Test we offer different trainings. &lt;/p&gt;
-&lt;p&gt;All trainings can be adapted indivudually to your needs.&lt;/p&gt;
-&lt;ul&gt;&lt;li&gt;
-		Standard training (compact course) at Geretsried or Leipzig for three days&lt;/li&gt;
-&lt;li&gt;
-		Standard training (compact course) via webinar for four days&lt;/li&gt;
-&lt;li&gt;
-		Company webinar training exclusively for one company&lt;/li&gt;
-&lt;li&gt;
-		Evaluation webinar: every Monday for 20 minutes&lt;/li&gt;
-&lt;li&gt;
-		Kick-off-webinar: Webinar for setting up the testing environment shortly after the purchase of QF-Test&lt;/li&gt;
-&lt;li&gt;
-		Quick-review-webinar: Webinar after a training or consulting to review the existing test suites.&lt;/li&gt;
-&lt;li&gt;
-		Special Webinar: Our trainer Martin Moser offers regularly webinars for special QF-Test subjects like e.g. custom components or component recognition in general, dependencies etc.&lt;/li&gt;
-&lt;/ul&gt;&lt;p&gt;Please contact us: &lt;a href=&quot;mailto:sales@qfs.de&quot; rel=&quot;nofollow&quot;&gt;sales@qfs.de&lt;/a&gt; and we can help you finding the right training especially for you.&lt;/p&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;&lt;div class=&quot;field field-name-field-consultingdesc field-type-text-long field-label-hidden&quot;&gt;&lt;div class=&quot;field-items&quot;&gt;&lt;div class=&quot;field-item even&quot;&gt;&lt;h2&gt;
-	&lt;a href=&quot;https://www.qfs.de/en/qf-test-support/training-consulting.html&quot; rel=&quot;nofollow&quot;&gt;QF-Test Consulting&lt;/a&gt;&lt;/h2&gt;
-&lt;p&gt;We offer consulting via webinar (remote) and on-site. One of our experienced consultants will consult and support you:&lt;/p&gt;
-&lt;ul&gt;&lt;li&gt;
-		Setting up test environment&lt;/li&gt;
-&lt;li&gt;
-		Optimization and review of test architecture&lt;/li&gt;
-&lt;li&gt;
-		Design of tests&lt;/li&gt;
-&lt;li&gt;
-		etc.&lt;/li&gt;
-&lt;/ul&gt;&lt;p&gt;Please contact us: &lt;a href=&quot;mailto:sales@qfs.de&quot; rel=&quot;nofollow&quot;&gt;sales@qfs.de&lt;/a&gt; and we can help you finding the right form of consulting especially for you.&lt;/p&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;&lt;div class=&quot;field field-name-field-url field-type-text field-label-above&quot;&gt;&lt;div class=&quot;field-label&quot;&gt;Organization URL:&amp;nbsp;&lt;/div&gt;&lt;div class=&quot;field-items&quot;&gt;&lt;div class=&quot;field-item even&quot;&gt;https://www.qfs.de/en.html&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;&lt;div class=&quot;field field-name-field-trainingurl field-type-text field-label-hidden&quot;&gt;&lt;div class=&quot;field-items&quot;&gt;&lt;div class=&quot;field-item even&quot;&gt;https://www.qfs.de/en/qf-test-support/webinars-reviews.html&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;&lt;div class=&quot;field field-name-field-consultingurl field-type-text field-label-hidden&quot;&gt;&lt;div class=&quot;field-items&quot;&gt;&lt;div class=&quot;field-item even&quot;&gt;https://www.qfs.de/en/qf-test-support/training-consulting.html&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;&lt;div class=&quot;field field-name-field-locations field-type-text field-label-hidden&quot;&gt;&lt;div class=&quot;field-items&quot;&gt;&lt;div class=&quot;field-item even&quot;&gt;At QFS (Wolfratshausen or Leipzig), Via Webinar, At customer&amp;#039;s site&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;</description>
-     <pubDate>Thu, 27 Apr 2017 09:08:21 +0000</pubDate>
- <dc:creator>cbaur</dc:creator>
- <guid isPermaLink="false">3416313 at http://marketplace.eclipse.org</guid>
- <comments>http://marketplace.eclipse.org/content/training-and-consulting-qf-test-java-incl-eclipse-web-gui-testing-tool#comments</comments>
+    <title>Live Coding in Python</title>
+    <link>http://marketplace.eclipse.org/content/live-coding-python</link>
+    <description>&lt;div class=&quot;field field-name-field-resource-image field-type-image field-label-hidden&quot;&gt;&lt;div class=&quot;field-items&quot;&gt;&lt;div class=&quot;field-item even&quot;&gt;&lt;img typeof=&quot;foaf:Image&quot; class=&quot;img-responsive&quot; src=&quot;http://marketplace.eclipse.org/sites/default/files/gravatar.jpg&quot; width=&quot;80&quot; height=&quot;80&quot; alt=&quot;&quot; /&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;&lt;div class=&quot;field field-name-shared-date-created field-type-text field-label-inline clearfix&quot;&gt;&lt;div class=&quot;field-label&quot;&gt;Date Created:&amp;nbsp;&lt;/div&gt;&lt;div class=&quot;field-items&quot;&gt;&lt;div class=&quot;field-item even&quot;&gt;Fri, 2016-04-01 00:12&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;&lt;div class=&quot;field field-name-shared-date-updated field-type-text field-label-inline clearfix&quot;&gt;&lt;div class=&quot;field-label&quot;&gt;Date Updated:&amp;nbsp;&lt;/div&gt;&lt;div class=&quot;field-items&quot;&gt;&lt;div class=&quot;field-item even&quot;&gt;Sat, 2018-01-27 01:13&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;&lt;a href=&quot;/search/content/%22Don%20Kirkby%22&quot;&gt;Don Kirkby&lt;/a&gt;&lt;div class=&quot;field field-name-shared-submitted-by field-type-text field-label-inline clearfix&quot;&gt;&lt;div class=&quot;field-label&quot;&gt;Submitted by:&amp;nbsp;&lt;/div&gt;&lt;div class=&quot;field-items&quot;&gt;&lt;div class=&quot;field-item even&quot;&gt;&lt;a href=&quot;/user/dkirkby/listings&quot; title=&quot;Don Kirkby&quot;&gt;Don Kirkby&lt;/a&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;&lt;!-- google_ad_section_start --&gt;&lt;div class=&quot;field field-name-body field-type-text-with-summary field-label-hidden&quot;&gt;&lt;div class=&quot;field-items&quot;&gt;&lt;div class=&quot;field-item even&quot; property=&quot;content:encoded&quot;&gt;&lt;p&gt;Run your Python code while you type. Displays variable state or turtle graphics that are updated as you type your code. Requires PyDev, so &lt;strong&gt;install PyDev first&lt;/strong&gt;.&lt;/p&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;&lt;!-- google_ad_section_end --&gt;</description>
+     <pubDate>Fri, 01 Apr 2016 04:12:00 +0000</pubDate>
+ <dc:creator>dkirkby</dc:creator>
+ <guid isPermaLink="false">2806369 at http://marketplace.eclipse.org</guid>
+ <comments>http://marketplace.eclipse.org/content/live-coding-python#comments</comments>
   </item>
   <item>
-    <title>Cute C++ Unit Testing Easier</title>
-    <link>http://marketplace.eclipse.org/content/cute-c-unit-testing-easier</link>
-    <description>&lt;div class=&quot;field field-name-field-resource-image field-type-image field-label-hidden&quot;&gt;&lt;div class=&quot;field-items&quot;&gt;&lt;div class=&quot;field-item even&quot;&gt;&lt;img typeof=&quot;foaf:Image&quot; class=&quot;img-responsive&quot; src=&quot;http://marketplace.eclipse.org/sites/default/files/logo_cute_320.png&quot; width=&quot;104&quot; height=&quot;80&quot; alt=&quot;&quot; /&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;&lt;div class=&quot;field field-name-shared-date-created field-type-text field-label-inline clearfix&quot;&gt;&lt;div class=&quot;field-label&quot;&gt;Date Created:&amp;nbsp;&lt;/div&gt;&lt;div class=&quot;field-items&quot;&gt;&lt;div class=&quot;field-item even&quot;&gt;Fri, 2007-06-15 10:41&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;&lt;div class=&quot;field field-name-shared-date-updated field-type-text field-label-inline clearfix&quot;&gt;&lt;div class=&quot;field-label&quot;&gt;Date Updated:&amp;nbsp;&lt;/div&gt;&lt;div class=&quot;field-items&quot;&gt;&lt;div class=&quot;field-item even&quot;&gt;Wed, 2018-01-17 04:32&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;&lt;a href=&quot;/search/content/%22IFS%20Institute%20for%20Software%22&quot;&gt;IFS Institute for Software&lt;/a&gt;&lt;div class=&quot;field field-name-shared-submitted-by field-type-text field-label-inline clearfix&quot;&gt;&lt;div class=&quot;field-label&quot;&gt;Submitted by:&amp;nbsp;&lt;/div&gt;&lt;div class=&quot;field-items&quot;&gt;&lt;div class=&quot;field-item even&quot;&gt;&lt;a href=&quot;/user/tcorbat/listings&quot; title=&quot;Thomas Corbat&quot;&gt;Thomas Corbat&lt;/a&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;&lt;!-- google_ad_section_start --&gt;&lt;div class=&quot;field field-name-body field-type-text-with-summary field-label-hidden&quot;&gt;&lt;div class=&quot;field-items&quot;&gt;&lt;div class=&quot;field-item even&quot; property=&quot;content:encoded&quot;&gt;&lt;p&gt;Automated unit testing supports high quality of program code, even under inevitable change and refactoring. As a side effect, unit tested code often has a better structure. Java developers are used to unit testing because of JUnit and its tight integration into IDEs like Eclipse. C++ programmers lacked the tool support for easy-to-use unit testing, even though the language&#039;s complexity asks for it. Refactoring and simplifying C++ code without tests is very hard. No longer! IFS created a simple to use CUTE (C++ Unit Testing Easier) and integrated it into Eclipse CDT similar to JUnit.&lt;/p&gt;
-&lt;ul&gt;&lt;li&gt;
-		wizard creating test frame&lt;/li&gt;
-&lt;li&gt;
-		test navigator with green/red bar&lt;/li&gt;
-&lt;li&gt;
-		diff-viewer for failing tests&lt;/li&gt;
-&lt;li&gt;
-		rerun specific tests&lt;/li&gt;
-&lt;li&gt;
-		coverage analysis&lt;/li&gt;
-&lt;li&gt;
-		code stub generation for test-driven development&lt;/li&gt;
-&lt;/ul&gt;&lt;p&gt;Please visit our update site for additional features. Note: The current release requires Eclipse Oxygen and Eclipse CDT (9.3.0). For those interested in earlier releases (Pre-Oxygen) visit: &lt;a href=&quot;http://www.cute-test.com/projects/cute/wiki/CUTE_Installation_and_System_Requirements&quot; rel=&quot;nofollow&quot;&gt;CUTE Wiki&lt;/a&gt;&lt;/p&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;&lt;!-- google_ad_section_end --&gt;</description>
-     <pubDate>Fri, 15 Jun 2007 14:41:44 +0000</pubDate>
- <dc:creator>tcorbat</dc:creator>
- <guid isPermaLink="false">483 at http://marketplace.eclipse.org</guid>
- <comments>http://marketplace.eclipse.org/content/cute-c-unit-testing-easier#comments</comments>
+    <title>IBM Eclipse Tools for IBM Cloud</title>
+    <link>http://marketplace.eclipse.org/content/ibm-eclipse-tools-ibm-cloud</link>
+    <description>&lt;div class=&quot;field field-name-field-resource-image field-type-image field-label-hidden&quot;&gt;&lt;div class=&quot;field-items&quot;&gt;&lt;div class=&quot;field-item even&quot;&gt;&lt;img typeof=&quot;foaf:Image&quot; class=&quot;img-responsive&quot; src=&quot;http://marketplace.eclipse.org/sites/default/files/cloud.png&quot; width=&quot;90&quot; height=&quot;80&quot; alt=&quot;&quot; /&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;&lt;div class=&quot;field field-name-shared-date-created field-type-text field-label-inline clearfix&quot;&gt;&lt;div class=&quot;field-label&quot;&gt;Date Created:&amp;nbsp;&lt;/div&gt;&lt;div class=&quot;field-items&quot;&gt;&lt;div class=&quot;field-item even&quot;&gt;Mon, 2014-06-30 04:34&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;&lt;div class=&quot;field field-name-shared-date-updated field-type-text field-label-inline clearfix&quot;&gt;&lt;div class=&quot;field-label&quot;&gt;Date Updated:&amp;nbsp;&lt;/div&gt;&lt;div class=&quot;field-items&quot;&gt;&lt;div class=&quot;field-item even&quot;&gt;Fri, 2018-01-26 16:26&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;&lt;a href=&quot;/search/content/%22IBM%22&quot;&gt;IBM&lt;/a&gt;&lt;div class=&quot;field field-name-shared-submitted-by field-type-text field-label-inline clearfix&quot;&gt;&lt;div class=&quot;field-label&quot;&gt;Submitted by:&amp;nbsp;&lt;/div&gt;&lt;div class=&quot;field-items&quot;&gt;&lt;div class=&quot;field-item even&quot;&gt;&lt;a href=&quot;/user/canderson/listings&quot; title=&quot;Carl Anderson&quot;&gt;Carl Anderson&lt;/a&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;&lt;!-- google_ad_section_start --&gt;&lt;div class=&quot;field field-name-body field-type-text-with-summary field-label-hidden&quot;&gt;&lt;div class=&quot;field-items&quot;&gt;&lt;div class=&quot;field-item even&quot; property=&quot;content:encoded&quot;&gt;&lt;p&gt;Enables rapid deployment and integration of applications with &lt;a href=&quot;https://console.ng.bluemix.net/registration/?cm_mmc=IBMEclipseTools-_-EclipseMarketplace-_-Mars1-_-Registration&quot; rel=&quot;nofollow&quot;&gt;IBM Cloud&lt;/a&gt; or the Cloud Foundry Clouds, including support for JavaScript and EAR publishing. &lt;strong&gt;A Java 7 or newer Execution Environment is required.&lt;/strong&gt; For more information about installing this version of the tools, see &lt;a href=&quot;https://developer.ibm.com/wasdev/downloads/#asset/tools-IBM_Eclipse_Tools_for_IBM_Cloud&quot; rel=&quot;nofollow&quot;&gt;https://developer.ibm.com/wasdev/downloads/#asset/tools-IBM_Eclipse_Tool...&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt; &lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Installing on Eclipse Neon&lt;/strong&gt;:&lt;/p&gt;
+&lt;p&gt;If you are running on Eclipse Neon or below, you may receive an &#039;Installation cannot be completed as requested.&quot; message. This is expected, as your Eclipse workbench will need to upgrade some of the required Eclipse Cloud Foundry Tools plug-ins.&lt;/p&gt;
+&lt;p&gt;When you see this message, select &#039;&lt;strong&gt;Update my installation to be compatible with the items being installed&lt;/strong&gt;&#039;, and continue the install. The required plug-ins will be updated to a supported version. You may also select &lt;strong&gt;Help &amp;gt; Check for Updates&lt;/strong&gt; to update the required plug-ins, at a later time.&lt;/p&gt;
+&lt;p&gt;Finally, to avoid this message you may download  the latest Eclipse Oxygen release, which does not require the dependent plug-ins to be upgraded.&lt;/p&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;&lt;!-- google_ad_section_end --&gt;</description>
+     <pubDate>Mon, 30 Jun 2014 08:34:39 +0000</pubDate>
+ <dc:creator>canderson</dc:creator>
+ <guid isPermaLink="false">1774120 at http://marketplace.eclipse.org</guid>
+ <comments>http://marketplace.eclipse.org/content/ibm-eclipse-tools-ibm-cloud#comments</comments>
   </item>
   <item>
-    <title>Cucumber Eclipse Plugin</title>
-    <link>http://marketplace.eclipse.org/content/cucumber-eclipse-plugin</link>
-    <description>&lt;div class=&quot;field field-name-field-resource-image field-type-image field-label-hidden&quot;&gt;&lt;div class=&quot;field-items&quot;&gt;&lt;div class=&quot;field-item even&quot;&gt;&lt;img typeof=&quot;foaf:Image&quot; class=&quot;img-responsive&quot; src=&quot;http://marketplace.eclipse.org/sites/default/files/cucumber_0.png&quot; width=&quot;110&quot; height=&quot;55&quot; alt=&quot;&quot; /&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;&lt;div class=&quot;field field-name-shared-date-created field-type-text field-label-inline clearfix&quot;&gt;&lt;div class=&quot;field-label&quot;&gt;Date Created:&amp;nbsp;&lt;/div&gt;&lt;div class=&quot;field-items&quot;&gt;&lt;div class=&quot;field-item even&quot;&gt;Fri, 2017-11-10 06:08&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;&lt;div class=&quot;field field-name-shared-date-updated field-type-text field-label-inline clearfix&quot;&gt;&lt;div class=&quot;field-label&quot;&gt;Date Updated:&amp;nbsp;&lt;/div&gt;&lt;div class=&quot;field-items&quot;&gt;&lt;div class=&quot;field-item even&quot;&gt;Tue, 2018-01-16 10:28&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;&lt;a href=&quot;/search/content/%22Cucumber%22&quot;&gt;Cucumber&lt;/a&gt;&lt;div class=&quot;field field-name-shared-submitted-by field-type-text field-label-inline clearfix&quot;&gt;&lt;div class=&quot;field-label&quot;&gt;Submitted by:&amp;nbsp;&lt;/div&gt;&lt;div class=&quot;field-items&quot;&gt;&lt;div class=&quot;field-item even&quot;&gt;&lt;a href=&quot;/user/gpandam3m/listings&quot; title=&quot;Girija Prasad Panda&quot;&gt;Girija Prasad Panda&lt;/a&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;&lt;!-- google_ad_section_start --&gt;&lt;div class=&quot;field field-name-body field-type-text-with-summary field-label-hidden&quot;&gt;&lt;div class=&quot;field-items&quot;&gt;&lt;div class=&quot;field-item even&quot; property=&quot;content:encoded&quot;&gt;&lt;h4&gt;
-	An eclipse plugin for &lt;a href=&quot;https://cucumber.io/&quot; rel=&quot;nofollow&quot;&gt; Cucumber &lt;/a&gt;.&lt;/h4&gt;
-&lt;h3&gt;
-	New Feature list in the version available from the update site:&lt;/h3&gt;
+    <title>Palladio 4.1 for Eclipse 4.6/.4.7 (Neon/Oxygen) </title>
+    <link>http://marketplace.eclipse.org/content/palladio-41-eclipse-4647-neonoxygen</link>
+    <description>&lt;div class=&quot;field field-name-field-resource-image field-type-image field-label-hidden&quot;&gt;&lt;div class=&quot;field-items&quot;&gt;&lt;div class=&quot;field-item even&quot;&gt;&lt;img typeof=&quot;foaf:Image&quot; class=&quot;img-responsive&quot; src=&quot;http://marketplace.eclipse.org/sites/default/files/palladio-logo-eclipse-marketplace-2010.png&quot; width=&quot;110&quot; height=&quot;80&quot; alt=&quot;&quot; /&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;&lt;div class=&quot;field field-name-shared-date-created field-type-text field-label-inline clearfix&quot;&gt;&lt;div class=&quot;field-label&quot;&gt;Date Created:&amp;nbsp;&lt;/div&gt;&lt;div class=&quot;field-items&quot;&gt;&lt;div class=&quot;field-item even&quot;&gt;Wed, 2017-10-04 07:51&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;&lt;div class=&quot;field field-name-shared-date-updated field-type-text field-label-inline clearfix&quot;&gt;&lt;div class=&quot;field-label&quot;&gt;Date Updated:&amp;nbsp;&lt;/div&gt;&lt;div class=&quot;field-items&quot;&gt;&lt;div class=&quot;field-item even&quot;&gt;Fri, 2018-01-26 04:17&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;&lt;a href=&quot;/search/content/%22The%20Palladio%20Team%22&quot;&gt;The Palladio Team&lt;/a&gt;&lt;div class=&quot;field field-name-shared-submitted-by field-type-text field-label-inline clearfix&quot;&gt;&lt;div class=&quot;field-label&quot;&gt;Submitted by:&amp;nbsp;&lt;/div&gt;&lt;div class=&quot;field-items&quot;&gt;&lt;div class=&quot;field-item even&quot;&gt;&lt;a href=&quot;/user/sseifermannnuk/listings&quot; title=&quot;Stephan Seifermann&quot;&gt;Stephan Seifermann&lt;/a&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;&lt;!-- google_ad_section_start --&gt;&lt;div class=&quot;field field-name-body field-type-text-with-summary field-label-hidden&quot;&gt;&lt;div class=&quot;field-items&quot;&gt;&lt;div class=&quot;field-item even&quot; property=&quot;content:encoded&quot;&gt;&lt;p&gt;Palladio is a software architecture simulation approach which analyses your software at the model level for performance bottlenecks, scalability issues, reliability threats, and allows for a subsequent optimisation. Palladio requires neither buying expensive execution environments (servers, networks, or storage) nor fully implementing a software product. Construction rules are automatically checked by Palladio and thus allow optimal software architectures without costly trial-and-error-cycles. Like in other engineering disciplines, Palladio enables software engineers to construct software straight and in the right way.&lt;/p&gt;
+&lt;p&gt;Use Palladio to&lt;/p&gt;
 &lt;ul&gt;&lt;li&gt;
-&lt;h4&gt;
-			&lt;a href=&quot;https://github.com/cucumber/cucumber-eclipse/wiki/Content-Assistance-for-feature-file&quot; rel=&quot;nofollow&quot;&gt;Content Assistance for feature file &lt;/a&gt;&lt;/h4&gt;
-&lt;/li&gt;
+		Forecast the impact of your design decisions&lt;/li&gt;
 &lt;li&gt;
-&lt;h4&gt;
-			&lt;a href=&quot;https://github.com/cucumber/cucumber-eclipse/wiki/New-Step-Definition-File-Wizard&quot; rel=&quot;nofollow&quot;&gt;New Step Definition File Wizard&lt;/a&gt;&lt;/h4&gt;
-&lt;/li&gt;
+		Lower the costs for trial-and-error-cycles&lt;/li&gt;
 &lt;li&gt;
-&lt;h4&gt;
-			&lt;a href=&quot;https://github.com/cucumber/cucumber-eclipse/wiki/Auto-Generation-of-Sample-Feature-Definition-Template&quot; rel=&quot;nofollow&quot;&gt;Auto Generation of Feature Definition&lt;/a&gt;&lt;/h4&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;h4&gt;
-			&lt;a href=&quot;https://github.com/cucumber/cucumber-eclipse/wiki/I18n-Syntax-highlighting&quot; rel=&quot;nofollow&quot;&gt;I18n Syntax highlighting&lt;/a&gt;&lt;/h4&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;h4&gt;
-			&lt;a href=&quot;https://github.com/cucumber/cucumber-eclipse/wiki/Pretty-Formatting&quot; rel=&quot;nofollow&quot;&gt;Pretty Formatting&lt;/a&gt;&lt;/h4&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;h4&gt;
-			&lt;a href=&quot;https://github.com/cucumber/cucumber-eclipse/wiki/Feature-Runner&quot; rel=&quot;nofollow&quot;&gt;Feature runner with formatters&lt;/a&gt;&lt;/h4&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;h4&gt;
-			&lt;strong&gt;Click through from Step to Step Definition&lt;/strong&gt;. (Currently only works in English, and from pop up menu)&lt;/h4&gt;
-&lt;/li&gt;
-&lt;/ul&gt;&lt;h4&gt;
-	Please head over to our &lt;a href=&quot;https://github.com/cucumber/cucumber-eclipse&quot; rel=&quot;nofollow&quot;&gt; Github Repository &lt;/a&gt; for more information.&lt;/h4&gt;
-&lt;h4&gt;
-	Please consult our &lt;a href=&quot;https://github.com/cucumber/cucumber-eclipse/wiki&quot; rel=&quot;nofollow&quot;&gt; Plugin-Wiki &lt;/a&gt; for a full list for currently available features and screenshots.&lt;/h4&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;&lt;!-- google_ad_section_end --&gt;</description>
-     <pubDate>Fri, 10 Nov 2017 11:08:15 +0000</pubDate>
- <dc:creator>gpandam3m</dc:creator>
- <guid isPermaLink="false">3759385 at http://marketplace.eclipse.org</guid>
- <comments>http://marketplace.eclipse.org/content/cucumber-eclipse-plugin#comments</comments>
-  </item>
-  <item>
-    <title>Spring Tools (aka Spring IDE and Spring Tool Suite)</title>
-    <link>http://marketplace.eclipse.org/content/spring-tools-aka-spring-ide-and-spring-tool-suite</link>
-    <description>&lt;div class=&quot;field field-name-field-resource-image field-type-image field-label-hidden&quot;&gt;&lt;div class=&quot;field-items&quot;&gt;&lt;div class=&quot;field-item even&quot;&gt;&lt;img typeof=&quot;foaf:Image&quot; class=&quot;img-responsive&quot; src=&quot;http://marketplace.eclipse.org/sites/default/files/STS_Eclipse_Rating_1_1.png&quot; width=&quot;110&quot; height=&quot;80&quot; alt=&quot;&quot; /&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;&lt;div class=&quot;field field-name-shared-date-created field-type-text field-label-inline clearfix&quot;&gt;&lt;div class=&quot;field-label&quot;&gt;Date Created:&amp;nbsp;&lt;/div&gt;&lt;div class=&quot;field-items&quot;&gt;&lt;div class=&quot;field-item even&quot;&gt;Fri, 2014-07-11 12:41&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;&lt;div class=&quot;field field-name-shared-date-updated field-type-text field-label-inline clearfix&quot;&gt;&lt;div class=&quot;field-label&quot;&gt;Date Updated:&amp;nbsp;&lt;/div&gt;&lt;div class=&quot;field-items&quot;&gt;&lt;div class=&quot;field-item even&quot;&gt;Tue, 2018-01-16 04:58&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;&lt;a href=&quot;/search/content/%22Pivotal%22&quot;&gt;Pivotal&lt;/a&gt;&lt;div class=&quot;field field-name-shared-submitted-by field-type-text field-label-inline clearfix&quot;&gt;&lt;div class=&quot;field-label&quot;&gt;Submitted by:&amp;nbsp;&lt;/div&gt;&lt;div class=&quot;field-items&quot;&gt;&lt;div class=&quot;field-item even&quot;&gt;&lt;a href=&quot;/user/mlippert/listings&quot; title=&quot;Martin Lippert&quot;&gt;Martin Lippert&lt;/a&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;&lt;!-- google_ad_section_start --&gt;&lt;div class=&quot;field field-name-body field-type-text-with-summary field-label-hidden&quot;&gt;&lt;div class=&quot;field-items&quot;&gt;&lt;div class=&quot;field-item even&quot; property=&quot;content:encoded&quot;&gt;&lt;p&gt;The Spring Tools provides the best Eclipse-powered development environment for building Spring-powered enterprise applications. The Spring Tools supply tools for all of the latest enterprise Java and Spring, and comes on top of the latest Eclipse releases.&lt;/p&gt;
-&lt;h2&gt;
-	Spring Application Tools&lt;/h2&gt;
-&lt;ul&gt;&lt;li&gt;
-		create Spring Boot projects in seconds using easy to use start.spring.io integration&lt;/li&gt;
-&lt;li&gt;
-		supports Spring Java-Config based app development&lt;/li&gt;
-&lt;li&gt;
-		Advanced code completion, content-assist, validation and quick-fix support for Spring apps&lt;/li&gt;
-&lt;li&gt;
-		A Spring Boot dashboard that serves as a microservice development center&lt;/li&gt;
-&lt;li&gt;
-		IDE integration for Cloud Foundry, including debugging in the cloud&lt;/li&gt;
-&lt;li&gt;
-		ultra-fast search-as-you-type in your workspace&lt;/li&gt;
-&lt;/ul&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;&lt;!-- google_ad_section_end --&gt;</description>
-     <pubDate>Fri, 11 Jul 2014 16:41:17 +0000</pubDate>
- <dc:creator>mlippert</dc:creator>
- <guid isPermaLink="false">1794107 at http://marketplace.eclipse.org</guid>
- <comments>http://marketplace.eclipse.org/content/spring-tools-aka-spring-ide-and-spring-tool-suite#comments</comments>
-  </item>
-  <item>
-    <title>SDMapGen</title>
-    <link>http://marketplace.eclipse.org/content/sdmapgen</link>
-    <description>&lt;div class=&quot;field field-name-field-resource-image field-type-image field-label-hidden&quot;&gt;&lt;div class=&quot;field-items&quot;&gt;&lt;div class=&quot;field-item even&quot;&gt;&lt;img typeof=&quot;foaf:Image&quot; class=&quot;img-responsive&quot; src=&quot;http://marketplace.eclipse.org/sites/default/files/SDMap80.png&quot; width=&quot;80&quot; height=&quot;80&quot; alt=&quot;&quot; /&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;&lt;div class=&quot;field field-name-shared-date-created field-type-text field-label-inline clearfix&quot;&gt;&lt;div class=&quot;field-label&quot;&gt;Date Created:&amp;nbsp;&lt;/div&gt;&lt;div class=&quot;field-items&quot;&gt;&lt;div class=&quot;field-item even&quot;&gt;Sun, 2017-05-28 18:15&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;&lt;div class=&quot;field field-name-shared-date-updated field-type-text field-label-inline clearfix&quot;&gt;&lt;div class=&quot;field-label&quot;&gt;Date Updated:&amp;nbsp;&lt;/div&gt;&lt;div class=&quot;field-items&quot;&gt;&lt;div class=&quot;field-item even&quot;&gt;Tue, 2018-01-16 02:49&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;&lt;div class=&quot;field field-name-shared-submitted-by field-type-text field-label-inline clearfix&quot;&gt;&lt;div class=&quot;field-label&quot;&gt;Submitted by:&amp;nbsp;&lt;/div&gt;&lt;div class=&quot;field-items&quot;&gt;&lt;div class=&quot;field-item even&quot;&gt;&lt;a href=&quot;/user/afuentes6lg/listings&quot; title=&quot;Alberto Fuentes&quot;&gt;Alberto Fuentes&lt;/a&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;&lt;!-- google_ad_section_start --&gt;&lt;div class=&quot;field field-name-body field-type-text-with-summary field-label-hidden&quot;&gt;&lt;div class=&quot;field-items&quot;&gt;&lt;div class=&quot;field-item even&quot; property=&quot;content:encoded&quot;&gt;&lt;p&gt;SDMapGen is a code generator for mapping between beans from an approach of simplicity of use, that is the reason for being integrated in Eclipse as a plugin. it generates while you are coding so you can review the mapping and adjust it while coding, directly in Java and into the classes where it should be.&lt;/p&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;&lt;!-- google_ad_section_end --&gt;</description>
-     <pubDate>Sun, 28 May 2017 22:15:16 +0000</pubDate>
- <dc:creator>afuentes6lg</dc:creator>
- <guid isPermaLink="false">3466013 at http://marketplace.eclipse.org</guid>
- <comments>http://marketplace.eclipse.org/content/sdmapgen#comments</comments>
+		Build highly reliable, scalable, and resource-efficient software architectures&lt;/li&gt;
+&lt;/ul&gt;&lt;p&gt;The Palladio Component Model is implemented using the Eclipse Modeling Framework (EMF). We have implemented an integrated modelling environment (called Palladio-Bench) based on the Eclipse IDE. It enables developers to create PCM model instances with graphical editors and derive performance metrics from the models using analytical techniques and simulation.&lt;/p&gt;
+&lt;p&gt;The best way for getting started with the Palladio-Bench is looking through the &lt;a href=&quot;http://www.palladio-simulator.com/tools/screencasts/&quot; rel=&quot;nofollow&quot;&gt;screencasts&lt;/a&gt; and &lt;a href=&quot;http://www.palladio-simulator.com/tools/tutorials/&quot; rel=&quot;nofollow&quot;&gt;tutorials&lt;/a&gt; provided on the &lt;a href=&quot;http://www.palladio-simulator.com/&quot; rel=&quot;nofollow&quot;&gt;webpage&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;The project community is managed by project leads of: the Karlsruhe Institute of Technology (&lt;a href=&quot;http://www.kit.edu&quot; rel=&quot;nofollow&quot;&gt;www.kit.edu&lt;/a&gt;), the FZI - Research Center for Information Technology (&lt;a href=&quot;http://www.fzi.de&quot; rel=&quot;nofollow&quot;&gt;www.fzi.de&lt;/a&gt;), Chemnitz University of Technology (&lt;a href=&quot;https://www.tu-chemnitz.de&quot; rel=&quot;nofollow&quot;&gt;www.tu-chemnitz.de&lt;/a&gt;), and University of Stuttgart (&lt;a href=&quot;https://www.uni-stuttgart.de&quot; rel=&quot;nofollow&quot;&gt;www.uni-stuttgart.de&lt;/a&gt;).&lt;/p&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;&lt;!-- google_ad_section_end --&gt;</description>
+     <pubDate>Wed, 04 Oct 2017 11:51:13 +0000</pubDate>
+ <dc:creator>sseifermannnuk</dc:creator>
+ <guid isPermaLink="false">3688958 at http://marketplace.eclipse.org</guid>
+ <comments>http://marketplace.eclipse.org/content/palladio-41-eclipse-4647-neonoxygen#comments</comments>
   </item>
   <item>
     <title>Design and Verification Tools (DVT) IDE for e, SystemVerilog, and VHDL</title>
     <link>http://marketplace.eclipse.org/content/design-and-verification-tools-dvt-ide-e-systemverilog-and-vhdl</link>
-    <description>&lt;div class=&quot;field field-name-field-resource-image field-type-image field-label-hidden&quot;&gt;&lt;div class=&quot;field-items&quot;&gt;&lt;div class=&quot;field-item even&quot;&gt;&lt;img typeof=&quot;foaf:Image&quot; class=&quot;img-responsive&quot; src=&quot;http://marketplace.eclipse.org/sites/default/files/AMIQ_logo_web_110x63.jpg&quot; width=&quot;110&quot; height=&quot;63&quot; alt=&quot;&quot; /&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;&lt;div class=&quot;field field-name-shared-date-created field-type-text field-label-inline clearfix&quot;&gt;&lt;div class=&quot;field-label&quot;&gt;Date Created:&amp;nbsp;&lt;/div&gt;&lt;div class=&quot;field-items&quot;&gt;&lt;div class=&quot;field-item even&quot;&gt;Wed, 2006-04-19 08:00&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;&lt;div class=&quot;field field-name-shared-date-updated field-type-text field-label-inline clearfix&quot;&gt;&lt;div class=&quot;field-label&quot;&gt;Date Updated:&amp;nbsp;&lt;/div&gt;&lt;div class=&quot;field-items&quot;&gt;&lt;div class=&quot;field-item even&quot;&gt;Mon, 2018-01-15 15:53&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;&lt;a href=&quot;/search/content/%22AMIQ%20EDA%22&quot;&gt;AMIQ EDA&lt;/a&gt;&lt;div class=&quot;field field-name-shared-submitted-by field-type-text field-label-inline clearfix&quot;&gt;&lt;div class=&quot;field-label&quot;&gt;Submitted by:&amp;nbsp;&lt;/div&gt;&lt;div class=&quot;field-items&quot;&gt;&lt;div class=&quot;field-item even&quot;&gt;&lt;a href=&quot;/user/emisingname6ia/listings&quot; title=&quot;AMIQ Support&quot;&gt;AMIQ Support&lt;/a&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;&lt;!-- google_ad_section_start --&gt;&lt;div class=&quot;field field-name-body field-type-text-with-summary field-label-hidden&quot;&gt;&lt;div class=&quot;field-items&quot;&gt;&lt;div class=&quot;field-item even&quot; property=&quot;content:encoded&quot;&gt;&lt;p&gt;Design and Verification Tools (DVT) is an integrated development environment (IDE) for the &lt;strong&gt;&lt;em&gt;e&lt;/em&gt; language, SystemVerilog, Verilog, VHDL, and mixed language projects&lt;/strong&gt; that also provides &lt;strong&gt;Universal Verification Methodology (UVM) support&lt;/strong&gt;. It is similar to well-known programming tools like Visual Studio®, NetBeans®, and IntelliJ®. DVT comprises a proprietary IEEE standard-compliant parser, a smart code editor, an intuitive GUI, a comprehensive set of features that help with code inspection, navigation, documentation, and debugging, and an innovative linting framework. DVT allows design and verification engineers to overcome the limitations of plain text editors and use a modern and powerful tool that enables them to:&lt;/p&gt;
+    <description>&lt;div class=&quot;field field-name-field-resource-image field-type-image field-label-hidden&quot;&gt;&lt;div class=&quot;field-items&quot;&gt;&lt;div class=&quot;field-item even&quot;&gt;&lt;img typeof=&quot;foaf:Image&quot; class=&quot;img-responsive&quot; src=&quot;http://marketplace.eclipse.org/sites/default/files/AMIQ_logo_web_110x63.jpg&quot; width=&quot;110&quot; height=&quot;63&quot; alt=&quot;&quot; /&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;&lt;div class=&quot;field field-name-shared-date-created field-type-text field-label-inline clearfix&quot;&gt;&lt;div class=&quot;field-label&quot;&gt;Date Created:&amp;nbsp;&lt;/div&gt;&lt;div class=&quot;field-items&quot;&gt;&lt;div class=&quot;field-item even&quot;&gt;Wed, 2006-04-19 08:00&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;&lt;div class=&quot;field field-name-shared-date-updated field-type-text field-label-inline clearfix&quot;&gt;&lt;div class=&quot;field-label&quot;&gt;Date Updated:&amp;nbsp;&lt;/div&gt;&lt;div class=&quot;field-items&quot;&gt;&lt;div class=&quot;field-item even&quot;&gt;Thu, 2018-01-25 15:35&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;&lt;a href=&quot;/search/content/%22AMIQ%20EDA%22&quot;&gt;AMIQ EDA&lt;/a&gt;&lt;div class=&quot;field field-name-shared-submitted-by field-type-text field-label-inline clearfix&quot;&gt;&lt;div class=&quot;field-label&quot;&gt;Submitted by:&amp;nbsp;&lt;/div&gt;&lt;div class=&quot;field-items&quot;&gt;&lt;div class=&quot;field-item even&quot;&gt;&lt;a href=&quot;/user/emisingname6ia/listings&quot; title=&quot;AMIQ Support&quot;&gt;AMIQ Support&lt;/a&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;&lt;!-- google_ad_section_start --&gt;&lt;div class=&quot;field field-name-body field-type-text-with-summary field-label-hidden&quot;&gt;&lt;div class=&quot;field-items&quot;&gt;&lt;div class=&quot;field-item even&quot; property=&quot;content:encoded&quot;&gt;&lt;p&gt;Design and Verification Tools (DVT) is an integrated development environment (IDE) for the &lt;strong&gt;&lt;em&gt;e&lt;/em&gt; language, SystemVerilog, Verilog, VHDL, and mixed language projects&lt;/strong&gt; that also provides &lt;strong&gt;Universal Verification Methodology (UVM) support&lt;/strong&gt;. It is similar to well-known programming tools like Visual Studio®, NetBeans®, and IntelliJ®. DVT comprises a proprietary IEEE standard-compliant parser, a smart code editor, an intuitive GUI, a comprehensive set of features that help with code inspection, navigation, documentation, and debugging, and an innovative linting framework. DVT allows design and verification engineers to overcome the limitations of plain text editors and use a modern and powerful tool that enables them to:&lt;/p&gt;
 &lt;ul&gt;&lt;li&gt;
 		Increase the speed and quality of new code development&lt;/li&gt;
 &lt;li&gt;
@@ -387,6 +179,42 @@ Main changes:&lt;br /&gt;
  <dc:creator>emisingname6ia</dc:creator>
  <guid isPermaLink="false">192 at http://marketplace.eclipse.org</guid>
  <comments>http://marketplace.eclipse.org/content/design-and-verification-tools-dvt-ide-e-systemverilog-and-vhdl#comments</comments>
+  </item>
+  <item>
+    <title>GNU MCU Eclipse</title>
+    <link>http://marketplace.eclipse.org/content/gnu-mcu-eclipse</link>
+    <description>&lt;div class=&quot;field field-name-field-resource-image field-type-image field-label-hidden&quot;&gt;&lt;div class=&quot;field-items&quot;&gt;&lt;div class=&quot;field-item even&quot;&gt;&lt;img typeof=&quot;foaf:Image&quot; class=&quot;img-responsive&quot; src=&quot;http://marketplace.eclipse.org/sites/default/files/gme-256.png&quot; width=&quot;80&quot; height=&quot;80&quot; alt=&quot;&quot; /&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;&lt;div class=&quot;field field-name-shared-date-created field-type-text field-label-inline clearfix&quot;&gt;&lt;div class=&quot;field-label&quot;&gt;Date Created:&amp;nbsp;&lt;/div&gt;&lt;div class=&quot;field-items&quot;&gt;&lt;div class=&quot;field-item even&quot;&gt;Tue, 2015-11-03 14:04&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;&lt;div class=&quot;field field-name-shared-date-updated field-type-text field-label-inline clearfix&quot;&gt;&lt;div class=&quot;field-label&quot;&gt;Date Updated:&amp;nbsp;&lt;/div&gt;&lt;div class=&quot;field-items&quot;&gt;&lt;div class=&quot;field-item even&quot;&gt;Thu, 2018-01-25 14:40&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;&lt;div class=&quot;field field-name-shared-submitted-by field-type-text field-label-inline clearfix&quot;&gt;&lt;div class=&quot;field-label&quot;&gt;Submitted by:&amp;nbsp;&lt;/div&gt;&lt;div class=&quot;field-items&quot;&gt;&lt;div class=&quot;field-item even&quot;&gt;&lt;a href=&quot;/user/lionescu/listings&quot; title=&quot;Liviu Ionescu&quot;&gt;Liviu Ionescu&lt;/a&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;&lt;!-- google_ad_section_start --&gt;&lt;div class=&quot;field field-name-body field-type-text-with-summary field-label-hidden&quot;&gt;&lt;div class=&quot;field-items&quot;&gt;&lt;div class=&quot;field-item even&quot; property=&quot;content:encoded&quot;&gt;&lt;p&gt;The GNU MCU Eclipse (formerly GNU ARM Eclipse) is an open source project that includes a family of Eclipse plug-ins and tools for multi-platform embedded ARM &amp;amp; RISC-V development, based on GNU toolchains.&lt;/p&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;&lt;!-- google_ad_section_end --&gt;</description>
+     <pubDate>Tue, 03 Nov 2015 19:04:04 +0000</pubDate>
+ <dc:creator>lionescu</dc:creator>
+ <guid isPermaLink="false">2593184 at http://marketplace.eclipse.org</guid>
+ <comments>http://marketplace.eclipse.org/content/gnu-mcu-eclipse#comments</comments>
+  </item>
+  <item>
+    <title>Red Hat JBoss Developer Studio Integration Stack</title>
+    <link>http://marketplace.eclipse.org/content/red-hat-jboss-developer-studio-integration-stack</link>
+    <description>&lt;div class=&quot;field field-name-field-resource-image field-type-image field-label-hidden&quot;&gt;&lt;div class=&quot;field-items&quot;&gt;&lt;div class=&quot;field-item even&quot;&gt;&lt;img typeof=&quot;foaf:Image&quot; class=&quot;img-responsive&quot; src=&quot;http://marketplace.eclipse.org/sites/default/files/128_jbds_icon_0.png&quot; width=&quot;80&quot; height=&quot;80&quot; alt=&quot;&quot; /&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;&lt;div class=&quot;field field-name-shared-date-created field-type-text field-label-inline clearfix&quot;&gt;&lt;div class=&quot;field-label&quot;&gt;Date Created:&amp;nbsp;&lt;/div&gt;&lt;div class=&quot;field-items&quot;&gt;&lt;div class=&quot;field-item even&quot;&gt;Fri, 2016-05-06 13:32&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;&lt;div class=&quot;field field-name-shared-date-updated field-type-text field-label-inline clearfix&quot;&gt;&lt;div class=&quot;field-label&quot;&gt;Date Updated:&amp;nbsp;&lt;/div&gt;&lt;div class=&quot;field-items&quot;&gt;&lt;div class=&quot;field-item even&quot;&gt;Thu, 2018-01-25 11:14&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;&lt;a href=&quot;/search/content/%22Red%20Hat%2C%20Inc.%22&quot;&gt;Red Hat, Inc.&lt;/a&gt;&lt;div class=&quot;field field-name-shared-submitted-by field-type-text field-label-inline clearfix&quot;&gt;&lt;div class=&quot;field-label&quot;&gt;Submitted by:&amp;nbsp;&lt;/div&gt;&lt;div class=&quot;field-items&quot;&gt;&lt;div class=&quot;field-item even&quot;&gt;&lt;a href=&quot;/user/jtools/listings&quot; title=&quot;JBoss Tools&quot;&gt;JBoss Tools&lt;/a&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;&lt;!-- google_ad_section_start --&gt;&lt;div class=&quot;field field-name-body field-type-text-with-summary field-label-hidden&quot;&gt;&lt;div class=&quot;field-items&quot;&gt;&lt;div class=&quot;field-item even&quot; property=&quot;content:encoded&quot;&gt;&lt;p&gt;Red Hat JBoss Developer Studio Integration Stack includes &lt;a href=&quot;https://marketplace.eclipse.org/content/red-hat-jboss-developer-studio&quot; rel=&quot;nofollow&quot;&gt;Red Hat JBoss Developer Studio&lt;/a&gt; plus: * BRMS Tooling - Tools related to business processes and rules development - includes support for BPEL, BPMN2, jBPM6 and Drools.  * JBoss Integration and SOA Development - Tools related to the development of Integration and SOA applications - includes support for BPEL, BPMN2, Drools, jBPM6 and KIE.  For a quick overview, see &lt;a href=&quot;https://access.redhat.com/documentation/en-US/Red_Hat_JBoss_Developer_Studio_Integration_Stack/index.html&quot; rel=&quot;nofollow&quot;&gt;Integration Stack documentation&lt;/a&gt; . See also: &lt;a href=&quot;http://www.redhat.com/products/jbossenterprisemiddleware/developer-studio/&quot; rel=&quot;nofollow&quot;&gt;http://www.redhat.com/products/jbossenterprisemiddleware/developer-studio/&lt;/a&gt; The latest release was built with Eclipse 4.7, but should also work with other Oxygen or Eclipse 4.7.x versions. NOTE: If you encounter problems, please open an &lt;a href=&quot;https://jira.jboss.org/jira/browse/JBTIS&quot; rel=&quot;nofollow&quot;&gt;issue&lt;/a&gt;&lt;/p&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;&lt;!-- google_ad_section_end --&gt;</description>
+     <pubDate>Fri, 06 May 2016 17:32:51 +0000</pubDate>
+ <dc:creator>jtools</dc:creator>
+ <guid isPermaLink="false">2872800 at http://marketplace.eclipse.org</guid>
+ <comments>http://marketplace.eclipse.org/content/red-hat-jboss-developer-studio-integration-stack#comments</comments>
+  </item>
+  <item>
+    <title>JBC</title>
+    <link>http://marketplace.eclipse.org/content/jbc</link>
+    <description>&lt;div class=&quot;field field-name-field-resource-image field-type-image field-label-hidden&quot;&gt;&lt;div class=&quot;field-items&quot;&gt;&lt;div class=&quot;field-item even&quot;&gt;&lt;img typeof=&quot;foaf:Image&quot; class=&quot;img-responsive&quot; src=&quot;http://marketplace.eclipse.org/sites/default/files/default_images/default_2.png&quot; width=&quot;110&quot; height=&quot;80&quot; alt=&quot;&quot; /&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;&lt;div class=&quot;field field-name-shared-date-created field-type-text field-label-inline clearfix&quot;&gt;&lt;div class=&quot;field-label&quot;&gt;Date Created:&amp;nbsp;&lt;/div&gt;&lt;div class=&quot;field-items&quot;&gt;&lt;div class=&quot;field-item even&quot;&gt;Wed, 2017-08-02 08:15&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;&lt;div class=&quot;field field-name-shared-date-updated field-type-text field-label-inline clearfix&quot;&gt;&lt;div class=&quot;field-label&quot;&gt;Date Updated:&amp;nbsp;&lt;/div&gt;&lt;div class=&quot;field-items&quot;&gt;&lt;div class=&quot;field-item even&quot;&gt;Thu, 2018-01-25 05:18&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;&lt;a href=&quot;/search/content/%22itemis%20AG%22&quot;&gt;itemis AG&lt;/a&gt;&lt;div class=&quot;field field-name-shared-submitted-by field-type-text field-label-inline clearfix&quot;&gt;&lt;div class=&quot;field-label&quot;&gt;Submitted by:&amp;nbsp;&lt;/div&gt;&lt;div class=&quot;field-items&quot;&gt;&lt;div class=&quot;field-item even&quot;&gt;&lt;a href=&quot;/user/adeutsch/listings&quot; title=&quot;Arne Deutsch&quot;&gt;Arne Deutsch&lt;/a&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;&lt;!-- google_ad_section_start --&gt;&lt;div class=&quot;field field-name-body field-type-text-with-summary field-label-hidden&quot;&gt;&lt;div class=&quot;field-items&quot;&gt;&lt;div class=&quot;field-item even&quot; property=&quot;content:encoded&quot;&gt;&lt;p&gt;JBC is an eclipse plugin that enables the developer to view and edit files containing java byte code (*.class) inside eclipse. This is done in a way such that a specialized editor opens the .class file and displays the binary code as a textual DSL whereas keywords intersparse the byte sequences. Changing the text and saving then writes back the bytes to the .class file.&lt;/p&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;&lt;!-- google_ad_section_end --&gt;</description>
+     <pubDate>Wed, 02 Aug 2017 12:15:45 +0000</pubDate>
+ <dc:creator>adeutsch</dc:creator>
+ <guid isPermaLink="false">3579717 at http://marketplace.eclipse.org</guid>
+ <comments>http://marketplace.eclipse.org/content/jbc#comments</comments>
+  </item>
+  <item>
+    <title>P4Eclipse</title>
+    <link>http://marketplace.eclipse.org/content/p4eclipse</link>
+    <description>&lt;div class=&quot;field field-name-field-resource-image field-type-image field-label-hidden&quot;&gt;&lt;div class=&quot;field-items&quot;&gt;&lt;div class=&quot;field-item even&quot;&gt;&lt;img typeof=&quot;foaf:Image&quot; class=&quot;img-responsive&quot; src=&quot;http://marketplace.eclipse.org/sites/default/files/p4eclipse-icon_0.png&quot; width=&quot;80&quot; height=&quot;80&quot; alt=&quot;&quot; /&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;&lt;div class=&quot;field field-name-shared-date-created field-type-text field-label-inline clearfix&quot;&gt;&lt;div class=&quot;field-label&quot;&gt;Date Created:&amp;nbsp;&lt;/div&gt;&lt;div class=&quot;field-items&quot;&gt;&lt;div class=&quot;field-item even&quot;&gt;Wed, 2010-09-01 11:25&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;&lt;div class=&quot;field field-name-shared-date-updated field-type-text field-label-inline clearfix&quot;&gt;&lt;div class=&quot;field-label&quot;&gt;Date Updated:&amp;nbsp;&lt;/div&gt;&lt;div class=&quot;field-items&quot;&gt;&lt;div class=&quot;field-item even&quot;&gt;Wed, 2018-01-24 18:45&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;&lt;a href=&quot;/search/content/%22Perforce%20Software%22&quot;&gt;Perforce Software&lt;/a&gt;&lt;div class=&quot;field field-name-shared-submitted-by field-type-text field-label-inline clearfix&quot;&gt;&lt;div class=&quot;field-label&quot;&gt;Submitted by:&amp;nbsp;&lt;/div&gt;&lt;div class=&quot;field-items&quot;&gt;&lt;div class=&quot;field-item even&quot;&gt;&lt;a href=&quot;/user/dwongcn1/listings&quot; title=&quot;Doris Wong&quot;&gt;Doris Wong&lt;/a&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;&lt;!-- google_ad_section_start --&gt;&lt;div class=&quot;field field-name-body field-type-text-with-summary field-label-hidden&quot;&gt;&lt;div class=&quot;field-items&quot;&gt;&lt;div class=&quot;field-item even&quot; property=&quot;content:encoded&quot;&gt;&lt;p&gt;New in P4Eclipse 2018.1 is support for Eclipse 4.7,  4.6, and 4.5. The Helix Plug-in for Eclipse seamlessly integrates the strengths of the Perforce Helix Versioning Engine with Eclipse. Implemented as a pure Java solution, P4Eclipse provides a developer-oriented set of features from within the Eclipse Team framework and supports a wide range of Agile and traditional development workflows.&lt;/p&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;&lt;!-- google_ad_section_end --&gt;</description>
+     <pubDate>Wed, 01 Sep 2010 15:25:08 +0000</pubDate>
+ <dc:creator>dwongcn1</dc:creator>
+ <guid isPermaLink="false">9209 at http://marketplace.eclipse.org</guid>
+ <comments>http://marketplace.eclipse.org/content/p4eclipse#comments</comments>
   </item>
   </channel>
 </rss>

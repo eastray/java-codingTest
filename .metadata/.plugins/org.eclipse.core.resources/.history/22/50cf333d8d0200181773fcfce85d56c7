@@ -1,0 +1,40 @@
+package eatCookie;
+
+import java.util.ArrayList;
+
+public class EatCookie {
+
+	public int eatCookie(int[] cookies) {
+
+		int count = cookies.length;
+
+		// ArrayList<Integer> list = new ArrayList<Integer>(count + 1);
+
+		int[] list = new int[count + 1];
+
+		int answer = 0;
+
+		for (int j = 0; j < count; j++) {
+			int Max = 0;
+			for (int k = 0; k < j; k++) {
+				if (cookies[j] > cookies[k] && Max < list[k])
+					Max = list[k];
+			}
+			list[j] = Max + 1;
+
+			answer = Math.max(answer, list[j]);
+		}
+
+		return answer;
+	}
+
+	public static void main(String[] args) {
+
+		EatCookie e = new EatCookie();
+
+		int[] cookies = { 1, 4, 2, 6, 4, 1, 5 };
+
+		System.out.println(e.eatCookie(cookies));
+	}
+
+}
