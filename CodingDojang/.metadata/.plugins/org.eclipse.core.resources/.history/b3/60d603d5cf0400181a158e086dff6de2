@@ -1,0 +1,16 @@
+package selfNumber;
+
+import static org.junit.Assert.*;
+
+import org.junit.Test;
+
+public class SelfNumberTest {
+	
+	SelfNumber sn = new SelfNumber();
+
+	@Test
+	public void testIsSelfNumber() {
+		assertEquals("true", "true");
+	}
+
+}

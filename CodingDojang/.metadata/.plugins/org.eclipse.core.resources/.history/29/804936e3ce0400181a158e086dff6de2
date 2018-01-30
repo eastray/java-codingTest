@@ -1,0 +1,46 @@
+package selfNumber;
+
+import java.util.ArrayList;
+
+public class SelfNumber {
+
+	private long selfNumber() {
+
+		long result = 0;
+
+		for (int i = 0; i < 5000; i++) {
+			if (isSelfNumber(i))
+				result += i;
+		}
+
+		return result;
+	}
+
+	private boolean isSelfNumber(int n) {
+
+		ArrayList<Integer> list = new ArrayList<Integer>();
+		int temp = n;
+		while (true) {
+			if(temp / 10 != 0){
+				list.add(temp % 10);
+				temp = temp /10;
+			}
+			else temp = temp % 10;
+				
+			
+			if(temp == 0)
+				n
+			list.add(n % 10);
+
+		}
+		return true;
+	}
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		SelfNumber sn = new SelfNumber();
+
+		System.out.println(sn.selfNumber());
+	}
+
+}

@@ -1,0 +1,21 @@
+package selfNumber;
+
+import static org.junit.Assert.*;
+
+import org.junit.Test;
+
+public class SelfNumberTest {
+	
+	SelfNumber sn = new SelfNumber();
+
+	@Test
+	public void testIsSelfNumber() {
+		assertEquals("true", "true");
+	}
+	
+	public void testGetArrayNumber(){
+		
+		assertEquals(new int[]{5,2,1}, sn.getArrayNumber(125));
+	}
+
+}

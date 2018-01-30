@@ -1,0 +1,25 @@
+package multiplesOf3And5;
+
+public class MultiplesOf3And5 {
+
+	private int multiple(int n, int m) {
+		int result = 0;
+
+		for (int i = 1; i < 10; i++) {
+			if (i % n == 0 || i % m == 0)
+				result += i;
+
+		}
+
+		return result;
+
+	}
+
+	public static void main(String[] args) {
+		MultiplesOf3And5 moa = new MultiplesOf3And5();
+
+		System.out.println(moa.multiple(3, 5));
+
+	}
+
+}

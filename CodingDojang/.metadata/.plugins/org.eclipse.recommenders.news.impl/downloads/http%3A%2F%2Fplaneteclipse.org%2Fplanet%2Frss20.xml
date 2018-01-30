@@ -1,0 +1,989 @@
+<?xml version="1.0"?>
+<rss version="2.0">
+
+<channel>
+	<title>Planet Eclipse</title>
+	<link>http://planeteclipse.org/planet/</link>
+	<language>en</language>
+	<description>Planet Eclipse - http://planeteclipse.org/planet/</description>
+
+<item>
+	<title>David Bosschaert: Blockchain Smart Contracts are the new Serverless!</title>
+	<guid isPermaLink="false">tag:blogger.com,1999:blog-9210566578097047576.post-2723035785943132788</guid>
+	<link>http://coderthoughts.blogspot.com/2018/01/blockchain-smart-contracts-are-new.html</link>
+	<description>&lt;div class=&quot;separator&quot; style=&quot;clear: both; text-align: center;&quot;&gt;&lt;/div&gt;&lt;div style=&quot;text-align: right;&quot;&gt;&lt;/div&gt;&lt;table cellpadding=&quot;0&quot; cellspacing=&quot;0&quot; class=&quot;tr-caption-container&quot; style=&quot;float: right; margin-left: 1em; text-align: right;&quot;&gt;&lt;tbody&gt;&lt;tr&gt;&lt;td style=&quot;text-align: center;&quot;&gt;&lt;a href=&quot;https://1.bp.blogspot.com/-AqbgUS9H8WY/Wm-OGt3a9UI/AAAAAAAAD_k/9HoNVNQsAVADMnuBZ3N0AYyuo5eXD9jRACEwYBhgL/s1600/Michael_Bacina_how-smart-contracts-work.png&quot; style=&quot;clear: right; margin-bottom: 1em; margin-left: auto; margin-right: auto;&quot;&gt;&lt;img border=&quot;0&quot; height=&quot;89&quot; src=&quot;https://1.bp.blogspot.com/-AqbgUS9H8WY/Wm-OGt3a9UI/AAAAAAAAD_k/9HoNVNQsAVADMnuBZ3N0AYyuo5eXD9jRACEwYBhgL/s200/Michael_Bacina_how-smart-contracts-work.png&quot; width=&quot;200&quot; /&gt;&lt;/a&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td class=&quot;tr-caption&quot; style=&quot;text-align: center;&quot;&gt;Smart Contracts (thanks to Michael Bacina)&lt;/td&gt;&lt;/tr&gt;&lt;/tbody&gt;&lt;/table&gt;Over the recent past I've been experimenting with Smart Contracts for block chain implementations. Smart Contracts are essentially programs running on the block chain infrastructure. For example Ethereum supports Smart Contracts written in Solidity. EOS is another example of a blockchain that will support smart contracts. I've been looking at EOS an its smart contracts in more detail, here the smart contracts can be written in C/C++ so you don't have to learn a new language for it.&lt;br /&gt;&lt;br /&gt;&lt;div class=&quot;separator&quot; style=&quot;clear: both; text-align: center;&quot;&gt;&lt;a href=&quot;https://1.bp.blogspot.com/--jD0A6eYnd4/Wm-OyLapDgI/AAAAAAAAD_o/I1A_NQTO7TgWzwlS54M4TB3ha_SvWyzWgCEwYBhgL/s1600/Ethereum.png_1512566634.jpg&quot; style=&quot;clear: left; float: left; margin-bottom: 1em; margin-right: 1em;&quot;&gt;&lt;img border=&quot;0&quot; height=&quot;200&quot; src=&quot;https://1.bp.blogspot.com/--jD0A6eYnd4/Wm-OyLapDgI/AAAAAAAAD_o/I1A_NQTO7TgWzwlS54M4TB3ha_SvWyzWgCEwYBhgL/s200/Ethereum.png_1512566634.jpg&quot; width=&quot;200&quot; /&gt;&lt;/a&gt;&lt;/div&gt;So what can you do with a smart contract? Smart contracts are designed to provide some sort of computation and store the result (immutably) on the blockchain. The computation is a custom program that applies to your domain, so for example you could be renting out holiday accommodation and your website might store the holiday home rental contract including the price, optional extras, insurance etc for a given period of time, after having computed it, on the blockchain. In most cases smart contracts can also handle the payment, so let's say the rental home costs 500 Euro per week, then the equivalent in Ether (ETH) or whatever the current blockchain/crypto is, can be transferred to the owner as part of the smart contract execution.&lt;div style=&quot;text-align: left;&quot;&gt;&lt;/div&gt;Or, more creatively as has been done on the ethereum network, your contract could compute a unique CryptoKitty for you that is a cute looking creature created just for you to look at and store the result on the blockchain.&lt;br /&gt;&lt;br /&gt;You can even take this a little bit further. As shown with the CryptoKitty the smart contract does not need to have anything to do with transferring money from &lt;i&gt;a&lt;/i&gt; to &lt;i&gt;b&lt;/i&gt; or writing some sort of financial contract. In theory you could use the smart contract to do anything you might be able to use asynchronous computing power for.&lt;br /&gt;&lt;br /&gt;&lt;div class=&quot;separator&quot; style=&quot;clear: both; text-align: center;&quot;&gt;&lt;/div&gt;After playing briefly with Solidity, the smart contract language for Ethereum I moved to play a bit more with EOS smart contracts. Why EOS? EOS as a blockchain is still in it's early phase and under heavy development although they do have a test network up and running at this stage. However I find EOS interesting because it has a couple of interesting aspects:&lt;div class=&quot;separator&quot; style=&quot;clear: both; text-align: center;&quot;&gt;&lt;/div&gt;&lt;div&gt;&lt;div class=&quot;separator&quot; style=&quot;clear: both; text-align: center;&quot;&gt;&lt;a href=&quot;https://eos.io/images/dawn_2.0-logo.png&quot; style=&quot;clear: left; float: left; margin-bottom: 1em; margin-right: 1em;&quot;&gt;&lt;img border=&quot;0&quot; height=&quot;200&quot; src=&quot;https://eos.io/images/dawn_2.0-logo.png&quot; width=&quot;133&quot; /&gt;&lt;/a&gt;&lt;/div&gt;&lt;ul&gt;&lt;li&gt;First of all it's quite easy to run a test EOS node on your own machine which allows you as a developer to play with it and understand it in a sandbox type environment.&lt;/li&gt;&lt;li&gt;EOS aims to provide much higher transaction rates than the current major block chains can provide. It promises up to 50000 transactions per second which all of a sudden is big enough to handle amounts of payments similar to major credit card companies like Visa and Mastercard.&lt;/li&gt;&lt;li&gt;Smart contracts on EOS can be written in C/C++ which is really nice, as you don't need to learn a new programming language for it.&lt;/li&gt;&lt;/ul&gt;&lt;div class=&quot;separator&quot; style=&quot;clear: both; text-align: center;&quot;&gt;&lt;/div&gt;&lt;div class=&quot;separator&quot; style=&quot;clear: both; text-align: center;&quot;&gt;&lt;/div&gt;&lt;div&gt;So let's take a look at how I got my example EOS contract deployed to my own test EOS node.&lt;br /&gt;&lt;br /&gt;&lt;h3&gt;Build the EOS code&lt;/h3&gt;I tried this on Ubuntu 16.04. Compile the EOS code base:&lt;br /&gt;&lt;br /&gt;First, clone the EOS code&lt;br /&gt;&lt;span style=&quot;font-family: Courier New, Courier, monospace;&quot;&gt;  ~$ git clone https://github.com/eosio/eos ~/eos&lt;br /&gt;  &lt;/span&gt;&lt;span&gt;~$ &lt;/span&gt;&lt;span&gt;cd eos&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;br /&gt;&lt;/div&gt;&lt;div&gt;Then build the whole lot:&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;font-family: Courier New, Courier, monospace;&quot;&gt;  ~/eos$ ./build.sh ubuntu full&lt;/span&gt;&lt;br /&gt;This takes a while but once it's finished you should be able to run your EOS node:&lt;br /&gt;&lt;span style=&quot;font-family: Courier New, Courier, monospace;&quot;&gt;  ~/eos/build/programs/eosiod$ ./&lt;/span&gt;&lt;span&gt;eosiod&lt;/span&gt;&lt;br /&gt;&lt;br /&gt;It now exits with an error. You need to set up &lt;span style=&quot;font-family: Courier New, Courier, monospace;&quot;&gt;data-dir/config.ini&lt;/span&gt; as described in the EOS docs: &lt;a href=&quot;https://github.com/EOSIO/eos&quot;&gt;https://github.com/EOSIO/eos&lt;/a&gt;&lt;br /&gt;&lt;br /&gt;At this point your EOS node should be happily up and running. Which is really neat. You've got a EOS block chain node running for development purposes on your local machine!&lt;br /&gt;&lt;br /&gt;&lt;span style=&quot;font-family: Courier New, Courier, monospace;&quot;&gt;~/eos/build/programs/eosiod $ ./eosiod &lt;/span&gt;&lt;br /&gt;&lt;div class=&quot;separator&quot; style=&quot;clear: both; text-align: center;&quot;&gt;&lt;a href=&quot;https://4.bp.blogspot.com/-5ozj96C3noA/Wm-Q9Yn2tpI/AAAAAAAAD_0/rx2h9zXzJMkqNdqew15Hj28OxelKm7OBwCEwYBhgL/s1600/eosnode.jpg&quot; style=&quot;margin-left: 1em; margin-right: 1em;&quot;&gt;&lt;img border=&quot;0&quot; height=&quot;130&quot; src=&quot;https://4.bp.blogspot.com/-5ozj96C3noA/Wm-Q9Yn2tpI/AAAAAAAAD_0/rx2h9zXzJMkqNdqew15Hj28OxelKm7OBwCEwYBhgL/s400/eosnode.jpg&quot; width=&quot;400&quot; /&gt;&lt;/a&gt;&lt;/div&gt;&lt;br /&gt;&lt;br /&gt;Before you can use your EOS node you need to create a wallet and an account. Since our smart contract will be computing the Fibonacci sequence, I'm going to call the account &lt;b&gt;fibonacci&lt;/b&gt;. The following commands do that for you. They use a demo account &lt;b&gt;inita&lt;/b&gt; that is created in the &lt;span style=&quot;font-family: Courier New, Courier, monospace;&quot;&gt;config.ini&lt;/span&gt; file when its set up as above.&lt;br /&gt;&lt;br /&gt;Here we use the &lt;span style=&quot;font-family: Courier New, Courier, monospace;&quot;&gt;eosioc&lt;/span&gt; program which is a client to the EOS network:&lt;br /&gt;&lt;span style=&quot;font-family: Courier New, Courier, monospace;&quot;&gt;~/eos/build/programs/eosioc $ ./eosioc wallet create&lt;/span&gt;&lt;br /&gt;&lt;span style=&quot;font-family: Courier New, Courier, monospace;&quot;&gt;~/eos/build/programs/eosioc $ ./eosioc wallet open&lt;/span&gt;&lt;br /&gt;&lt;br /&gt;Import the inita demo key:&lt;br /&gt;&lt;span style=&quot;font-family: Courier New, Courier, monospace;&quot;&gt;~/eos/build/programs/eosioc $ ./eosioc wallet import 5KQwrPbwdL6PhXujxW37FSSQZ1JiwsST4cqQzDeyXtP79zkvFD3&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;br /&gt;&lt;/div&gt;&lt;div&gt;Create two private keys for the fibonacci account:&lt;br /&gt;&lt;div&gt;&lt;span style=&quot;font-family: Courier New, Courier, monospace;&quot;&gt;~/eos/build/programs/eosioc $ ./eosioc create key&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;font-family: Courier New, Courier, monospace;&quot;&gt;Private key:###&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;font-family: Courier New, Courier, monospace;&quot;&gt;Public key: ###&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;div&gt;&lt;span style=&quot;font-family: Courier New, Courier, monospace;&quot;&gt;~/eos/build/programs/eosioc $ ./eosioc create key&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;font-family: Courier New, Courier, monospace;&quot;&gt;Private key:###&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;font-family: Courier New, Courier, monospace;&quot;&gt;Public key: ###&lt;/span&gt;&lt;/div&gt;&lt;/div&gt;&lt;div&gt;&lt;br /&gt;&lt;/div&gt;Create the fibonacci account:&lt;br /&gt;&lt;span style=&quot;font-family: Courier New, Courier, monospace;&quot;&gt;~/eos/build/programs/eosioc $ ./eosioc create account inita fibonacci  {private key1} {private key2}&lt;/span&gt;&lt;br /&gt;&lt;br /&gt;&lt;h3&gt;Create the smart contract&lt;/h3&gt;I created a little testproject called &lt;i&gt;fibonacci&lt;/i&gt; which computes the fibonacci sequence to a certain iteration in the EOS smart contract and stores the result in the EOS database.&lt;br /&gt;&lt;br /&gt;The code can be found in github here: &lt;a href=&quot;https://github.com/coderthoughts/fibonacci&quot;&gt;https://github.com/coderthoughts/fibonacci&lt;/a&gt;&lt;br /&gt;&lt;br /&gt;It exists of two components: an external contract, in the &lt;a href=&quot;https://github.com/coderthoughts/fibonacci/blob/master/fibonacci.abi&quot;&gt;fibonacci.abi file&lt;/a&gt; which defines how the application communicates with the outside world. The actual communication typically happens in JSON:&lt;/div&gt;&lt;div&gt;&lt;div&gt;&lt;br /&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;font-family: Courier New, Courier, monospace; font-size: x-small;&quot;&gt;{&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span&gt;  &quot;structs&quot;: [{&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span&gt;      &quot;name&quot;: &quot;compute&quot;,&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span&gt;      &quot;base&quot;: &quot;&quot;,&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;font-family: Courier New, Courier, monospace; font-size: x-small;&quot;&gt;      &quot;fields&quot;: {&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;font-family: Courier New, Courier, monospace; font-size: x-small;&quot;&gt;        &quot;iterations&quot;: &quot;uint64&quot;&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;font-family: Courier New, Courier, monospace; font-size: x-small;&quot;&gt;      }&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;font-family: Courier New, Courier, monospace; font-size: x-small;&quot;&gt;  },{&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span&gt;   &lt;/span&gt;&lt;span&gt; &lt;/span&gt;&lt;span style=&quot;font-family: Courier New, Courier, monospace; font-size: x-small;&quot;&gt;&quot;name&quot;: &quot;result&quot;,&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span&gt;   &lt;/span&gt;&lt;span&gt; &lt;/span&gt;&lt;span style=&quot;font-family: Courier New, Courier, monospace; font-size: x-small;&quot;&gt;&quot;base&quot;: &quot;&quot;,&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span&gt;   &lt;/span&gt;&lt;span&gt; &lt;/span&gt;&lt;span style=&quot;font-family: Courier New, Courier, monospace; font-size: x-small;&quot;&gt;&quot;fields&quot;: {&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span&gt;     &lt;/span&gt;&lt;span&gt; &lt;/span&gt;&lt;span style=&quot;font-family: Courier New, Courier, monospace; font-size: x-small;&quot;&gt;&quot;id&quot;: &quot;name&quot;,&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span&gt;     &lt;/span&gt;&lt;span&gt; &lt;/span&gt;&lt;span style=&quot;font-family: Courier New, Courier, monospace; font-size: x-small;&quot;&gt;&quot;value&quot;: &quot;uint64&quot;&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;font-family: Courier New, Courier, monospace; font-size: x-small;&quot;&gt;    }&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span&gt;  }],&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;font-family: Courier New, Courier, monospace; font-size: x-small;&quot;&gt;  &quot;actions&quot;: [{&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;font-family: Courier New, Courier, monospace; font-size: x-small;&quot;&gt;    &quot;action_name&quot;: &quot;compute&quot;,&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;font-family: Courier New, Courier, monospace; font-size: x-small;&quot;&gt;    &quot;type&quot;: &quot;compute&quot;&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span&gt;  }],&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;font-family: Courier New, Courier, monospace; font-size: x-small;&quot;&gt;  &quot;tables&quot;: [{&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;font-family: Courier New, Courier, monospace; font-size: x-small;&quot;&gt;    &quot;table_name&quot;: &quot;results&quot;,&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;font-family: Courier New, Courier, monospace; font-size: x-small;&quot;&gt;    &quot;type&quot;: &quot;result&quot;,&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;font-family: Courier New, Courier, monospace; font-size: x-small;&quot;&gt;    &quot;index_type&quot;: &quot;i64&quot;,&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;font-family: Courier New, Courier, monospace; font-size: x-small;&quot;&gt;    &quot;key_names&quot;: [&quot;id&quot;],&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;font-family: Courier New, Courier, monospace; font-size: x-small;&quot;&gt;    &quot;key_types&quot;: [&quot;name&quot;]&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span&gt;  }]&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;font-family: Courier New, Courier, monospace; font-size: x-small;&quot;&gt;}&lt;/span&gt;&lt;/div&gt;&lt;br /&gt;And there is the &lt;a href=&quot;https://github.com/coderthoughts/fibonacci/blob/master/fibonacci.cpp&quot;&gt;fibonacci.cpp file&lt;/a&gt; that contains the source code in C++ of the contract. The main bit of the C++ contract is just the apply() method that gets invoked when the EOS Smart Contract receives a message:&lt;/div&gt;&lt;div&gt;&lt;div&gt;&lt;span style=&quot;font-family: Courier New, Courier, monospace; font-size: x-small;&quot;&gt;    uint64_t fibonacci(uint64_t iterations) {&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;font-family: Courier New, Courier, monospace; font-size: x-small;&quot;&gt;        uint64_t first = 0;&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;font-family: Courier New, Courier, monospace; font-size: x-small;&quot;&gt;        uint64_t second = 1;&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;font-family: Courier New, Courier, monospace; font-size: x-small;&quot;&gt;&lt;br /&gt;&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;font-family: Courier New, Courier, monospace; font-size: x-small;&quot;&gt;        if (iterations == 0)&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;font-family: Courier New, Courier, monospace; font-size: x-small;&quot;&gt;            return 0;&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;font-family: Courier New, Courier, monospace; font-size: x-small;&quot;&gt;&lt;br /&gt;&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;font-family: Courier New, Courier, monospace; font-size: x-small;&quot;&gt;        eosio::print(&quot;1 &quot;);&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;font-family: Courier New, Courier, monospace; font-size: x-small;&quot;&gt;        for (uint64_t i=1; i &amp;lt; iterations; i++) {&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;font-family: Courier New, Courier, monospace; font-size: x-small;&quot;&gt;            uint64_t res = first + second;&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;font-family: Courier New, Courier, monospace; font-size: x-small;&quot;&gt;            first = second;&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;font-family: Courier New, Courier, monospace; font-size: x-small;&quot;&gt;            second = res;&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;font-family: Courier New, Courier, monospace; font-size: x-small;&quot;&gt;            eosio::print(res, &quot; &quot;);&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;font-family: Courier New, Courier, monospace; font-size: x-small;&quot;&gt;        }&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;font-family: Courier New, Courier, monospace; font-size: x-small;&quot;&gt;        return second;&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;font-family: Courier New, Courier, monospace; font-size: x-small;&quot;&gt;    }&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;font-family: Courier New, Courier, monospace; font-size: x-small;&quot;&gt;&lt;br /&gt;&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;font-family: Courier New, Courier, monospace; font-size: x-small;&quot;&gt;    /// The apply method implements the dispatch of events to this contract&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;font-family: Courier New, Courier, monospace; font-size: x-small;&quot;&gt;    void apply(uint64_t code, uint64_t action) {&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;font-family: Courier New, Courier, monospace; font-size: x-small;&quot;&gt;        if (action == N(compute)) {&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;font-family: Courier New, Courier, monospace; font-size: x-small;&quot;&gt;            auto message = eosio::current_message&amp;lt;compute&amp;gt;();&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;font-family: Courier New, Courier, monospace; font-size: x-small;&quot;&gt;            eosio::print(&quot;Calling fibonacci\n&quot;);&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;font-family: Courier New, Courier, monospace; font-size: x-small;&quot;&gt;            uint64_t num = fibonacci(message.iterations);&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;font-family: Courier New, Courier, monospace; font-size: x-small;&quot;&gt;&lt;br /&gt;&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;font-family: Courier New, Courier, monospace; font-size: x-small;&quot;&gt;            result res(eosio::name(code), num);&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;font-family: Courier New, Courier, monospace; font-size: x-small;&quot;&gt;            Results::store(res, res.id);&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;font-family: Courier New, Courier, monospace; font-size: x-small;&quot;&gt;            eosio::print(&quot;Stored result in database\n&quot;);&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;font-family: Courier New, Courier, monospace; font-size: x-small;&quot;&gt;        }&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;font-family: Courier New, Courier, monospace; font-size: x-small;&quot;&gt;    }&lt;/span&gt;&lt;/div&gt;&lt;/div&gt;&lt;div&gt;&lt;br /&gt;&lt;/div&gt;&lt;div&gt;There are also specific EOS libraries available, the documentation is here: &lt;a href=&quot;https://eosio.github.io/eos/group__contractdev.html&quot;&gt;https://eosio.github.io/eos/group__contractdev.html&lt;/a&gt;&lt;/div&gt;&lt;div&gt;&lt;br /&gt;&lt;h3&gt;Deploy your own smart contract&lt;/h3&gt;An interesting part of the EOS smart contract development lifecycle is that these contract don't get compiled in regular machine language, what C++ compilers normally do, but it gets compiles into a WebAssembly .wast file. This file is some sort of assembler language but then platform independent and this is what EOS uses at runtime. &lt;br /&gt;&lt;br /&gt;Once deployed, you can execute your contract by sending a message to it. The contract executes and can write its output to a database location for later retrieval by a client.&lt;br /&gt;&lt;br /&gt;The easiest way to compile the fibonacci source is to put the files with the other example smart contracts in the EOS codebase, in the &lt;i&gt;contracts &lt;/i&gt;directory. Then you've got everything in the path as the compiler expects it:&lt;br /&gt;&lt;br /&gt;Compile the project:&lt;br /&gt;&lt;span style=&quot;font-family: Courier New, Courier, monospace;&quot;&gt;~/eos/contracts$ ../build/tools/eoscpp -o fibonacci/fibonacci.wast fibonacci/fibonacci.cpp&lt;/span&gt;&lt;br /&gt;Upload the fibonacci smart contract to the EOS node:&lt;br /&gt;&lt;span style=&quot;font-family: Courier New, Courier, monospace;&quot;&gt;~/eos/contracts$ eosioc set contract fibonacci fibonacci/fibonacci.wast fibonacci/fibonacci.abi&lt;/span&gt;&lt;br /&gt;Now we can start executing it. Lets run the fibonacci compute for 8 iterations and store the result:&lt;br /&gt;&lt;span style=&quot;font-family: Courier New, Courier, monospace;&quot;&gt;~/eos/contracts$ eosioc push message fibonacci compute '{&quot;iterations&quot;:8}' -S fibonacci&lt;/span&gt;&lt;br /&gt;&lt;br /&gt;On the EOS demon console you can see some debug output from the smart contract&lt;br /&gt;&lt;br /&gt;&lt;span style=&quot;font-family: Courier New, Courier, monospace;&quot;&gt;&amp;gt; Calling fibonacci&lt;br /&gt;&amp;gt; 1 1 2 3 5 8 13 21 Stored result&lt;/span&gt;&lt;br /&gt;However a real user will obviously never be able to see this. So to obtain the result of the computation, we'll look it up in the EOS database:&lt;br /&gt;&lt;br /&gt;&lt;span style=&quot;font-family: Courier New, Courier, monospace;&quot;&gt;/build/programs/eosioc$ ./eosioc get table  fibonacci fibonacci &lt;/span&gt;&lt;span&gt;results &lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;font-family: Courier New, Courier, monospace;&quot;&gt;&lt;br /&gt;&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;font-family: Courier New, Courier, monospace;&quot;&gt;&lt;div&gt;{&lt;/div&gt;&lt;div&gt;  &quot;rows&quot;: [{&lt;/div&gt;&lt;div&gt;      &quot;id&quot;: &quot;fibonacci&quot;,&lt;/div&gt;&lt;div&gt;      &quot;value&quot;: 21&lt;/div&gt;&lt;div&gt;    }&lt;/div&gt;&lt;div&gt;  ],&lt;/div&gt;&lt;div&gt;  &quot;more&quot;: false&lt;/div&gt;&lt;div&gt;}&lt;/div&gt;&lt;div&gt;&lt;br /&gt;&lt;/div&gt;&lt;/span&gt;&lt;br /&gt;So the result is 21. We've executed our smart contract and obtained the result on the EOS blockchain!&lt;/div&gt;&lt;div&gt;&lt;br /&gt;&lt;h3&gt;Conclusion&lt;/h3&gt;I'm pretty excited by the possibilities of smart contracts with regard to the possibilities that these, once matured, can provide. It becomes similar to what today is labeled 'serverless' computing. Things that are at the moment possible through large providers such as Amazon Lambda and Microsoft Azure Functions will also be provided via block chain networks. One difference is that the computation is not done by a single cloud entity, but rather by a collection of nodes that are run by individuals who have mining machines for that crypto. In my eyes it's still early days and certain things in the contracts can certainly be improved, e.g. the available APIs usable from within the smart contracts are still fairly limited, but that will probably improve over time. The fun thing is: it's pretty easy to get started experimenting and writing smart contracts, even from a simple Linux box, so you can learn and develop your smart contracts while the blockchain teams are working on maturing the infrastructure.&lt;/div&gt;&lt;/div&gt;</description>
+	<pubDate>Mon, 29 Jan 2018 22:10:14 +0000</pubDate>
+	<author>noreply@blogger.com (David Bosschaert)</author>
+</item>
+<item>
+	<title>InfoQ Eclipse feed: Public Review of Java MVC 1.0 Specification is Now Open</title>
+	<guid isPermaLink="true">http://www.infoq.com/news/2018/01/mvc-1.0-public-review?utm_campaign=infoq_content&amp;utm_source=infoq&amp;utm_medium=feed&amp;utm_term=Eclipse</guid>
+	<link>http://www.infoq.com/news/2018/01/mvc-1.0-public-review?utm_campaign=infoq_content&amp;utm_source=infoq&amp;utm_medium=feed&amp;utm_term=Eclipse</link>
+	<description>&lt;img src=&quot;http://www.infoq.com/styles/i/logo_bigger.jpg&quot; /&gt;&lt;p&gt;Public review of JSR-371, Model-View-Controller (MVC) version 1.0 specification, is now open. The latest features include support for data binding and internationalization. Eclipse Ozark, a full implementation of MVC 1.0, is expected to release version 1.0 in conjunction with the final release of JSR-371. Ivar Grimstad, principal consultant for the Cybercom Group, spoke to InfoQ about MVC 1.0.
+&lt;/p&gt; &lt;i&gt;By Michael Redlich&lt;/i&gt;</description>
+	<pubDate>Mon, 29 Jan 2018 08:00:00 +0000</pubDate>
+</item>
+<item>
+	<title>JBoss Tools Team: JBoss Tools and Red Hat Developer Studio for Eclipse Oxygen.2</title>
+	<guid isPermaLink="true">https://tools.jboss.org/blog/11.2.0.ga-for-oxygen.2.html</guid>
+	<link>https://tools.jboss.org/blog/11.2.0.ga-for-oxygen.2.html</link>
+	<description>&lt;div&gt;&lt;div id=&quot;preamble&quot;&gt;
+      &lt;div class=&quot;sectionbody&quot;&gt;
+      &lt;div class=&quot;paragraph&quot;&gt;
+      &lt;p&gt;&lt;a href=&quot;https://tools.jboss.org/downloads/jbosstools/oxygen/4.5.2.Final.html&quot;&gt;JBoss Tools 4.5.2&lt;/a&gt; and &lt;a href=&quot;https://tools.jboss.org/downloads/devstudio/oxygen/11.2.0.GA.html&quot;&gt;Red Hat JBoss Developer Studio 11.2&lt;/a&gt; for Eclipse Oxygen.2 are here waiting for you. Check it out!&lt;/p&gt;
+      &lt;/div&gt;
+      &lt;div class=&quot;imageblock&quot;&gt;
+      &lt;div class=&quot;content&quot;&gt;
+      &lt;img alt=&quot;devstudio11&quot; src=&quot;https://tools.jboss.org/blog/images/devstudio11.png&quot; /&gt;
+      &lt;/div&gt;
+      &lt;/div&gt;
+      &lt;/div&gt;
+      &lt;/div&gt;
+      &lt;div class=&quot;sect1&quot;&gt;
+      &lt;h2 id=&quot;installation&quot;&gt;&lt;a class=&quot;anchor&quot; href=&quot;http://tools.jboss.org/blog/news.atom#installation&quot;&gt;&lt;/a&gt;Installation&lt;/h2&gt;
+      &lt;div class=&quot;sectionbody&quot;&gt;
+      &lt;div class=&quot;paragraph&quot;&gt;
+      &lt;p&gt;JBoss Developer Studio comes with everything pre-bundled in its installer. Simply download it from our &lt;a href=&quot;https://www.jboss.org/products/devstudio.html&quot;&gt;JBoss Products page&lt;/a&gt; and run it like this:&lt;/p&gt;
+      &lt;/div&gt;
+      &lt;div class=&quot;literalblock&quot;&gt;
+      &lt;div class=&quot;content&quot;&gt;
+      &lt;pre&gt;java -jar jboss-devstudio-&amp;lt;installername&amp;gt;.jar&lt;/pre&gt;
+      &lt;/div&gt;
+      &lt;/div&gt;
+      &lt;div class=&quot;paragraph&quot;&gt;
+      &lt;p&gt;JBoss Tools or Bring-Your-Own-Eclipse (BYOE) JBoss Developer Studio require a bit more:&lt;/p&gt;
+      &lt;/div&gt;
+      &lt;div class=&quot;paragraph&quot;&gt;
+      &lt;p&gt;This release requires at least Eclipse 4.7 (Oxygen) but we recommend
+      using the latest &lt;a href=&quot;http://www.eclipse.org/downloads/packages/eclipse-ide-java-ee-developers/oxygen2&quot;&gt;Eclipse 4.7.2 Oxygen JEE Bundle&lt;/a&gt; since then you get most of the dependencies preinstalled.&lt;/p&gt;
+      &lt;/div&gt;
+      &lt;div class=&quot;paragraph&quot;&gt;
+      &lt;p&gt;Once you have installed Eclipse, you can either find us on the Eclipse Marketplace under &quot;JBoss Tools&quot; or &quot;Red Hat JBoss Developer Studio&quot;.&lt;/p&gt;
+      &lt;/div&gt;
+      &lt;div class=&quot;paragraph&quot;&gt;
+      &lt;p&gt;For JBoss Tools, you can also use our update site directly.&lt;/p&gt;
+      &lt;/div&gt;
+      &lt;div class=&quot;literalblock&quot;&gt;
+      &lt;div class=&quot;content&quot;&gt;
+      &lt;pre&gt;http://download.jboss.org/jbosstools/oxygen/stable/updates/&lt;/pre&gt;
+      &lt;/div&gt;
+      &lt;/div&gt;
+      &lt;/div&gt;
+      &lt;/div&gt;
+      &lt;div class=&quot;sect1&quot;&gt;
+      &lt;h2 id=&quot;what-is-new&quot;&gt;&lt;a class=&quot;anchor&quot; href=&quot;http://tools.jboss.org/blog/news.atom#what-is-new&quot;&gt;&lt;/a&gt;What is new?&lt;/h2&gt;
+      &lt;div class=&quot;sectionbody&quot;&gt;
+      &lt;div class=&quot;paragraph&quot;&gt;
+      &lt;p&gt;Our main focus for this release was on adoption of Java9, improvements for container based development and bug fixing.
+      Eclipse Oxygen itself has &lt;a href=&quot;https://www.youtube.com/playlist?list=PLy7t4z5SYNaTM66CahSlkMh5YkndYXMUq&quot;&gt;a lot of new cool stuff&lt;/a&gt; but let me highlight just a few updates in both Eclipse Oxygen and JBoss Tools plugins that I think are worth mentioning.&lt;/p&gt;
+      &lt;/div&gt;
+      &lt;div class=&quot;sect2&quot;&gt;
+      &lt;h3 id=&quot;openshift-3&quot;&gt;&lt;a class=&quot;anchor&quot; href=&quot;http://tools.jboss.org/blog/news.atom#openshift-3&quot;&gt;&lt;/a&gt;OpenShift 3&lt;/h3&gt;
+      &lt;div class=&quot;sect3&quot;&gt;
+      &lt;h4 id=&quot;spring-boot-applications-support-in-openshift-server-adapter&quot;&gt;&lt;a class=&quot;anchor&quot; href=&quot;http://tools.jboss.org/blog/news.atom#spring-boot-applications-support-in-openshift-server-adapter&quot;&gt;&lt;/a&gt;Spring Boot applications support in OpenShift server adapter&lt;/h4&gt;
+      &lt;div class=&quot;paragraph&quot;&gt;
+      &lt;p&gt;The OpenShift server adapter allowed hotdeploy and debugging for JEE and NodeJS based applications.
+      It now supports Spring Boot applications with some limitations: the Spring Boot devtools module must be added to your application as it monitors code changes and as the application must be launched in exploded mode, you must use the upstream image (docker.io/fabric8/s2i-java) rather than the downstream image builder fis-java-openshift.&lt;/p&gt;
+      &lt;/div&gt;
+      &lt;div class=&quot;paragraph&quot;&gt;
+      &lt;p&gt;As an example, we’ve provided an OpenShift template that will create an OpenShift application based on the upstream application and a Git repository that added the Spring Boot devtools to the Fabric8 Spring Boot quickstart.&lt;/p&gt;
+      &lt;/div&gt;
+      &lt;div class=&quot;listingblock&quot;&gt;
+      &lt;div class=&quot;content&quot;&gt;
+      &lt;pre class=&quot;prettyprint highlight&quot;&gt;&lt;code class=&quot;language-json&quot;&gt;{
+        &quot;apiVersion&quot;: &quot;v1&quot;,
+        &quot;kind&quot;: &quot;Template&quot;,
+        &quot;metadata&quot;: {
+          &quot;annotations&quot;: {
+            &quot;description&quot;: &quot;Spring-Boot and CXF JAXRS QuickStart. This example demonstrates how you can use Apache CXF JAXRS with Spring Boot on Openshift. The quickstart uses Spring Boot to configure a little application that includes a CXF JAXRS endpoint with Swagger enabled.&quot;,
+            &quot;tags&quot;: &quot;quickstart,java,springboot,fis&quot;,
+            &quot;iconClass&quot;: &quot;icon-jboss&quot;,
+            &quot;version&quot;: &quot;2.0&quot;
+          },
+          &quot;name&quot;: &quot;s2i-spring-boot-cxf-jaxrs&quot;
+        },
+        &quot;labels&quot;: {
+          &quot;template&quot;: &quot;s2i-spring-boot-cxf-jaxrs&quot;
+        },
+        &quot;parameters&quot;: [
+          {
+            &quot;name&quot;: &quot;APP_NAME&quot;,
+            &quot;displayName&quot;: &quot;Application Name&quot;,
+            &quot;required&quot;: true,
+            &quot;value&quot;: &quot;s2i-spring-boot-cxf-jaxrs&quot;,
+            &quot;description&quot;: &quot;The name assigned to the application.&quot;
+          },
+          {
+            &quot;name&quot;: &quot;GIT_REPO&quot;,
+            &quot;displayName&quot;: &quot;Git Repository URL&quot;,
+            &quot;required&quot;: true,
+            &quot;value&quot;: &quot;https://github.com/jeffmaury/spring-boot-cxf-jaxrs.git&quot;,
+            &quot;description&quot;: &quot;The URL of the repository with your application source code.&quot;
+          },
+          {
+            &quot;name&quot;: &quot;GIT_REF&quot;,
+            &quot;displayName&quot;: &quot;Git Reference&quot;,
+            &quot;value&quot;: &quot;hotdeploy&quot;,
+            &quot;description&quot;: &quot;Set this to a branch name, tag or other ref of your repository if you are not using the default branch.&quot;
+          },
+          {
+            &quot;name&quot;: &quot;SERVICE_NAME&quot;,
+            &quot;displayName&quot;: &quot;Service Name&quot;,
+            &quot;value&quot;: &quot;cxf-jaxrs&quot;,
+            &quot;description&quot;: &quot;Exposed service name.&quot;
+          },
+          {
+            &quot;name&quot;: &quot;BUILDER_VERSION&quot;,
+            &quot;displayName&quot;: &quot;Builder version&quot;,
+            &quot;value&quot;: &quot;2.0&quot;,
+            &quot;description&quot;: &quot;The version of the FIS S2I builder image to use.&quot;
+          },
+          {
+            &quot;name&quot;: &quot;APP_VERSION&quot;,
+            &quot;displayName&quot;: &quot;Application Version&quot;,
+            &quot;value&quot;: &quot;1.0.0.redhat-000014&quot;,
+            &quot;description&quot;: &quot;The application version.&quot;
+          },
+          {
+            &quot;name&quot;: &quot;MAVEN_ARGS&quot;,
+            &quot;displayName&quot;: &quot;Maven Arguments&quot;,
+            &quot;value&quot;: &quot;package -DskipTests -Dfabric8.skip -e -B&quot;,
+            &quot;description&quot;: &quot;Arguments passed to mvn in the build.&quot;
+          },
+          {
+            &quot;name&quot;: &quot;MAVEN_ARGS_APPEND&quot;,
+            &quot;displayName&quot;: &quot;Extra Maven Arguments&quot;,
+            &quot;description&quot;: &quot;Extra arguments passed to mvn, e.g. for multi-module builds.&quot;
+          },
+          {
+            &quot;name&quot;: &quot;ARTIFACT_DIR&quot;,
+            &quot;displayName&quot;: &quot;Maven build directory&quot;,
+            &quot;description&quot;: &quot;Directory of the artifact to be built, e.g. for multi-module builds.&quot;
+          },
+          {
+            &quot;name&quot;: &quot;IMAGE_STREAM_NAMESPACE&quot;,
+            &quot;displayName&quot;: &quot;Image Stream Namespace&quot;,
+            &quot;value&quot;: &quot;openshift&quot;,
+            &quot;required&quot;: true,
+            &quot;description&quot;: &quot;Namespace in which the Fuse ImageStreams are installed. These ImageStreams are normally installed in the openshift namespace. You should only need to modify this if you&amp;amp;aposve installed the ImageStreams in a different namespace/project.&quot;
+          },
+          {
+            &quot;name&quot;: &quot;BUILD_SECRET&quot;,
+            &quot;displayName&quot;: &quot;Git Build Secret&quot;,
+            &quot;generate&quot;: &quot;expression&quot;,
+            &quot;description&quot;: &quot;The secret needed to trigger a build.&quot;,
+            &quot;from&quot;: &quot;[a-zA-Z0-9]{40}&quot;
+          },
+          {
+            &quot;name&quot;: &quot;CPU_REQUEST&quot;,
+            &quot;displayName&quot;: &quot;CPU request&quot;,
+            &quot;value&quot;: &quot;0.2&quot;,
+            &quot;required&quot;: true,
+            &quot;description&quot;: &quot;The amount of CPU to requests.&quot;
+          },
+          {
+            &quot;name&quot;: &quot;CPU_LIMIT&quot;,
+            &quot;displayName&quot;: &quot;CPU limit&quot;,
+            &quot;value&quot;: &quot;1.0&quot;,
+            &quot;required&quot;: true,
+            &quot;description&quot;: &quot;The amount of CPU the container is limited to use.&quot;
+          }
+        ],
+        &quot;objects&quot;: [
+          {
+            &quot;apiVersion&quot;: &quot;v1&quot;,
+            &quot;kind&quot;: &quot;Route&quot;,
+            &quot;metadata&quot;: {
+              &quot;labels&quot;: {
+                &quot;component&quot;: &quot;${APP_NAME}&quot;,
+                &quot;provider&quot;: &quot;s2i&quot;,
+                &quot;project&quot;: &quot;${APP_NAME}&quot;,
+                &quot;version&quot;: &quot;${APP_VERSION}&quot;,
+                &quot;group&quot;: &quot;quickstarts&quot;
+              },
+              &quot;name&quot;: &quot;${SERVICE_NAME}-route&quot;
+            },
+            &quot;spec&quot;: {
+              &quot;to&quot;: {
+                &quot;kind&quot;: &quot;Service&quot;,
+                &quot;name&quot;: &quot;${SERVICE_NAME}&quot;
+              }
+            }
+          },
+          {
+            &quot;apiVersion&quot;: &quot;v1&quot;,
+            &quot;kind&quot;: &quot;Service&quot;,
+            &quot;metadata&quot;: {
+              &quot;annotations&quot;: {
+              },
+              &quot;labels&quot;: {
+                &quot;component&quot;: &quot;${APP_NAME}&quot;,
+                &quot;provider&quot;: &quot;s2i&quot;,
+                &quot;project&quot;: &quot;${APP_NAME}&quot;,
+                &quot;version&quot;: &quot;${APP_VERSION}&quot;,
+                &quot;group&quot;: &quot;quickstarts&quot;
+              },
+              &quot;name&quot;: &quot;${SERVICE_NAME}&quot;
+            },
+            &quot;spec&quot;: {
+              &quot;clusterIP&quot;: &quot;None&quot;,
+              &quot;deprecatedPublicIPs&quot;: [],
+              &quot;ports&quot;: [
+                {
+                  &quot;port&quot;: 9413,
+                  &quot;protocol&quot;: &quot;TCP&quot;,
+                  &quot;targetPort&quot;: 8080
+                }
+              ],
+              &quot;selector&quot;: {
+                &quot;project&quot;: &quot;${APP_NAME}&quot;,
+                &quot;component&quot;: &quot;${APP_NAME}&quot;,
+                &quot;provider&quot;: &quot;s2i&quot;,
+                &quot;group&quot;: &quot;quickstarts&quot;
+              }
+            }
+          },
+          {
+            &quot;kind&quot;: &quot;ImageStream&quot;,
+            &quot;apiVersion&quot;: &quot;v1&quot;,
+            &quot;metadata&quot;: {
+              &quot;name&quot;: &quot;${APP_NAME}&quot;,
+              &quot;creationTimestamp&quot;: null,
+              &quot;labels&quot;: {
+                &quot;component&quot;: &quot;${APP_NAME}&quot;,
+                &quot;group&quot;: &quot;quickstarts&quot;,
+                &quot;project&quot;: &quot;${APP_NAME}&quot;,
+                &quot;provider&quot;: &quot;s2i&quot;,
+                &quot;version&quot;: &quot;${APP_VERSION}&quot;
+              }
+            },
+            &quot;spec&quot;: {},
+            &quot;status&quot;: {
+              &quot;dockerImageRepository&quot;: &quot;&quot;
+            }
+          },
+          {
+            &quot;kind&quot;: &quot;BuildConfig&quot;,
+            &quot;apiVersion&quot;: &quot;v1&quot;,
+            &quot;metadata&quot;: {
+              &quot;name&quot;: &quot;${APP_NAME}&quot;,
+              &quot;creationTimestamp&quot;: null,
+              &quot;labels&quot;: {
+                &quot;component&quot;: &quot;${APP_NAME}&quot;,
+                &quot;group&quot;: &quot;quickstarts&quot;,
+                &quot;project&quot;: &quot;${APP_NAME}&quot;,
+                &quot;provider&quot;: &quot;s2i&quot;,
+                &quot;version&quot;: &quot;${APP_VERSION}&quot;
+              }
+            },
+            &quot;spec&quot;: {
+              &quot;triggers&quot;: [
+                {
+                  &quot;type&quot;: &quot;GitHub&quot;,
+                  &quot;github&quot;: {
+                    &quot;secret&quot;: &quot;${BUILD_SECRET}&quot;
+                  }
+                },
+                {
+                  &quot;type&quot;: &quot;Generic&quot;,
+                  &quot;generic&quot;: {
+                    &quot;secret&quot;: &quot;${BUILD_SECRET}&quot;
+                  }
+                },
+                {
+                  &quot;type&quot;: &quot;ConfigChange&quot;
+                },
+                {
+                  &quot;type&quot;: &quot;ImageChange&quot;,
+                  &quot;imageChange&quot;: {}
+                }
+              ],
+              &quot;source&quot;: {
+                &quot;type&quot;: &quot;Git&quot;,
+                &quot;git&quot;: {
+                  &quot;uri&quot;: &quot;${GIT_REPO}&quot;,
+                  &quot;ref&quot;: &quot;${GIT_REF}&quot;
+                }
+              },
+              &quot;strategy&quot;: {
+                &quot;type&quot;: &quot;Source&quot;,
+                &quot;sourceStrategy&quot;: {
+                  &quot;from&quot;: {
+                    &quot;kind&quot;: &quot;DockerImage&quot;,
+                    &quot;name&quot;: &quot;fabric8/s2i-java:${BUILDER_VERSION}&quot;
+                  },
+                  &quot;forcePull&quot;: true,
+                  &quot;incremental&quot;: true,
+                  &quot;env&quot;: [
+                    {
+                      &quot;name&quot;: &quot;BUILD_LOGLEVEL&quot;,
+                      &quot;value&quot;: &quot;5&quot;
+                    },
+                    {
+                      &quot;name&quot;: &quot;ARTIFACT_DIR&quot;,
+                      &quot;value&quot;: &quot;${ARTIFACT_DIR}&quot;
+                    },
+                    {
+                      &quot;name&quot;: &quot;MAVEN_ARGS&quot;,
+                      &quot;value&quot;: &quot;${MAVEN_ARGS}&quot;
+                    },
+                    {
+                      &quot;name&quot;: &quot;MAVEN_ARGS_APPEND&quot;,
+                      &quot;value&quot;: &quot;${MAVEN_ARGS_APPEND}&quot;
+                    }
+                  ]
+                }
+              },
+              &quot;output&quot;: {
+                &quot;to&quot;: {
+                  &quot;kind&quot;: &quot;ImageStreamTag&quot;,
+                  &quot;name&quot;: &quot;${APP_NAME}:latest&quot;
+                }
+              },
+              &quot;resources&quot;: {}
+            },
+            &quot;status&quot;: {
+              &quot;lastVersion&quot;: 0
+            }
+          },
+          {
+            &quot;kind&quot;: &quot;DeploymentConfig&quot;,
+            &quot;apiVersion&quot;: &quot;v1&quot;,
+            &quot;metadata&quot;: {
+              &quot;name&quot;: &quot;${APP_NAME}&quot;,
+              &quot;creationTimestamp&quot;: null,
+              &quot;labels&quot;: {
+                &quot;component&quot;: &quot;${APP_NAME}&quot;,
+                &quot;group&quot;: &quot;quickstarts&quot;,
+                &quot;project&quot;: &quot;${APP_NAME}&quot;,
+                &quot;provider&quot;: &quot;s2i&quot;,
+                &quot;version&quot;: &quot;${APP_VERSION}&quot;
+              }
+            },
+            &quot;spec&quot;: {
+              &quot;strategy&quot;: {
+                &quot;resources&quot;: {}
+              },
+              &quot;triggers&quot;: [
+                {
+                  &quot;type&quot;: &quot;ConfigChange&quot;
+                },
+                {
+                  &quot;type&quot;: &quot;ImageChange&quot;,
+                  &quot;imageChangeParams&quot;: {
+                    &quot;automatic&quot;: true,
+                    &quot;containerNames&quot;: [
+                      &quot;${APP_NAME}&quot;
+                    ],
+                    &quot;from&quot;: {
+                      &quot;kind&quot;: &quot;ImageStreamTag&quot;,
+                      &quot;name&quot;: &quot;${APP_NAME}:latest&quot;
+                    }
+                  }
+                }
+              ],
+              &quot;replicas&quot;: 1,
+              &quot;selector&quot;: {
+                &quot;component&quot;: &quot;${APP_NAME}&quot;,
+                &quot;deploymentconfig&quot;: &quot;${APP_NAME}&quot;,
+                &quot;group&quot;: &quot;quickstarts&quot;,
+                &quot;project&quot;: &quot;${APP_NAME}&quot;,
+                &quot;provider&quot;: &quot;s2i&quot;,
+                &quot;version&quot;: &quot;${APP_VERSION}&quot;
+              },
+              &quot;template&quot;: {
+                &quot;metadata&quot;: {
+                  &quot;creationTimestamp&quot;: null,
+                  &quot;labels&quot;: {
+                    &quot;component&quot;: &quot;${APP_NAME}&quot;,
+                    &quot;deploymentconfig&quot;: &quot;${APP_NAME}&quot;,
+                    &quot;group&quot;: &quot;quickstarts&quot;,
+                    &quot;project&quot;: &quot;${APP_NAME}&quot;,
+                    &quot;provider&quot;: &quot;s2i&quot;,
+                    &quot;version&quot;: &quot;${APP_VERSION}&quot;
+                  }
+                },
+                &quot;spec&quot;: {
+                  &quot;containers&quot;: [
+                    {
+                      &quot;name&quot;: &quot;${APP_NAME}&quot;,
+                      &quot;image&quot;: &quot;library/${APP_NAME}:latest&quot;,
+                      &quot;readinessProbe&quot; : {
+                        &quot;httpGet&quot; : {
+                          &quot;path&quot; : &quot;/health&quot;,
+                          &quot;port&quot; : 8081
+                        },
+                        &quot;initialDelaySeconds&quot; : 10
+                      },
+                      &quot;livenessProbe&quot; : {
+                        &quot;httpGet&quot; : {
+                          &quot;path&quot; : &quot;/health&quot;,
+                          &quot;port&quot; : 8081
+                        },
+                        &quot;initialDelaySeconds&quot; : 180
+                      },
+                      &quot;ports&quot;: [
+                        {
+                          &quot;containerPort&quot;: 8778,
+                          &quot;name&quot;: &quot;jolokia&quot;
+                        }
+                      ],
+                      &quot;env&quot; : [ {
+                        &quot;name&quot; : &quot;KUBERNETES_NAMESPACE&quot;,
+                        &quot;valueFrom&quot; : {
+                          &quot;fieldRef&quot; : {
+                            &quot;fieldPath&quot; : &quot;metadata.namespace&quot;
+                          }
+                        }
+                      } ],
+                      &quot;resources&quot;: {
+                        &quot;requests&quot;: {
+                          &quot;cpu&quot;: &quot;${CPU_REQUEST}&quot;
+                        },
+                        &quot;limits&quot;: {
+                          &quot;cpu&quot;: &quot;${CPU_LIMIT}&quot;
+                        }
+                      }
+                    }
+                  ]
+                }
+              }
+            },
+            &quot;status&quot;: {}
+          }
+        ]
+      }&lt;/code&gt;&lt;/pre&gt;
+      &lt;/div&gt;
+      &lt;/div&gt;
+      &lt;div class=&quot;paragraph&quot;&gt;
+      &lt;p&gt;You can see a demo of the OpenShift server adapter for Spring Boot application here:&lt;/p&gt;
+      &lt;/div&gt;
+      &lt;div class=&quot;videoblock&quot;&gt;
+      &lt;div class=&quot;content&quot;&gt;
+      
+      &lt;/div&gt;
+      &lt;/div&gt;
+      &lt;/div&gt;
+      &lt;div class=&quot;sect3&quot;&gt;
+      &lt;h4 id=&quot;support-for-route-timeouts-and-liveness-probe-for-openshift-server-adapter-debugging-configurations&quot;&gt;&lt;a class=&quot;anchor&quot; href=&quot;http://tools.jboss.org/blog/news.atom#support-for-route-timeouts-and-liveness-probe-for-openshift-server-adapter-debugging-configurations&quot;&gt;&lt;/a&gt;Support for route timeouts and liveness probe for OpenShift Server Adapter debugging configurations&lt;/h4&gt;
+      &lt;div class=&quot;paragraph&quot;&gt;
+      &lt;p&gt;While debugging your OpenShift deployment, you may face two different issues:&lt;/p&gt;
+      &lt;/div&gt;
+      &lt;div class=&quot;ulist&quot;&gt;
+      &lt;ul&gt;
+      &lt;li&gt;
+      &lt;p&gt;if you launch your test through a Web browser, then it’s likely that you will access your OpenShift deployment through an OpenShift
+      route. The problem is that, by default, OpenShift routes have a 30 seconds timeout for each request. So if you’re stepping through one
+      of your breakpoints, you will get a timeout error message in the browser window even if you can still debug your OpenShift deployment.
+      And you’re now stuck will the navigation of your OpenShift application.&lt;/p&gt;
+      &lt;/li&gt;
+      &lt;li&gt;
+      &lt;p&gt;if your OpenShift deployment has a liveness probe configured, depending on your virtual machine capabilities or how your debugger is
+      configured, if your stepping into one of your breakpoints, the liveness probe may fail thus OpenShift so OpenShift will restart your
+      container and your debugging session will be destroyed.&lt;/p&gt;
+      &lt;/li&gt;
+      &lt;/ul&gt;
+      &lt;/div&gt;
+      &lt;div class=&quot;paragraph&quot;&gt;
+      &lt;p&gt;So, from now, when the OpenShift server adapter is started in &lt;code&gt;debug&lt;/code&gt; mode, the following action are being performed:&lt;/p&gt;
+      &lt;/div&gt;
+      &lt;div class=&quot;ulist&quot;&gt;
+      &lt;ul&gt;
+      &lt;li&gt;
+      &lt;p&gt;if an OpenShift route is found that is linked to the OpenShift deployment you want to debug, the route timeout will be
+      set or increased to 1 hour. The original or default value will be restored when the OpenShift server adapter will be restarted
+      in &lt;code&gt;run&lt;/code&gt; mode.&lt;/p&gt;
+      &lt;/li&gt;
+      &lt;li&gt;
+      &lt;p&gt;if your OpenShift deployment has a liveness probe configured, the &lt;code&gt;initialDelay&lt;/code&gt; field will be increased to 1 hour if the defined
+      value for this field is lower than 1 hour. If the value of this field is defined to a value greater than 1 hour, it is left intact.
+      The original value will be restored when the OpenShift server adapter will be restarted
+      in &lt;code&gt;run&lt;/code&gt; mode&lt;/p&gt;
+      &lt;/li&gt;
+      &lt;/ul&gt;
+      &lt;/div&gt;
+      &lt;/div&gt;
+      &lt;/div&gt;
+      &lt;div class=&quot;sect2&quot;&gt;
+      &lt;h3 id=&quot;enhanced-command-to-delete-resource-s&quot;&gt;&lt;a class=&quot;anchor&quot; href=&quot;http://tools.jboss.org/blog/news.atom#enhanced-command-to-delete-resource-s&quot;&gt;&lt;/a&gt;Enhanced command to delete resource(s)&lt;/h3&gt;
+      &lt;div class=&quot;paragraph&quot;&gt;
+      &lt;p&gt;When it comes to delete OpenShift resources, you had two different choices:&lt;/p&gt;
+      &lt;/div&gt;
+      &lt;div class=&quot;ulist&quot;&gt;
+      &lt;ul&gt;
+      &lt;li&gt;
+      &lt;p&gt;individually delete each resource but as some resources are hidden by the OpenShift explorer, it may become troublesome&lt;/p&gt;
+      &lt;/li&gt;
+      &lt;li&gt;
+      &lt;p&gt;delete the containing OpenShift project but you are then deleting more resources than required&lt;/p&gt;
+      &lt;/li&gt;
+      &lt;/ul&gt;
+      &lt;/div&gt;
+      &lt;div class=&quot;paragraph&quot;&gt;
+      &lt;p&gt;There is now a new enhanced command to delete resources. It is available at the OpenShift project level and it will first
+      list all the available OpenShift resources for the selected OpenShift project. You can now select the ones you want to delete
+      and you can also filter the list using a filter that will be applied to the labels for each retrieved OpenShift resource.&lt;/p&gt;
+      &lt;/div&gt;
+      &lt;div class=&quot;paragraph&quot;&gt;
+      &lt;p&gt;So if you have two different deployments in a single OpenShift project (if you using OpenShift Online Starter for example) or if
+      you have different kind of resources in a single deployment, you can now distinct them.&lt;/p&gt;
+      &lt;/div&gt;
+      &lt;div class=&quot;paragraph&quot;&gt;
+      &lt;p&gt;Let’s see this in action:&lt;/p&gt;
+      &lt;/div&gt;
+      &lt;div class=&quot;paragraph&quot;&gt;
+      &lt;p&gt;In this example, I have deployed an EAP6.4 based application and an EAP7.0 based one. Here is what you  can see from the OpenShift explorer:&lt;/p&gt;
+      &lt;/div&gt;
+      &lt;div class=&quot;imageblock&quot;&gt;
+      &lt;div class=&quot;content&quot;&gt;
+      &lt;img alt=&quot;new delete resources explorer&quot; src=&quot;https://tools.jboss.org/documentation/whatsnew/openshift/images/new-delete-resources-explorer.png&quot; /&gt;
+      &lt;/div&gt;
+      &lt;/div&gt;
+      &lt;div class=&quot;paragraph&quot;&gt;
+      &lt;p&gt;Now, let’s invoke the new delete command on the &lt;em&gt;eap&lt;/em&gt; OpenShift project: right click the OpenShift project and select &lt;strong&gt;Delete Resources…​&lt;/strong&gt;:&lt;/p&gt;
+      &lt;/div&gt;
+      &lt;div class=&quot;imageblock&quot;&gt;
+      &lt;div class=&quot;content&quot;&gt;
+      &lt;img alt=&quot;new delete resources dialog&quot; src=&quot;https://tools.jboss.org/documentation/whatsnew/openshift/images/new-delete-resources-dialog.png&quot; /&gt;
+      &lt;/div&gt;
+      &lt;/div&gt;
+      &lt;div class=&quot;paragraph&quot;&gt;
+      &lt;p&gt;Let suppose that we want to delete the EAP6.4 deployement. Enter &lt;em&gt;eap=6.4&lt;/em&gt; in the filter field:&lt;/p&gt;
+      &lt;/div&gt;
+      &lt;div class=&quot;imageblock&quot;&gt;
+      &lt;div class=&quot;content&quot;&gt;
+      &lt;img alt=&quot;new delete resources dialog1&quot; src=&quot;https://tools.jboss.org/documentation/whatsnew/openshift/images/new-delete-resources-dialog1.png&quot; /&gt;
+      &lt;/div&gt;
+      &lt;/div&gt;
+      &lt;div class=&quot;paragraph&quot;&gt;
+      &lt;p&gt;Push the &lt;strong&gt;Select All&lt;/strong&gt; button:&lt;/p&gt;
+      &lt;/div&gt;
+      &lt;div class=&quot;imageblock&quot;&gt;
+      &lt;div class=&quot;content&quot;&gt;
+      &lt;img alt=&quot;new delete resources dialog2&quot; src=&quot;https://tools.jboss.org/documentation/whatsnew/openshift/images/new-delete-resources-dialog2.png&quot; /&gt;
+      &lt;/div&gt;
+      &lt;/div&gt;
+      &lt;div class=&quot;paragraph&quot;&gt;
+      &lt;p&gt;Close this dialog by pushing the &lt;strong&gt;OK&lt;/strong&gt; button. The resources will be deleted and the OpenShift explorer will be updated accordingly:&lt;/p&gt;
+      &lt;/div&gt;
+      &lt;div class=&quot;imageblock&quot;&gt;
+      &lt;div class=&quot;content&quot;&gt;
+      &lt;img alt=&quot;new delete resources explorer1&quot; src=&quot;https://tools.jboss.org/documentation/whatsnew/openshift/images/new-delete-resources-explorer1.png&quot; /&gt;
+      &lt;/div&gt;
+      &lt;/div&gt;
+      &lt;/div&gt;
+      &lt;div class=&quot;sect2&quot;&gt;
+      &lt;h3 id=&quot;server-tools&quot;&gt;&lt;a class=&quot;anchor&quot; href=&quot;http://tools.jboss.org/blog/news.atom#server-tools&quot;&gt;&lt;/a&gt;Server tools&lt;/h3&gt;
+      &lt;div class=&quot;sect3&quot;&gt;
+      &lt;h4 id=&quot;eap-7-1-server-adapter&quot;&gt;&lt;a class=&quot;anchor&quot; href=&quot;http://tools.jboss.org/blog/news.atom#eap-7-1-server-adapter&quot;&gt;&lt;/a&gt;EAP 7.1 Server Adapter&lt;/h4&gt;
+      &lt;div class=&quot;paragraph&quot;&gt;
+      &lt;p&gt;A server adapter has been added to work with EAP 7.1 and Wildfly 11. It’s based on WildFly 11. This new server adapter includes support for incremental management
+      deployment like it’s upstream WildFly 11 counterpart.&lt;/p&gt;
+      &lt;/div&gt;
+      &lt;/div&gt;
+      &lt;/div&gt;
+      &lt;div class=&quot;sect2&quot;&gt;
+      &lt;h3 id=&quot;fuse-tooling&quot;&gt;&lt;a class=&quot;anchor&quot; href=&quot;http://tools.jboss.org/blog/news.atom#fuse-tooling&quot;&gt;&lt;/a&gt;Fuse Tooling&lt;/h3&gt;
+      &lt;div class=&quot;sect3&quot;&gt;
+      &lt;h4 id=&quot;fuse-7-karaf-based-runtime-server-adapter&quot;&gt;&lt;a class=&quot;anchor&quot; href=&quot;http://tools.jboss.org/blog/news.atom#fuse-7-karaf-based-runtime-server-adapter&quot;&gt;&lt;/a&gt;Fuse 7 Karaf-based runtime Server adapter&lt;/h4&gt;
+      &lt;div class=&quot;paragraph&quot;&gt;
+      &lt;p&gt;Fuse 7 is cooking and preliminary versions are already available on &lt;a href=&quot;http://origin-repository.jboss.org/nexus/content/groups/ea/org/jboss/fuse/jboss-fuse-karaf&quot;&gt;early-access repository&lt;/a&gt;. Fuse Tooling is ready to leverage them so that you can try the upcoming major Fuse version.&lt;/p&gt;
+      &lt;/div&gt;
+      &lt;div class=&quot;imageblock&quot;&gt;
+      &lt;div class=&quot;content&quot;&gt;
+      &lt;img alt=&quot;Fuse 7 Server Adapter&quot; src=&quot;https://tools.jboss.org/documentation/whatsnew/fusetools/images/Fuse7-ServerAdapter.png&quot; /&gt;
+      &lt;/div&gt;
+      &lt;/div&gt;
+      &lt;div class=&quot;paragraph&quot;&gt;
+      &lt;p&gt;Classical functionalities with server adapters are available: automatic redeploy, Java debug, Graphical Camel debug through created JMX connection.
+      Please note:
+      - you can’t retrieve the Fuse 7 Runtime yet directly from Fuse tooling, it is required to download it on your machine and point to it when creating the Server adapter.
+      - the provided templates requires some modifications to have them working with Fuse 7, mainly adapting the bom. Please see work related to it in this &lt;a href=&quot;https://issues.jboss.org/browse/FUSETOOLS-2578&quot;&gt;JIRA task&lt;/a&gt; and its children.&lt;/p&gt;
+      &lt;/div&gt;
+      &lt;/div&gt;
+      &lt;div class=&quot;sect3&quot;&gt;
+      &lt;h4 id=&quot;display-routes-defined-inside-routecontext-in-camel-graphical-editor-design-tab&quot;&gt;&lt;a class=&quot;anchor&quot; href=&quot;http://tools.jboss.org/blog/news.atom#display-routes-defined-inside-routecontext-in-camel-graphical-editor-design-tab&quot;&gt;&lt;/a&gt;Display routes defined inside &quot;routeContext&quot; in Camel Graphical Editor (Design tab)&lt;/h4&gt;
+      &lt;div class=&quot;paragraph&quot;&gt;
+      &lt;p&gt;&quot;routeContext&quot; tag is a special tag used in Camel to provide the ability to reuse routes and to split them across different files. This is very useful on large projects. See Camel &lt;a href=&quot;http://camel.apache.org/how-do-i-import-routes-from-other-xml-files.html&quot;&gt;documentation&lt;/a&gt; for more information.
+      Since this version, the Design of the routes defined in &quot;routeContext&quot; tags are now displayed.&lt;/p&gt;
+      &lt;/div&gt;
+      &lt;/div&gt;
+      &lt;div class=&quot;sect3&quot;&gt;
+      &lt;h4 id=&quot;usability-improvement-progress-bar-when-changing-the-camel-version&quot;&gt;&lt;a class=&quot;anchor&quot; href=&quot;http://tools.jboss.org/blog/news.atom#usability-improvement-progress-bar-when-changing-the-camel-version&quot;&gt;&lt;/a&gt;Usability improvement: Progress bar when &quot;Changing the Camel version&quot;&lt;/h4&gt;
+      &lt;div class=&quot;paragraph&quot;&gt;
+      &lt;p&gt;Since Fuse Tooling 10.1.0, it is possible to change the Camel version. In case the Camel version was not cached locally yet and for slow internet connections, this operation can take a while. There is now a progress bar to see the progress.&lt;/p&gt;
+      &lt;/div&gt;
+      &lt;div class=&quot;imageblock&quot;&gt;
+      &lt;div class=&quot;content&quot;&gt;
+      &lt;img alt=&quot;Switch Camel Version with Progress Bar&quot; src=&quot;https://tools.jboss.org/documentation/whatsnew/fusetools/images/switchCamelVersionWithProgressBar.png&quot; /&gt;
+      &lt;/div&gt;
+      &lt;/div&gt;
+      &lt;/div&gt;
+      &lt;div class=&quot;sect3&quot;&gt;
+      &lt;h4 id=&quot;support-for-creating-fuse-ignite-technical-extensions&quot;&gt;&lt;a class=&quot;anchor&quot; href=&quot;http://tools.jboss.org/blog/news.atom#support-for-creating-fuse-ignite-technical-extensions&quot;&gt;&lt;/a&gt;Support for creating Fuse Ignite Technical Extensions&lt;/h4&gt;
+      &lt;div class=&quot;paragraph&quot;&gt;
+      &lt;p&gt;We are happy to announce the addition of support for creating Technical Extension projects for &lt;strong&gt;Fuse Ignite&lt;/strong&gt;*. That includes the creation of the project using the &lt;em&gt;&quot;New Fuse Ignite Extension Project&quot;&lt;/em&gt; wizard as well as support for building the deployable artifact directly from inside the Eclipse environment.&lt;/p&gt;
+      &lt;/div&gt;
+      &lt;div class=&quot;paragraph&quot;&gt;
+      &lt;p&gt;&lt;em&gt;*&lt;strong&gt;Fuse Ignite&lt;/strong&gt; is a JBoss Fuse feature that provides a web interface for integrating applications. Without writing code, a business expert can use Ignite to connect to applications and optionally operate on data between connections to different applications. In Ignite, a data operation is referred to as a step in an integration.
+      Ignite provides steps for operations such as filtering and mapping data. To operate on data in ways that are not provided by Ignite built-in steps, you can develop an Ignite extension to define one or more custom steps.
+      Fuse Ignite comes as part of &lt;a href=&quot;https://developers.redhat.com/products/fuse/overview/&quot;&gt;Fuse&lt;/a&gt; and &lt;a href=&quot;https://www.redhat.com/en/explore/fuse-online&quot;&gt;Fuse Online&lt;/a&gt;. Please refer to the &lt;a href=&quot;https://access.redhat.com/documentation/en-us/red_hat_jboss_fuse/6.3/html-single/tooling_user_guide/#IgniteExtension&quot;&gt;online documentation&lt;/a&gt; for more information on how to create and configure technical extensions for Fuse Ignite.&lt;/em&gt;&lt;/p&gt;
+      &lt;/div&gt;
+      &lt;div class=&quot;imageblock&quot;&gt;
+      &lt;div class=&quot;content&quot;&gt;
+      &lt;img alt=&quot;Fuse Ignite Technical Extension Wizard&quot; src=&quot;https://tools.jboss.org/documentation/whatsnew/fusetools/images/igniteExtensionWizard.png&quot; /&gt;
+      &lt;/div&gt;
+      &lt;/div&gt;
+      &lt;div class=&quot;paragraph&quot;&gt;
+      &lt;p&gt;The provided project template allows you to define an &lt;a href=&quot;http://camel.apache.org&quot;&gt;Apache Camel&lt;/a&gt; route as the base flow of your new technical extension.&lt;/p&gt;
+      &lt;/div&gt;
+      &lt;div class=&quot;imageblock&quot;&gt;
+      &lt;div class=&quot;content&quot;&gt;
+      &lt;img alt=&quot;Fuse Ignite Technical Extension Route&quot; src=&quot;https://tools.jboss.org/documentation/whatsnew/fusetools/images/igniteExtensionRoute.png&quot; /&gt;
+      &lt;/div&gt;
+      &lt;/div&gt;
+      &lt;div class=&quot;paragraph&quot;&gt;
+      &lt;p&gt;To configure your new technical extension you can use the JSON file created with the new project.&lt;/p&gt;
+      &lt;/div&gt;
+      &lt;div class=&quot;imageblock&quot;&gt;
+      &lt;div class=&quot;content&quot;&gt;
+      &lt;img alt=&quot;Fuse Ignite Technical Extension Configuration&quot; src=&quot;https://tools.jboss.org/documentation/whatsnew/fusetools/images/igniteExtensionConfig.png&quot; /&gt;
+      &lt;/div&gt;
+      &lt;/div&gt;
+      &lt;/div&gt;
+      &lt;/div&gt;
+      &lt;div class=&quot;sect2&quot;&gt;
+      &lt;h3 id=&quot;forge-tools&quot;&gt;&lt;a class=&quot;anchor&quot; href=&quot;http://tools.jboss.org/blog/news.atom#forge-tools&quot;&gt;&lt;/a&gt;Forge Tools&lt;/h3&gt;
+      &lt;div class=&quot;sect3&quot;&gt;
+      &lt;h4 id=&quot;forge-runtime-updated-to-3-8-1-final&quot;&gt;&lt;a class=&quot;anchor&quot; href=&quot;http://tools.jboss.org/blog/news.atom#forge-runtime-updated-to-3-8-1-final&quot;&gt;&lt;/a&gt;Forge Runtime updated to 3.8.1.Final&lt;/h4&gt;
+      &lt;div class=&quot;paragraph&quot;&gt;
+      &lt;p&gt;The included Forge runtime is now 3.8.1.Final. Read the official announcement &lt;a href=&quot;http://forge.jboss.org/news/jboss-forge-3.8.1.final-is-here&quot;&gt;here&lt;/a&gt;.&lt;/p&gt;
+      &lt;/div&gt;
+      &lt;/div&gt;
+      &lt;/div&gt;
+      &lt;div class=&quot;sect2&quot;&gt;
+      &lt;h3 id=&quot;and-more&quot;&gt;&lt;a class=&quot;anchor&quot; href=&quot;http://tools.jboss.org/blog/news.atom#and-more&quot;&gt;&lt;/a&gt;And more…​&lt;/h3&gt;
+      &lt;div class=&quot;paragraph&quot;&gt;
+      &lt;p&gt;You can find more noteworthy updates in on &lt;a href=&quot;https://tools.jboss.org/documentation/whatsnew/jbosstools/4.5.2.Final.html&quot;&gt;this page&lt;/a&gt;.&lt;/p&gt;
+      &lt;/div&gt;
+      &lt;/div&gt;
+      &lt;/div&gt;
+      &lt;/div&gt;
+      &lt;div class=&quot;sect1&quot;&gt;
+      &lt;h2 id=&quot;what-is-next&quot;&gt;&lt;a class=&quot;anchor&quot; href=&quot;http://tools.jboss.org/blog/news.atom#what-is-next&quot;&gt;&lt;/a&gt;What is next?&lt;/h2&gt;
+      &lt;div class=&quot;sectionbody&quot;&gt;
+      &lt;div class=&quot;paragraph&quot;&gt;
+      &lt;p&gt;Having JBoss Tools 4.5.2 and Developer Studio 11.2 out we are already working on the next maintenance release for Eclipse Oxygen.&lt;/p&gt;
+      &lt;/div&gt;
+      &lt;div class=&quot;paragraph&quot;&gt;
+      &lt;p&gt;Enjoy!&lt;/p&gt;
+      &lt;/div&gt;
+      &lt;div class=&quot;paragraph&quot;&gt;
+      &lt;p&gt;Jeff Maury&lt;/p&gt;
+      &lt;/div&gt;
+      &lt;/div&gt;
+      &lt;/div&gt;&lt;/div&gt;</description>
+	<pubDate>Mon, 29 Jan 2018 07:07:14 +0000</pubDate>
+</item>
+<item>
+	<title>Doug Schaefer: What makes a good C++ IDE?</title>
+	<guid isPermaLink="false">https://cdtdoug.ca/tag/eclipse/rss/5a6d3cee3ad93a43a56d3ae4</guid>
+	<link>https://cdtdoug.ca/what-makes-a-good-c-ide/</link>
+	<description>&lt;div class=&quot;kg-card-markdown&quot;&gt;&lt;img alt=&quot;What makes a good C++ IDE?&quot; src=&quot;https://cdtdoug.ca/content/images/2018/01/cdt_screenshot.png&quot; /&gt;&lt;p&gt;When I started working on C code many years ago, I was a big fan of emacs. It didn't have the weird modes that vi did. You just typed and code showed up. emacs has a rich extension system, if you don't mind writing LISP code, and soon we had fancy features such as running builds and navigating through compile errors. There's even a gdb integration that gives you what you need to debug your program. And then along came ctags and we started getting source navigation.&lt;/p&gt;
+&lt;p&gt;But what was good for C started to fade with C++. We also started bringing in code coverage and profiling tools and even modeling and code generation tools. Simple editors like emacs couldn't keep up. We needed much more powerful platforms that provided a richer environment for tools as well as the promise of standard interfaces that allowed us to integrate tools to provide functionality greater than the whole. The IDE was born.&lt;/p&gt;
+&lt;p&gt;But somewhere along the way it seems we failed. We didn't provide enough value that warranted the opinionated structures that IDEs enforce that enable the standard APIs to work. As I've stated many times, we have paid dearly with Eclipse trying to force C/C++ projects into the Eclipse resource system. What is a project in C/C++ world? Are projects the root of a recursive make tree, or the individual nodes that represent executable things and libraries? Neither works well, especially in complex systems embedded systems developers are building.&lt;/p&gt;
+&lt;p&gt;So after years of trying to convert die hards and working hard to support those who want to use our IDEs, we need to take a step back try again. Get back to emacs, or more modern editors like Visual Studio Code, and see how we can bring our users forward again. This time we need to do it in a way that doesn't enforce a paradigm on them yet provides a path back towards the valuable features we can provide through integration.&lt;/p&gt;
+&lt;p&gt;Anyway, that was a long preamble towards the real topic of this post, remembering what made CDT successful and providing at least that first step forward. What is the minimal feature set that meets expectations of today's developers. As I was using Visual Studio Code to hack Visual Studio Code, you get a real sense of what that is. You also get a good sense at what's missing from these editors.&lt;/p&gt;
+&lt;p&gt;First of all is source navigation, being able to control click to find definitions of symbols and to be able to search for references to them. And, of course, along with that comes content assist. I spent most of my early years on CDT figuring out how to do this properly and quickly. For those that remember, the quickly took a long time and in the end exchanging perfect answers for speed was our path to success. To make this work we hand built C and C++ parsers that referenced a symbol database called the index. You also need to know the toolchain and build system to know how the code is built to do a reasonable job at it. Integration with the build system is a must.&lt;/p&gt;
+&lt;p&gt;It's hard to imagine how editors like VS Code can be a good CDT replacement without replicating the magic. I'm not convinced the current front runner clangd and it's use of the clang parser which has perfection as it's number one requirement, will get us there without a lot of hacking. And editors usually don't deal with builds other than to invoke them and give you error navigation to feed it the info it needs.&lt;/p&gt;
+&lt;p&gt;And I'm not even touching on launching where you really need to match build configs with launch configs to make sure launches do what you want. So while editors are all the rage right now because they are lightweight and flexible, users still expect them to more than the editors of old. It will be an interesting challenge for those who go that road to walk that balancing line. If you get it right though, I can imagine a lot of happy users.&lt;/p&gt;
+&lt;/div&gt;</description>
+	<pubDate>Sun, 28 Jan 2018 18:31:34 +0000</pubDate>
+</item>
+<item>
+	<title>Wayne Beaton: Decoding the Eclipse IP Policy: Third Party Dependencies</title>
+	<guid isPermaLink="false">http://waynebeaton.wordpress.com/?p=5424</guid>
+	<link>https://waynebeaton.wordpress.com/2018/01/26/decoding-the-eclipse-ip-policy-third-party-dependencies/</link>
+	<description>&lt;p&gt;&lt;span style=&quot;font-weight: 400;&quot;&gt;The term &lt;/span&gt;&lt;i&gt;&lt;span style=&quot;font-weight: 400;&quot;&gt;Intellectual Property&lt;/span&gt;&lt;/i&gt;&lt;span style=&quot;font-weight: 400;&quot;&gt; (IP) refers to any sort of creative work, be it literature, art, or software. In the realm of open source software, artifacts like source code, documentation, and images are considered intellectual property. Unless otherwise stated, intellectual property is the property of its creator, who may grant permission for others to use that intellectual property by providing a license. &lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;&lt;span style=&quot;font-weight: 400;&quot;&gt;The ease with which software can be copied and combined makes it challenging to know with confidence if content can be used without running into legal issues. Any sort of serious software development effort must be accompanied by a well-defined IP Due Diligence process that can ferret out issues and mitigate the risk of leveraging the work of others. IP Due Diligence is a time consuming process that requires specialized skills and a keen eye for detail.&lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;&lt;span style=&quot;font-weight: 400;&quot;&gt;There are different kinds of content (source code, documentation, images, …) to consider. &lt;/span&gt;&lt;b&gt;&lt;i&gt;Project Code&lt;/i&gt;&lt;/b&gt;&lt;span style=&quot;font-weight: 400;&quot;&gt; is content that is produced and maintained by the open source project committers and contributors. &lt;/span&gt;&lt;b&gt;&lt;i&gt;Third Party Content&lt;/i&gt;&lt;/b&gt;&lt;span style=&quot;font-weight: 400;&quot;&gt; generally takes the form of libraries (modules, components, …), source files, images, or other forms of IP that are produced and maintained outside of the scope of the open source project. To mitigate the risk associated with adopting open source in products, the &lt;/span&gt;&lt;i&gt;&lt;span style=&quot;font-weight: 400;&quot;&gt;Project Code&lt;/span&gt;&lt;/i&gt;&lt;span style=&quot;font-weight: 400;&quot;&gt; and &lt;/span&gt;&lt;i&gt;&lt;span style=&quot;font-weight: 400;&quot;&gt;Third Party Content&lt;/span&gt;&lt;/i&gt;&lt;span style=&quot;font-weight: 400;&quot;&gt; that it leverages need to be vetted to ensure that the copyrights expressed are correct, licensing is valid and compatible, and other issues have been uncovered and properly investigated.&lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;&lt;span style=&quot;font-weight: 400;&quot;&gt;The Eclipse Foundation has a well-defined &lt;a href=&quot;https://www.eclipse.org/org/documents/Eclipse_IP_Policy.pdf&quot;&gt;IP Policy&lt;/a&gt;, corresponding IP Due Diligence Process, and a dedicated team of professional IP specialists who perform the heavy lifting in the due diligence process. Committers, the software developers who decide what will become &lt;/span&gt;&lt;i&gt;&lt;span style=&quot;font-weight: 400;&quot;&gt;Project Code&lt;/span&gt;&lt;/i&gt;&lt;span style=&quot;font-weight: 400;&quot;&gt; and how an Eclipse open source project will leverage &lt;/span&gt;&lt;i&gt;&lt;span style=&quot;font-weight: 400;&quot;&gt;Third Party Content&lt;/span&gt;&lt;/i&gt;&lt;span style=&quot;font-weight: 400;&quot;&gt;, are responsible for bringing IP issues to the attention of the Eclipse IP Team.&lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;&lt;span style=&quot;font-weight: 400;&quot;&gt;Most of the &lt;/span&gt;&lt;i&gt;&lt;span style=&quot;font-weight: 400;&quot;&gt;Project Code&lt;/span&gt;&lt;/i&gt;&lt;span style=&quot;font-weight: 400;&quot;&gt; produced by committers can just be pushed into a project repository without any sort of legal review. However, at least in some cases, the IP Team needs to be engaged to review &lt;/span&gt;&lt;i&gt;&lt;span style=&quot;font-weight: 400;&quot;&gt;Project Code&lt;/span&gt;&lt;/i&gt;&lt;span style=&quot;font-weight: 400;&quot;&gt; that comes from contributors (who are not committers); and there are some cases where even the work of committers needs to be reviewed. I’ll discuss &lt;/span&gt;&lt;i&gt;&lt;span style=&quot;font-weight: 400;&quot;&gt;Project Code&lt;/span&gt;&lt;/i&gt;&lt;span style=&quot;font-weight: 400;&quot;&gt; with more detail in a future post.&lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;&lt;span style=&quot;font-weight: 400;&quot;&gt;The sort of effort that the Eclipse IP Team brings to bear on &lt;/span&gt;&lt;i&gt;&lt;span style=&quot;font-weight: 400;&quot;&gt;Third Party Content&lt;/span&gt;&lt;/i&gt;&lt;span style=&quot;font-weight: 400;&quot;&gt; varies depending on the type. The&lt;/span&gt;&lt;a href=&quot;https://www.eclipse.org/org/documents/Eclipse_Policy_and_Procedure_for_3rd_Party_Dependencies_Final.pdf&quot;&gt; &lt;span style=&quot;font-weight: 400;&quot;&gt;Guidelines for the Review of Third Party Dependencies&lt;/span&gt;&lt;/a&gt;&lt;span style=&quot;font-weight: 400;&quot;&gt; defines three different types: &lt;/span&gt;&lt;i&gt;&lt;span style=&quot;font-weight: 400;&quot;&gt;Prerequisite&lt;/span&gt;&lt;/i&gt;&lt;span style=&quot;font-weight: 400;&quot;&gt;, &lt;/span&gt;&lt;i&gt;&lt;span style=&quot;font-weight: 400;&quot;&gt;Exempt Prerequisite&lt;/span&gt;&lt;/i&gt;&lt;span style=&quot;font-weight: 400;&quot;&gt;, and &lt;/span&gt;&lt;i&gt;&lt;span style=&quot;font-weight: 400;&quot;&gt;Works With Dependency&lt;/span&gt;&lt;/i&gt;&lt;span style=&quot;font-weight: 400;&quot;&gt;.&lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;&lt;span style=&quot;font-weight: 400;&quot;&gt;The simplest form of &lt;/span&gt;&lt;i&gt;&lt;span style=&quot;font-weight: 400;&quot;&gt;Third Party Content&lt;/span&gt;&lt;/i&gt;&lt;span style=&quot;font-weight: 400;&quot;&gt; is &lt;/span&gt;&lt;b&gt;&lt;i&gt;Prerequisite&lt;/i&gt;&lt;/b&gt;&lt;i&gt;&lt;span style=&quot;font-weight: 400;&quot;&gt;.&lt;/span&gt;&lt;/i&gt; &lt;i&gt;&lt;span style=&quot;font-weight: 400;&quot;&gt;Prerequisites&lt;/span&gt;&lt;/i&gt;&lt;span style=&quot;font-weight: 400;&quot;&gt; are required by the Eclipse project content to provide core functionality. &lt;/span&gt;&lt;i&gt;&lt;span style=&quot;font-weight: 400;&quot;&gt;Prerequisite&lt;/span&gt;&lt;/i&gt;&lt;span style=&quot;font-weight: 400;&quot;&gt; content is not generally stored in an Eclipse project’s source code repositories, but is likely included in build scripts and referenced as runtime dependencies. Since adopters of Eclipse project content are compelled to adopt the &lt;/span&gt;&lt;i&gt;&lt;span style=&quot;font-weight: 400;&quot;&gt;Prerequisite&lt;/span&gt;&lt;/i&gt;&lt;span style=&quot;font-weight: 400;&quot;&gt; content, that content must also be vetted by the IP Team. The vetting requirement applies recursively: the entire transitive closure of a &lt;/span&gt;&lt;i&gt;&lt;span style=&quot;font-weight: 400;&quot;&gt;Prerequisite’s&lt;/span&gt;&lt;/i&gt;&lt;span style=&quot;font-weight: 400;&quot;&gt; dependencies needs to reviewed (the dependencies of a &lt;/span&gt;&lt;i&gt;&lt;span style=&quot;font-weight: 400;&quot;&gt;Prerequisite&lt;/span&gt;&lt;/i&gt;&lt;span style=&quot;font-weight: 400;&quot;&gt; are themselves &lt;/span&gt;&lt;i&gt;&lt;span style=&quot;font-weight: 400;&quot;&gt;Prerequisites&lt;/span&gt;&lt;/i&gt;&lt;span style=&quot;font-weight: 400;&quot;&gt;).&lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img alt=&quot;prereq&quot; class=&quot;alignnone size-full wp-image-5429 aligncenter&quot; src=&quot;https://waynebeaton.files.wordpress.com/2018/01/prereq.png?w=640&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;span style=&quot;font-weight: 400;&quot;&gt;The transitive closure requirement only applies when an Eclipse project makes a direct reference to &lt;/span&gt;&lt;i&gt;&lt;span style=&quot;font-weight: 400;&quot;&gt;Third Party Content&lt;/span&gt;&lt;/i&gt;&lt;span style=&quot;font-weight: 400;&quot;&gt; (the Eclipse Project Handbook provides some examples of what constitutes a &lt;/span&gt;&lt;a href=&quot;https://www.eclipse.org/projects/handbook/#ip-third-party&quot;&gt;&lt;span style=&quot;font-weight: 400;&quot;&gt;direct reference&lt;/span&gt;&lt;/a&gt;&lt;span style=&quot;font-weight: 400;&quot;&gt;). In the case where an Eclipse project references code from a second Eclipse project that itself references &lt;/span&gt;&lt;i&gt;&lt;span style=&quot;font-weight: 400;&quot;&gt;Prerequisites&lt;/span&gt;&lt;/i&gt;&lt;span style=&quot;font-weight: 400;&quot;&gt;, no further vetting of that chain of &lt;/span&gt;&lt;i&gt;&lt;span style=&quot;font-weight: 400;&quot;&gt;Prerequisite&lt;/span&gt;&lt;/i&gt;&lt;span style=&quot;font-weight: 400;&quot;&gt; content is required (the IP Team will have already vetted it on behalf of the second project team). Eclipse project teams should take care to only reference release versions of other Eclipse projects in their own releases to ensure that the IP process has been completed.&lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img alt=&quot;project&quot; class=&quot;alignnone size-full wp-image-5428 aligncenter&quot; src=&quot;https://waynebeaton.files.wordpress.com/2018/01/project.png?w=640&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;span style=&quot;font-weight: 400;&quot;&gt;When you follow this all the way to the bottom, the entire runtime environment including virtual machines and the operating system are included in the transitive closure of dependencies. Clearly, having the IP team vet virtual machines and operating systems is not a great use of time, and—in the case of closed source operating systems—just not be possible.&lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;&lt;span style=&quot;font-weight: 400;&quot;&gt;The Eclipse IP process guidelines provide for a notion of &lt;/span&gt;&lt;b&gt;&lt;i&gt;Exempt Prerequisite&lt;/i&gt;&lt;/b&gt;&lt;span style=&quot;font-weight: 400;&quot;&gt; dependencies, which are not subject to review. According to the guide, content may be considered exempt if it “is pervasive in nature, expected to be already on the user’s machine, and/or an IP review would be either impossible, impractical, or inadvisable.” The Eclipse IP Team does not review the source code associated with an &lt;/span&gt;&lt;i&gt;&lt;span style=&quot;font-weight: 400;&quot;&gt;Exempt Prerequisite&lt;/span&gt;&lt;/i&gt;&lt;span style=&quot;font-weight: 400;&quot;&gt;.&lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;&lt;span style=&quot;font-weight: 400;&quot;&gt;One of the key aspects of an &lt;/span&gt;&lt;i&gt;&lt;span style=&quot;font-weight: 400;&quot;&gt;Exempt Prerequisite&lt;/span&gt;&lt;/i&gt;&lt;span style=&quot;font-weight: 400;&quot;&gt; is that the user or adopter is typically the one that actually installs the software and so is the one who must agree to the licensing terms. Content that is declared an &lt;/span&gt;&lt;i&gt;&lt;span style=&quot;font-weight: 400;&quot;&gt;Exempt Prerequisite&lt;/span&gt;&lt;/i&gt;&lt;span style=&quot;font-weight: 400;&quot;&gt; should never be directly distributed by an Eclipse project or otherwise made available without some explicit action from the consumer. &lt;/span&gt;&lt;i&gt;&lt;span style=&quot;font-weight: 400;&quot;&gt;Exempt Prerequisites&lt;/span&gt;&lt;/i&gt;&lt;span style=&quot;font-weight: 400;&quot;&gt; must be approved by the Eclipse Foundation’s Executive Director.&lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;&lt;span style=&quot;font-weight: 400;&quot;&gt;The Eclipse IP process guidelines also define the notion of a &lt;/span&gt;&lt;b&gt;&lt;i&gt;Works With Dependency&lt;/i&gt;&lt;/b&gt;&lt;span style=&quot;font-weight: 400;&quot;&gt; (commonly referred to as a “works with”) that applies in two different cases. Third Party Content may be declared a &lt;/span&gt;&lt;i&gt;&lt;span style=&quot;font-weight: 400;&quot;&gt;Works With Dependency&lt;/span&gt;&lt;/i&gt;&lt;span style=&quot;font-weight: 400;&quot;&gt; when:&lt;/span&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li style=&quot;font-weight: 400;&quot;&gt;&lt;span style=&quot;font-weight: 400;&quot;&gt;the functionality of Eclipse project content is enhanced by the presence of the software, but is otherwise functional and useful without it; or&lt;/span&gt;&lt;/li&gt;
+&lt;li style=&quot;font-weight: 400;&quot;&gt;&lt;span style=&quot;font-weight: 400;&quot;&gt;there are multiple choices and vetting all of them is impractical or impossible.&lt;/span&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;span style=&quot;font-weight: 400;&quot;&gt;A &lt;/span&gt;&lt;i&gt;&lt;span style=&quot;font-weight: 400;&quot;&gt;Works With Dependency&lt;/span&gt;&lt;/i&gt;&lt;span style=&quot;font-weight: 400;&quot;&gt; is, literally, a dependency that the Eclipse &lt;em&gt;Project Code&lt;/em&gt; will &lt;/span&gt;&lt;i&gt;&lt;span style=&quot;font-weight: 400;&quot;&gt;work with&lt;/span&gt;&lt;/i&gt;&lt;span style=&quot;font-weight: 400;&quot;&gt; when it is available. The fundamental requirement is the Eclipse &lt;em&gt;Project Code&lt;/em&gt; must be useful and adoptable without the &lt;/span&gt;&lt;i&gt;&lt;span style=&quot;font-weight: 400;&quot;&gt;Works With Dependency&lt;/span&gt;&lt;/i&gt;&lt;span style=&quot;font-weight: 400;&quot;&gt;. That is, either the &lt;em&gt;Project Code&lt;/em&gt; provides useful functionality without the &lt;/span&gt;&lt;i&gt;&lt;span style=&quot;font-weight: 400;&quot;&gt;Works With Dependency&lt;/span&gt;&lt;/i&gt;&lt;span style=&quot;font-weight: 400;&quot;&gt; or the &lt;/span&gt;&lt;i&gt;&lt;span style=&quot;font-weight: 400;&quot;&gt;Works With Dependency&lt;/span&gt;&lt;/i&gt;&lt;span style=&quot;font-weight: 400;&quot;&gt; is a suitable alternative for a &lt;/span&gt;&lt;i&gt;&lt;span style=&quot;font-weight: 400;&quot;&gt;Prerequisite&lt;/span&gt;&lt;/i&gt;&lt;span style=&quot;font-weight: 400;&quot;&gt;.&lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;&lt;span style=&quot;font-weight: 400;&quot;&gt;It’s enough to just register the use of &lt;/span&gt;&lt;i&gt;&lt;span style=&quot;font-weight: 400;&quot;&gt;Works With Dependency&lt;/span&gt;&lt;/i&gt;&lt;span style=&quot;font-weight: 400;&quot;&gt; without seeking IP Team approval for its dependencies. The consumer is responsible for making that content available and otherwise agreeing to the terms for that content.&lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img alt=&quot;workswith&quot; class=&quot;alignnone size-full wp-image-5432&quot; src=&quot;https://waynebeaton.files.wordpress.com/2018/01/workswith2.png?w=640&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;span style=&quot;font-weight: 400;&quot;&gt;As with an &lt;/span&gt;&lt;i&gt;&lt;span style=&quot;font-weight: 400;&quot;&gt;Exempt Prerequisite&lt;/span&gt;&lt;/i&gt;&lt;span style=&quot;font-weight: 400;&quot;&gt;, a &lt;/span&gt;&lt;i&gt;&lt;span style=&quot;font-weight: 400;&quot;&gt;Works With Dependency&lt;/span&gt;&lt;/i&gt;&lt;span style=&quot;font-weight: 400;&quot;&gt; should never be directly distributed or otherwise made available without some explicit action from the consumer. &lt;/span&gt;&lt;i&gt;&lt;span style=&quot;font-weight: 400;&quot;&gt;Works With Dependencies&lt;/span&gt;&lt;/i&gt;&lt;span style=&quot;font-weight: 400;&quot;&gt; must be approved by the Eclipse project’s &lt;/span&gt;&lt;i&gt;&lt;span style=&quot;font-weight: 400;&quot;&gt;Project Management Committee&lt;/span&gt;&lt;/i&gt;&lt;span style=&quot;font-weight: 400;&quot;&gt;.&lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;&lt;span style=&quot;font-weight: 400;&quot;&gt;As an example, if Eclipse &lt;em&gt;Project Code&lt;/em&gt; will make use of a specific database implementation when it is available, but otherwise provides useful functionality when that database is not present, that database may be a &lt;/span&gt;&lt;i&gt;&lt;span style=&quot;font-weight: 400;&quot;&gt;Works With Dependency&lt;/span&gt;&lt;/i&gt;&lt;span style=&quot;font-weight: 400;&quot;&gt;. If, however, a specific database &lt;strong&gt;must&lt;/strong&gt; be available for the Eclipse &lt;em&gt;Project Code&lt;/em&gt; to provide any sort of core functionality, then that database is likely a &lt;/span&gt;&lt;i&gt;&lt;span style=&quot;font-weight: 400;&quot;&gt;Prerequisite&lt;/span&gt;&lt;/i&gt;&lt;span style=&quot;font-weight: 400;&quot;&gt; which must be fully vetted. Or, if the &lt;em&gt;Project Code&lt;/em&gt; must have access to some database, then the IP process requires that at least one specific database be fully vetted as a &lt;/span&gt;&lt;i&gt;&lt;span style=&quot;font-weight: 400;&quot;&gt;Prerequisite&lt;/span&gt;&lt;/i&gt;&lt;span style=&quot;font-weight: 400;&quot;&gt; and other options can be declared as &lt;/span&gt;&lt;i&gt;&lt;span style=&quot;font-weight: 400;&quot;&gt;Works With Dependencies&lt;/span&gt;&lt;/i&gt;&lt;span style=&quot;font-weight: 400;&quot;&gt;.&lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;&lt;span style=&quot;font-weight: 400;&quot;&gt;Eclipse committers engage the Eclipse IP Process is by filing a&lt;/span&gt;&lt;a href=&quot;https://www.eclipse.org/projects/handbook/#ip-cq&quot;&gt; &lt;b&gt;&lt;i&gt;Contribution Questionnaire&lt;/i&gt;&lt;/b&gt;&lt;/a&gt;&lt;span style=&quot;font-weight: 400;&quot;&gt; (which is commonly referred to as a &lt;/span&gt;&lt;i&gt;&lt;span style=&quot;font-weight: 400;&quot;&gt;CQ&lt;/span&gt;&lt;/i&gt;&lt;span style=&quot;font-weight: 400;&quot;&gt;). Committers can find a link to create a CQ on their&lt;/span&gt;&lt;a href=&quot;https://www.eclipse.org/projects/handbook/#pmi-project-page&quot;&gt; &lt;span style=&quot;font-weight: 400;&quot;&gt;project page&lt;/span&gt;&lt;/a&gt;&lt;span style=&quot;font-weight: 400;&quot;&gt; in the Eclipse&lt;/span&gt;&lt;a href=&quot;https://www.eclipse.org/projects/handbook/#pmi&quot;&gt; &lt;span style=&quot;font-weight: 400;&quot;&gt;Project Management Infrastructure&lt;/span&gt;&lt;/a&gt;&lt;span style=&quot;font-weight: 400;&quot;&gt; (PMI).&lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;&lt;span style=&quot;font-weight: 400;&quot;&gt;As always, if you’re just not sure… &lt;a href=&quot;mailto:emo@eclipse.org&quot;&gt;ask&lt;/a&gt;. We’re here to help.&lt;/span&gt;&lt;/p&gt;</description>
+	<pubDate>Fri, 26 Jan 2018 17:41:37 +0000</pubDate>
+</item>
+<item>
+	<title>Roxanne Joncas: IoT Developer Survey 2018</title>
+	<guid isPermaLink="false">https://medium.com/p/a3dd189f7cc8</guid>
+	<link>https://medium.com/@roxanne.iot/iot-developer-survey-2018-a3dd189f7cc8?source=rss-82f8afd3e513------2</link>
+	<description>&lt;figure&gt;&lt;a href=&quot;https://www.surveymonkey.de/r/IOTRJ&quot;&gt;&lt;img alt=&quot;&quot; src=&quot;https://cdn-images-1.medium.com/max/700/1*3VqkXyWs1NHhfC2yk2iiOQ.png&quot; /&gt;&lt;/a&gt;Complete the survey :)&lt;/figure&gt;&lt;p&gt;The fourth &lt;a href=&quot;https://www.surveymonkey.de/r/IOTRJ&quot;&gt;IoT Developer Survey&lt;/a&gt; is now open and ready to receive your responses! It’s a great resource to find out what’s going on in the world of IoT and to watch it change year to year.&lt;/p&gt;&lt;p&gt;Dear IoT enthusiasts, please take 10 minutes to &lt;a href=&quot;https://www.surveymonkey.de/r/IOTRJ&quot;&gt;complete the survey&lt;/a&gt; all the way to the end :) I’m posting this on a Friday — so I am basically giving you a way to procrastinate!&lt;/p&gt;&lt;p&gt;While you’re at it, look at the results from previous years:&lt;/p&gt;&lt;ul&gt;&lt;li&gt;&lt;a href=&quot;https://www.slideshare.net/IanSkerrett/iot-developer-survey-2017&quot;&gt;2017&lt;/a&gt;&lt;/li&gt;&lt;li&gt;&lt;a href=&quot;https://www.slideshare.net/IanSkerrett/iot-developer-survey-2016&quot;&gt;2016&lt;/a&gt;&lt;/li&gt;&lt;li&gt;&lt;a href=&quot;https://www.slideshare.net/IanSkerrett/iot-developer-survey-2015&quot;&gt;2015&lt;/a&gt;&lt;/li&gt;&lt;/ul&gt;&lt;img height=&quot;1&quot; src=&quot;https://medium.com/_/stat?event=post.clientViewed&amp;amp;referrerSource=full_rss&amp;amp;postId=a3dd189f7cc8&quot; width=&quot;1&quot; /&gt;</description>
+	<pubDate>Fri, 26 Jan 2018 14:16:11 +0000</pubDate>
+</item>
+<item>
+	<title>Benjamin Cabe: Eclipse IoT Day is coming to the Bay Area – Submit a talk now!</title>
+	<guid isPermaLink="false">https://blog.benjamin-cabe.com/?p=3099</guid>
+	<link>http://feedproxy.google.com/~r/benjamin-cabe-planet-eclipse/~3/wBYb_wyG06Q/eclipse-iot-day-coming-bay-area-submit-talk-now</link>
+	<description>&lt;p&gt;&lt;a href=&quot;https://iot.eclipse.org/eclipse-iot-day-santa-clara-2018/&quot; rel=&quot;noopener&quot; target=&quot;_blank&quot;&gt;Eclipse IoT Day is coming to the Bay Area on May 14, 2018&lt;/a&gt;, and I really hope you will be joining us!&lt;/p&gt;
+&lt;h2&gt;&lt;/h2&gt;
+&lt;p&gt;&lt;a href=&quot;https://goo.gl/forms/L0znMdW1zOiAwu2w1&quot;&gt;&lt;img alt=&quot;&quot; class=&quot;size-large wp-image-3104 aligncenter&quot; height=&quot;237&quot; src=&quot;https://blog.benjamin-cabe.com/wp-content/uploads/2018/01/DT1BdFjWkAIfzKq-1024x512.png&quot; width=&quot;474&quot; /&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;We have opened a &lt;a href=&quot;https://goo.gl/forms/L0znMdW1zOiAwu2w1&quot; rel=&quot;noopener&quot; target=&quot;_blank&quot;&gt;Call for Papers&lt;/a&gt; that will end on Feb 15th – so you have about 3 weeks to submit your talk!&lt;/p&gt;
+&lt;p&gt;If you are considering submitting a talk but are not sure whether it would be a good fit, here are some of the reasons why it would totally be &lt;img alt=&quot;🙂&quot; class=&quot;wp-smiley&quot; src=&quot;https://s.w.org/images/core/emoji/2.3/72x72/1f642.png&quot; style=&quot;height: 1em;&quot; /&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;You are &lt;strong&gt;building&lt;/strong&gt; an IoT solution that is based on open source software and Eclipse IoT components, and want to share some of the lessons learned along the way, the things you wished would be available as part of the open source IoT community&lt;/li&gt;
+&lt;li&gt;You are &lt;strong&gt;contributing&lt;/strong&gt; to an Eclipse IoT project and want to provide an update on the overall roadmap,&lt;/li&gt;
+&lt;li&gt;You care about &lt;strong&gt;open standards&lt;/strong&gt;, &lt;strong&gt;interoperability&lt;/strong&gt;, &lt;strong&gt;security&lt;/strong&gt;, &lt;strong&gt;edge computing&lt;/strong&gt;, … and want to share your expertise and network with the attendees of the IoT Day.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Please don’t wait and &lt;a href=&quot;https://goo.gl/forms/L0znMdW1zOiAwu2w1&quot; rel=&quot;noopener&quot; target=&quot;_blank&quot;&gt;submit your talk&lt;/a&gt; today!  For what it’s worth I will be more than happy to &lt;a href=&quot;https://blog.benjamin-cabe.com/contact&quot;&gt;chat with you&lt;/a&gt; if you need feedback regarding your session idea.&lt;/p&gt;
+ &lt;p&gt;The post &lt;a href=&quot;https://blog.benjamin-cabe.com/2018/01/25/eclipse-iot-day-coming-bay-area-submit-talk-now&quot; rel=&quot;nofollow&quot;&gt;Eclipse IoT Day is coming to the Bay Area – Submit a talk now!&lt;/a&gt; appeared first on &lt;a href=&quot;https://blog.benjamin-cabe.com&quot; rel=&quot;nofollow&quot;&gt;Benjamin Cabé&lt;/a&gt;.&lt;/p&gt;
+&lt;img alt=&quot;&quot; height=&quot;1&quot; src=&quot;http://feeds.feedburner.com/~r/benjamin-cabe-planet-eclipse/~4/wBYb_wyG06Q&quot; width=&quot;1&quot; /&gt;</description>
+	<pubDate>Thu, 25 Jan 2018 17:44:55 +0000</pubDate>
+</item>
+<item>
+	<title>Eclipse Announcements: Eclipse Newsletter | Coming in 2018</title>
+	<guid isPermaLink="true">http://feedproxy.google.com/~r/eclipse/fnews/~3/8WotbdxFrMg/</guid>
+	<link>http://feedproxy.google.com/~r/eclipse/fnews/~3/8WotbdxFrMg/</link>
+	<description>What's coming to the Eclipse Community in 2018? Read the newsletter to find out!&lt;img alt=&quot;&quot; height=&quot;1&quot; src=&quot;http://feeds.feedburner.com/~r/eclipse/fnews/~4/8WotbdxFrMg&quot; width=&quot;1&quot; /&gt;</description>
+	<pubDate>Thu, 25 Jan 2018 15:30:00 +0000</pubDate>
+</item>
+<item>
+	<title>Ian Skerrett: Last Day at the Eclipse Foundation</title>
+	<guid isPermaLink="false">http://ianskerrett.wordpress.com/?p=4456</guid>
+	<link>http://feedproxy.google.com/~r/IanSkerrett/~3/iVIxX4QuH6E/</link>
+	<description>&lt;p&gt;This is my last day at the Eclipse Foundation. If you missed my earlier post, I have &lt;a href=&quot;https://ianskerrett.wordpress.com/2018/01/04/time-for-a-new-challenge/&quot;&gt;resigned from the Foundation&lt;/a&gt; and am starting to look for new opportunities.&lt;/p&gt;
+&lt;p&gt;Thank you to everyone in the Eclipse community for making my time with the Foundation an amazing experience. It is the people that make a community. I will definitely miss the people in the Eclipse community.&lt;/p&gt;
+&lt;p&gt;My plan is to stop posting to this blog. I’ve always wanted to &lt;a href=&quot;https://medium.com/@iskerrett/&quot;&gt;start on medium&lt;/a&gt; so now seems like a good time. I will continue to be active on &lt;a href=&quot;https://twitter.com/IanSkerrett&quot;&gt;Twitter&lt;/a&gt; and &lt;a href=&quot;https://www.linkedin.com/in/ianskerrett/&quot;&gt;LinkedIn&lt;/a&gt;. I hope we meet again soon.&lt;/p&gt;
+&lt;p&gt;#Onward&lt;/p&gt;
+&lt;p&gt; &lt;/p&gt;
+&lt;img alt=&quot;&quot; height=&quot;1&quot; src=&quot;http://feeds.feedburner.com/~r/IanSkerrett/~4/iVIxX4QuH6E&quot; width=&quot;1&quot; /&gt;</description>
+	<pubDate>Thu, 25 Jan 2018 15:28:21 +0000</pubDate>
+</item>
+<item>
+	<title>InfoQ Eclipse feed: Article: JPA 2.2 Brings Some Highly Anticipated Changes</title>
+	<guid isPermaLink="true">http://www.infoq.com/articles/JPA-2.2-Brings-Highly-Anticipated-Changes?utm_campaign=infoq_content&amp;utm_source=infoq&amp;utm_medium=feed&amp;utm_term=Eclipse</guid>
+	<link>http://www.infoq.com/articles/JPA-2.2-Brings-Highly-Anticipated-Changes?utm_campaign=infoq_content&amp;utm_source=infoq&amp;utm_medium=feed&amp;utm_term=Eclipse</link>
+	<description>&lt;img src=&quot;https://res.infoq.com/articles/JPA-2.2-Brings-Highly-Anticipated-Changes/en/smallimage/java-logo-1516663617190.jpeg&quot; /&gt;&lt;p&gt;Released this past summer, JPA 2.2 delivered some frequently requested enhancements, especially by providing better alignment with Java 8 features, such as support for the Date and Time API and the retrieval of a query result as a Stream.
+&lt;/p&gt; &lt;i&gt;By Thorben Janssen&lt;/i&gt;</description>
+	<pubDate>Thu, 25 Jan 2018 13:00:00 +0000</pubDate>
+</item>
+<item>
+	<title>Eclipse Announcements: Launching IoT Developer Survey 2018</title>
+	<guid isPermaLink="true">http://feedproxy.google.com/~r/eclipse/fnews/~3/utBMUYA-QH4/iotdevsurvey2018.php</guid>
+	<link>http://feedproxy.google.com/~r/eclipse/fnews/~3/utBMUYA-QH4/iotdevsurvey2018.php</link>
+	<description>We are pleased to launch the fourth annual IoT Developer Survey! Complete the survey today.&lt;img alt=&quot;&quot; height=&quot;1&quot; src=&quot;http://feeds.feedburner.com/~r/eclipse/fnews/~4/utBMUYA-QH4&quot; width=&quot;1&quot; /&gt;</description>
+	<pubDate>Wed, 24 Jan 2018 09:27:00 +0000</pubDate>
+</item>
+<item>
+	<title>Mike Milinkovich: EE4J: Current Status and What’s Next</title>
+	<guid isPermaLink="false">http://mmilinkov.wordpress.com/?p=1424</guid>
+	<link>https://mmilinkov.wordpress.com/2018/01/23/ee4j-current-status-and-whats-next/</link>
+	<description>&lt;p&gt;&lt;span style=&quot;font-weight: 400;&quot;&gt;There is a lot going on as Java EE continues its migration to the Eclipse Foundation. Since there are so many parallel threads, I thought it would be a good idea to recap where we are, and what is coming up in the next few weeks.&lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;&lt;span style=&quot;font-weight: 400;&quot;&gt;First off, we are continuing to work on arriving at a new brand name. Last week the PMC provided the Eclipse Foundation with a potential list of names, and we are running trademark reviews to see if we believe that they can be properly secured. Obviously, we need to have a high degree of confidence that we can freely use the name around the world if we are going to use it to replace some as well known as Java EE. Once we have a short list of potentials we will be starting a community vote to help arrive at a final choice.&lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;&lt;span style=&quot;font-weight: 400;&quot;&gt;Secondly, the code is moving from the existing Oracle-led Java EE organization on GitHub into EE4J. The first nine projects which were proposed have all been created and provisioned, and the code is being moved into them as we speak. The next step on this front will be to propose the next round of projects to move next. As I understand it, the Oracle team will be proposing the JSON-B API and JavaMail projects next.&lt;/span&gt;&lt;b&gt; &lt;/b&gt;Soon after will come JAX-B, JAX-WS, JSTL, UEL, JAF, Security, JTA, Enterprise Management, Concurrency, and Common Annotations. &lt;span style=&quot;font-weight: 400;&quot;&gt;Everyone involved strongly believes that a key factor in the success of this entire migration is the rapid creation of a diverse and engaged open source community around this code, so we are moving as rapidly as possible to get these projects up and running. &lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;&lt;span style=&quot;font-weight: 400;&quot;&gt;We want to demonstrate to the world that these projects are capable of shipping. Therefore the short-term objective is to have the EE4J project ship a Java EE 8-compliant release as quickly as possible: i.e. a Java EE 8 certified release of Eclipse Glassfish and related projects. There are a couple of positive reasons for doing this:&lt;/span&gt;&lt;/p&gt;
+&lt;ol&gt;
+&lt;li style=&quot;font-weight: 400;&quot;&gt;&lt;span style=&quot;font-weight: 400;&quot;&gt;It demonstrates that the EE4J projects are fully functional as open source projects, and that they and the PMC can run through the full process of a release under the auspices of the Eclipse Foundation and the Eclipse Development Process.&lt;/span&gt;&lt;/li&gt;
+&lt;li style=&quot;font-weight: 400;&quot;&gt;&lt;span style=&quot;font-weight: 400;&quot;&gt;It gets downloadable code that users and adopters can access and run from EE4J as quickly as possible. Creating an ecosystem of developers and companies using this code is important, and the sooner we start the better.&lt;/span&gt;&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;&lt;span style=&quot;font-weight: 400;&quot;&gt;A comment on the API projects that are moving over: several have asked on the mailing lists if the fact that the source has moved means that we can start changing the APIs directly in the EE4J projects. The short answer is “please, not quite yet”. There are several reasons for that: &lt;/span&gt;&lt;/p&gt;
+&lt;ol&gt;
+&lt;li style=&quot;font-weight: 400;&quot;&gt;&lt;span style=&quot;font-weight: 400;&quot;&gt;We want to focus in the short term on shipping an EE 8 compliant release. So the fewer moving parts while we’re doing that, the better. &lt;/span&gt;&lt;/li&gt;
+&lt;li style=&quot;font-weight: 400;&quot;&gt;&lt;span style=&quot;font-weight: 400;&quot;&gt;There is going to be a new spec process that is going to be managing the evolution of these APIs in the future, and it hasn’t been set up yet. &lt;/span&gt;&lt;/li&gt;
+&lt;li style=&quot;font-weight: 400;&quot;&gt;&lt;span style=&quot;font-weight: 400;&quot;&gt;As has been discussed in several venues, this new spec process is going to be bootstrapped with some rules around the continued use of the javax namespace. We’re still working on what those rules are. &lt;/span&gt;&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;&lt;span style=&quot;font-weight: 400;&quot;&gt;In the meantime if you really want to start prototyping some new APIs you are always free to fork the repos on GitHub. &lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;&lt;span style=&quot;font-weight: 400;&quot;&gt;Finally, we are working on establishing an Eclipse Foundation working group to provide a member-driven governance model for the EE4J community. Working groups are consortia which complement the Eclipse open source projects. Community-driven open source projects are great for a lot of things, but don’t do well with business and ecosystem topics such as marketing, developer outreach, branding, specifications, compliance programs, and the like. The first step in creating a working group is to write its core governance charter. We hope to have a draft of that available for review by the end of the month as well. My next blog post will provide some additional information and background on that topic.&lt;/span&gt;&lt;/p&gt;</description>
+	<pubDate>Tue, 23 Jan 2018 17:48:29 +0000</pubDate>
+</item>
+<item>
+	<title>InfoQ Eclipse feed: EE4J Code Begins the Journey to Open Source</title>
+	<guid isPermaLink="true">http://www.infoq.com/news/2018/01/EE4JCodeArrives?utm_campaign=infoq_content&amp;utm_source=infoq&amp;utm_medium=feed&amp;utm_term=Eclipse</guid>
+	<link>http://www.infoq.com/news/2018/01/EE4JCodeArrives?utm_campaign=infoq_content&amp;utm_source=infoq&amp;utm_medium=feed&amp;utm_term=Eclipse</link>
+	<description>&lt;img src=&quot;http://www.infoq.com/styles/i/logo_bigger.jpg&quot; /&gt;&lt;p&gt;Enterprise Java source code is beginning the Open Source journey to the Eclipse EE4J project&lt;/p&gt; &lt;i&gt;By Tim Hodkinson&lt;/i&gt;</description>
+	<pubDate>Mon, 22 Jan 2018 15:40:00 +0000</pubDate>
+</item>
+<item>
+	<title>Mike Milinkovich: Eclipse Community Directions for 2018</title>
+	<guid isPermaLink="false">http://mmilinkov.wordpress.com/?p=1422</guid>
+	<link>https://mmilinkov.wordpress.com/2018/01/22/eclipse-community-directions-for-2018/</link>
+	<description>&lt;p&gt;&lt;span style=&quot;font-weight: 400;&quot;&gt;As 2018 begins I would like to share a few thoughts on where I think the Eclipse community is heading.  I am looking forward to an incredibly busy year for myself, the staff of the Eclipse Foundation, and our community, because this is going to be a year of tremendous growth and opportunity. I will try to give a brief overview of what I see as some of the exciting things that are going on at the Eclipse Foundation. I am sure that I will miss some, so apologies in advance!&lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;&lt;span style=&quot;font-weight: 400;&quot;&gt;Of course the big news of the past few months was the&lt;/span&gt;&lt;a href=&quot;https://blogs.oracle.com/theaquarium/opening-up-ee-update&quot;&gt; &lt;span style=&quot;font-weight: 400;&quot;&gt;announcement by Oracle&lt;/span&gt;&lt;/a&gt;&lt;span style=&quot;font-weight: 400;&quot;&gt; that Java EE is going to be moving to the Eclipse Foundation. This represents the largest single contribution to the Eclipse community since — well, the original Eclipse IDE project in 2001. It is approximately 35 new projects, hundreds of new committers and contributors, and millions of lines of code. It is and was an incredible endorsement of the Eclipse Foundation’s mission as the leading organization for individuals and companies to collaborate on commercial-friendly open source software. Since the announcement in September, we have created the new Eclipse Enterprise for Java (EE4J) top-level project, and source code is starting to move into the projects. During 2018 our collective mission will be to create a functioning and successful community around this code, pick a new brand to replace Java EE going forward, ship a release compatible with Java EE 8, open source the Java EE TCKs, and establish a new specification process to shape the future of cloud native Java. I feel out of breath just thinking of it.&lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;&lt;span style=&quot;font-weight: 400;&quot;&gt;But in addition to this Java EE work, it is clear that the Eclipse Foundation is now playing a pivotal role in the future of the Java ecosystem. Projects such as&lt;/span&gt;&lt;a href=&quot;http://microprofile.io/&quot;&gt; &lt;span style=&quot;font-weight: 400;&quot;&gt;Eclipse MicroProfile&lt;/span&gt;&lt;/a&gt;&lt;span style=&quot;font-weight: 400;&quot;&gt; (microservices for Java),&lt;/span&gt;&lt;a href=&quot;https://www.eclipse.org/openj9/&quot;&gt; &lt;span style=&quot;font-weight: 400;&quot;&gt;Eclipse OpenJ9&lt;/span&gt;&lt;/a&gt;&lt;span style=&quot;font-weight: 400;&quot;&gt; (Java virtual machine),&lt;/span&gt;&lt;a href=&quot;https://projects.eclipse.org/projects/technology.deeplearning4j&quot;&gt; &lt;span style=&quot;font-weight: 400;&quot;&gt;Eclipse DeepLearning4J&lt;/span&gt;&lt;/a&gt;&lt;span style=&quot;font-weight: 400;&quot;&gt; (machine learning),&lt;/span&gt;&lt;a href=&quot;https://www.eclipse.org/collections/&quot;&gt; &lt;span style=&quot;font-weight: 400;&quot;&gt;Eclipse Collections&lt;/span&gt;&lt;/a&gt;&lt;span style=&quot;font-weight: 400;&quot;&gt; (highly scalable collections),&lt;/span&gt;&lt;a href=&quot;https://projects.eclipse.org/projects/technology.jnosql&quot;&gt; &lt;span style=&quot;font-weight: 400;&quot;&gt;Eclipse JNoSQL&lt;/span&gt;&lt;/a&gt;&lt;span style=&quot;font-weight: 400;&quot;&gt; (NoSQL for Java EE) and&lt;/span&gt;&lt;a href=&quot;http://vertx.io/&quot;&gt; &lt;span style=&quot;font-weight: 400;&quot;&gt;Eclipse Vert.x&lt;/span&gt;&lt;/a&gt;&lt;span style=&quot;font-weight: 400;&quot;&gt; (reactive apps for Java) are leading the next generation of Java innovation.&lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;&lt;span style=&quot;font-weight: 400;&quot;&gt;From the Eclipse Science community comes&lt;/span&gt;&lt;a href=&quot;https://projects.eclipse.org/projects/science.xacc&quot;&gt; &lt;span style=&quot;font-weight: 400;&quot;&gt;Eclipse XACC&lt;/span&gt;&lt;/a&gt;&lt;span style=&quot;font-weight: 400;&quot;&gt;, which I believe is the world’s first community-led open source project in the new field of quantum computing. Originating from Oak Ridge National Laboratory, XACC is working to integrate quantum processors with the high-performance computing environments that are the backbone of modern scientific computing. It will be exciting to see XACC ship its first release in 2018, and to support its desire to create an open collaboration to shape the next generation of computing hardware and programming paradigms.&lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;&lt;span style=&quot;font-weight: 400;&quot;&gt;The Eclipse IoT community has been a significant growth area within the Eclipse community over the past couple of years. In 2017 Eclipse IoT grew to over 25 projects, and is attracting a substantial developer and corporate community.. It is also a terrifically ambitious group, with a&lt;/span&gt;&lt;a href=&quot;https://iot.eclipse.org/resources/white-papers/Eclipse%20IoT%20White%20Paper%20-%20The%20Three%20Software%20Stacks%20Required%20for%20IoT%20Architectures.pdf&quot;&gt; &lt;span style=&quot;font-weight: 400;&quot;&gt;vision of providing technology stacks&lt;/span&gt;&lt;/a&gt;&lt;span style=&quot;font-weight: 400;&quot;&gt; that span the smallest of constrained devices, through device gateways, to cloud-scale data collection and management runtimes. Late in 2017 the group published a&lt;/span&gt;&lt;a href=&quot;https://iot.eclipse.org/resources/white-papers/Eclipse%20IoT%20White%20Paper%20-%20Open%20Source%20Software%20for%20Industry%204.0.pdf&quot;&gt; &lt;span style=&quot;font-weight: 400;&quot;&gt;white paper&lt;/span&gt;&lt;/a&gt;&lt;span style=&quot;font-weight: 400;&quot;&gt; on the role that open source will play in Industry 4.0, or industrial IoT. This white paper is important because in many ways it sets out the vision for the group, which has been primarily focused on industrial IoT. In 2018 the primary goal for Eclipse IoT is to start shipping these stacks rather than simply projects. In other words, to create cross-project collaborations that provide IoT adopters with more complete solutions rather than individual building blocks. This will go a long way to paving the way for broad industry adoption of these open source IoT technologies.&lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;&lt;span style=&quot;font-weight: 400;&quot;&gt;Finally, a word on developer tools — the Eclipse Foundation’s original franchise. I noticed recently that according to at least&lt;/span&gt;&lt;a href=&quot;http://pypl.github.io/IDE.html&quot;&gt; &lt;span style=&quot;font-weight: 400;&quot;&gt;one source&lt;/span&gt;&lt;/a&gt;&lt;span style=&quot;font-weight: 400;&quot;&gt;, the Eclipse IDE is maintaining its position as the #1 IDE in the world, and grew its market share substantially last year. The goal for this year is to continue this trend. In addition, the&lt;/span&gt;&lt;a href=&quot;https://www.eclipse.org/che/&quot;&gt; &lt;span style=&quot;font-weight: 400;&quot;&gt;Eclipse Che&lt;/span&gt;&lt;/a&gt;&lt;span style=&quot;font-weight: 400;&quot;&gt; cloud IDE continues to grow its community and adoption. As more and more developers work on cloud native applications, the appeal of a cloud IDE that works where they do is going to grow. Che is well positioned to be the leader in this space and is the only community-led cloud IDE.&lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;Anyone who has seen me speak over the past couple of years has likely heard me express the idea that the “community is the capacity.” The Eclipse Foundation is a 30 person organization that supports a community of hundred of projects, hundreds of members, thousands of committers and contributors, and millions of users. Whenever I take a moment to reflect on what we accomplish together it is breathtaking. The breadth of the technology that we collectively produce is vast, and our community spans the globe. Equally exciting, engagement continues to grow with a variety of industries notably automotive, power, transportation, etc. interested in leveraging the Eclipse Foundation as the place for open, commercial collaboration.&lt;/p&gt;
+&lt;p&gt;I am incredibly optimistic that 2018 is going to be one of the most exciting years we’ve ever had, so please get involved!&lt;/p&gt;</description>
+	<pubDate>Mon, 22 Jan 2018 13:01:45 +0000</pubDate>
+</item>
+<item>
+	<title>PapyrusUML: Papyrus UML support in Hawk</title>
+	<guid isPermaLink="false">http://papyrusuml.wordpress.com/?p=1069</guid>
+	<link>https://papyrusuml.wordpress.com/2018/01/19/papyrus-uml-support-in-hawk/</link>
+	<description>&lt;p&gt;&lt;img align=&quot;right&quot; alt=&quot;mondo project&quot; height=&quot;25%&quot; src=&quot;https://i2.wp.com/api.ning.com/files/ujcza9N5GbJv7*4sWhEl42fjxvc3NEu8iKexmuwI5d7l0xuxOVoUVOT0aFOsqT8nAnFcZncOVdcnt0UFko9J8WJQ-yWFS5EF/MONDOhoriztag.png&quot; width=&quot;25%&quot; /&gt; The &lt;a href=&quot;http://www.mondo-project.org/&quot; rel=&quot;noopener&quot; target=&quot;_blank&quot;&gt;Mondo  Project&lt;/a&gt;‘s &lt;a href=&quot;https://github.com/mondo-project/mondo-hawk&quot; rel=&quot;noopener&quot; target=&quot;_blank&quot;&gt;mondo-hawk&lt;/a&gt; now supports my models!&lt;/p&gt;
+&lt;p&gt;You can read more about this on their &lt;a href=&quot;https://github.com/mondo-project/mondo-hawk/wiki/Papyrus-UML-support-in-Hawk&quot; rel=&quot;noopener&quot; target=&quot;_blank&quot;&gt;announcement page&lt;/a&gt;!&lt;/p&gt;
+&lt;p&gt;Note that they only index my semantic model (i.e., the “.uml” files) and not the diagrams, which makes sense in their context given that diagrams are not semantic elements.&lt;/p&gt;
+&lt;p&gt;Still, this is so cool!&lt;/p&gt;</description>
+	<pubDate>Fri, 19 Jan 2018 15:00:40 +0000</pubDate>
+</item>
+<item>
+	<title>PapyrusUML: Papyrus has layers (like parfait?)</title>
+	<guid isPermaLink="false">http://papyrusuml.wordpress.com/?p=1064</guid>
+	<link>https://papyrusuml.wordpress.com/2018/01/17/papyrus-has-layers-like-parfait/</link>
+	<description>&lt;p&gt;The Papyrus layers functionality has been in incubation for a while, and some may be wondering what it’s all about:&lt;/p&gt;
+&lt;blockquote&gt;&lt;p&gt;The Layers mechanism allows to build different views of an underlying UML diagrams by applying selections rules as well as graphical transformation operators.&lt;/p&gt;&lt;/blockquote&gt;
+&lt;p&gt;You can read the description of this function in the &lt;a href=&quot;https://wiki.eclipse.org/Papyrus/Oxygen_Work_Description/NewFeature/Layers&quot; rel=&quot;noopener&quot; target=&quot;_blank&quot;&gt;Papyrus Wiki&lt;/a&gt;, and you can also see it in action in this YouTube video:&lt;/p&gt;
+&lt;div class=&quot;jetpack-video-wrapper&quot;&gt;&lt;/div&gt;
+&lt;p&gt; &lt;/p&gt;</description>
+	<pubDate>Wed, 17 Jan 2018 16:17:14 +0000</pubDate>
+</item>
+<item>
+	<title>Chris Aniszczyk: KubeCon CloudNativeCon 2017 Takeaways + 2018 Predictions</title>
+	<guid isPermaLink="false">http://aniszczyk.org/?p=4167</guid>
+	<link>http://aniszczyk.org/2018/01/15/kubecon-cloudnativecon-2017-takeaways-2018-predictions/</link>
+	<description>&lt;p&gt;It was a crazy 2017 for me with 300,000 miles of business travel, but it was all worth it to experience every major cloud provider adopt Kubernetes in some fashion and grow our community to 14 projects total! Also, it was amazing to help host 4000+ people in Austin for &lt;a href=&quot;https://events.linuxfoundation.org/events/kubecon-cloudnativecon-europe-2018/&quot;&gt;KubeCon/CloudNativeCon,&lt;/a&gt; where it actually snowed!&lt;/p&gt;
+&lt;blockquote class=&quot;twitter-tweet&quot;&gt;
+&lt;p dir=&quot;ltr&quot; lang=&quot;en&quot;&gt;&lt;a href=&quot;https://twitter.com/hashtag/KeepAustinWeird?src=hash&amp;amp;ref_src=twsrc%5Etfw&quot;&gt;#KeepAustinWeird&lt;/a&gt;&lt;br /&gt;Today’s surprise: snow and bumping into an old friend, &lt;a href=&quot;https://twitter.com/sabdfl?ref_src=twsrc%5Etfw&quot;&gt;@sabdfl&lt;/a&gt; with &lt;a href=&quot;https://twitter.com/rezgol?ref_src=twsrc%5Etfw&quot;&gt;@rezgol&lt;/a&gt; &lt;a href=&quot;https://twitter.com/hashtag/KubeCon?src=hash&amp;amp;ref_src=twsrc%5Etfw&quot;&gt;#KubeCon&lt;/a&gt; &lt;a href=&quot;https://twitter.com/hashtag/CloudNativeCon?src=hash&amp;amp;ref_src=twsrc%5Etfw&quot;&gt;#CloudNativeCon&lt;/a&gt; &lt;a href=&quot;https://twitter.com/hashtag/austin?src=hash&amp;amp;ref_src=twsrc%5Etfw&quot;&gt;#austin&lt;/a&gt; &lt;a href=&quot;https://t.co/Fs1ykzdFdm&quot;&gt;pic.twitter.com/Fs1ykzdFdm&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;— zahedab (@zahedab) &lt;a href=&quot;https://twitter.com/zahedab/status/939008977282592768?ref_src=twsrc%5Etfw&quot;&gt;December 8, 2017&lt;/a&gt;&lt;/p&gt;&lt;/blockquote&gt;
+&lt;p&gt;&lt;/p&gt;
+&lt;p&gt;I’d like to share some personal take aways I had from the conference (of course with accompanying tweets) that will serve as predictions for 2018:&lt;/p&gt;
+&lt;p&gt;&lt;span style=&quot;font-size: 18px; font-weight: bold;&quot;&gt;Exciting Times for Boring Container Infrastructure!&lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;One of the themes from the conference was that the Kubernetes community was working hard to make infrastructure boring. In my humble opinion, Kubernetes becomes something like “POSIX of the cloud” or “Linux of the Cloud” where Kubernetes is solidifying kernel space but the excitement should be in user space.&lt;/p&gt;
+&lt;blockquote class=&quot;twitter-tweet&quot;&gt;
+&lt;p dir=&quot;ltr&quot; lang=&quot;en&quot;&gt;The power of boring &lt;a href=&quot;https://twitter.com/hashtag/kubecon?src=hash&amp;amp;ref_src=twsrc%5Etfw&quot;&gt;#kubecon&lt;/a&gt; &lt;a href=&quot;https://t.co/x2VuPau6zl&quot;&gt;pic.twitter.com/x2VuPau6zl&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;— Barton George (@barton808) &lt;a href=&quot;https://twitter.com/barton808/status/938800626246537216?ref_src=twsrc%5Etfw&quot;&gt;December 7, 2017&lt;/a&gt;&lt;/p&gt;&lt;/blockquote&gt;
+&lt;p&gt;&lt;/p&gt;
+&lt;p&gt;The &lt;a href=&quot;https://www.opencontainers.org/blog/2017/11/10/oci-update-v1-0-1-release-new-maintainer&quot;&gt;Open Container Initiative (OCI) community&lt;/a&gt; also held a meeting where it celebrated its v1.0 release to make containers a bit more boring and standardized.&lt;/p&gt;
+&lt;p&gt;In 2018, look for the boring infrastructure pattern to continue, the OCI community is planning to make distribution a bit more boring via a &lt;a href=&quot;https://github.com/opencontainers/tob/issues/34&quot;&gt;proposed distribution API specification&lt;/a&gt;. I also predict that some of the specialized/boutique cloud providers who haven’t offered Kubernetes integration will do so finally in 2018.&lt;/p&gt;
+&lt;h4 style=&quot;text-align: left;&quot;&gt;CNCF + KubeCon and CloudNativeCon: Home of Open Infrastructure&lt;/h4&gt;
+&lt;p&gt;CNCF has a &lt;a href=&quot;https://www.cncf.io/projects/&quot;&gt;community of independently governed projects&lt;/a&gt;, as of today which there are 14 of covering all parts of cloud native. There’s &lt;a href=&quot;https://prometheus.io/&quot;&gt;Prometheus&lt;/a&gt; which integrates beautifully with &lt;a href=&quot;https://kubernetes.io&quot;&gt;Kubernetes&lt;/a&gt; but also brings modern monitoring practices to environments outside of cloud native land too! There’s &lt;a href=&quot;https://www.envoyproxy.io/&quot;&gt;Envoy&lt;/a&gt; which is a cloud native edge and proxy, that integrates with Kubernetes through projects like &lt;a href=&quot;https://github.com/heptio/contour&quot;&gt;Contour&lt;/a&gt; or Istio, however, Envoy can be used in any environment where a reverse proxy is used. &lt;a href=&quot;https://grpc.io/&quot;&gt;gRPC&lt;/a&gt; is a universal RPC framework that can help you build services that run on Kubernetes or any environment for that matter! There are many other CNCF projects that have use cases outside of just purely a cloud native environment and we will see more of that usage grow over time to help companies in transition to a cloud native world.&lt;/p&gt;
+&lt;p&gt;In 2018, look for CNCF conferences continue to grow, expand locations (hello China) and truly become the main event for open source infrastructure. In Austin it was incredible to have talks and people from the Ansible to Eclipse to JVM to Openstack to Zephyr communities (and more). I can’t think of any other event that brings together open source infrastructure across all layers of the &lt;a href=&quot;https://github.com/cncf/landscape&quot;&gt;cloud native landscape.&lt;/a&gt;&lt;/p&gt;
+&lt;h4 style=&quot;text-align: left;&quot;&gt;Moving up the Stack: 2018 is Year of Service Meshes&lt;/h4&gt;
+&lt;p&gt;Service meshes are fairly a new concept (I highly recommend this &lt;a href=&quot;https://medium.com/@mattklein123/service-mesh-data-plane-vs-control-plane-2774e720f7fc&quot;&gt;blog post by Matt Klein&lt;/a&gt; if you’re new to the concept) and will become the middleware of the cloud native world. In CNCF, we currently host Envoy and linkerd which helped poineer this space. In 2018, I expect more service mesh related projects to be open sourced along with more participation from traditional networking vendors. We will also see some of the projects in this space to mature with real production usage.&lt;/p&gt;
+&lt;h4 style=&quot;text-align: left;&quot;&gt;Cloud Native AI + Machine Learning: Kubeflow&lt;/h4&gt;
+&lt;p style=&quot;text-align: left;&quot;&gt;In 2018, ML focused workloads and projects will find ways to integrate with Kubernetes to help scale and encourage portability of infrastructure. Just take a look at the &lt;a href=&quot;https://github.com/google/kubeflow&quot;&gt;kubeflow&lt;/a&gt; project which aims to make ML with Kubernetes easy, portable and scalable. Note, this doesn’t mean that AI/ML folks will have to become Kubernetes experts, all this means is that Kubernetes will be powering more AI/ML workloads (and potentially even sharing their existing cloud native infrastructure). I expect more startups to form in this space (see &lt;a href=&quot;https://riseml.com&quot;&gt;RiseML&lt;/a&gt; as an example), look to see a “cloud native” AI movement that focuses on portability of workloads.&lt;/p&gt;
+&lt;p style=&quot;text-align: left;&quot;&gt;&lt;span style=&quot;font-size: 18px; font-weight: bold;&quot;&gt;Developer Experience Focus and Cloud Native Tooling&lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;One of my favorite keynotes from KubeCon was &lt;a href=&quot;https://www.youtube.com/watch?v=gCQfFXSHSxw&quot;&gt;Brendan Burns speaking about metaparticle.io&lt;/a&gt;, a standard library for cloud native applications. I completely agree with his premise that we need to democratize distributed systems development. Not everyone developer needs to know about Kubernetes the same way not every developer needs to understand POSIX. In 2018, we are going to see an explosion of open source “cloud native languages” that will offer multiple approaches to democratizing distributed systems development.&lt;/p&gt;
+&lt;p&gt;Also in 2018, I expect us to see growth in cloud native development environments (IDEs) to provide better developer experience. As an example, for those that were wondering why there was an Eclipse Foundation booth at KubeCon, they were demoing a technology called &lt;a href=&quot;https://www.eclipse.org/che/technology/&quot;&gt;Eclipse Che&lt;/a&gt; which is a cloud native IDE framework (your workspace is composed of docker/container images). Che is a framework that helps you build Cloud Native IDEs too, for example, OpenShift.io is OpenShift integrated with Che to provide you a fully blown online development experience.&lt;/p&gt;
+&lt;p&gt;Finally in 2018, I expect the developer experience of installing Kubernetes applications improved, including the underlying technology for doing so. For example, the &lt;a href=&quot;https://github.com/kubernetes-incubator/service-catalog&quot;&gt;Service Catalog&lt;/a&gt; work and websites like &lt;a href=&quot;https://kubeapps.com/&quot;&gt;kubeapps.com&lt;/a&gt; showcase what is possible in making it easier for people to install Kubernetes app/integrations, we’ll see this grow significantly in 2018. Also I predict that the Helm community will grow faster than it has before.&lt;/p&gt;
+&lt;h4 style=&quot;text-align: left;&quot;&gt;Diversity and Inclusion&lt;/h4&gt;
+&lt;p&gt;One of my favorite take aways from the conference was the focus on diversity and inclusion within our community:&lt;/p&gt;
+&lt;p&gt;https://twitter.com/CloudNativeFdn/status/938435795022745600&lt;/p&gt;
+&lt;p&gt;We (thank you amazing diversity committee) raised $250,000 and helped over 100 diversity scholarship recipients attend KubeCon/CloudNativeCon in Austin. In 2018, I predict and truly hope some other event will match or beat this.&lt;/p&gt;
+&lt;p&gt;Anyways, after a crazy 2017, I can’t wait to grow our communities in 2018.&lt;/p&gt;
+&lt;p&gt; &lt;/p&gt;
+&lt;p&gt; &lt;/p&gt;</description>
+	<pubDate>Tue, 16 Jan 2018 04:48:53 +0000</pubDate>
+</item>
+<item>
+	<title>Mike Milinkovich: EE4J Code Arrives</title>
+	<guid isPermaLink="false">http://mmilinkov.wordpress.com/?p=1419</guid>
+	<link>https://mmilinkov.wordpress.com/2018/01/15/ee4j-code-arrives/</link>
+	<description>&lt;p&gt;&lt;span style=&quot;font-weight: 400;&quot;&gt;Last week the EE4J project achieved an important milestone when the source code for the API and reference implementation of JSON-P JSR-374 project was pushed by &lt;/span&gt;&lt;a href=&quot;https://github.com/m0mus&quot; rel=&quot;noopener&quot; target=&quot;_blank&quot;&gt;Dmitry Kornilov&lt;/a&gt;&lt;span style=&quot;font-weight: 400;&quot;&gt; into its &lt;/span&gt;&lt;a href=&quot;https://github.com/eclipse-ee4j/jsonp&quot; rel=&quot;noopener&quot; target=&quot;_blank&quot;&gt;GitHub repository&lt;/a&gt;&lt;span style=&quot;font-weight: 400;&quot;&gt; in the EE4J organization. This is the first project of the &lt;/span&gt;&lt;a href=&quot;https://mmilinkov.wordpress.com/2017/11/21/ee4j-progress-nine-new-projects-proposed-at-the-eclipse-foundation/&quot;&gt;&lt;span style=&quot;font-weight: 400;&quot;&gt;initial nine proposed&lt;/span&gt;&lt;/a&gt;&lt;span style=&quot;font-weight: 400;&quot;&gt; to reach this stage.&lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;&lt;span style=&quot;font-weight: 400;&quot;&gt;This may seem like a small step in a very large process, but it is a concrete demonstration of the commitment to move forward with the &lt;/span&gt;&lt;a href=&quot;https://blogs.oracle.com/theaquarium/opening-up-ee-update&quot; rel=&quot;noopener&quot; target=&quot;_blank&quot;&gt;migration of Java EE to the Eclipse Foundation&lt;/a&gt;&lt;span style=&quot;font-weight: 400;&quot;&gt;. The Oracle team and the Eclipse Foundation staff had a ton of work to do to make this possible. This is definitely one of those cases where the visible code contributions are just the visible tip of an iceberg’s worth of effort.&lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;&lt;span style=&quot;font-weight: 400;&quot;&gt;Here are just a few examples of the work that went on to get to this stage:&lt;/span&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li style=&quot;font-weight: 400;&quot;&gt;&lt;span style=&quot;font-weight: 400;&quot;&gt;The names of the projects such as Glassfish represent important trademarks in the industry. Oracle transferred ownership of these project names to the Eclipse Foundation so that they can be held and protected for the community. &lt;/span&gt;&lt;/li&gt;
+&lt;li style=&quot;font-weight: 400;&quot;&gt;&lt;span style=&quot;font-weight: 400;&quot;&gt;The EMO staff reviewed the projects proposals, ran the project creation review, provisioned the repositories and set up the committer lists.&lt;/span&gt;&lt;/li&gt;
+&lt;li style=&quot;font-weight: 400;&quot;&gt;&lt;span style=&quot;font-weight: 400;&quot;&gt;The Oracle team packaged up the source code and updated the file headers to reflect the new EPL-2.0 licensing.&lt;/span&gt;&lt;/li&gt;
+&lt;li style=&quot;font-weight: 400;&quot;&gt;&lt;span style=&quot;font-weight: 400;&quot;&gt;The EMO IP staff scanned the code and ensured that all was well before approving it for initial check-in.&lt;/span&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;span style=&quot;font-weight: 400;&quot;&gt;Now that the collective team has run through this process with JSON-P we will be working to get the remaining eight initial projects pushed out as quickly as possible. Hopefully by the end of this month. Meanwhile, more projects will be proposed and we will be migrating a steady stream of Java EE projects into EE4J.&lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;&lt;span style=&quot;font-weight: 400;&quot;&gt;Exciting times!&lt;/span&gt;&lt;/p&gt;</description>
+	<pubDate>Mon, 15 Jan 2018 16:51:40 +0000</pubDate>
+</item>
+<item>
+	<title>Eclipse Announcements: Eclipse IoT Day Santa Clara 2018 | Call for Papers</title>
+	<guid isPermaLink="true">http://feedproxy.google.com/~r/eclipse/fnews/~3/m-u4xUFGRYE/</guid>
+	<link>http://feedproxy.google.com/~r/eclipse/fnews/~3/m-u4xUFGRYE/</link>
+	<description>We're happy to announce the Eclipse IoT Day Santa Clara, taking place May 14, in co-location with IoT World 2018.&lt;img alt=&quot;&quot; height=&quot;1&quot; src=&quot;http://feeds.feedburner.com/~r/eclipse/fnews/~4/m-u4xUFGRYE&quot; width=&quot;1&quot; /&gt;</description>
+	<pubDate>Mon, 15 Jan 2018 14:15:00 +0000</pubDate>
+</item>
+<item>
+	<title>itemis: Machine Learning Formatting with Xtext: Part II</title>
+	<guid isPermaLink="true">https://blogs.itemis.com/en/machine-learning-formatting-part-ii</guid>
+	<link>https://blogs.itemis.com/en/machine-learning-formatting-part-ii</link>
+	<description>&lt;p&gt;Hi folks! Some of you might have seen my earlier &lt;a href=&quot;https://hosting.itemis.de/en/machine-learning-formatting-with-xtext&quot;&gt;blogpost&lt;/a&gt; on Machine Learning Formatting. It was more or less meant as an advertiser for the Eclipse Democamp Munich. As promised, here comes the follow up blogpost with more details.&lt;/p&gt;  
+&lt;p&gt;&lt;a href=&quot;https://github.com/antlr/codebuff&quot;&gt;Codebuff&lt;/a&gt; is a project started by &lt;a href=&quot;https://github.com/parrt&quot;&gt;Terrence Parr&lt;/a&gt;. The project aims the problem that writing a codeformatter is hard and will not fit all needs. Therefore people want to customize it in every way since formatting is a very individual thing.&lt;/p&gt; 
+&lt;p&gt;Codebuff tries to format code by taking already formatted examples and learning out of that how to format code based on the same grammar. To do that it needs the corresponding lexer and parser. The lexer is used to get the tokens and the parser to create an abstract syntax tree out of the tokens. Based on that information &lt;span style=&quot;background-color: transparent;&quot;&gt;Codebuff tries to mimics the behavior of a developer. &lt;/span&gt;&lt;span style=&quot;background-color: transparent;&quot;&gt;Sounds simple, but how does that work?  &lt;/span&gt;&lt;span style=&quot;background-color: transparent;&quot;&gt;First of all code consists of tokens.&lt;br /&gt;&lt;br /&gt;&lt;/span&gt;&lt;/p&gt; 
+&lt;p&gt;&lt;img alt=&quot;tokens.png&quot; src=&quot;https://blogs.itemis.com/hs-fs/hubfs/Blog/tokens.png?t=1515762170520&amp;amp;width=495&amp;amp;name=tokens.png&quot; style=&quot;width: 495px; display: block; margin-left: auto; margin-right: auto;&quot; width=&quot;495&quot; /&gt;&lt;/p&gt; 
+&lt;p&gt;&lt;br /&gt;Depending on tokens and the location a developer would normally make a decision to introduce or delete whitespaces. &lt;span&gt;A whitespace could be a simple space, a newline along with an indentation or alignment.&lt;span&gt; Another valid decision could also be to do nothing. &lt;/span&gt;&lt;/span&gt;&lt;span style=&quot;background-color: transparent;&quot;&gt;To make a decision you need certain criteria. Codebuff works with 21&lt;/span&gt;&lt;span style=&quot;background-color: transparent;&quot;&gt;criterias, so called features &lt;/span&gt;&lt;span style=&quot;background-color: transparent;&quot;&gt;that are taken into account. The following figure shows the 5 most obvious &lt;/span&gt;&lt;span style=&quot;background-color: transparent;&quot;&gt;features&lt;/span&gt;&lt;span style=&quot;background-color: transparent;&quot;&gt;.&lt;br /&gt;&lt;br /&gt;&lt;/span&gt;&lt;/p&gt; 
+&lt;p&gt;&lt;img alt=&quot;Bildschirmfoto 2017-12-19 um 16.26.00.png&quot; src=&quot;https://blogs.itemis.com/hs-fs/hubfs/Blog/Bildschirmfoto%202017-12-19%20um%2016.26.00.png?t=1515762170520&amp;amp;width=468&amp;amp;name=Bildschirmfoto%202017-12-19%20um%2016.26.00.png&quot; style=&quot;width: 468px; display: block; margin-left: auto; margin-right: auto;&quot; width=&quot;468&quot; /&gt;&lt;/p&gt; 
+&lt;p&gt;&lt;span style=&quot;background-color: transparent;&quot;&gt;&lt;br /&gt;Based on those 21 &lt;/span&gt;&lt;span style=&quot;background-color: transparent;&quot;&gt;features&lt;/span&gt;&lt;span style=&quot;background-color: transparent;&quot;&gt; Codebuff analyses the given examples and computes token properties.&lt;br /&gt;&lt;br /&gt;&lt;/span&gt;&lt;/p&gt; 
+&lt;p&gt;&lt;img alt=&quot;Bildschirmfoto 2017-12-21 um 14.56.14.png&quot; src=&quot;https://blogs.itemis.com/hs-fs/hubfs/Blog/Bildschirmfoto%202017-12-21%20um%2014.56.14.png?t=1515762170520&amp;amp;width=471&amp;amp;name=Bildschirmfoto%202017-12-21%20um%2014.56.14.png&quot; style=&quot;width: 471px; display: block; margin-left: auto; margin-right: auto;&quot; width=&quot;471&quot; /&gt;&lt;/p&gt; 
+&lt;p&gt;&lt;span style=&quot;background-color: transparent;&quot;&gt;&lt;br /&gt;When training is done all token properties are stored as vectors in a matrix along with the whitespace information.&lt;br /&gt;&lt;/span&gt;&lt;/p&gt; 
+&lt;img alt=&quot;Matrix.png&quot; src=&quot;https://blogs.itemis.com/hs-fs/hubfs/Blog/Matrix.png?t=1515762170520&amp;amp;width=265&amp;amp;name=Matrix.png&quot; style=&quot;width: 265px; display: block; margin-left: auto; margin-right: auto;&quot; width=&quot;265&quot; /&gt; 
+&lt;div&gt;
+ &lt;br /&gt; 
+ &lt;p&gt;&lt;br /&gt;From this point on we should start to speak about &lt;a href=&quot;https://en.wikipedia.org/wiki/Machine_learning&quot;&gt;machine learning&lt;/a&gt;. What we want to achieve is finding a match in the computed &lt;span&gt;matrix of &lt;/span&gt;token properties and get the whitespace to inject into the given document at a certain position.&lt;/p&gt; 
+ &lt;p&gt;First of all we have to compute where to look at in the examples. For that reason we look at our current position in the document and compute the token property (vector) like we did it in the training without storing it to the matrix.&lt;br /&gt;&lt;br /&gt;&lt;/p&gt; 
+ &lt;p&gt;&lt;img alt=&quot;Vector.png&quot; src=&quot;https://blogs.itemis.com/hs-fs/hubfs/Blog/Vector.png?t=1515762170520&amp;amp;width=178&amp;amp;name=Vector.png&quot; style=&quot;width: 178px; display: block; margin: 0px auto;&quot; width=&quot;178&quot; /&gt;&lt;/p&gt; 
+ &lt;p&gt;&lt;span&gt;&lt;br /&gt;Now that we have that vector we need an algorithm to find a match in the matrix and apply the right whitespace to the document.&lt;br /&gt;&lt;br /&gt;&lt;/span&gt;&lt;/p&gt; 
+ &lt;p&gt;&lt;span style=&quot;background-color: transparent;&quot;&gt;&lt;img alt=&quot;Format.png&quot; src=&quot;https://blogs.itemis.com/hs-fs/hubfs/Blog/Format.png?t=1515762170520&amp;amp;width=470&amp;amp;name=Format.png&quot; style=&quot;display: block; margin-left: auto; margin-right: auto; width: 470px;&quot; width=&quot;470&quot; /&gt;&lt;/span&gt;&lt;/p&gt; 
+ &lt;p&gt;&lt;span style=&quot;background-color: transparent;&quot;&gt;&lt;br /&gt;For doing that Codebuff uses the simplest machine learning algorithm that exists – the &lt;/span&gt;&lt;a href=&quot;https://en.wikipedia.org/wiki/K-nearest_neighbors_algorithm&quot;&gt;K-nearest neighbors algorithm&lt;/a&gt;&lt;span style=&quot;background-color: transparent;&quot;&gt;. &lt;/span&gt;&lt;span style=&quot;background-color: transparent;&quot;&gt;The algorithm uses a function to compare a token property to the entries of the existing training-matrix. To do that the a constant named k needs to be specified to define how many nearest neighbors should be used. Mostly k is computed once by taking the root of the number of examples in the corpus, but for Codebuff k is fixed to 11.&lt;br /&gt;&lt;/span&gt;&lt;/p&gt; 
+ &lt;p&gt;&lt;img alt=&quot;Bildschirmfoto 2018-01-03 um 16.19.08.png&quot; height=&quot;393&quot; src=&quot;https://blogs.itemis.com/hs-fs/hubfs/Blog/Bildschirmfoto%202018-01-03%20um%2016.19.08.png?t=1515762170520&amp;amp;width=590&amp;amp;height=393&amp;amp;name=Bildschirmfoto%202018-01-03%20um%2016.19.08.png&quot; style=&quot;display: block; margin-left: auto; margin-right: auto;&quot; width=&quot;590&quot; /&gt;&lt;/p&gt; 
+ &lt;p&gt;&lt;br /&gt;As shown above, experiments with different languages showed that the median error rate is nearly constant from k = 11 on, so taking this as a constant makes sense for performance reasons. &lt;/p&gt; 
+ &lt;p&gt;As we now know the value of k, we can start to find most similar token properties to the one we just computed at the location to format.&lt;br /&gt;&lt;br /&gt;&lt;/p&gt; 
+ &lt;p&gt;&lt;img alt=&quot;KNN.png&quot; src=&quot;https://blogs.itemis.com/hs-fs/hubfs/Blog/KNN.png?t=1515762170520&amp;amp;width=481&amp;amp;name=KNN.png&quot; style=&quot;width: 481px; display: block; margin-left: auto; margin-right: auto;&quot; width=&quot;481&quot; /&gt; &lt;/p&gt; 
+ &lt;p&gt;Out of that the algorithm uses a function to weigh the best whitespace. In Codebuff it takes simply the whitespace that appears most often – very simple but efficient. Codebuff's theoretical background is explained in more depth &lt;a href=&quot;https://arxiv.org/pdf/1606.08866v1.pdf&quot;&gt;here&lt;/a&gt; and you can find an entertaining &lt;a href=&quot;https://www.youtube.com/watch?v=Mni2HVGGUdo&quot;&gt;talk by Terence on YouTube&lt;/a&gt;&lt;a href=&quot;https://www.youtube.com/watch?v=Mni2HVGGUdo&quot;&gt;.&lt;/a&gt;&lt;/p&gt; 
+ &lt;p&gt;Looking at the way Codebuff works you might ask yourself how many example files you need to get good results? The answer is pretty simple: after a lot of experiments the Codebuff guys found out that from 10 example files on the results will not get better nor worst. The next figure shows for some different languages that after 10 files the error rate stays around the same.&lt;br /&gt;&lt;br /&gt;&lt;/p&gt; 
+ &lt;p&gt;&lt;img alt=&quot;Bildschirmfoto 2017-12-21 um 15.18.06.png&quot; src=&quot;https://blogs.itemis.com/hs-fs/hubfs/Blog/Bildschirmfoto%202017-12-21%20um%2015.18.06.png?t=1515762170520&amp;amp;width=481&amp;amp;name=Bildschirmfoto%202017-12-21%20um%2015.18.06.png&quot; style=&quot;width: 481px; display: block; margin-left: auto; margin-right: auto;&quot; width=&quot;481&quot; /&gt;&lt;/p&gt; 
+ &lt;h2&gt;&lt;br /&gt;So – what has Codebuff to do with Xtext?&lt;/h2&gt; 
+ &lt;p&gt;Now as we know a bit of the theoretical background around Codebuff you may wonder what all that stuff has to do with &lt;a href=&quot;https://www.eclipse.org/Xtext/&quot;&gt;Xtext&lt;/a&gt;.&lt;/p&gt; 
+ &lt;p&gt;In Xtext you can create various DSLs for very different domains. For each language you need to specify a formatter. Luckily Xtext comes with two different APIs&lt;span style=&quot;background-color: transparent;&quot;&gt;. The older one relies on tokens only, that means you can define how your DSL should be formatted on a &lt;/span&gt;&lt;span style=&quot;background-color: transparent;&quot;&gt;lexical level&lt;/span&gt;&lt;span style=&quot;background-color: transparent;&quot;&gt;. The newer API relies on the semantic model in addition. Depending on the state of the abstract syntax tree you can treat things different. Cool – but customization of your formatter is not coming out of the box and we know that formatting is an individual thing. So you would end up in a lot of effort to write a reasonable formatter and make customizations possible. Even when you did your best you will always find a special case that someone wants to treat differently. Codebuff sounds like a nice idea to solve that problem...&lt;/span&gt;&lt;/p&gt; 
+ &lt;p&gt;To marry Xtext and Codebuff together you don't need to do much. Ok – Xtext relies on AntLR 3 and bringing AntLR 4 on the classpath will take you into hell, but there is a pragmatic way around that.&lt;/p&gt; 
+ &lt;p&gt;&lt;strong&gt;&lt;span style=&quot;text-align: center; background-color: transparent;&quot;&gt;DISCLAIMER: From this point on we are talking about a prototype – not ready for production!&lt;/span&gt;&lt;/strong&gt;&lt;/p&gt; 
+ &lt;p&gt;First we wrote a so-called GeneratorFragment. To understand this you would have to understand how Xtext works under the covers, but for now let's just stay with the fact that Xtext generates it's DSL specific infrastructure out of the Xtext grammar and a GeneratorFragment is one piece of the overall generator.&lt;/p&gt; 
+ &lt;p&gt;To come back to our issue – the GeneratorFragment needs to generate an AntLR 4 grammar. Out of that we need to generate the AntLR 4 lexer and parser. To do that we need the &lt;a href=&quot;https://github.com/antlr/antlr4/blob/master/tool/src/org/antlr/v4/Tool.java&quot;&gt;AntLR 4 generator&lt;/a&gt; but we are not allowed to bring that stuff on the classpath. Let's assume we managed to do that – how could we compile the generated code without AntLR 4 on the classpath? Even when we managed that we are not allowed to bring Codebuff on the classpath as it carries AntLR 4 under the covers. Even when we managed that – does Codebuff have an API that fits for us? The documentation just deals with a call of a main method with a bunch of parameters....&lt;/p&gt; 
+ &lt;p&gt;Ok – step by step.&lt;/p&gt; 
+ &lt;h2&gt;1. Generate the grammar&lt;/h2&gt; 
+ &lt;p&gt;&lt;span style=&quot;background-color: transparent;&quot;&gt;The major difference between AntLR 3 and 4 is that AntLR 4 does not allow syntactic predicates anymore since it handles &lt;a href=&quot;https://en.wikipedia.org/wiki/Left_recursion&quot;&gt;left recursion&lt;/a&gt; now directly. AntLR 3 is not able to do that and for that reason grammars need to be left refactored. By doing that, syntactic predicates guide the parser on it's way to get rid of ambiguities and make decisions. The other thing is that the syntax has changed a bit from AntLR 3 to 4. Beside that Codebuff has a special need. Whitespaces and comments need to go to the hidden channel.&lt;/span&gt;&lt;/p&gt; 
+ &lt;h2&gt;&lt;strong&gt;&lt;span style=&quot;background-color: transparent;&quot;&gt;2. Generate lexer and parser&lt;/span&gt;&lt;/strong&gt;&lt;/h2&gt; 
+ &lt;p&gt;To achieve that we are downloading the necessary jar on demand once, like we already do it in Xtext for AntLR 3. To invoke the so called Tool of AntLR 4 we created a URLClassLoader that points to the jar. As Xtext uses AntLR 3 we need to leave the parent classloader empty to avoid confusions. After that we need to use reflection to call the right API.&lt;/p&gt; 
+ &lt;p&gt;As a fun fact we observed that the AntLR 4 Tool has two methods to process a grammar and both produce lexer and parser - but they are not equal. After fighting with that situation we found out that the method &lt;code&gt;process&lt;/code&gt; is not the right choice as Codebuff got stuck with that the generated sources. &lt;code&gt;P&lt;span style=&quot;background-color: transparent;&quot;&gt;rocessGrammarsOnCommandLine &lt;/span&gt;&lt;/code&gt;&lt;span style=&quot;background-color: transparent;&quot;&gt;produced the right result since it reorders the tokens by calling  &lt;/span&gt;&lt;code&gt;&lt;span style=&quot;background-color: transparent;&quot;&gt;sortGrammarByTokenVocab &lt;/span&gt;&lt;/code&gt;&lt;span style=&quot;background-color: transparent;&quot;&gt;and then called &lt;code&gt;process&lt;/code&gt;.&lt;/span&gt;&lt;/p&gt; 
+ &lt;p&gt;&lt;span style=&quot;background-color: transparent;&quot;&gt;Of course the generated classes are stored in a separated folder that is no source folder. Otherwise we would end up in compile errors in the project. ;-)&lt;/span&gt;&lt;/p&gt; 
+ &lt;h2&gt;&lt;strong&gt;&lt;span style=&quot;background-color: transparent;&quot;&gt;3. Compile lexer and parser&lt;/span&gt;&lt;/strong&gt;&lt;/h2&gt; 
+ &lt;p&gt;&lt;span style=&quot;background-color: transparent;&quot;&gt;We cannot simply compile the lexer and parser like the rest of the code since AntLR 4 is not on the classpath. To achieve compiling we used the &lt;/span&gt;&lt;code style=&quot;background-color: transparent; font-size: 16px;&quot;&gt;javax.tools.JavaCompiler &lt;/code&gt;&lt;span style=&quot;background-color: transparent;&quot;&gt;directly. To use it we need to bring referenced classes into a special classloader. For this use-case the AntLR 4 jar is enough. After that we need to handle in the files to compile - that's it. &lt;/span&gt;&lt;span style=&quot;background-color: transparent;&quot;&gt;Of course the compiled class files are stored in a separated folder as well. ;-)&lt;/span&gt;&lt;/p&gt; 
+ &lt;h2&gt;&lt;strong&gt;4. Use Codebuff with the compiled classes without bringing it on the classpath&lt;/strong&gt;&lt;/h2&gt; 
+ &lt;p&gt;To achieve that we used the same trick as for AntLR 4 and downloaded Codebuff on demand once. So we ended up in two jars, AntLR 4 and Codebuff, a grammar and compiled lexer and parser. Now we need to combine all those things.&lt;/p&gt; 
+ &lt;p&gt;Codebuff does not really have an &lt;a href=&quot;https://github.com/antlr/codebuff/blob/master/src/org/antlr/codebuff/Tool.java&quot;&gt;API&lt;/a&gt; to use it somewhere else then the commandline. Normally the &lt;a href=&quot;https://github.com/antlr/codebuff/blob/master/src/org/antlr/codebuff/Tool.java&quot;&gt;Tool&lt;/a&gt; class needs a bunch of information including a destination file.&lt;br /&gt;&lt;br /&gt;&lt;/p&gt; 
+ &lt;p&gt;&lt;img alt=&quot;Bildschirmfoto 2018-01-04 um 10.48.02.png&quot; src=&quot;https://blogs.itemis.com/hs-fs/hubfs/Blog/Bildschirmfoto%202018-01-04%20um%2010.48.02.png?t=1515762170520&amp;amp;width=640&amp;amp;name=Bildschirmfoto%202018-01-04%20um%2010.48.02.png&quot; style=&quot;width: 640px; display: block; margin-left: auto; margin-right: auto;&quot; width=&quot;640&quot; /&gt;&lt;/p&gt; 
+ &lt;p&gt;&lt;br /&gt;The formatter API in Xtext does not write to a file directly. It needs to set the formatted text as a string. Because of that the given approach does not work for use. &lt;span style=&quot;background-color: transparent;&quot;&gt;We digged a bit in the code and yes there is a way that is slightly complicated and as you know we have to do everything through reflection ;-)&lt;/span&gt;&lt;/p&gt; 
+ &lt;p&gt;To explain it in a simple way we will just mention the steps without showing the ugly reflective code.&lt;br /&gt;&lt;br /&gt;&lt;/p&gt; 
+ &lt;ol&gt; 
+  &lt;li&gt;We need to instantiate a &lt;code&gt;org.antlr.codebuff.misc.LangDescriptor&lt;/code&gt; that holds all necessary information about the language. That includes the folder of the examples, a regex to identify examples, the compiled lexer and parser, the root rule of the grammar, the amount of spaces that make an indentation and the rule for comments.&lt;/li&gt; 
+  &lt;li&gt;&lt;span&gt;We need to load all examples to invoke the train method that fills the matrix with token properties.&lt;/span&gt;&lt;/li&gt; 
+  &lt;li&gt;We need to parse the document that we want to format.&lt;/li&gt; 
+  &lt;li&gt;We need to instantiate the formatter and fill in the necessary information including the training result.&lt;/li&gt; 
+  &lt;li&gt; We need to invoke the formatter to get a string back that represents the formatted document.&lt;/li&gt; 
+ &lt;/ol&gt; 
+ &lt;p&gt;&lt;br /&gt;Sounds simple but we have to admit that it was pain. If Codebuff would have a more user friendly API, it would have been much simpler – we are planning to create a pullrequest to Codebuff to make it easier.&lt;/p&gt; 
+ &lt;p&gt;On Xtext side the story is simple – we need to bind a &lt;code&gt;org.eclipse.xtext.ui.editor.formatting.IContentFormatterFactory&lt;/code&gt; to create our &lt;code&gt;org.eclipse.jface.text.formatter.IContentFormatter&lt;/code&gt; that has only one method that gets the document that holds all necessary information and we can directly set the new formatted text.&lt;/p&gt; 
+ &lt;p&gt;The only tricky part that is left is classloading. We need to have Codebuff, AntLR4 and the compiled lexer and parser in a classloader. Of course a URLClassLoader solves the problem as we already downloaded the necessary jars and compiled the lexer and parser.&lt;/p&gt; 
+ &lt;p&gt;As a wrap up we can say that Codebuff creates a nice way to get rid of an old problem – but it's not perfect. For the future of Xtext it would be nice to have something like that included. Currently we are looking into alternative approaches and enhancements of the existing Codebuff codebase. Stay tuned.&lt;/p&gt; 
+&lt;/div&gt;  
+&lt;img alt=&quot;&quot; height=&quot;1&quot; src=&quot;https://track.hubspot.com/__ptq.gif?a=761475&amp;amp;k=14&amp;amp;r=https%3A%2F%2Fblogs.itemis.com%2Fen%2Fmachine-learning-formatting-part-ii&amp;amp;bu=https%253A%252F%252Fblogs.itemis.com&amp;amp;bvt=rss&quot; style=&quot;width: 1px!important;&quot; width=&quot;1&quot; /&gt;</description>
+	<pubDate>Fri, 12 Jan 2018 11:12:00 +0000</pubDate>
+	<author>schill@itemis.com (Holger Schill)</author>
+</item>
+
+</channel>
+</rss>
