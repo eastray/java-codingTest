@@ -1,0 +1,49 @@
+package tugOfWar;
+
+import java.util.ArrayList;
+import java.util.Arrays;
+import java.util.Scanner;
+
+public class TugOfWar {
+	
+	public int[] tugOfWar(int[] arr){
+		
+		Arrays.sort(arr);
+		
+//		int[] first = new int[arr.length/2];
+//		int[] second = new int[arr.length/2];
+		
+		ArrayList<Integer> first = new ArrayList<Integer>();
+		ArrayList<Integer> second = enw ArrayList<Integer>();
+		
+		
+		
+		for(int i = 2; i < arr.length; i++){
+			
+		}
+
+		
+		
+		
+		return null;
+	}
+	
+	
+	public static void main(String[] args) {
+
+		TugOfWar tow = new TugOfWar();
+		
+		@SuppressWarnings("resource")
+		Scanner scanner = new Scanner(System.in);
+		int n = scanner.nextInt();
+		int[] array = new int[n];
+		
+		for(int i =0; i < n; i++){
+			array[i] = scanner.nextInt();
+		}
+		
+		System.out.println(Arrays.toString(tow.tugOfWar(array)));
+		
+		
+	}
+}

@@ -1,0 +1,22 @@
+package countingEight;
+
+import java.util.IntSummaryStatistics;
+import java.util.stream.IntStream;
+
+public class CountingEight {
+	
+	private int getEight(int n){
+		
+		return (int)IntStream.range(1, n).filter(m -> Integer.toString(m).contains("8")).count();
+	}
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+		CountingEight ce = new CountingEight();
+		
+		System.out.println(ce.getEight(1000));
+		
+	}
+
+}

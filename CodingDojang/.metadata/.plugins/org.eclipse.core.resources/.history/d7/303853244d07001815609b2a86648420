@@ -1,0 +1,35 @@
+package primaryArithmetic;
+
+
+public class PrimaryArithmetic {
+
+	public int primaryArithmetic(int n, int m) {
+		
+		int result = 0;
+		
+		int[] nArray = Integer.toString(n).chars().map(ele -> Character.getNumericValue(ele)).toArray();
+		int[] mArray = Integer.toString(m).chars().map(ele -> Character.getNumericValue(ele)F).toArray();
+		
+		if(nArray.length != mArray.length)
+			System.out.println("not same to two number");
+		
+		for(int i = nArray.length-1; i >= 0; i--){
+			System.out.println("nArray[i]: " + nArray[i] +  " mArray[i]: "+ mArray[i]);
+			if((nArray[i]+mArray[i]) >= 10)
+				result++;
+		}
+
+		return result;
+	}
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+		PrimaryArithmetic pa = new PrimaryArithmetic();
+
+		System.out.println(pa.primaryArithmetic(123, 456) + " carry operation.");
+		System.out.println(pa.primaryArithmetic(555, 555) + " carry operation.");
+		System.out.println(pa.primaryArithmetic(123, 594) + " carry operation.");
+
+	}
+}
