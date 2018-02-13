@@ -1,0 +1,23 @@
+package insertComma;
+
+public class InsertComma {
+	
+	public String insertComma(int n) {
+		
+		String str = Integer.toString(n);
+		
+		if(str.contains(".")){
+		}
+		
+		return addComma(str);
+	}
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+		InsertComma ic = new InsertComma();
+		
+		System.out.println(ic.insertComma(1000));
+	}
+
+}

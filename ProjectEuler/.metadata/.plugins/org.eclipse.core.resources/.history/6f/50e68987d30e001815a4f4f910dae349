@@ -1,0 +1,18 @@
+package problem3;
+
+public class PrimeDivisorUsingRecursion {
+
+	private int maxOfPrimeDivisors(int n) {
+
+		return 0;
+	}
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+		PrimeDivisorUsingRecursion pdur = new PrimeDivisorUsingRecursion();
+
+		System.out.println(pdur.maxOfPrimeDivisors(13195));
+	}
+
+}

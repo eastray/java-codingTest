@@ -1,0 +1,18 @@
+package problem9;
+
+public class Pythagoras {
+	
+	private int pythagoras(int n){
+		
+		
+		return 0;
+	}
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		Pythagoras pytha = new Pythagoras();
+		
+		System.out.println(pytha.pythagoras(1000));
+	}
+
+}

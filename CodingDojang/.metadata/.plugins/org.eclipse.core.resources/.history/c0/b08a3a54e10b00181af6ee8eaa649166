@@ -1,0 +1,85 @@
+package sortStringAndInteger;
+
+import java.util.ArrayList;
+import java.util.Arrays;
+import java.util.List;
+import java.util.stream.Collectors;
+import java.util.stream.Stream;
+
+public class SortStringAndInteger {
+
+	private String[] sort(String[] str) {
+		ArrayList<String> list = new ArrayList<String>();
+
+		Arrays.sort(str);
+
+		List<String> result = Stream.of(str).filter(m -> m.contains(Character.toString(str[0].charAt(0))))
+				.collect(Collectors.toList());
+
+		for (int i = 0; i < result.size(); i++) {
+			list.add(str[i]);
+
+			for (int j = i + 1; j < str.length; j++) {
+				if (Integer.valueOf(str[i].charAt(0)) < Integer.valueOf(str[j].charAt(0))
+						&& Character.getNumericValue(str[i].charAt(1)) == Character.getNumericValue(str[j].charAt(1))) {
+					list.add(str[j]);
+
+				}
+			}
+
+		}
+
+		System.out.println(Arrays.toString(list.toArray()));
+
+		return str;
+	}
+
+	private String[] swap(String[] str, int i, int j) {
+		String temp = str[i];
+		str[i] = str[j];
+		str[j] = temp;
+
+		return str;
+	}
+
+	private String[] insert(String[] str, int i, int j) {
+		String temp = str[j];
+
+		for (int k = j; k > i; k--)
+			str[k] = str[k - 1];
+
+		str[i] = temp;
+
+		return str;
+	}
+
+	private String[] sort2(String[] str) {
+
+		Arrays.sort(str);
+
+		System.out.println(Arrays.toString(str));
+
+		for (int i = 0; i < str.length - 1; i++) {
+			for (int j = i + 1; j < str.length - 1; j++) {
+				if (str[i].charAt(1) == str[j].charAt(1))
+					str = insert(str, i, j);
+			}
+		}
+
+		return str;
+	}
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+		SortStringAndInteger ssai = new SortStringAndInteger();
+
+		System.out.println(Arrays.toString(ssai
+				.sort(new String[] { "c1", "b1", "b2", "b3", "a1", "a2", "d4", "a3", "a4", "a5", "b4", "b5", "c3" })));
+		System.out.println();
+
+		System.out.println(Arrays
+				.toString(ssai.sort2(new String[] { "a1", "a2", "a3", "a4", "a5", "b1", "b2", "b3", "b4", "b5" })));
+	}
+
+}

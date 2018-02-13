@@ -1,0 +1,25 @@
+package problem2;
+
+public class SumOfFibonacciNumbers {
+
+	private int sumOfFibonacci(int n, int s, int e) {
+		if (e > n)
+			return s;
+
+		return s + sumOfFibonacci(n, e, s + e);
+	}
+	
+	private int sumOfFibonacci(int n) {
+		return sumOfFibonacci(n, 1, 2);
+	}
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+		SumOfFibonacciNumbers sofn = new SumOfFibonacciNumbers();
+
+		System.out.println(sofn.sumOfFibonacci(10));
+		System.out.println(sofn.sumOfFibonacci(4000000));
+	}
+
+}

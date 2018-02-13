@@ -1,0 +1,34 @@
+package timeSheet;
+
+import java.util.Scanner;
+
+public class TimeSheet {
+
+	private int count() {
+
+		return 0;
+	}
+	
+	private int convertFormat(String time){
+		
+		return Integer.parseInt(time.replace(":", ""));
+	}
+
+	public int timeSheet(String[] str, String time) {
+
+		return 0;
+	}
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+		TimeSheet ts = new TimeSheet();
+		String[] str = { "09:12:23 11:14:35", "10:34:01 13:23:40", "10:34:31 11:20:10" };
+
+		@SuppressWarnings("resource")
+		Scanner sc = new Scanner(System.in);
+
+		System.out.println(ts.timeSheet(str, sc.nextLine()));
+	}
+
+}

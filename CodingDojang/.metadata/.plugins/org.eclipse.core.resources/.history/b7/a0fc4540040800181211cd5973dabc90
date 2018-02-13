@@ -1,0 +1,35 @@
+package smallestRange;
+
+import java.util.Arrays;
+
+public class SmallestRange {
+
+	public int[] smallestRange(int[][] arrays) {
+
+		int diff = Integer.MAX_VALUE;
+		int i = 0, j = 0, k = 0;
+
+		while (true) {
+			int max = Math.max(arrays[0][i], Math.max(arrays[1][j], arrays[2][k]));
+			int min = Math.min(arrays[0][i], Math.min(arrays[1][j], arrays[2][k]));
+			
+			if(diff > max - min)
+				diff = max - min;
+			
+			
+
+		}
+
+		return null;
+	}
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+		SmallestRange sr = new SmallestRange();
+
+		System.out.println(Arrays.toString(
+				sr.smallestRange(new int[][] { { 4, 10, 15, 24, 26 }, { 0, 9, 12, 20 }, { 5, 18, 22, 30 } })));
+	}
+
+}

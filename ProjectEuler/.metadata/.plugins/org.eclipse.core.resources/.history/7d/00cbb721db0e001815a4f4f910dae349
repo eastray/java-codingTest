@@ -1,0 +1,18 @@
+package problem5;
+
+public class Divisor {
+	
+	private int findDivisor(int n ) {
+		
+		return 0;
+	}
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+		Divisor dv = new Divisor();
+		
+		System.out.println(dv.findDivisor(10));
+	}
+
+}

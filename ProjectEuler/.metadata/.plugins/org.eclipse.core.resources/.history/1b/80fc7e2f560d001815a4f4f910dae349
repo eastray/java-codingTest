@@ -1,0 +1,29 @@
+package problem2;
+
+public class SumOfFibonacciNumbersUsingLoop {
+
+	private int sumOfFibonacci(int n) {
+		int result = 0;
+		int beforeIndex = 0;
+
+		for (int i = 1; i < n;) {
+			if ((beforeIndex + i) % 2 == 0)
+				result += beforeIndex + i;
+			int temp = beforeIndex;
+			beforeIndex = i;
+			i += temp;
+		}
+
+		return result;
+	}
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+		SumOfFibonacciNumbersUsingLoop sofnul = new SumOfFibonacciNumbersUsingLoop();
+
+		System.out.println(sofnul.sumOfFibonacci(10));
+		System.out.println(sofnul.sumOfFibonacci(4000000));
+	}
+
+}

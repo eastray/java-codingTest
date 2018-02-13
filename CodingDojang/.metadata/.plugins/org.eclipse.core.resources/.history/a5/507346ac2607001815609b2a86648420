@@ -1,7 +1,0 @@
-package tugOfWar;
-
-public class TugOfWar {
-	public static void main(String[] args) {
-
-	}
-}

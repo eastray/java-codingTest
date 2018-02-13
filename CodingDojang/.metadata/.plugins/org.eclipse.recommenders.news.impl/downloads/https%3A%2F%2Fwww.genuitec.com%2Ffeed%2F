@@ -12,12 +12,33 @@
 	<atom:link href="https://www.genuitec.com/feed/" rel="self" type="application/rss+xml" />
 	<link>https://www.genuitec.com</link>
 	<description>The Cloud Control Company</description>
-	<lastBuildDate>Thu, 01 Feb 2018 00:29:04 +0000</lastBuildDate>
+	<lastBuildDate>Thu, 08 Feb 2018 17:48:33 +0000</lastBuildDate>
 	<language>en-US</language>
 	<sy:updatePeriod>hourly</sy:updatePeriod>
 	<sy:updateFrequency>1</sy:updateFrequency>
 	<generator>https://wordpress.org/?v=4.9.2</generator>
 	<item>
+		<title>Angular 5 Authentication: Getting Started</title>
+		<link>https://www.genuitec.com/angular-5-authentication/</link>
+		<pubDate>Tue, 06 Feb 2018 15:05:21 +0000</pubDate>
+		<dc:creator><![CDATA[Bob at Genuitec]]></dc:creator>
+				<category><![CDATA[Genuitec]]></category>
+		<category><![CDATA[MyEclipse]]></category>
+		<category><![CDATA[Programming Tips]]></category>
+		<category><![CDATA[Webclipse]]></category>
+		<category><![CDATA[angular and firebase integration]]></category>
+		<category><![CDATA[authentication in Angular 5]]></category>
+		<category><![CDATA[firebase integration]]></category>
+		<category><![CDATA[firestore database]]></category>
+		<category><![CDATA[set up authentication]]></category>
+		<category><![CDATA[set up authentication in Angular 5]]></category>
+
+		<guid isPermaLink="false">https://www.genuitec.com/?p=547349</guid>
+		<description><![CDATA[<p>In this tutorial, we are going to build an Angular 5 authentication system using Google’s Cloud Firestore. Most of the applications we build require some kind of authentication, and the simplest and fastest way to get started with that is by using the Firestore &#8211; a flexible, scalable database for mobile, web and server development. [&#8230;]</p>
+<p>The post <a rel="nofollow" href="https://www.genuitec.com/angular-5-authentication/">Angular 5 Authentication: Getting Started</a> appeared first on <a rel="nofollow" href="https://www.genuitec.com">Genuitec</a>.</p>
+]]></description>
+		</item>
+		<item>
 		<title>Eclipse — Still the Best IDE!</title>
 		<link>https://www.genuitec.com/eclipse-still-best-ide/</link>
 		<pubDate>Wed, 31 Jan 2018 07:07:38 +0000</pubDate>
@@ -285,24 +306,6 @@
 <p>The post <a rel="nofollow" href="https://www.genuitec.com/improving-java-performance/">Improving Java Performance</a> appeared first on <a rel="nofollow" href="https://www.genuitec.com">Genuitec</a>.</p>
 ]]></description>
 		</item>
-		<item>
-		<title>Create a Cryptocurrency Dashboard with Angular</title>
-		<link>https://www.genuitec.com/create-cryptocurrency-dashboard-angular/</link>
-		<pubDate>Tue, 07 Nov 2017 20:25:08 +0000</pubDate>
-		<dc:creator><![CDATA[Bob at Genuitec]]></dc:creator>
-				<category><![CDATA[Eclipse]]></category>
-		<category><![CDATA[Genuitec]]></category>
-		<category><![CDATA[MyEclipse]]></category>
-		<category><![CDATA[Programming Tips]]></category>
-		<category><![CDATA[Webclipse]]></category>
-		<category><![CDATA[create cryptocurrency dashboard]]></category>
-		<category><![CDATA[cryptocurrency dashboard]]></category>
-
-		<guid isPermaLink="false">https://www.genuitec.com/?p=541645</guid>
-		<description><![CDATA[<p>With Bitcoin’s record-breaking surge past the $7000 mark, we thought this would the perfect time to build a cryptocurrency dashboard with Angular. Cryptocurrency is a digital asset designed to work as a medium of exchange, using cryptography to secure the transactions and to control the creation of additional units of the currency. While Bitcoin is [&#8230;]</p>
-<p>The post <a rel="nofollow" href="https://www.genuitec.com/create-cryptocurrency-dashboard-angular/">Create a Cryptocurrency Dashboard with Angular</a> appeared first on <a rel="nofollow" href="https://www.genuitec.com">Genuitec</a>.</p>
-]]></description>
-		</item>
 	</channel>
 </rss>
 
@@ -311,7 +314,7 @@ Performance optimized by W3 Total Cache. Learn more: https://www.w3-edge.com/pro
 
 Page Caching using disk: enhanced (SSL caching disabled) 
 Content Delivery Network via resources.cloud.genuitec.com
-Database Caching 136/139 queries in 0.375 seconds using disk
+Database Caching 136/139 queries in 0.017 seconds using disk
 
-Served from: www.genuitec.com @ 2018-02-01 03:37:29 by W3 Total Cache
+Served from: www.genuitec.com @ 2018-02-08 21:34:56 by W3 Total Cache
 -->

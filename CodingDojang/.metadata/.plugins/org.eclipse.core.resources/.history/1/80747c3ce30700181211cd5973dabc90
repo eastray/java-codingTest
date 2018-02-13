@@ -1,0 +1,35 @@
+package insertComma;
+
+public class InsertComma {
+
+	public String insertComma(int n) {
+
+		StringBuilder sb = new StringBuilder(Integer.toString(n)).reverse();
+
+		for (int i = 3; i < sb.length();) {
+				
+			sb = sb.insert(i, ",");
+
+			if (i + 3 > sb.length())
+				break;
+
+			i += 4;
+		}
+
+		return sb.reverse().toString();
+	}
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+		InsertComma ic = new InsertComma();
+
+		System.out.println(ic.insertComma(1000));
+		System.out.println(ic.insertComma(100000));
+		System.out.println(ic.insertComma(1000000));
+		System.out.println(ic.insertComma(10000000));
+		System.out.println(ic.insertComma(100000000));
+		System.out.println(ic.insertComma(1000000000));
+	}
+
+}

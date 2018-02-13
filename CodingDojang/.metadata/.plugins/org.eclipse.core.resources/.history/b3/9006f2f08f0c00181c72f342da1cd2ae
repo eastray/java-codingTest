@@ -1,0 +1,41 @@
+package currencyInterpreter;
+
+import static org.junit.Assert.assertEquals;
+
+import org.junit.Test;
+
+public class CurrencyInterpreterTest {
+	CurrencyInterpreter ci = new CurrencyInterpreter();
+
+	@Test
+	public void testCurrencyInterpreter() {
+		assertEquals("str" , "str");
+		
+		assertEquals(new Long(9), ci.currencyInterpreter("구"));
+		assertEquals(new Long(9), ci.currencyInterpreter("천"));
+		assertEquals(new Long(9), ci.currencyInterpreter("구천"));
+		assertEquals(new Long(9), ci.currencyInterpreter("구십구"));
+		assertEquals(new Long(9), ci.currencyInterpreter("구천구"));
+		assertEquals(new Long(9), ci.currencyInterpreter("구만구"));
+		assertEquals(new Long(9), ci.currencyInterpreter("십만"));
+		assertEquals(new Long(9), ci.currencyInterpreter("일십만"));
+		assertEquals(new Long(9), ci.currencyInterpreter("일백만"));
+		assertEquals(new Long(9), ci.currencyInterpreter("일천만"));
+		assertEquals(new Long(9), ci.currencyInterpreter("일십만"));
+		assertEquals(new Long(9), ci.currencyInterpreter("일만만"));
+		assertEquals(new Long(9), ci.currencyInterpreter("일억"));
+		assertEquals(new Long(9), ci.currencyInterpreter("십억"));
+		assertEquals(new Long(9), ci.currencyInterpreter("백억"));
+		assertEquals(new Long(9), ci.currencyInterpreter("천억"));
+		assertEquals(new Long(9), ci.currencyInterpreter("일조"));
+		assertEquals(new Long(9), ci.currencyInterpreter("천억"));
+		assertEquals(new Long(9), ci.currencyInterpreter("십조"));
+		assertEquals(new Long(9), ci.currencyInterpreter("오억"));
+		assertEquals(new Long(9), ci.currencyInterpreter("일억"));
+		assertEquals(new Long(9), ci.currencyInterpreter("오천만"));
+		assertEquals(new Long(150000000), ci.currencyInterpreter("일억오천만"));
+		assertEquals(new Long(Long.parseLong("10000000000000000")), ci.currencyInterpreter("사천구십칠조이천만삼백십육"));
+
+	}
+
+}

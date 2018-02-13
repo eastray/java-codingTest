@@ -1,0 +1,59 @@
+package problem3;
+
+import java.util.ArrayList;
+import java.util.Arrays;
+import java.util.List;
+
+public class PrimeDivisor {
+
+	private int findPrimeDivisor(int n) {
+		List<Integer> list = new ArrayList<Integer>();
+		
+		while(true){
+			System.out.println(n);
+
+			for(int i = 2; i < n; i++){
+				if(n % i == 0){
+					list.add(i);
+					n /= i;
+				}
+				
+				if(i+1 == n){
+					list.add(n);
+					n = 0;
+				}
+				
+			}
+			
+			
+			if(n == 0)
+				break;
+		}
+		
+		
+		return list.stream().mapToInt(m -> m).max().getAsInt();
+	}
+
+	private int maxOfPrimeDivisors(int n) {
+
+		//int[] result = findPrimeDivisor(n);
+		
+//		if(result == null)
+//			return 0;
+//
+//		Arrays.sort(result);
+//		
+//		return result[result.length - 1];
+	}
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+		PrimeDivisor pd = new PrimeDivisor();
+
+		//System.out.println(pd.maxOfPrimeDivisors(13195));
+		
+		System.out.println(pd.findPrimeDivisor(13195));
+	}
+
+}

@@ -1,0 +1,20 @@
+package smallestRange;
+
+import java.util.Arrays;
+
+public class SmallestRange {
+
+	public int[] smallestRange(int[][] arrays) {
+
+		return null;
+	}
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+		SmallestRange sr = new SmallestRange();
+		
+		System.out.println(Arrays.toString(sr.smallestRange({{4, 10, 15, 24, 26},{0, 9, 12, 20},{5, 18, 22, 30}})));
+	}
+
+}

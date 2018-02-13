@@ -5,6 +5,8 @@
 		<item value="false" key="casesensitive"/>
 		<item value="false" key="wholeword"/>
 		<list key="findhistory">
+			<item value="map.put(&quot;십&quot;, (long) 10);&#x0A;&#x09;&#x09;map.put(&quot;백&quot;, (long) 100);&#x0A;&#x09;&#x09;map.put(&quot;천&quot;, (long) 1000);&#x0A;&#x09;&#x09;map.put(&quot;만&quot;, (long) 10000);&#x0A;&#x09;&#x09;map.put(&quot;억&quot;, (long) 100000000);&#x0A;&#x09;&#x09;map.put(&quot;조&quot;, Long.parseLong(&quot;1000000000000&quot;));&#x0A;&#x09;&#x09;map.put(&quot;경&quot;, Long.parseLong(&quot;10000000000000000&quot;));map.put(&quot;십&quot;, (long) 10);&#x0A;&#x09;&#x09;map.put(&quot;백&quot;, (long) 100);&#x0A;&#x09;&#x09;map.put(&quot;천&quot;, (long) 1000);&#x0A;&#x09;&#x09;map.put(&quot;만&quot;, (long) 10000);&#x0A;&#x09;&#x09;map.put(&quot;억&quot;, (long) 100000000);&#x0A;&#x09;&#x09;map.put(&quot;조&quot;, Long.parseLong(&quot;1000000000000&quot;));&#x0A;&#x09;&#x09;map.put(&quot;경&quot;, Long.parseLong(&quot;10000000000000000&quot;));"/>
+			<item value="s"/>
 		</list>
 		<list key="replacehistory">
 		</list>

@@ -1,0 +1,131 @@
+package currencyInterpreter;
+
+import java.text.DecimalFormat;
+import java.util.HashMap;
+import java.util.Stack;
+
+public class CurrencyInterpreter {
+
+	private HashMap<String, Long> init() {
+
+		HashMap<String, Long> map = new HashMap<String, Long>();
+
+		map.put("영", (long) 0);
+		map.put("일", (long) 1);
+		map.put("이", (long) 2);
+		map.put("삼", (long) 3);
+		map.put("사", (long) 4);
+		map.put("오", (long) 5);
+		map.put("육", (long) 6);
+		map.put("칠", (long) 7);
+		map.put("팔", (long) 8);
+		map.put("구", (long) 9);
+
+		return map;
+	}
+
+	private HashMap<String, Long> unitInit() {
+		HashMap<String, Long> map = new HashMap<String, Long>();
+
+		map.put("십", (long) 10);
+		map.put("백", (long) 100);
+		map.put("천", (long) 1000);
+		map.put("만", (long) 10000);
+		map.put("억", (long) 100000000);
+		map.put("조", Long.parseLong("1000000000000"));
+		map.put("경", Long.parseLong("10000000000000000"));
+
+		return map;
+	}
+
+	public Long currencyInterpreter(String str) {
+
+		HashMap<String, Long> map = init();
+		HashMap<String, Long> unitMap = unitInit();
+		Stack<String> stack = new Stack<String>();
+		Long prefix = (long) 0;
+
+		if (str.length() == 1 && map.containsKey(str))
+			return map.get(str);
+		else if (str.length() == 1 && unitMap.containsKey(str))
+			return unitMap.get(str);
+
+		if (unitMap.containsKey(str.substring(0, 1)))
+			str = "일".concat(str.substring(0, str.length()));
+
+		int index = 0;
+
+		while (true) {
+			int count = 0;
+
+			loop: for (int i = 0; i < str.length(); i++) {
+				if (map.containsKey(str.substring(i, i + 1)))
+					count++;
+
+				if (count == 2) {
+					str = str.substring(i, str.length());
+					break loop;
+				}
+
+				stack.push(str.substring(i, i + 1));
+
+				if (i == str.length() - 1)
+					str = "";
+			}
+
+			long temp = 0;
+			
+			System.out.println("stack.size: " + stack.size());
+
+			if (stack.size() == 1)
+				temp += map.get(stack.pop());
+			else
+				temp = 1;
+
+			System.out.println("temp: " + temp);
+
+			while (!stack.isEmpty())
+				temp *= (map.containsKey(stack.peek())) ? map.get(stack.pop()) : unitMap.get(stack.pop());
+
+			prefix += temp;
+			
+			System.out.println("prefix: " + prefix);
+			
+			if (str.length() == 0)
+				break;
+		}
+
+		return prefix;
+	}
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+		CurrencyInterpreter ci = new CurrencyInterpreter();
+
+		DecimalFormat df = new DecimalFormat("#,##0");
+
+		 System.out.println(df.format(ci.currencyInterpreter("구")));
+		 System.out.println(df.format(ci.currencyInterpreter("천")));
+		 System.out.println(df.format(ci.currencyInterpreter("구천")));
+		 System.out.println(df.format(ci.currencyInterpreter("구십구")));
+		 System.out.println(df.format(ci.currencyInterpreter("구천구")));
+		 System.out.println(df.format(ci.currencyInterpreter("구만구")));
+		 System.out.println(df.format(ci.currencyInterpreter("십만")));
+		 System.out.println(df.format(ci.currencyInterpreter("일십만")));
+		 System.out.println(df.format(ci.currencyInterpreter("일백만")));
+		 System.out.println(df.format(ci.currencyInterpreter("일천만")));
+		 System.out.println(df.format(ci.currencyInterpreter("일만만")));
+		 System.out.println(df.format(ci.currencyInterpreter("일억")));
+		 System.out.println(df.format(ci.currencyInterpreter("십억")));
+		 System.out.println(df.format(ci.currencyInterpreter("백억")));
+		 System.out.println(df.format(ci.currencyInterpreter("천억")));
+		 System.out.println(df.format(ci.currencyInterpreter("일조")) + " 일조");
+		 System.out.println(df.format(ci.currencyInterpreter("십조")));
+		 System.out.println(df.format(ci.currencyInterpreter("오억")));
+		 System.out.println(df.format(ci.currencyInterpreter("일억")));
+		 System.out.println(df.format(ci.currencyInterpreter("오천만")));
+		 System.out.println(df.format(ci.currencyInterpreter("일억오천만")));
+	}
+
+}

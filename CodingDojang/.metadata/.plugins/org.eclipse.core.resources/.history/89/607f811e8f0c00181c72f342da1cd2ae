@@ -1,0 +1,39 @@
+package currencyInterpreter;
+
+import static org.junit.Assert.assertEquals;
+
+import org.junit.Test;
+
+public class CurrencyInterpreterTest {
+	CurrencyInterpreter ci = new CurrencyInterpreter();
+
+	@Test
+	public void testCurrencyInterpreter() {
+		
+		assertEquals((long)9, ci.currencyInterpreter("구"));
+
+		System.out.println(df.format(ci.currencyInterpreter("구")));
+		System.out.println(df.format(ci.currencyInterpreter("천")));
+		System.out.println(df.format(ci.currencyInterpreter("구천")));
+		System.out.println(df.format(ci.currencyInterpreter("구십구")));
+		System.out.println(df.format(ci.currencyInterpreter("구천구")));
+		System.out.println(df.format(ci.currencyInterpreter("구만구")));
+		System.out.println(df.format(ci.currencyInterpreter("십만")));
+		System.out.println(df.format(ci.currencyInterpreter("일십만")));
+		System.out.println(df.format(ci.currencyInterpreter("일백만")));
+		System.out.println(df.format(ci.currencyInterpreter("일천만")));
+		System.out.println(df.format(ci.currencyInterpreter("일만만")));
+		System.out.println(df.format(ci.currencyInterpreter("일억")));
+//		System.out.println(df.format(ci.currencyInterpreter("십억")));
+//		System.out.println(df.format(ci.currencyInterpreter("백억")));
+//		System.out.println(df.format(ci.currencyInterpreter("천억")));
+//		System.out.println(df.format(ci.currencyInterpreter("일조")) + " 일조");
+//		System.out.println(df.format(ci.currencyInterpreter("십조")));
+//		System.out.println(df.format(ci.currencyInterpreter("오억")));
+//		System.out.println(df.format(ci.currencyInterpreter("일억")));
+//		System.out.println(df.format(ci.currencyInterpreter("오천만")));
+//		System.out.println(df.format(ci.currencyInterpreter("일억오천만")));
+		// System.out.println(df.format(ci.currencyInterpreter("사천구십칠조이천만삼백십육")));
+	}
+
+}

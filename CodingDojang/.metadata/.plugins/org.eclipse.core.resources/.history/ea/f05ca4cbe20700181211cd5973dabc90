@@ -1,0 +1,22 @@
+package insertComma;
+
+public class InsertComma {
+	
+	public String insertComma(int n) {
+		
+		StringBuilder sb = new StringBuilder(Integer.toString(n));
+		
+		System.out.println(sb.reverse().insert(1, ",").reverse());
+		
+		return null;
+	}
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+		InsertComma ic = new InsertComma();
+		
+		System.out.println(ic.insertComma(1000));
+	}
+
+}

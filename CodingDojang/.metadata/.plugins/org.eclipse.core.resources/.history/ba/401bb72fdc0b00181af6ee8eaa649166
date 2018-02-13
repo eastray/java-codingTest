@@ -1,0 +1,80 @@
+package sortStringAndInteger;
+
+import java.util.ArrayList;
+import java.util.Arrays;
+import java.util.Iterator;
+import java.util.List;
+import java.util.stream.Collectors;
+import java.util.stream.Stream;
+
+public class SortStringAndInteger {
+
+	// private String[] sort(String[] str) {
+	//
+	// Arrays.sort(str);
+	//
+	// List<String> list = new ArrayList<String>();
+	// ArrayList<String> result = new ArrayList<String>();
+	//
+	// list = Stream.of(str).filter(m ->
+	// m.contains(Character.toString(str[0].charAt(0))))
+	// .collect(Collectors.toList());
+	//
+	// int i = list.size();
+	// Iterator<String> iter = list.iterator();
+	//
+	// while (iter.hasNext()) {
+	// String temp = iter.next();
+	//
+	// if (Integer.valueOf(temp.charAt(0)) < Integer.valueOf(str[i].charAt(0)))
+	// {
+	// if (Character.getNumericValue(temp.charAt(1)) ==
+	// Character.getNumericValue(str[i].charAt(1))) {
+	// result.add(temp);
+	// result.add(str[i]);
+	// i++;
+	// }
+	// }
+	//
+	// }
+	//
+	// System.out.println(Arrays.toString(list.toArray()));
+	// System.out.println(Arrays.toString(result.toArray()));
+	//
+	// return str;
+	// }
+	private String[] sort(String[] str) {
+		ArrayList<String> list = new ArrayList<String>();
+
+		Arrays.sort(str);
+		
+		List<String> result = Stream.of(str).filter(m -> m.contains(Character.toString(str[0].charAt(0)))).collect(Collectors.toList());
+
+		for (int i = 0; i < result.size(); i++) {
+			list.add(str[i]);
+
+			for (int j = i + 1; j < str.length; j++) {
+				if (Integer.valueOf(str[i].charAt(0)) < Integer.valueOf(str[j].charAt(0))
+						&& Character.getNumericValue(str[i].charAt(1)) == Character.getNumericValue(str[j].charAt(1))) {
+					list.add(str[j]);
+					
+				}
+			}
+
+		}
+		
+		System.out.println(Arrays.toString(list.toArray()));
+		
+		return str;
+	}
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+		SortStringAndInteger ssai = new SortStringAndInteger();
+
+		System.out.println(Arrays.toString(
+				ssai.sort(new String[] { "c1", "b1", "b2", "b3", "a1", "a2", "a3", "a4", "a5", "b4", "b5", "c3" })));
+	}
+
+}

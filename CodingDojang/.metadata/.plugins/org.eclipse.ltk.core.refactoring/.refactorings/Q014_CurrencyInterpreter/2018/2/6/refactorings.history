@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename package &apos;CurrencyInterpreter&apos; to &apos;currencyInterpreter&apos;&#x0A;- Original project: &apos;Q014_CurrencyInterpreter&apos;&#x0A;- Original element: &apos;Q014_CurrencyInterpreter/src/CurrencyInterpreter&apos;&#x0A;- Renamed element: &apos;Q014_CurrencyInterpreter/src/currencyInterpreter&apos;&#x0A;- Update references to refactored element&#x0A;- Update textual occurrences in comments and strings" description="Rename package &apos;CurrencyInterpreter&apos;" flags="589830" hierarchical="false" id="org.eclipse.jdt.ui.rename.package" input="/src&lt;CurrencyInterpreter" name="currencyInterpreter" qualified="false" references="true" stamp="1517994519500" textual="false" version="1.0"/>
+</session>

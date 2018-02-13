@@ -1,0 +1,19 @@
+package problem2;
+
+import java.util.stream.IntStream;
+
+public class SumOfFibonacciNumbersUsingStream {
+	
+	private int sumOfFibonacci(int n) {
+		return IntStream.iterate(1, i -> (i + ))
+	}
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		
+		SumOfFibonacciNumbersUsingStream sofnus = new SumOfFibonacciNumbersUsingStream();
+		
+		System.out.println(sofnus.sumOfFibonacci(10));
+	}
+
+}

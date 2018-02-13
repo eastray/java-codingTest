@@ -1,0 +1,48 @@
+package smallestRange;
+
+import java.util.Arrays;
+
+public class SmallestRange {
+
+	public int[] smallestRange(int[][] arrays) {
+
+		int[] result = new int[3];
+		result[0] = Integer.MAX_VALUE;
+		int i = 0, j = 0, k = 0;
+
+		while (true) {
+			int max = Math.max(arrays[0][i], Math.max(arrays[1][j], arrays[2][k]));
+			int min = Math.min(arrays[0][i], Math.min(arrays[1][j], arrays[2][k]));
+
+			if (result[0] > max - min) {
+				result[0] = max - min;
+				result[1] = max;
+				result[2] = min;
+			}
+
+			if (arrays[0][i] == min && arrays[0].length != (i + 1))
+				i++;
+			else if (arrays[1][j] == min && arrays[1].length != (j + 1))
+				j++;
+			else if (arrays[2][k] == min && arrays[2].length != (k + 1))
+				k++;
+			else 
+				break;
+
+			if (arrays[0].length == (i + 1) && arrays[1].length == (j + 1) && arrays[2].length == (k + 1))
+				break;
+		}
+
+		return result;
+	}
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+		SmallestRange sr = new SmallestRange();
+
+		System.out.println(Arrays.toString(
+				sr.smallestRange(new int[][] { { 4, 10, 15, 24, 26 }, { 0, 9, 12, 20 }, { 5, 18, 22, 30 } })));
+	}
+
+}
