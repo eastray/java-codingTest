@@ -1,0 +1,10 @@
+package problem14;
+
+public class GetTens {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+
+}

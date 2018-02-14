@@ -8,6 +8,281 @@
 	<description>Planet Eclipse - http://planeteclipse.org/planet/</description>
 
 <item>
+	<title>JBoss Tools Team: JBoss Tools 4.5.3.AM1 for Eclipse Oxygen.2</title>
+	<guid isPermaLink="true">https://tools.jboss.org/blog/4.5.3.am1-for-oxygen.2.html</guid>
+	<link>https://tools.jboss.org/blog/4.5.3.am1-for-oxygen.2.html</link>
+	<description>&lt;div&gt;&lt;div id=&quot;preamble&quot;&gt;
+      &lt;div class=&quot;sectionbody&quot;&gt;
+      &lt;div class=&quot;paragraph&quot;&gt;
+      &lt;p&gt;Happy to announce 4.5.3.AM1 (Developer Milestone 1) build for Eclipse Oxygen.2.&lt;/p&gt;
+      &lt;/div&gt;
+      &lt;div class=&quot;paragraph&quot;&gt;
+      &lt;p&gt;Downloads available at &lt;a href=&quot;https://tools.jboss.org/downloads/jbosstools/oxygen/4.5.3.AM1.html&quot;&gt;JBoss Tools 4.5.3 AM1&lt;/a&gt;.&lt;/p&gt;
+      &lt;/div&gt;
+      &lt;/div&gt;
+      &lt;/div&gt;
+      &lt;div class=&quot;sect1&quot;&gt;
+      &lt;h2 id=&quot;what-is-new&quot;&gt;&lt;a class=&quot;anchor&quot; href=&quot;http://tools.jboss.org/blog/news.atom#what-is-new&quot;&gt;&lt;/a&gt;What is New?&lt;/h2&gt;
+      &lt;div class=&quot;sectionbody&quot;&gt;
+      &lt;div class=&quot;paragraph&quot;&gt;
+      &lt;p&gt;Full info is at &lt;a href=&quot;https://tools.jboss.org/documentation/whatsnew/jbosstools/4.5.3.AM1.html&quot;&gt;this page&lt;/a&gt;. Some highlights are below.&lt;/p&gt;
+      &lt;/div&gt;
+      &lt;div class=&quot;sect2&quot;&gt;
+      &lt;h3 id=&quot;openshift&quot;&gt;&lt;a class=&quot;anchor&quot; href=&quot;http://tools.jboss.org/blog/news.atom#openshift&quot;&gt;&lt;/a&gt;OpenShift&lt;/h3&gt;
+      &lt;div class=&quot;sect3&quot;&gt;
+      &lt;h4 id=&quot;minishift-server-adapter&quot;&gt;&lt;a class=&quot;anchor&quot; href=&quot;http://tools.jboss.org/blog/news.atom#minishift-server-adapter&quot;&gt;&lt;/a&gt;Minishift Server Adapter&lt;/h4&gt;
+      &lt;div class=&quot;paragraph&quot;&gt;
+      &lt;p&gt;A new server adapter has been added to support upstream Minishift.
+      While the server adapter itself has limited functionality, it is able to start and stop the Minishift virtual machine via its minishift binary.
+      From the Servers view, click &lt;strong&gt;New&lt;/strong&gt; and then type minishift, that will bring up a command to setup and/or launch the Minishift server adapter.&lt;/p&gt;
+      &lt;/div&gt;
+      &lt;div class=&quot;imageblock&quot;&gt;
+      &lt;div class=&quot;content&quot;&gt;
+      &lt;img alt=&quot;minishift server adapter&quot; src=&quot;https://tools.jboss.org/documentation/whatsnew/openshift/images/minishift-server-adapter.png&quot; width=&quot;600&quot; /&gt;
+      &lt;/div&gt;
+      &lt;/div&gt;
+      &lt;div class=&quot;paragraph&quot;&gt;
+      &lt;p&gt;All you have to do is set the location of the minishift binary file, the type of virtualization hypervisor
+      and an optional Minishift profile name.&lt;/p&gt;
+      &lt;/div&gt;
+      &lt;div class=&quot;imageblock&quot;&gt;
+      &lt;div class=&quot;content&quot;&gt;
+      &lt;img alt=&quot;minishift server adapter1&quot; src=&quot;https://tools.jboss.org/documentation/whatsnew/openshift/images/minishift-server-adapter1.png&quot; width=&quot;600&quot; /&gt;
+      &lt;/div&gt;
+      &lt;/div&gt;
+      &lt;div class=&quot;paragraph&quot;&gt;
+      &lt;p&gt;Once you’re finished, a new Minishift Server adapter will then be created and visible in the Servers view.&lt;/p&gt;
+      &lt;/div&gt;
+      &lt;div class=&quot;imageblock&quot;&gt;
+      &lt;div class=&quot;content&quot;&gt;
+      &lt;img alt=&quot;minishift server adapter2&quot; src=&quot;https://tools.jboss.org/documentation/whatsnew/openshift/images/minishift-server-adapter2.png&quot; width=&quot;600&quot; /&gt;
+      &lt;/div&gt;
+      &lt;/div&gt;
+      &lt;div class=&quot;paragraph&quot;&gt;
+      &lt;p&gt;Once the server is started, Docker and OpenShift connections should appear in their respective views, allowing the user to quickly create a new Openshift application and begin developing their AwesomeApp in a highly-replicatable environment.&lt;/p&gt;
+      &lt;/div&gt;
+      &lt;div class=&quot;imageblock&quot;&gt;
+      &lt;div class=&quot;content&quot;&gt;
+      &lt;img alt=&quot;minishift server adapter3&quot; src=&quot;https://tools.jboss.org/documentation/whatsnew/openshift/images/minishift-server-adapter3.png&quot; width=&quot;600&quot; /&gt;
+      &lt;/div&gt;
+      &lt;/div&gt;
+      &lt;div class=&quot;imageblock&quot;&gt;
+      &lt;div class=&quot;content&quot;&gt;
+      &lt;img alt=&quot;minishift server adapter4&quot; src=&quot;https://tools.jboss.org/documentation/whatsnew/openshift/images/minishift-server-adapter4.png&quot; width=&quot;600&quot; /&gt;
+      &lt;/div&gt;
+      &lt;/div&gt;
+      &lt;/div&gt;
+      &lt;/div&gt;
+      &lt;div class=&quot;sect2&quot;&gt;
+      &lt;h3 id=&quot;fuse-tooling&quot;&gt;&lt;a class=&quot;anchor&quot; href=&quot;http://tools.jboss.org/blog/news.atom#fuse-tooling&quot;&gt;&lt;/a&gt;Fuse Tooling&lt;/h3&gt;
+      &lt;div class=&quot;sect3&quot;&gt;
+      &lt;h4 id=&quot;new-shortcuts-in-fuse-integration-perspective&quot;&gt;&lt;a class=&quot;anchor&quot; href=&quot;http://tools.jboss.org/blog/news.atom#new-shortcuts-in-fuse-integration-perspective&quot;&gt;&lt;/a&gt;New shortcuts in Fuse Integration perspective&lt;/h4&gt;
+      &lt;div class=&quot;paragraph&quot;&gt;
+      &lt;p&gt;Shortcuts for the Java, Launch, and Debug perspectives and basic navigation operations are now provided within the Fuse Integration perspective.&lt;/p&gt;
+      &lt;/div&gt;
+      &lt;div class=&quot;paragraph&quot;&gt;
+      &lt;p&gt;The result is a set of buttons in the Toolbar:&lt;/p&gt;
+      &lt;/div&gt;
+      &lt;div class=&quot;imageblock&quot;&gt;
+      &lt;div class=&quot;content&quot;&gt;
+      &lt;img alt=&quot;New Toolbar action&quot; src=&quot;https://tools.jboss.org/documentation/whatsnew/fusetools/images/newToolbarAction.png&quot; /&gt;
+      &lt;/div&gt;
+      &lt;/div&gt;
+      &lt;div class=&quot;paragraph&quot;&gt;
+      &lt;p&gt;All of the associated keyboard shortcuts are also available, such as Ctrl+Shift+T to open a Java Type.&lt;/p&gt;
+      &lt;/div&gt;
+      &lt;/div&gt;
+      &lt;div class=&quot;sect3&quot;&gt;
+      &lt;h4 id=&quot;performance-improvement-loading-advanced-tab-for-camel-endpoints&quot;&gt;&lt;a class=&quot;anchor&quot; href=&quot;http://tools.jboss.org/blog/news.atom#performance-improvement-loading-advanced-tab-for-camel-endpoints&quot;&gt;&lt;/a&gt;Performance improvement: Loading Advanced tab for Camel Endpoints&lt;/h4&gt;
+      &lt;div class=&quot;paragraph&quot;&gt;
+      &lt;p&gt;The loading time of the &quot;Advanced&quot; tab in the Properties view for Camel Endpoints is greatly improved.&lt;/p&gt;
+      &lt;/div&gt;
+      &lt;div class=&quot;imageblock&quot;&gt;
+      &lt;div class=&quot;content&quot;&gt;
+      &lt;img alt=&quot;Advanced Tab in Properties view&quot; src=&quot;https://tools.jboss.org/documentation/whatsnew/fusetools/images/advancedTab.png&quot; /&gt;
+      &lt;/div&gt;
+      &lt;/div&gt;
+      &lt;div class=&quot;paragraph&quot;&gt;
+      &lt;p&gt;Previously, in the case of Camel Components that have a lot of parameters, it took several seconds to load the Advanced tab. For example, for the File component, it would take ~3.5s. It now takes ~350ms. The load time has been reduced by a factor of 10. (See this interesting &lt;a href=&quot;https://www.nngroup.com/articles/response-times-3-important-limits/&quot;&gt;article on response time&lt;/a&gt;)&lt;/p&gt;
+      &lt;/div&gt;
+      &lt;div class=&quot;paragraph&quot;&gt;
+      &lt;p&gt;If you notice other places showing slow performance, you can file a report by using the &lt;a href=&quot;https://issues.jboss.org/browse/FUSETOOLS&quot;&gt;Fuse Tooling issue tracker&lt;/a&gt;. The Fuse Tooling team really appreciates your help. Your feedback contributes to our development priorities and improves the Fuse Tooling user experience.&lt;/p&gt;
+      &lt;/div&gt;
+      &lt;div class=&quot;paragraph&quot;&gt;
+      &lt;p&gt;Enjoy!&lt;/p&gt;
+      &lt;/div&gt;
+      &lt;div class=&quot;paragraph&quot;&gt;
+      &lt;p&gt;Jeff Maury&lt;/p&gt;
+      &lt;/div&gt;
+      &lt;/div&gt;
+      &lt;/div&gt;
+      &lt;/div&gt;
+      &lt;/div&gt;&lt;/div&gt;</description>
+	<pubDate>Tue, 13 Feb 2018 20:44:40 +0000</pubDate>
+</item>
+<item>
+	<title>Lorenzo Bettini: Eclipse tested with a few Gnome themes</title>
+	<guid isPermaLink="false">http://www.lorenzobettini.it/?p=1048</guid>
+	<link>http://www.lorenzobettini.it/2018/02/eclipse-tested-with-a-few-gnome-themes/</link>
+	<description>&lt;p&gt;In this small blog post I’ll show how Eclipse looks like in Linux Gnome (Ubuntu 17.10) with a few Gnome themes.&lt;/p&gt;
+&lt;p&gt;First of all, the default Ubuntu theme, &lt;strong&gt;Ambiance&lt;/strong&gt;, makes Eclipse look not very nice… see the icons, which are “packed” and “compressed” in the toolbar, not to mention the cut “Filter Files” textbox in the “Git Staging” view:&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;http://www.lorenzobettini.it/2018/02/eclipse-tested-with-a-few-gnome-themes/eclipse-ambiance/&quot; rel=&quot;attachment wp-att-1049&quot;&gt;&lt;img alt=&quot;&quot; class=&quot;aligncenter size-full wp-image-1049&quot; height=&quot;375&quot; src=&quot;https://i0.wp.com/www.lorenzobettini.it/wp-content/uploads/2018/02/eclipse-ambiance.png?resize=625%2C375&quot; width=&quot;625&quot; /&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Numix&lt;/strong&gt; has similar problems:&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;http://www.lorenzobettini.it/2018/02/eclipse-tested-with-a-few-gnome-themes/eclipse-numix/&quot; rel=&quot;attachment wp-att-1050&quot;&gt;&lt;img alt=&quot;&quot; class=&quot;aligncenter size-full wp-image-1050&quot; height=&quot;375&quot; src=&quot;https://i2.wp.com/www.lorenzobettini.it/wp-content/uploads/2018/02/eclipse-numix.png?resize=625%2C375&quot; width=&quot;625&quot; /&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Adwaita&lt;/strong&gt;, (the default Gnome theme) instead makes it look great:&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;http://www.lorenzobettini.it/2018/02/eclipse-tested-with-a-few-gnome-themes/eclipse-adwaita/&quot; rel=&quot;attachment wp-att-1051&quot;&gt;&lt;img alt=&quot;&quot; class=&quot;aligncenter size-full wp-image-1051&quot; height=&quot;375&quot; src=&quot;https://i0.wp.com/www.lorenzobettini.it/wp-content/uploads/2018/02/eclipse-adwaita.png?resize=625%2C375&quot; width=&quot;625&quot; /&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;The same holds for alternative themes; the following screenshots are based on &lt;strong&gt;Arc&lt;/strong&gt;, &lt;strong&gt;Pop&lt;/strong&gt; and &lt;strong&gt;Matcha&lt;/strong&gt;, respectively:&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;http://www.lorenzobettini.it/2018/02/eclipse-tested-with-a-few-gnome-themes/eclipse-arc/&quot; rel=&quot;attachment wp-att-1052&quot;&gt;&lt;img alt=&quot;&quot; class=&quot;aligncenter size-full wp-image-1052&quot; height=&quot;375&quot; src=&quot;https://i1.wp.com/www.lorenzobettini.it/wp-content/uploads/2018/02/eclipse-arc.png?resize=625%2C375&quot; width=&quot;625&quot; /&gt;&lt;/a&gt;&lt;a href=&quot;http://www.lorenzobettini.it/2018/02/eclipse-tested-with-a-few-gnome-themes/eclipse-pop/&quot; rel=&quot;attachment wp-att-1053&quot;&gt;&lt;img alt=&quot;&quot; class=&quot;aligncenter size-full wp-image-1053&quot; height=&quot;375&quot; src=&quot;https://i2.wp.com/www.lorenzobettini.it/wp-content/uploads/2018/02/eclipse-pop.png?resize=625%2C375&quot; width=&quot;625&quot; /&gt;&lt;/a&gt;&lt;a href=&quot;http://www.lorenzobettini.it/2018/02/eclipse-tested-with-a-few-gnome-themes/eclipse-matcha/&quot; rel=&quot;attachment wp-att-1054&quot;&gt;&lt;img alt=&quot;&quot; class=&quot;aligncenter size-full wp-image-1054&quot; height=&quot;374&quot; src=&quot;https://i1.wp.com/www.lorenzobettini.it/wp-content/uploads/2018/02/eclipse-matcha.png?resize=625%2C374&quot; width=&quot;625&quot; /&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;So, in the end, stay away from Ubuntu default theme &lt;img alt=&quot;😉&quot; class=&quot;wp-smiley&quot; src=&quot;https://s.w.org/images/core/emoji/2.4/72x72/1f609.png&quot; style=&quot;height: 1em;&quot; /&gt;&lt;/p&gt;
+&lt;div class=&quot;sociable&quot;&gt;&lt;div class=&quot;sociable_tagline&quot;&gt;Be Sociable, Share!&lt;/div&gt;&lt;ul class=&quot;clearfix&quot;&gt;&lt;li&gt;&lt;a class=&quot;option1_16&quot; href=&quot;http://twitter.com/intent/tweet?text=Eclipse%20tested%20with%20a%20few%20Gnome%20themes%20-%20http%3A%2F%2Fwww.lorenzobettini.it%2F2018%2F02%2Feclipse-tested-with-a-few-gnome-themes%2F%20&quot; rel=&quot;nofollow&quot; target=&quot;_blank&quot; title=&quot;Twitter&quot;&gt;&lt;/a&gt;&lt;/li&gt;&lt;li&gt;&lt;a class=&quot;option1_16&quot; href=&quot;http://www.facebook.com/share.php?u=http%3A%2F%2Fwww.lorenzobettini.it%2F2018%2F02%2Feclipse-tested-with-a-few-gnome-themes%2F&amp;amp;t=Eclipse%20tested%20with%20a%20few%20Gnome%20themes&quot; rel=&quot;nofollow&quot; target=&quot;_blank&quot; title=&quot;Facebook&quot;&gt;&lt;/a&gt;&lt;/li&gt;&lt;li&gt;&lt;a class=&quot;option1_16&quot; href=&quot;https://mail.google.com/mail/?view=cm&amp;amp;fs=1&amp;amp;to&amp;amp;su=Eclipse%20tested%20with%20a%20few%20Gnome%20themes&amp;amp;body=http%3A%2F%2Fwww.lorenzobettini.it%2F2018%2F02%2Feclipse-tested-with-a-few-gnome-themes%2F&amp;amp;ui=2&amp;amp;tf=1&amp;amp;shva=1&quot; rel=&quot;nofollow&quot; target=&quot;_blank&quot; title=&quot;email&quot;&gt;&lt;/a&gt;&lt;/li&gt;&lt;li&gt;&lt;a class=&quot;option1_16&quot; rel=&quot;nofollow&quot; title=&quot;Add to favorites - doesn't work in Chrome&quot;&gt;&lt;/a&gt;&lt;/li&gt;&lt;li&gt;&lt;a class=&quot;option1_16&quot; href=&quot;http://www.stumbleupon.com/submit?url=http%3A%2F%2Fwww.lorenzobettini.it%2F2018%2F02%2Feclipse-tested-with-a-few-gnome-themes%2F&amp;amp;title=Eclipse%20tested%20with%20a%20few%20Gnome%20themes&quot; rel=&quot;nofollow&quot; target=&quot;_blank&quot; title=&quot;StumbleUpon&quot;&gt;&lt;/a&gt;&lt;/li&gt;&lt;li&gt;&lt;a class=&quot;option1_16&quot; href=&quot;http://delicious.com/post?url=http%3A%2F%2Fwww.lorenzobettini.it%2F2018%2F02%2Feclipse-tested-with-a-few-gnome-themes%2F&amp;amp;title=Eclipse%20tested%20with%20a%20few%20Gnome%20themes&amp;amp;notes=In%20this%20small%20blog%20post%20I%27ll%20show%20how%20Eclipse%20looks%20like%20in%20Linux%20Gnome%20%28Ubuntu%2017.10%29%20with%20a%20few%20Gnome%20themes.%0D%0A%0D%0AFirst%20of%20all%2C%20the%20default%20Ubuntu%20theme%2C%20Ambiance%2C%20makes%20Eclipse%20look%20not%20very%20nice...%20see%20the%20icons%2C%20which%20are%20%22packed%22%20and%20%22compressed&quot; rel=&quot;nofollow&quot; target=&quot;_blank&quot; title=&quot;Delicious&quot;&gt;&lt;/a&gt;&lt;/li&gt;&lt;li&gt;&lt;a class=&quot;option1_16&quot; href=&quot;http://www.google.com/reader/link?url=http%3A%2F%2Fwww.lorenzobettini.it%2F2018%2F02%2Feclipse-tested-with-a-few-gnome-themes%2F&amp;amp;title=Eclipse%20tested%20with%20a%20few%20Gnome%20themes&amp;amp;srcURL=http%3A%2F%2Fwww.lorenzobettini.it%2F2018%2F02%2Feclipse-tested-with-a-few-gnome-themes%2F&amp;amp;srcTitle=Lorenzo+Bettini+My+Home+Page&quot; rel=&quot;nofollow&quot; target=&quot;_blank&quot; title=&quot;Google Reader&quot;&gt;&lt;/a&gt;&lt;/li&gt;&lt;li&gt;&lt;a class=&quot;option1_16&quot; href=&quot;http://www.linkedin.com/shareArticle?mini=true&amp;amp;url=http%3A%2F%2Fwww.lorenzobettini.it%2F2018%2F02%2Feclipse-tested-with-a-few-gnome-themes%2F&amp;amp;title=Eclipse%20tested%20with%20a%20few%20Gnome%20themes&amp;amp;source=Lorenzo+Bettini+My+Home+Page&amp;amp;summary=In%20this%20small%20blog%20post%20I%27ll%20show%20how%20Eclipse%20looks%20like%20in%20Linux%20Gnome%20%28Ubuntu%2017.10%29%20with%20a%20few%20Gnome%20themes.%0D%0A%0D%0AFirst%20of%20all%2C%20the%20default%20Ubuntu%20theme%2C%20Ambiance%2C%20makes%20Eclipse%20look%20not%20very%20nice...%20see%20the%20icons%2C%20which%20are%20%22packed%22%20and%20%22compressed&quot; rel=&quot;nofollow&quot; target=&quot;_blank&quot; title=&quot;LinkedIn&quot;&gt;&lt;/a&gt;&lt;/li&gt;&lt;li&gt;&lt;a class=&quot;option1_16&quot; href=&quot;http://www.blinklist.com/index.php?Action=Blink/addblink.php&amp;amp;Url=http%3A%2F%2Fwww.lorenzobettini.it%2F2018%2F02%2Feclipse-tested-with-a-few-gnome-themes%2F&amp;amp;Title=Eclipse%20tested%20with%20a%20few%20Gnome%20themes&quot; rel=&quot;nofollow&quot; style=&quot;background-position: 0px 0px;&quot; target=&quot;_blank&quot; title=&quot;BlinkList&quot;&gt;&lt;/a&gt;&lt;/li&gt;&lt;li&gt;&lt;a rel=&quot;nofollow&quot; style=&quot;cursor: pointer;&quot;&gt;&lt;img src=&quot;https://i0.wp.com/www.lorenzobettini.it/wp-content/plugins/sociable/images/more.png?w=625&quot; /&gt;&lt;/a&gt;&lt;/li&gt;&lt;/ul&gt;&lt;div id=&quot;sociable-post-1048&quot; style=&quot;display: none;&quot;&gt;   
+
+    &lt;div id=&quot;sociable&quot; style=&quot;display: block;&quot;&gt;
+
+
+
+		&lt;div class=&quot;popup&quot;&gt;
+
+			&lt;div class=&quot;content&quot;&gt;
+
+				&lt;ul&gt;&lt;li style=&quot;width: 16px;&quot;&gt;&lt;a class=&quot;option1_16&quot; href=&quot;http://www.myspace.com/Modules/PostTo/Pages/?u=http%3A%2F%2Fwww.lorenzobettini.it%2F2018%2F02%2Feclipse-tested-with-a-few-gnome-themes%2F&amp;amp;t=Eclipse%20tested%20with%20a%20few%20Gnome%20themes&quot; rel=&quot;nofollow&quot; target=&quot;_blank&quot; title=&quot;Myspace&quot;&gt;&lt;/a&gt;&lt;/li&gt;&lt;li style=&quot;width: 16px;&quot;&gt;&lt;a class=&quot;option1_16&quot; href=&quot;http://digg.com/submit?phase=2&amp;amp;url=http%3A%2F%2Fwww.lorenzobettini.it%2F2018%2F02%2Feclipse-tested-with-a-few-gnome-themes%2F&amp;amp;title=Eclipse%20tested%20with%20a%20few%20Gnome%20themes&amp;amp;bodytext=In%20this%20small%20blog%20post%20I%27ll%20show%20how%20Eclipse%20looks%20like%20in%20Linux%20Gnome%20%28Ubuntu%2017.10%29%20with%20a%20few%20Gnome%20themes.%0D%0A%0D%0AFirst%20of%20all%2C%20the%20default%20Ubuntu%20theme%2C%20Ambiance%2C%20makes%20Eclipse%20look%20not%20very%20nice...%20see%20the%20icons%2C%20which%20are%20%22packed%22%20and%20%22compressed&quot; rel=&quot;nofollow&quot; target=&quot;_blank&quot; title=&quot;Digg&quot;&gt;&lt;/a&gt;&lt;/li&gt;&lt;li style=&quot;width: 16px;&quot;&gt;&lt;a class=&quot;option1_16&quot; href=&quot;http://reddit.com/submit?url=http%3A%2F%2Fwww.lorenzobettini.it%2F2018%2F02%2Feclipse-tested-with-a-few-gnome-themes%2F&amp;amp;title=Eclipse%20tested%20with%20a%20few%20Gnome%20themes&quot; rel=&quot;nofollow&quot; target=&quot;_blank&quot; title=&quot;Reddit&quot;&gt;&lt;/a&gt;&lt;/li&gt;&lt;li style=&quot;width: 16px;&quot;&gt;&lt;a class=&quot;option1_16&quot; href=&quot;http://www.google.com/bookmarks/mark?op=edit&amp;amp;bkmk=http%3A%2F%2Fwww.lorenzobettini.it%2F2018%2F02%2Feclipse-tested-with-a-few-gnome-themes%2F&amp;amp;title=Eclipse%20tested%20with%20a%20few%20Gnome%20themes&amp;amp;annotation=In%20this%20small%20blog%20post%20I%27ll%20show%20how%20Eclipse%20looks%20like%20in%20Linux%20Gnome%20%28Ubuntu%2017.10%29%20with%20a%20few%20Gnome%20themes.%0D%0A%0D%0AFirst%20of%20all%2C%20the%20default%20Ubuntu%20theme%2C%20Ambiance%2C%20makes%20Eclipse%20look%20not%20very%20nice...%20see%20the%20icons%2C%20which%20are%20%22packed%22%20and%20%22compressed&quot; rel=&quot;nofollow&quot; target=&quot;_blank&quot; title=&quot;Google Bookmarks&quot;&gt;&lt;/a&gt;&lt;/li&gt;&lt;li style=&quot;width: 16px;&quot;&gt;&lt;a class=&quot;option1_16&quot; href=&quot;http://news.ycombinator.com/submitlink?u=http%3A%2F%2Fwww.lorenzobettini.it%2F2018%2F02%2Feclipse-tested-with-a-few-gnome-themes%2F&amp;amp;t=Eclipse%20tested%20with%20a%20few%20Gnome%20themes&quot; rel=&quot;nofollow&quot; target=&quot;_blank&quot; title=&quot;HackerNews&quot;&gt;&lt;/a&gt;&lt;/li&gt;&lt;li style=&quot;width: 16px;&quot;&gt;&lt;a class=&quot;option1_16&quot; href=&quot;http://reporter.es.msn.com/?fn=contribute&amp;amp;Title=Eclipse%20tested%20with%20a%20few%20Gnome%20themes&amp;amp;URL=http%3A%2F%2Fwww.lorenzobettini.it%2F2018%2F02%2Feclipse-tested-with-a-few-gnome-themes%2F&amp;amp;cat_id=6&amp;amp;tag_id=31&amp;amp;Remark=In%20this%20small%20blog%20post%20I%27ll%20show%20how%20Eclipse%20looks%20like%20in%20Linux%20Gnome%20%28Ubuntu%2017.10%29%20with%20a%20few%20Gnome%20themes.%0D%0A%0D%0AFirst%20of%20all%2C%20the%20default%20Ubuntu%20theme%2C%20Ambiance%2C%20makes%20Eclipse%20look%20not%20very%20nice...%20see%20the%20icons%2C%20which%20are%20%22packed%22%20and%20%22compressed&quot; rel=&quot;nofollow&quot; target=&quot;_blank&quot; title=&quot;MSNReporter&quot;&gt;&lt;/a&gt;&lt;/li&gt;&lt;li style=&quot;width: 16px;&quot;&gt;&lt;a class=&quot;option1_16&quot; href=&quot;http://sphinn.com/index.php?c=post&amp;amp;m=submit&amp;amp;link=http%3A%2F%2Fwww.lorenzobettini.it%2F2018%2F02%2Feclipse-tested-with-a-few-gnome-themes%2F&quot; rel=&quot;nofollow&quot; target=&quot;_blank&quot; title=&quot;Sphinn&quot;&gt;&lt;/a&gt;&lt;/li&gt;&lt;li style=&quot;width: 16px;&quot;&gt;&lt;a class=&quot;option1_16&quot; href=&quot;http://posterous.com/share?linkto=http%3A%2F%2Fwww.lorenzobettini.it%2F2018%2F02%2Feclipse-tested-with-a-few-gnome-themes%2F&amp;amp;title=Eclipse%20tested%20with%20a%20few%20Gnome%20themes&amp;amp;selection=In%20this%20small%20blog%20post%20I%27ll%20show%20how%20Eclipse%20looks%20like%20in%20Linux%20Gnome%20%28Ubuntu%2017.10%29%20with%20a%20few%20Gnome%20themes.%0D%0A%0D%0AFirst%20of%20all%2C%20the%20default%20Ubuntu%20theme%2C%20Ambiance%2C%20makes%20Eclipse%20look%20not%20very%20nice...%20see%20the%20icons%2C%20which%20are%20%22packed%22%20and%20%22compressed&quot; rel=&quot;nofollow&quot; target=&quot;_blank&quot; title=&quot;Posterous&quot;&gt;&lt;/a&gt;&lt;/li&gt;&lt;li style=&quot;width: 16px;&quot;&gt;&lt;a class=&quot;option1_16&quot; href=&quot;http://www.tumblr.com/share?v=3&amp;amp;u=http%3A%2F%2Fwww.lorenzobettini.it%2F2018%2F02%2Feclipse-tested-with-a-few-gnome-themes%2F&amp;amp;t=Eclipse%20tested%20with%20a%20few%20Gnome%20themes&amp;amp;s=In%20this%20small%20blog%20post%20I%27ll%20show%20how%20Eclipse%20looks%20like%20in%20Linux%20Gnome%20%28Ubuntu%2017.10%29%20with%20a%20few%20Gnome%20themes.%0D%0A%0D%0AFirst%20of%20all%2C%20the%20default%20Ubuntu%20theme%2C%20Ambiance%2C%20makes%20Eclipse%20look%20not%20very%20nice...%20see%20the%20icons%2C%20which%20are%20%22packed%22%20and%20%22compressed&quot; rel=&quot;nofollow&quot; target=&quot;_blank&quot; title=&quot;Tumblr&quot;&gt;&lt;/a&gt;&lt;/li&gt;&lt;/ul&gt;			
+
+			&lt;/div&gt;        
+
+		  &lt;a class=&quot;close&quot; style=&quot;cursor: pointer;&quot;&gt;
+
+		  &lt;img src=&quot;https://i0.wp.com/www.lorenzobettini.it/wp-content/plugins/sociable/images/closelabel.png?w=625&quot; title=&quot;close&quot; /&gt;
+
+		  &lt;/a&gt;
+
+		&lt;/div&gt;
+
+	&lt;/div&gt; 
+
+  &lt;/div&gt;&lt;/div&gt;&lt;div class=&quot;sociable&quot; style=&quot;float: none;&quot;&gt;&lt;ul class=&quot;clearfix&quot;&gt;&lt;li id=&quot;Twitter_Counter&quot;&gt;&lt;a class=&quot;twitter-share-button&quot; href=&quot;https://twitter.com/share&quot;&gt;Tweet&lt;/a&gt;&lt;/li&gt;&lt;li id=&quot;Facebook_Counter&quot;&gt;&lt;/li&gt;&lt;li id=&quot;Google_p&quot;&gt;&lt;/li&gt;&lt;li id=&quot;LinkedIn_Counter&quot;&gt;&lt;/li&gt;&lt;li id=&quot;StumbleUpon_Counter&quot;&gt;&lt;/li&gt;&lt;/ul&gt;&lt;/div&gt;</description>
+	<pubDate>Tue, 13 Feb 2018 09:53:13 +0000</pubDate>
+</item>
+<item>
+	<title>Scott Lewis: Python 3 and Import Hooks for OSGi Services</title>
+	<guid isPermaLink="false">tag:blogger.com,1999:blog-20358640.post-8198790809149751713</guid>
+	<link>http://eclipseecf.blogspot.com/2018/02/python-3-and-import-hooks-for-osgi.html</link>
+	<description>In a previous post I described using &lt;a href=&quot;http://eclipseecf.blogspot.com/2017/12/remote-services-between-python-and-java.html&quot; target=&quot;_blank&quot;&gt;Python for implementing OSGi Services&lt;/a&gt;.   This Python&amp;lt;-&amp;gt;Java service bridge allows Python-provided/implemented OSGi services called from Java, and Java-provided/implemented OSGi Services called from Python.   OSGi Remote Services provides a standardized way of communicating service meta-data (e.g. service contracts, endpoint meta-data) between Java and Python processes.&lt;br /&gt;&lt;br /&gt;As this Java&amp;lt;-&amp;gt;Python communication conforms to the OSGi Remote Services specification, everything is completely inter-operable with Declarative Services and/or other frameworks based upon OSGi Services.  It will also run in any OSGi R5+ environment, including Eclipse, Karaf, OSGi-based web servers, or other OSGi-based environments.&lt;br /&gt;&lt;br /&gt;Recently, Python 3 has introduced the concept of an &lt;b&gt;&lt;a href=&quot;https://www.python.org/dev/peps/pep-0302/&quot; target=&quot;_blank&quot;&gt;Import Hook&lt;/a&gt;&lt;/b&gt;.   An import hook allows the python path and the behavior of the python import statement to be dynamically or extended. &lt;br /&gt;&lt;br /&gt;In the most recent version (2.7) of the &lt;a href=&quot;https://github.com/ECF/Py4j-RemoteServicesProvider&quot; target=&quot;_blank&quot;&gt;ECF Py4j Distribution Provider&lt;/a&gt;, we use import hooks so that Python module import is resolved by a Java-side OSGi ModuleResolver service.   For example, as described in &lt;a href=&quot;https://wiki.eclipse.org/Tutorial:_Python_for_OSGi_Services&quot; target=&quot;_blank&quot;&gt;this tutorial&lt;/a&gt;, this Python statement&lt;br /&gt;&lt;pre&gt;&lt;div&gt;&lt;br /&gt;from hello import HelloServiceImpl&lt;/div&gt;&lt;br /&gt;&lt;/pre&gt;imports the hello.py module as a string loaded from &lt;b&gt;within &lt;/b&gt;an OSGi bundle.  Among other things, this allows OSGi dynamics to be used to add and remove modules from the python path without stopping and restarting either the Java or the Python processes.&lt;br /&gt;&lt;br /&gt;&lt;br /&gt;</description>
+	<pubDate>Tue, 13 Feb 2018 02:15:52 +0000</pubDate>
+	<author>noreply@blogger.com (Scott Lewis)</author>
+</item>
+<item>
+	<title>vert.x project: Eclipse Vert.x 3.5.1 released!</title>
+	<guid isPermaLink="true">http://vertx.io/blog/eclipse-vert-x-3-5-1-released</guid>
+	<link>http://vertx.io/blog/eclipse-vert-x-3-5-1-released</link>
+	<description>&lt;article&gt;&lt;p&gt;We have just released Vert.x 3.5.1!&lt;/p&gt;
+&lt;h4 id=&quot;fixes-first-&quot;&gt;Fixes first!&lt;/h4&gt;
+&lt;p&gt;As usual this release fixes bugs reported in 3.5.0, see the release notes.&lt;/p&gt;
+&lt;h4 id=&quot;junit-5-support&quot;&gt;JUnit 5 support&lt;/h4&gt;
+&lt;p&gt;This release introduces the new &lt;a href=&quot;https://github.com/vert-x3/vertx-junit5&quot;&gt;vertx-junit5 module&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;http://junit.org/junit5/&quot;&gt;JUnit 5&lt;/a&gt; is a rewrite of the famous Java testing framework that brings new interesting features, including:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;nested tests,&lt;/li&gt;
+&lt;li&gt;the ability to give a human-readable description of tests and test cases (and yes, even use emojis),&lt;/li&gt;
+&lt;li&gt;a modular extension mechanism that is more powerful than the JUnit 4 runner mechanism (@RunWith annotation),&lt;/li&gt;
+&lt;li&gt;conditional test execution,&lt;/li&gt;
+&lt;li&gt;parameterized tests, including from sources such as CSV data,&lt;/li&gt;
+&lt;li&gt;the support of Java 8 lambda expressions in the reworked built-in assertions API,&lt;/li&gt;
+&lt;li&gt;support for running tests previously written for JUnit 4.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Suppose that we have a &lt;code&gt;SampleVerticle&lt;/code&gt; verticle that exposes a HTTP server on port 11981.
+Here is how we can test its deployment as well as the result of 10 concurrent HTTP requests:&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&quot;hljs&quot;&gt;&lt;span class=&quot;hljs-property&quot;&gt;@Test&lt;/span&gt;
+&lt;span class=&quot;hljs-property&quot;&gt;@DisplayName&lt;/span&gt;(&lt;span class=&quot;hljs-string&quot;&gt;&quot;🚀 Deploy a HTTP service verticle and make 10 requests&quot;&lt;/span&gt;)
+&lt;span class=&quot;hljs-literal&quot;&gt;void&lt;/span&gt; useSampleVerticle(Vertx vertx, VertxTestContext testContext) {
+  WebClient webClient = WebClient.create(vertx);
+  Checkpoint deploymentCheckpoint = testContext.checkpoint();
+
+  Checkpoint requestCheckpoint = testContext.checkpoint(&lt;span class=&quot;hljs-number&quot;&gt;10&lt;/span&gt;);
+  vertx.deployVerticle(&lt;span class=&quot;hljs-keyword&quot;&gt;new&lt;/span&gt; SampleVerticle(), testContext.succeeding(id&lt;span class=&quot;hljs-function&quot;&gt; -&amp;gt;&lt;/span&gt; {
+    deploymentCheckpoint.flag();
+
+    &lt;span class=&quot;hljs-keyword&quot;&gt;for&lt;/span&gt; (int i = &lt;span class=&quot;hljs-number&quot;&gt;0&lt;/span&gt;; i &amp;lt; &lt;span class=&quot;hljs-number&quot;&gt;10&lt;/span&gt;; i++) {
+      webClient.get(&lt;span class=&quot;hljs-number&quot;&gt;11981&lt;/span&gt;, &lt;span class=&quot;hljs-string&quot;&gt;&quot;localhost&quot;&lt;/span&gt;, &lt;span class=&quot;hljs-string&quot;&gt;&quot;/&quot;&lt;/span&gt;)
+        .as(BodyCodec.string())
+        .send(testContext.succeeding(resp&lt;span class=&quot;hljs-function&quot;&gt; -&amp;gt;&lt;/span&gt; {
+          testContext.verify&lt;span class=&quot;hljs-function&quot;&gt;&lt;span class=&quot;hljs-params&quot;&gt;(() -&amp;gt; {
+            assertThat(resp.statusCode()).isEqualTo(&lt;span class=&quot;hljs-number&quot;&gt;200&lt;/span&gt;);
+            assertThat(resp.body()).contains(&lt;span class=&quot;hljs-string&quot;&gt;&quot;Yo!&quot;&lt;/span&gt;);
+            requestCheckpoint.flag();
+          })&lt;/span&gt;;
+        }));
+    }
+  }));
+}&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;The test method above benefits from the injection of a working &lt;code&gt;Vertx&lt;/code&gt; context, a &lt;code&gt;VertxTestContext&lt;/code&gt; for dealing with
+asynchronous operations, and the guarantee that the execution time is bound by a timeout which can optionally be configured
+using a &lt;code&gt;@Timeout&lt;/code&gt; annotation.&lt;/p&gt;
+&lt;p&gt;The test succeeds when all checkpoints have been flagged.
+Note that &lt;code&gt;vertx-junit5&lt;/code&gt; is agnostic of the assertions library being used: you may opt for the built-in JUnit 5 assertions
+or use a 3rd-party library such as &lt;a href=&quot;http://joel-costigliola.github.io/assertj/&quot;&gt;AssertJ&lt;/a&gt; as we did in the example above.&lt;/p&gt;
+&lt;p&gt;You can checkout the &lt;a href=&quot;https://github.com/vert-x3/vertx-junit5&quot;&gt;source on GitHub&lt;/a&gt;, read
+&lt;a href=&quot;http://vertx.io/docs/vertx-junit5/java/&quot;&gt;the manual&lt;/a&gt; and learn from
+&lt;a href=&quot;https://github.com/vert-x3/vertx-examples/tree/master/junit5-examples&quot;&gt;the examples&lt;/a&gt;.&lt;/p&gt;
+&lt;h4 id=&quot;web-api-contract-enhancements&quot;&gt;Web API Contract enhancements&lt;/h4&gt;
+&lt;p&gt;The package &lt;code&gt;vertx-web-api-contract&lt;/code&gt; includes a variety of fixes, from schema &lt;code&gt;$ref&lt;/code&gt; to
+&lt;a href=&quot;http://vertx.io/docs/vertx-web-api-contract/java/&quot;&gt;revamped documentation&lt;/a&gt;. You can give a look at list of all
+&lt;a href=&quot;https://github.com/vert-x3/vertx-web/pull/802&quot;&gt;fixes/improvements here&lt;/a&gt; and all
+&lt;a href=&quot;https://github.com/vert-x3/wiki/wiki/3.5.1-Breaking-Changes#vertx-web-api-contracts&quot;&gt;breaking changes here&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;From 3.5.1 to load the openapi spec and instantiate the Router you should use new method &lt;code&gt;OpenAPI3RouterFactory.create()&lt;/code&gt;
+that replaces old methods &lt;code&gt;createRouterFactoryFromFile()&lt;/code&gt; and &lt;code&gt;createRouterFactoryFromURL()&lt;/code&gt;. This new method accepts
+relative paths, absolute paths, local URL with &lt;code&gt;file://&lt;/code&gt; and remote URL with &lt;code&gt;http://&lt;/code&gt;. Note that if you want refeer to
+a file relative to your jar’s root, you can simply use a relative path and the parser will look out the jar and into the
+jar for the spec.&lt;/p&gt;
+&lt;p&gt;From 3.5.1 all settings about &lt;code&gt;OpenAPI3RouterFactory&lt;/code&gt; behaviours during router generation are inglobed in a new object called
+&lt;a href=&quot;http://vertx.io/docs/apidocs/io/vertx/ext/web/api/contract/RouterFactoryOptions.html&quot;&gt;&lt;code&gt;RouterFactoryOptions&lt;/code&gt;&lt;/a&gt;. From
+this object you can:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Configure if you want to mount a default validation failure handler and which one
+(methods &lt;code&gt;setMountValidationFailureHandler(boolean)&lt;/code&gt; and &lt;code&gt;setValidationFailureHandler(Handler)&lt;/code&gt;)&lt;/li&gt;
+&lt;li&gt;Configure if you want to mount a default 501 not implemented handler and which one
+(methods &lt;code&gt;setMountNotImplementedFailureHandler(boolean)&lt;/code&gt; and &lt;code&gt;setNotImplementedFailureHandler(Handler)&lt;/code&gt;)&lt;/li&gt;
+&lt;li&gt;Configure if you want to mount &lt;code&gt;ResponseContentTypeHandler&lt;/code&gt; automatically
+(method &lt;code&gt;setMountResponseContentTypeHandler(boolean)&lt;/code&gt;)&lt;/li&gt;
+&lt;li&gt;Configure if you want to fail during router generation when security handlers are not configured
+(method &lt;code&gt;setRequireSecurityHandlers(boolean)&lt;/code&gt;)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;After initialization of route, you can mount the &lt;code&gt;RouterFactoryOptions&lt;/code&gt; object with method &lt;code&gt;routerFactory.setOptions()&lt;/code&gt;
+when you want before calling &lt;code&gt;getRouter()&lt;/code&gt;.&lt;/p&gt;
+&lt;h4 id=&quot;rxjava-deprecation-removal&quot;&gt;RxJava deprecation removal&lt;/h4&gt;
+&lt;p&gt;It is important to know that 3.5.x will be the last release with the legacy &lt;code&gt;xyzObservable()&lt;/code&gt; methods:&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&quot;hljs&quot;&gt;&lt;span class=&quot;hljs-annotation&quot;&gt;@Deprecated&lt;/span&gt;()
+&lt;span class=&quot;hljs-function&quot;&gt;&lt;span class=&quot;hljs-keyword&quot;&gt;public&lt;/span&gt; Observable &lt;span class=&quot;hljs-title&quot;&gt;listenObservable&lt;/span&gt;&lt;span class=&quot;hljs-params&quot;&gt;(&lt;span class=&quot;hljs-keyword&quot;&gt;int&lt;/span&gt; port, String host)&lt;/span&gt;&lt;/span&gt;;&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;has been replaced since Vert.x 3.4 by:&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&quot;hljs&quot;&gt;&lt;span class=&quot;hljs-function&quot;&gt;&lt;span class=&quot;hljs-keyword&quot;&gt;public&lt;/span&gt; Single &lt;span class=&quot;hljs-title&quot;&gt;rxListen&lt;/span&gt;&lt;span class=&quot;hljs-params&quot;&gt;(&lt;span class=&quot;hljs-keyword&quot;&gt;int&lt;/span&gt; port, String host)&lt;/span&gt;&lt;/span&gt;;&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;The &lt;code&gt;xyzObservable()&lt;/code&gt; deprecated methods will be &lt;a href=&quot;https://github.com/vert-x3/vertx-rx/issues/113&quot;&gt;removed&lt;/a&gt; in Vert.x 3.6.&lt;/p&gt;
+&lt;h4 id=&quot;wrap-up&quot;&gt;Wrap up&lt;/h4&gt;
+&lt;p&gt;Vert.x 3.5.1 release notes and breaking changes:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&quot;https://github.com/vert-x3/wiki/wiki/3.5.1-Release-Notes&quot;&gt;https://github.com/vert-x3/wiki/wiki/3.5.1-Release-Notes&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://github.com/vert-x3/wiki/wiki/3.5.1-Breaking-Changes&quot;&gt;https://github.com/vert-x3/wiki/wiki/3.5.1-Breaking-Changes&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;The event bus client using the SockJS bridge are available from NPM, Bower and as a WebJar:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&quot;https://www.npmjs.com/package/vertx3-eventbus-client&quot;&gt;https://www.npmjs.com/package/vertx3-eventbus-client&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://github.com/vert-x3/vertx-bus-bower&quot;&gt;https://github.com/vert-x3/vertx-bus-bower&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;http://www.webjars.org/&quot;&gt;http://www.webjars.org/&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Docker images are also available on the &lt;a href=&quot;https://hub.docker.com/u/vertx/&quot;&gt;Docker Hub&lt;/a&gt;. The Vert.x distribution is also available from &lt;a href=&quot;http://sdkman.io/index.html&quot;&gt;SDKMan&lt;/a&gt; and &lt;a href=&quot;http://brew.sh/&quot;&gt;HomeBrew&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;The artifacts have been deployed to &lt;a href=&quot;http://search.maven.org/#search%7Cga%7C1%7Cg%3A%22io.vertx%22%20AND%20v%3A%223.5.1%22&quot;&gt;Maven Central&lt;/a&gt; and you can get the distribution on &lt;a href=&quot;https://bintray.com/vertx/downloads/distribution/3.3.3/view&quot;&gt;Bintray&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;Happy coding !&lt;/p&gt;
+&lt;/article&gt;</description>
+	<pubDate>Tue, 13 Feb 2018 00:00:00 +0000</pubDate>
+</item>
+<item>
+	<title>Eclipse Announcements: EclipseCon France 2018 Call for Papers</title>
+	<guid isPermaLink="true">http://feedproxy.google.com/~r/eclipse/fnews/~3/P-OCvrydq2E/france2018</guid>
+	<link>http://feedproxy.google.com/~r/eclipse/fnews/~3/P-OCvrydq2E/france2018</link>
+	<description>Call for paper submissions are now open until March 19. We'll see you June 13 - 14 in Toulouse!&lt;img alt=&quot;&quot; height=&quot;1&quot; src=&quot;http://feeds.feedburner.com/~r/eclipse/fnews/~4/P-OCvrydq2E&quot; width=&quot;1&quot; /&gt;</description>
+	<pubDate>Mon, 12 Feb 2018 14:15:00 +0000</pubDate>
+</item>
+<item>
 	<title>Wayne Beaton: The Eclipse Committer Election Workflow</title>
 	<guid isPermaLink="false">http://waynebeaton.wordpress.com/?p=5437</guid>
 	<link>https://waynebeaton.wordpress.com/2018/02/08/the-eclipse-committer-election-workflow/</link>
@@ -1131,82 +1406,6 @@ class MyDslGlobalScopeProvider extends ImportUriGlobalScopeProvider {
 &lt;p&gt;And I'm not even touching on launching where you really need to match build configs with launch configs to make sure launches do what you want. So while editors are all the rage right now because they are lightweight and flexible, users still expect them to more than the editors of old. It will be an interesting challenge for those who go that road to walk that balancing line. If you get it right though, I can imagine a lot of happy users.&lt;/p&gt;
 &lt;/div&gt;</description>
 	<pubDate>Sun, 28 Jan 2018 18:31:34 +0000</pubDate>
-</item>
-<item>
-	<title>Wayne Beaton: Decoding the Eclipse IP Policy: Third Party Dependencies</title>
-	<guid isPermaLink="false">http://waynebeaton.wordpress.com/?p=5424</guid>
-	<link>https://waynebeaton.wordpress.com/2018/01/26/decoding-the-eclipse-ip-policy-third-party-dependencies/</link>
-	<description>&lt;p&gt;&lt;span style=&quot;font-weight: 400;&quot;&gt;The term &lt;/span&gt;&lt;i&gt;&lt;span style=&quot;font-weight: 400;&quot;&gt;Intellectual Property&lt;/span&gt;&lt;/i&gt;&lt;span style=&quot;font-weight: 400;&quot;&gt; (IP) refers to any sort of creative work, be it literature, art, or software. In the realm of open source software, artifacts like source code, documentation, and images are considered intellectual property. Unless otherwise stated, intellectual property is the property of its creator, who may grant permission for others to use that intellectual property by providing a license. &lt;/span&gt;&lt;/p&gt;
-&lt;p&gt;&lt;span style=&quot;font-weight: 400;&quot;&gt;The ease with which software can be copied and combined makes it challenging to know with confidence if content can be used without running into legal issues. Any sort of serious software development effort must be accompanied by a well-defined IP Due Diligence process that can ferret out issues and mitigate the risk of leveraging the work of others. IP Due Diligence is a time consuming process that requires specialized skills and a keen eye for detail.&lt;/span&gt;&lt;/p&gt;
-&lt;p&gt;&lt;span style=&quot;font-weight: 400;&quot;&gt;There are different kinds of content (source code, documentation, images, …) to consider. &lt;/span&gt;&lt;b&gt;&lt;i&gt;Project Code&lt;/i&gt;&lt;/b&gt;&lt;span style=&quot;font-weight: 400;&quot;&gt; is content that is produced and maintained by the open source project committers and contributors. &lt;/span&gt;&lt;b&gt;&lt;i&gt;Third Party Content&lt;/i&gt;&lt;/b&gt;&lt;span style=&quot;font-weight: 400;&quot;&gt; generally takes the form of libraries (modules, components, …), source files, images, or other forms of IP that are produced and maintained outside of the scope of the open source project. To mitigate the risk associated with adopting open source in products, the &lt;/span&gt;&lt;i&gt;&lt;span style=&quot;font-weight: 400;&quot;&gt;Project Code&lt;/span&gt;&lt;/i&gt;&lt;span style=&quot;font-weight: 400;&quot;&gt; and &lt;/span&gt;&lt;i&gt;&lt;span style=&quot;font-weight: 400;&quot;&gt;Third Party Content&lt;/span&gt;&lt;/i&gt;&lt;span style=&quot;font-weight: 400;&quot;&gt; that it leverages need to be vetted to ensure that the copyrights expressed are correct, licensing is valid and compatible, and other issues have been uncovered and properly investigated.&lt;/span&gt;&lt;/p&gt;
-&lt;p&gt;&lt;span style=&quot;font-weight: 400;&quot;&gt;The Eclipse Foundation has a well-defined &lt;a href=&quot;https://www.eclipse.org/org/documents/Eclipse_IP_Policy.pdf&quot;&gt;IP Policy&lt;/a&gt;, corresponding IP Due Diligence Process, and a dedicated team of professional IP specialists who perform the heavy lifting in the due diligence process. Committers, the software developers who decide what will become &lt;/span&gt;&lt;i&gt;&lt;span style=&quot;font-weight: 400;&quot;&gt;Project Code&lt;/span&gt;&lt;/i&gt;&lt;span style=&quot;font-weight: 400;&quot;&gt; and how an Eclipse open source project will leverage &lt;/span&gt;&lt;i&gt;&lt;span style=&quot;font-weight: 400;&quot;&gt;Third Party Content&lt;/span&gt;&lt;/i&gt;&lt;span style=&quot;font-weight: 400;&quot;&gt;, are responsible for bringing IP issues to the attention of the Eclipse IP Team.&lt;/span&gt;&lt;/p&gt;
-&lt;p&gt;&lt;span style=&quot;font-weight: 400;&quot;&gt;Most of the &lt;/span&gt;&lt;i&gt;&lt;span style=&quot;font-weight: 400;&quot;&gt;Project Code&lt;/span&gt;&lt;/i&gt;&lt;span style=&quot;font-weight: 400;&quot;&gt; produced by committers can just be pushed into a project repository without any sort of legal review. However, at least in some cases, the IP Team needs to be engaged to review &lt;/span&gt;&lt;i&gt;&lt;span style=&quot;font-weight: 400;&quot;&gt;Project Code&lt;/span&gt;&lt;/i&gt;&lt;span style=&quot;font-weight: 400;&quot;&gt; that comes from contributors (who are not committers); and there are some cases where even the work of committers needs to be reviewed. I’ll discuss &lt;/span&gt;&lt;i&gt;&lt;span style=&quot;font-weight: 400;&quot;&gt;Project Code&lt;/span&gt;&lt;/i&gt;&lt;span style=&quot;font-weight: 400;&quot;&gt; with more detail in a future post.&lt;/span&gt;&lt;/p&gt;
-&lt;p&gt;&lt;span style=&quot;font-weight: 400;&quot;&gt;The sort of effort that the Eclipse IP Team brings to bear on &lt;/span&gt;&lt;i&gt;&lt;span style=&quot;font-weight: 400;&quot;&gt;Third Party Content&lt;/span&gt;&lt;/i&gt;&lt;span style=&quot;font-weight: 400;&quot;&gt; varies depending on the type. The&lt;/span&gt;&lt;a href=&quot;https://www.eclipse.org/org/documents/Eclipse_Policy_and_Procedure_for_3rd_Party_Dependencies_Final.pdf&quot;&gt; &lt;span style=&quot;font-weight: 400;&quot;&gt;Guidelines for the Review of Third Party Dependencies&lt;/span&gt;&lt;/a&gt;&lt;span style=&quot;font-weight: 400;&quot;&gt; defines three different types: &lt;/span&gt;&lt;i&gt;&lt;span style=&quot;font-weight: 400;&quot;&gt;Prerequisite&lt;/span&gt;&lt;/i&gt;&lt;span style=&quot;font-weight: 400;&quot;&gt;, &lt;/span&gt;&lt;i&gt;&lt;span style=&quot;font-weight: 400;&quot;&gt;Exempt Prerequisite&lt;/span&gt;&lt;/i&gt;&lt;span style=&quot;font-weight: 400;&quot;&gt;, and &lt;/span&gt;&lt;i&gt;&lt;span style=&quot;font-weight: 400;&quot;&gt;Works With Dependency&lt;/span&gt;&lt;/i&gt;&lt;span style=&quot;font-weight: 400;&quot;&gt;.&lt;/span&gt;&lt;/p&gt;
-&lt;p&gt;&lt;span style=&quot;font-weight: 400;&quot;&gt;The simplest form of &lt;/span&gt;&lt;i&gt;&lt;span style=&quot;font-weight: 400;&quot;&gt;Third Party Content&lt;/span&gt;&lt;/i&gt;&lt;span style=&quot;font-weight: 400;&quot;&gt; is &lt;/span&gt;&lt;b&gt;&lt;i&gt;Prerequisite&lt;/i&gt;&lt;/b&gt;&lt;i&gt;&lt;span style=&quot;font-weight: 400;&quot;&gt;.&lt;/span&gt;&lt;/i&gt; &lt;i&gt;&lt;span style=&quot;font-weight: 400;&quot;&gt;Prerequisites&lt;/span&gt;&lt;/i&gt;&lt;span style=&quot;font-weight: 400;&quot;&gt; are required by the Eclipse project content to provide core functionality. &lt;/span&gt;&lt;i&gt;&lt;span style=&quot;font-weight: 400;&quot;&gt;Prerequisite&lt;/span&gt;&lt;/i&gt;&lt;span style=&quot;font-weight: 400;&quot;&gt; content is not generally stored in an Eclipse project’s source code repositories, but is likely included in build scripts and referenced as runtime dependencies. Since adopters of Eclipse project content are compelled to adopt the &lt;/span&gt;&lt;i&gt;&lt;span style=&quot;font-weight: 400;&quot;&gt;Prerequisite&lt;/span&gt;&lt;/i&gt;&lt;span style=&quot;font-weight: 400;&quot;&gt; content, that content must also be vetted by the IP Team. The vetting requirement applies recursively: the entire transitive closure of a &lt;/span&gt;&lt;i&gt;&lt;span style=&quot;font-weight: 400;&quot;&gt;Prerequisite’s&lt;/span&gt;&lt;/i&gt;&lt;span style=&quot;font-weight: 400;&quot;&gt; dependencies needs to reviewed (the dependencies of a &lt;/span&gt;&lt;i&gt;&lt;span style=&quot;font-weight: 400;&quot;&gt;Prerequisite&lt;/span&gt;&lt;/i&gt;&lt;span style=&quot;font-weight: 400;&quot;&gt; are themselves &lt;/span&gt;&lt;i&gt;&lt;span style=&quot;font-weight: 400;&quot;&gt;Prerequisites&lt;/span&gt;&lt;/i&gt;&lt;span style=&quot;font-weight: 400;&quot;&gt;).&lt;/span&gt;&lt;/p&gt;
-&lt;p&gt;&lt;img alt=&quot;prereq&quot; class=&quot;alignnone size-full wp-image-5429 aligncenter&quot; src=&quot;https://waynebeaton.files.wordpress.com/2018/01/prereq.png?w=640&quot; /&gt;&lt;/p&gt;
-&lt;p&gt;&lt;span style=&quot;font-weight: 400;&quot;&gt;The transitive closure requirement only applies when an Eclipse project makes a direct reference to &lt;/span&gt;&lt;i&gt;&lt;span style=&quot;font-weight: 400;&quot;&gt;Third Party Content&lt;/span&gt;&lt;/i&gt;&lt;span style=&quot;font-weight: 400;&quot;&gt; (the Eclipse Project Handbook provides some examples of what constitutes a &lt;/span&gt;&lt;a href=&quot;https://www.eclipse.org/projects/handbook/#ip-third-party&quot;&gt;&lt;span style=&quot;font-weight: 400;&quot;&gt;direct reference&lt;/span&gt;&lt;/a&gt;&lt;span style=&quot;font-weight: 400;&quot;&gt;). In the case where an Eclipse project references code from a second Eclipse project that itself references &lt;/span&gt;&lt;i&gt;&lt;span style=&quot;font-weight: 400;&quot;&gt;Prerequisites&lt;/span&gt;&lt;/i&gt;&lt;span style=&quot;font-weight: 400;&quot;&gt;, no further vetting of that chain of &lt;/span&gt;&lt;i&gt;&lt;span style=&quot;font-weight: 400;&quot;&gt;Prerequisite&lt;/span&gt;&lt;/i&gt;&lt;span style=&quot;font-weight: 400;&quot;&gt; content is required (the IP Team will have already vetted it on behalf of the second project team). Eclipse project teams should take care to only reference release versions of other Eclipse projects in their own releases to ensure that the IP process has been completed.&lt;/span&gt;&lt;/p&gt;
-&lt;p&gt;&lt;img alt=&quot;project&quot; class=&quot;alignnone size-full wp-image-5428 aligncenter&quot; src=&quot;https://waynebeaton.files.wordpress.com/2018/01/project.png?w=640&quot; /&gt;&lt;/p&gt;
-&lt;p&gt;&lt;span style=&quot;font-weight: 400;&quot;&gt;When you follow this all the way to the bottom, the entire runtime environment including virtual machines and the operating system are included in the transitive closure of dependencies. Clearly, having the IP team vet virtual machines and operating systems is not a great use of time, and—in the case of closed source operating systems—just not be possible.&lt;/span&gt;&lt;/p&gt;
-&lt;p&gt;&lt;span style=&quot;font-weight: 400;&quot;&gt;The Eclipse IP process guidelines provide for a notion of &lt;/span&gt;&lt;b&gt;&lt;i&gt;Exempt Prerequisite&lt;/i&gt;&lt;/b&gt;&lt;span style=&quot;font-weight: 400;&quot;&gt; dependencies, which are not subject to review. According to the guide, content may be considered exempt if it “is pervasive in nature, expected to be already on the user’s machine, and/or an IP review would be either impossible, impractical, or inadvisable.” The Eclipse IP Team does not review the source code associated with an &lt;/span&gt;&lt;i&gt;&lt;span style=&quot;font-weight: 400;&quot;&gt;Exempt Prerequisite&lt;/span&gt;&lt;/i&gt;&lt;span style=&quot;font-weight: 400;&quot;&gt;.&lt;/span&gt;&lt;/p&gt;
-&lt;p&gt;&lt;span style=&quot;font-weight: 400;&quot;&gt;One of the key aspects of an &lt;/span&gt;&lt;i&gt;&lt;span style=&quot;font-weight: 400;&quot;&gt;Exempt Prerequisite&lt;/span&gt;&lt;/i&gt;&lt;span style=&quot;font-weight: 400;&quot;&gt; is that the user or adopter is typically the one that actually installs the software and so is the one who must agree to the licensing terms. Content that is declared an &lt;/span&gt;&lt;i&gt;&lt;span style=&quot;font-weight: 400;&quot;&gt;Exempt Prerequisite&lt;/span&gt;&lt;/i&gt;&lt;span style=&quot;font-weight: 400;&quot;&gt; should never be directly distributed by an Eclipse project or otherwise made available without some explicit action from the consumer. &lt;/span&gt;&lt;i&gt;&lt;span style=&quot;font-weight: 400;&quot;&gt;Exempt Prerequisites&lt;/span&gt;&lt;/i&gt;&lt;span style=&quot;font-weight: 400;&quot;&gt; must be approved by the Eclipse Foundation’s Executive Director.&lt;/span&gt;&lt;/p&gt;
-&lt;p&gt;&lt;span style=&quot;font-weight: 400;&quot;&gt;The Eclipse IP process guidelines also define the notion of a &lt;/span&gt;&lt;b&gt;&lt;i&gt;Works With Dependency&lt;/i&gt;&lt;/b&gt;&lt;span style=&quot;font-weight: 400;&quot;&gt; (commonly referred to as a “works with”) that applies in two different cases. Third Party Content may be declared a &lt;/span&gt;&lt;i&gt;&lt;span style=&quot;font-weight: 400;&quot;&gt;Works With Dependency&lt;/span&gt;&lt;/i&gt;&lt;span style=&quot;font-weight: 400;&quot;&gt; when:&lt;/span&gt;&lt;/p&gt;
-&lt;ul&gt;
-&lt;li style=&quot;font-weight: 400;&quot;&gt;&lt;span style=&quot;font-weight: 400;&quot;&gt;the functionality of Eclipse project content is enhanced by the presence of the software, but is otherwise functional and useful without it; or&lt;/span&gt;&lt;/li&gt;
-&lt;li style=&quot;font-weight: 400;&quot;&gt;&lt;span style=&quot;font-weight: 400;&quot;&gt;there are multiple choices and vetting all of them is impractical or impossible.&lt;/span&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;&lt;span style=&quot;font-weight: 400;&quot;&gt;A &lt;/span&gt;&lt;i&gt;&lt;span style=&quot;font-weight: 400;&quot;&gt;Works With Dependency&lt;/span&gt;&lt;/i&gt;&lt;span style=&quot;font-weight: 400;&quot;&gt; is, literally, a dependency that the Eclipse &lt;em&gt;Project Code&lt;/em&gt; will &lt;/span&gt;&lt;i&gt;&lt;span style=&quot;font-weight: 400;&quot;&gt;work with&lt;/span&gt;&lt;/i&gt;&lt;span style=&quot;font-weight: 400;&quot;&gt; when it is available. The fundamental requirement is the Eclipse &lt;em&gt;Project Code&lt;/em&gt; must be useful and adoptable without the &lt;/span&gt;&lt;i&gt;&lt;span style=&quot;font-weight: 400;&quot;&gt;Works With Dependency&lt;/span&gt;&lt;/i&gt;&lt;span style=&quot;font-weight: 400;&quot;&gt;. That is, either the &lt;em&gt;Project Code&lt;/em&gt; provides useful functionality without the &lt;/span&gt;&lt;i&gt;&lt;span style=&quot;font-weight: 400;&quot;&gt;Works With Dependency&lt;/span&gt;&lt;/i&gt;&lt;span style=&quot;font-weight: 400;&quot;&gt; or the &lt;/span&gt;&lt;i&gt;&lt;span style=&quot;font-weight: 400;&quot;&gt;Works With Dependency&lt;/span&gt;&lt;/i&gt;&lt;span style=&quot;font-weight: 400;&quot;&gt; is a suitable alternative for a &lt;/span&gt;&lt;i&gt;&lt;span style=&quot;font-weight: 400;&quot;&gt;Prerequisite&lt;/span&gt;&lt;/i&gt;&lt;span style=&quot;font-weight: 400;&quot;&gt;.&lt;/span&gt;&lt;/p&gt;
-&lt;p&gt;&lt;span style=&quot;font-weight: 400;&quot;&gt;It’s enough to just register the use of &lt;/span&gt;&lt;i&gt;&lt;span style=&quot;font-weight: 400;&quot;&gt;Works With Dependency&lt;/span&gt;&lt;/i&gt;&lt;span style=&quot;font-weight: 400;&quot;&gt; without seeking IP Team approval for its dependencies. The consumer is responsible for making that content available and otherwise agreeing to the terms for that content.&lt;/span&gt;&lt;/p&gt;
-&lt;p&gt;&lt;img alt=&quot;workswith&quot; class=&quot;alignnone size-full wp-image-5432&quot; src=&quot;https://waynebeaton.files.wordpress.com/2018/01/workswith2.png?w=640&quot; /&gt;&lt;/p&gt;
-&lt;p&gt;&lt;span style=&quot;font-weight: 400;&quot;&gt;As with an &lt;/span&gt;&lt;i&gt;&lt;span style=&quot;font-weight: 400;&quot;&gt;Exempt Prerequisite&lt;/span&gt;&lt;/i&gt;&lt;span style=&quot;font-weight: 400;&quot;&gt;, a &lt;/span&gt;&lt;i&gt;&lt;span style=&quot;font-weight: 400;&quot;&gt;Works With Dependency&lt;/span&gt;&lt;/i&gt;&lt;span style=&quot;font-weight: 400;&quot;&gt; should never be directly distributed or otherwise made available without some explicit action from the consumer. &lt;/span&gt;&lt;i&gt;&lt;span style=&quot;font-weight: 400;&quot;&gt;Works With Dependencies&lt;/span&gt;&lt;/i&gt;&lt;span style=&quot;font-weight: 400;&quot;&gt; must be approved by the Eclipse project’s &lt;/span&gt;&lt;i&gt;&lt;span style=&quot;font-weight: 400;&quot;&gt;Project Management Committee&lt;/span&gt;&lt;/i&gt;&lt;span style=&quot;font-weight: 400;&quot;&gt;.&lt;/span&gt;&lt;/p&gt;
-&lt;p&gt;&lt;span style=&quot;font-weight: 400;&quot;&gt;As an example, if Eclipse &lt;em&gt;Project Code&lt;/em&gt; will make use of a specific database implementation when it is available, but otherwise provides useful functionality when that database is not present, that database may be a &lt;/span&gt;&lt;i&gt;&lt;span style=&quot;font-weight: 400;&quot;&gt;Works With Dependency&lt;/span&gt;&lt;/i&gt;&lt;span style=&quot;font-weight: 400;&quot;&gt;. If, however, a specific database &lt;strong&gt;must&lt;/strong&gt; be available for the Eclipse &lt;em&gt;Project Code&lt;/em&gt; to provide any sort of core functionality, then that database is likely a &lt;/span&gt;&lt;i&gt;&lt;span style=&quot;font-weight: 400;&quot;&gt;Prerequisite&lt;/span&gt;&lt;/i&gt;&lt;span style=&quot;font-weight: 400;&quot;&gt; which must be fully vetted. Or, if the &lt;em&gt;Project Code&lt;/em&gt; must have access to some database, then the IP process requires that at least one specific database be fully vetted as a &lt;/span&gt;&lt;i&gt;&lt;span style=&quot;font-weight: 400;&quot;&gt;Prerequisite&lt;/span&gt;&lt;/i&gt;&lt;span style=&quot;font-weight: 400;&quot;&gt; and other options can be declared as &lt;/span&gt;&lt;i&gt;&lt;span style=&quot;font-weight: 400;&quot;&gt;Works With Dependencies&lt;/span&gt;&lt;/i&gt;&lt;span style=&quot;font-weight: 400;&quot;&gt;.&lt;/span&gt;&lt;/p&gt;
-&lt;p&gt;&lt;span style=&quot;font-weight: 400;&quot;&gt;Eclipse committers engage the Eclipse IP Process is by filing a&lt;/span&gt;&lt;a href=&quot;https://www.eclipse.org/projects/handbook/#ip-cq&quot;&gt; &lt;b&gt;&lt;i&gt;Contribution Questionnaire&lt;/i&gt;&lt;/b&gt;&lt;/a&gt;&lt;span style=&quot;font-weight: 400;&quot;&gt; (which is commonly referred to as a &lt;/span&gt;&lt;i&gt;&lt;span style=&quot;font-weight: 400;&quot;&gt;CQ&lt;/span&gt;&lt;/i&gt;&lt;span style=&quot;font-weight: 400;&quot;&gt;). Committers can find a link to create a CQ on their&lt;/span&gt;&lt;a href=&quot;https://www.eclipse.org/projects/handbook/#pmi-project-page&quot;&gt; &lt;span style=&quot;font-weight: 400;&quot;&gt;project page&lt;/span&gt;&lt;/a&gt;&lt;span style=&quot;font-weight: 400;&quot;&gt; in the Eclipse&lt;/span&gt;&lt;a href=&quot;https://www.eclipse.org/projects/handbook/#pmi&quot;&gt; &lt;span style=&quot;font-weight: 400;&quot;&gt;Project Management Infrastructure&lt;/span&gt;&lt;/a&gt;&lt;span style=&quot;font-weight: 400;&quot;&gt; (PMI).&lt;/span&gt;&lt;/p&gt;
-&lt;p&gt;&lt;span style=&quot;font-weight: 400;&quot;&gt;As always, if you’re just not sure… &lt;a href=&quot;mailto:emo@eclipse.org&quot;&gt;ask&lt;/a&gt;. We’re here to help.&lt;/span&gt;&lt;/p&gt;</description>
-	<pubDate>Fri, 26 Jan 2018 17:41:37 +0000</pubDate>
-</item>
-<item>
-	<title>Roxanne Joncas: IoT Developer Survey 2018</title>
-	<guid isPermaLink="false">https://medium.com/p/a3dd189f7cc8</guid>
-	<link>https://medium.com/@roxanne.iot/iot-developer-survey-2018-a3dd189f7cc8?source=rss-82f8afd3e513------2</link>
-	<description>&lt;figure&gt;&lt;a href=&quot;https://www.surveymonkey.de/r/IOTRJ&quot;&gt;&lt;img alt=&quot;&quot; src=&quot;https://cdn-images-1.medium.com/max/700/1*3VqkXyWs1NHhfC2yk2iiOQ.png&quot; /&gt;&lt;/a&gt;Complete the survey :)&lt;/figure&gt;&lt;p&gt;The fourth &lt;a href=&quot;https://www.surveymonkey.de/r/IOTRJ&quot;&gt;IoT Developer Survey&lt;/a&gt; is now open and ready to receive your responses! It’s a great resource to find out what’s going on in the world of IoT and to watch it change year to year.&lt;/p&gt;&lt;p&gt;Dear IoT enthusiasts, please take 10 minutes to &lt;a href=&quot;https://www.surveymonkey.de/r/IOTRJ&quot;&gt;complete the survey&lt;/a&gt; all the way to the end :) I’m posting this on a Friday — so I am basically giving you a way to procrastinate!&lt;/p&gt;&lt;p&gt;While you’re at it, look at the results from previous years:&lt;/p&gt;&lt;ul&gt;&lt;li&gt;&lt;a href=&quot;https://www.slideshare.net/IanSkerrett/iot-developer-survey-2017&quot;&gt;2017&lt;/a&gt;&lt;/li&gt;&lt;li&gt;&lt;a href=&quot;https://www.slideshare.net/IanSkerrett/iot-developer-survey-2016&quot;&gt;2016&lt;/a&gt;&lt;/li&gt;&lt;li&gt;&lt;a href=&quot;https://www.slideshare.net/IanSkerrett/iot-developer-survey-2015&quot;&gt;2015&lt;/a&gt;&lt;/li&gt;&lt;/ul&gt;&lt;img height=&quot;1&quot; src=&quot;https://medium.com/_/stat?event=post.clientViewed&amp;amp;referrerSource=full_rss&amp;amp;postId=a3dd189f7cc8&quot; width=&quot;1&quot; /&gt;</description>
-	<pubDate>Fri, 26 Jan 2018 14:16:11 +0000</pubDate>
-</item>
-<item>
-	<title>Benjamin Cabe: Eclipse IoT Day is coming to the Bay Area – Submit a talk now!</title>
-	<guid isPermaLink="false">https://blog.benjamin-cabe.com/?p=3099</guid>
-	<link>http://feedproxy.google.com/~r/benjamin-cabe-planet-eclipse/~3/wBYb_wyG06Q/eclipse-iot-day-coming-bay-area-submit-talk-now</link>
-	<description>&lt;p&gt;&lt;a href=&quot;https://iot.eclipse.org/eclipse-iot-day-santa-clara-2018/&quot; rel=&quot;noopener&quot; target=&quot;_blank&quot;&gt;Eclipse IoT Day is coming to the Bay Area on May 14, 2018&lt;/a&gt;, and I really hope you will be joining us!&lt;/p&gt;
-&lt;h2&gt;&lt;/h2&gt;
-&lt;p&gt;&lt;a href=&quot;https://goo.gl/forms/L0znMdW1zOiAwu2w1&quot;&gt;&lt;img alt=&quot;&quot; class=&quot;size-large wp-image-3104 aligncenter&quot; height=&quot;237&quot; src=&quot;https://blog.benjamin-cabe.com/wp-content/uploads/2018/01/DT1BdFjWkAIfzKq-1024x512.png&quot; width=&quot;474&quot; /&gt;&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;We have opened a &lt;a href=&quot;https://goo.gl/forms/L0znMdW1zOiAwu2w1&quot; rel=&quot;noopener&quot; target=&quot;_blank&quot;&gt;Call for Papers&lt;/a&gt; that will end on Feb 15th – so you have about 3 weeks to submit your talk!&lt;/p&gt;
-&lt;p&gt;If you are considering submitting a talk but are not sure whether it would be a good fit, here are some of the reasons why it would totally be &lt;img alt=&quot;🙂&quot; class=&quot;wp-smiley&quot; src=&quot;https://s.w.org/images/core/emoji/2.3/72x72/1f642.png&quot; style=&quot;height: 1em;&quot; /&gt;&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;You are &lt;strong&gt;building&lt;/strong&gt; an IoT solution that is based on open source software and Eclipse IoT components, and want to share some of the lessons learned along the way, the things you wished would be available as part of the open source IoT community&lt;/li&gt;
-&lt;li&gt;You are &lt;strong&gt;contributing&lt;/strong&gt; to an Eclipse IoT project and want to provide an update on the overall roadmap,&lt;/li&gt;
-&lt;li&gt;You care about &lt;strong&gt;open standards&lt;/strong&gt;, &lt;strong&gt;interoperability&lt;/strong&gt;, &lt;strong&gt;security&lt;/strong&gt;, &lt;strong&gt;edge computing&lt;/strong&gt;, … and want to share your expertise and network with the attendees of the IoT Day.&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;Please don’t wait and &lt;a href=&quot;https://goo.gl/forms/L0znMdW1zOiAwu2w1&quot; rel=&quot;noopener&quot; target=&quot;_blank&quot;&gt;submit your talk&lt;/a&gt; today!  For what it’s worth I will be more than happy to &lt;a href=&quot;https://blog.benjamin-cabe.com/contact&quot;&gt;chat with you&lt;/a&gt; if you need feedback regarding your session idea.&lt;/p&gt;
- &lt;p&gt;The post &lt;a href=&quot;https://blog.benjamin-cabe.com/2018/01/25/eclipse-iot-day-coming-bay-area-submit-talk-now&quot; rel=&quot;nofollow&quot;&gt;Eclipse IoT Day is coming to the Bay Area – Submit a talk now!&lt;/a&gt; appeared first on &lt;a href=&quot;https://blog.benjamin-cabe.com&quot; rel=&quot;nofollow&quot;&gt;Benjamin Cabé&lt;/a&gt;.&lt;/p&gt;
-&lt;img alt=&quot;&quot; height=&quot;1&quot; src=&quot;http://feeds.feedburner.com/~r/benjamin-cabe-planet-eclipse/~4/wBYb_wyG06Q&quot; width=&quot;1&quot; /&gt;</description>
-	<pubDate>Thu, 25 Jan 2018 17:44:55 +0000</pubDate>
-</item>
-<item>
-	<title>Eclipse Announcements: Eclipse Newsletter | Coming in 2018</title>
-	<guid isPermaLink="true">http://feedproxy.google.com/~r/eclipse/fnews/~3/8WotbdxFrMg/</guid>
-	<link>http://feedproxy.google.com/~r/eclipse/fnews/~3/8WotbdxFrMg/</link>
-	<description>What's coming to the Eclipse Community in 2018? Read the newsletter to find out!&lt;img alt=&quot;&quot; height=&quot;1&quot; src=&quot;http://feeds.feedburner.com/~r/eclipse/fnews/~4/8WotbdxFrMg&quot; width=&quot;1&quot; /&gt;</description>
-	<pubDate>Thu, 25 Jan 2018 15:30:00 +0000</pubDate>
-</item>
-<item>
-	<title>Ian Skerrett: Last Day at the Eclipse Foundation</title>
-	<guid isPermaLink="false">http://ianskerrett.wordpress.com/?p=4456</guid>
-	<link>http://feedproxy.google.com/~r/IanSkerrett/~3/iVIxX4QuH6E/</link>
-	<description>&lt;p&gt;This is my last day at the Eclipse Foundation. If you missed my earlier post, I have &lt;a href=&quot;https://ianskerrett.wordpress.com/2018/01/04/time-for-a-new-challenge/&quot;&gt;resigned from the Foundation&lt;/a&gt; and am starting to look for new opportunities.&lt;/p&gt;
-&lt;p&gt;Thank you to everyone in the Eclipse community for making my time with the Foundation an amazing experience. It is the people that make a community. I will definitely miss the people in the Eclipse community.&lt;/p&gt;
-&lt;p&gt;My plan is to stop posting to this blog. I’ve always wanted to &lt;a href=&quot;https://medium.com/@iskerrett/&quot;&gt;start on medium&lt;/a&gt; so now seems like a good time. I will continue to be active on &lt;a href=&quot;https://twitter.com/IanSkerrett&quot;&gt;Twitter&lt;/a&gt; and &lt;a href=&quot;https://www.linkedin.com/in/ianskerrett/&quot;&gt;LinkedIn&lt;/a&gt;. I hope we meet again soon.&lt;/p&gt;
-&lt;p&gt;#Onward&lt;/p&gt;
-&lt;p&gt; &lt;/p&gt;
-&lt;img alt=&quot;&quot; height=&quot;1&quot; src=&quot;http://feeds.feedburner.com/~r/IanSkerrett/~4/iVIxX4QuH6E&quot; width=&quot;1&quot; /&gt;</description>
-	<pubDate>Thu, 25 Jan 2018 15:28:21 +0000</pubDate>
 </item>
 
 </channel>

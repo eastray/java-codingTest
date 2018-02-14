@@ -1,0 +1,47 @@
+package divisorOfTriangularNumber;
+
+import java.util.ArrayList;
+import java.util.Arrays;
+
+public class DivisorOfTriangularNumber {
+
+	private int getDivisorOfTriangularNumber(int n) {
+
+		int triangularNumber = 0;
+		int index = 1;
+		ArrayList<Integer> list = new ArrayList<Integer>();
+
+		while (true) {
+			triangularNumber += index;
+			System.out.println(triangularNumber);
+			index++;
+			
+			for(int i = 1; i <= triangularNumber; i++){
+				if(triangularNumber % i == 0){
+					list.add(i);
+				}
+					
+			}
+			
+			System.out.println(Arrays.toString(list.stream().mapToInt(m->m).toArray()));
+			
+			
+//			if (list.stream().map(m->m).count() == 500)
+//				return triangularNumber;
+			
+			if(index == 20)
+				break;
+			
+			list.clear();
+		}
+
+	}
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		DivisorOfTriangularNumber dotn = new DivisorOfTriangularNumber();
+
+		System.out.println(dotn.getDivisorOfTriangularNumber(5));
+	}
+
+}

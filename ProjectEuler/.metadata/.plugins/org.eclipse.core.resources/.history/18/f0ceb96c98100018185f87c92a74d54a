@@ -1,0 +1,29 @@
+package divisorOfTriangularNumber;
+
+public class DivisorOfTriangularNumber {
+
+	private int getDivisorOfTriangularNumber(int n) {
+
+		int triangularNumber = 0;
+		int index = 1;
+
+		while (true) {
+			triangularNumber += index;
+			System.out.println(triangularNumber);
+			index++;
+
+			if (index > 20)
+				break;
+		}
+
+		return 0;
+	}
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		DivisorOfTriangularNumber dotn = new DivisorOfTriangularNumber();
+
+		System.out.println(dotn.getDivisorOfTriangularNumber(5));
+	}
+
+}

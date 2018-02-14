@@ -1,0 +1,17 @@
+package problem14;
+
+public class GetTens {
+	
+	private int getTens(){
+		
+		return 0;
+	}
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		GetTens gt = new GetTens();
+		
+		System.out.println(gt.getTens());
+	}
+
+}
