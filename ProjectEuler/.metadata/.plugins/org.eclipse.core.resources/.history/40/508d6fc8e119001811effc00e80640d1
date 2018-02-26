@@ -1,0 +1,25 @@
+package problem20;
+
+import java.math.BigInteger;
+
+public class SiumOfMultiplyFactorial {
+	
+	private BigInteger factorial(BigInteger n){
+		BigInteger sum = BigInteger.ONE;
+		
+		for(int i = 0; i < n; i++)
+			sum *= (n - i);
+		
+		return sum;
+	}
+	
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+		SiumOfMultiplyFactorial sof = new SiumOfMultiplyFactorial();
+		
+		System.out.println(sof.factorial(100));
+	}
+
+}

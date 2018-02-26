@@ -1,0 +1,28 @@
+package problem15;
+
+public class FindDirections {
+
+	private void print(int[][] arr) {
+		for (int[] array : arr) {
+			for (int ele : array)
+				System.out.print(ele + " ");
+			System.out.println();
+		}
+
+	}
+
+	private void findDirections(int[][] arr) {
+		print(arr);
+	}
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+		int[][] arr = new int[21][21];
+
+		FindDirections fd = new FindDirections();
+
+		fd.findDirections(arr);
+	}
+
+}

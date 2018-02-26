@@ -1,0 +1,27 @@
+package problem16;
+
+public class Pow {
+
+	private int sumOfPow(int n) {
+
+		String str = Integer.toString((int) Math.pow(2, n));
+		int result = 0;
+
+		for (int i = 0; i < str.length(); i++)
+			result += Character.getNumericValue(str.charAt(i));
+		
+		System.out.println("2^"+n+": " + str);
+
+		return result;
+	}
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+		Pow pow = new Pow();
+
+		System.out.println(pow.sumOfPow(15));
+		System.out.println(pow.sumOfPow(10000));
+	}
+
+}

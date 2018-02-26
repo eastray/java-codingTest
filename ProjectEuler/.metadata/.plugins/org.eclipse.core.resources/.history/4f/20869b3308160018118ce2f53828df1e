@@ -1,0 +1,10 @@
+package problem15;
+
+public class FindDirections {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+
+}

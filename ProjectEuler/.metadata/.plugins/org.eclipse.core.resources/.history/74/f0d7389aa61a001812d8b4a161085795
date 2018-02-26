@@ -1,0 +1,38 @@
+package problem25;
+
+public class NthOfFibonacci {
+
+	private int fibo2(int n) {
+		if (n <= 2)
+			return 1;
+
+		return fibo2(n - 1) + fibo2(n - 2);
+	}
+
+	private int fibo(int n) {
+
+		if (n <= 2)
+			return 1;
+		
+		int temp = 1;
+		int result = 1;
+		int last = 1;
+
+		for (int i = 3; i <= n; i++) {
+			temp = result;
+			result += last;
+			last = temp;
+		}
+
+		return result;
+	}
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+		NthOfFibonacci nof = new NthOfFibonacci();
+
+		System.out.println(nof.fibo(7));
+	}
+
+}

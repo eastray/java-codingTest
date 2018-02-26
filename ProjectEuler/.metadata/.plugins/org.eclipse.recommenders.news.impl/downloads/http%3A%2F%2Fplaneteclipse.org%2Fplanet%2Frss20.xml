@@ -8,6 +8,360 @@
 	<description>Planet Eclipse - http://planeteclipse.org/planet/</description>
 
 <item>
+	<title>Doug Schaefer: Building a Custom Viewer for VS Code</title>
+	<guid isPermaLink="false">https://cdtdoug.ca/tag/eclipse/rss/5a906bbc65afdf75547a1cd3</guid>
+	<link>https://cdtdoug.ca/building-a-custom-viewer-for-vs-code/</link>
+	<description>&lt;div class=&quot;kg-card-markdown&quot;&gt;&lt;p&gt;I attended the online CheConf this week and was impressed by a few of the sessions. Now don't get me wrong, I still have reservations over the practicality of having your IDE in the cloud, at least in the embedded space where engineers tend to be more conservative. Certainly running tools inside docker containers makes sense and I believe all IDEs, cloud and desktop, need to be able to interface with them and Jeff from Red Hat is making good progress with that in the CDT. So we're not so different.&lt;/p&gt;
+&lt;p&gt;What did impress me from the sessions, though, is the progress we're starting to see with advanced visualizations using Web front ends. I was especially excited to see Mélanie from Obeo show Sirius there. And Silexica is doing some interesting visualizations of call graphs of C++ code with what I believe is D3.js. The charts you see come out of D3 are amazing, especially with animation. Being able to visualize complex systems this way will be a huge help to developers, epecially embedded engineers.&lt;/p&gt;
+&lt;p&gt;As I mentioned at the beginning of last year, I'm very excited about Electron as a desktop IDE platform. After playing around a bit on my own, I decided to give up and start working with one that's already well ahead, Visual Studio Code. Despite their claims to be focused on providing a great text editor, the community is working hard to make it a full fledged IDE. With the extensibility available today, you can do the same advanced visualizations we saw at CheConf as well as many other online tools.&lt;/p&gt;
+&lt;p&gt;I have created a demo of this capability as shown below. Click on the picture to see the github repo and the description in the README. It's dead simple but it shows how you can create a VS Code extension that renders in a webview whatever you would like with data fed from an embedded http server. It's a little weird, but once you get the plumbing done, you're on your way, and hopefully this demo can help you get started.&lt;/p&gt;
+&lt;a href=&quot;https://github.com/dschaefer/vscode-custom-viewer&quot;&gt;
+&lt;img src=&quot;https://raw.githubusercontent.com/dschaefer/vscode-custom-viewer/18de5338b6bc6a5455efea521255dde6e6d28558/images/Capture.png&quot; style=&quot;display: block; margin: 0 auto;&quot; /&gt;
+&lt;/a&gt;
+&lt;p&gt;&lt;/p&gt;
+&lt;p&gt;There are many reasons why this move is important. There is so much momentum behind  web technologies with a seemingly endless line up of libraries on npm, to tutorials on the web, to people who know how to do this stuff. It only makes sense that we start to ride this wave as we did when the Eclipse IDE first came along. And, you know, fire this stuff up in a SWT Browser widget and you get that same experience and we can breath some new life into our old friend. It's an exciting future and it's a lot of fun trying to get there.&lt;/p&gt;
+&lt;/div&gt;</description>
+	<pubDate>Sat, 24 Feb 2018 01:12:47 +0000</pubDate>
+</item>
+<item>
+	<title>Donald Raab: Help Wanted!</title>
+	<guid isPermaLink="false">https://medium.com/p/b1acf25d8c8d</guid>
+	<link>https://medium.com/@donraab/help-wanted-b1acf25d8c8d?source=rss-df39b86e9f04------2</link>
+	<description>&lt;figure&gt;&lt;img alt=&quot;&quot; src=&quot;https://cdn-images-1.medium.com/max/1024/1*Rp2ZAp0GMnbnuIubHOrxeA.png&quot; /&gt;Contribute to an open source project!&lt;/figure&gt;&lt;p&gt;Shhhh! I’m going to tell you a secret. It’s something that for a few people might just change their software development lives in unexpected and exciting ways.&lt;/p&gt;&lt;h4&gt;Contribute to an open source project!&lt;/h4&gt;&lt;p&gt;That’s not the secret though. I realize many of you have probably already thought of contributing to an open source project but were unsure how to get started.&lt;/p&gt;&lt;p&gt;&lt;strong&gt;&lt;em&gt;I can help you get started and it might be easier than you expect.&lt;/em&gt;&lt;/strong&gt;&lt;/p&gt;&lt;p&gt;That’s the secret.&lt;/p&gt;&lt;p&gt;There is a project called &lt;a href=&quot;https://github.com/eclipse/eclipse-collections&quot;&gt;Eclipse Collections &lt;/a&gt;which is managed at the &lt;a href=&quot;https://projects.eclipse.org/projects/technology.collections&quot;&gt;Eclipse Foundation&lt;/a&gt; and is open for contributions from anyone. As open source libraries go, Eclipse Collections has a relatively low barrier of entry. Eclipse Collections is a library of Java data structures and algorithms.&lt;/p&gt;&lt;p&gt;&lt;strong&gt;Disclaimer&lt;/strong&gt;: I am not a lawyer, and cannot dispense legal advice. I won’t be able to help you determine what you will be able or allowed to do given your personal situation. You will need to determine whether you are allowed to do something, and what if any approvals and process you need to follow from your employer if you are employed by someone else given their policies, procedures, agreements, etc. for contributing to FOSS projects. If you are unsure of what you are able to do, I would suggest not getting started until you clarify that and are 150% comfortable. Contact the &lt;a href=&quot;https://www.eclipse.org/legal/&quot;&gt;Eclipse Foundation&lt;/a&gt; if you want to understand the legal and governance rules over projects managed at the Foundation. The folks at the Eclipse Foundation are very helpful.&lt;/p&gt;&lt;p&gt;If you’d like to get started and are sure you are able to given your personal situation, here are some suggestions that might help you break through the initial barrier of contributing to an open source project. Not all contributions need to be made through code.&lt;/p&gt;&lt;ol&gt;&lt;li&gt;Try out the &lt;a href=&quot;https://github.com/eclipse/eclipse-collections-kata&quot;&gt;Eclipse Collections Kata&lt;/a&gt;s — this will help you understand what Eclipse Collection is all about. Once you understand Eclipse Collections, you may want to use it in your projects. If you use it in your projects, you may discover something that is missing that you would like to suggest and contribute. This is the best kind of code contribution to make to a project. Here you are helping yourself provide the functionality that you need. Eclipse Collections evolved from a single class called Iterate over the past 12+ years because folks like myself and &lt;a href=&quot;https://medium.com/u/4285d8a2ca86&quot;&gt;Nikhil&lt;/a&gt; and &lt;a href=&quot;https://medium.com/u/82b613b921f6&quot;&gt;Craig&lt;/a&gt; and &lt;a href=&quot;https://medium.com/u/18b43cac5e00&quot;&gt;Hiroshi&lt;/a&gt; and many others added things that they needed or wanted in the framework.&lt;/li&gt;&lt;li&gt;If you use and like Eclipse Collections you can also contribute to the community in many different ways. For instance you could… &lt;strong&gt;a)&lt;/strong&gt; give a talk on Eclipse Collections perhaps at a Java User Group meet-up &lt;strong&gt;b)&lt;/strong&gt; teach the katas to developers you know or at a Java User Group meet-up &lt;strong&gt;c)&lt;/strong&gt; write about it in a blog or article. This can help people discover that Eclipse Collections exists. This is an amazing contribution and can help introduce you to the growing community of Java developers!&lt;/li&gt;&lt;li&gt;If you are ready to try your hand at contributing code, the best place to start is the &lt;a href=&quot;https://github.com/eclipse/eclipse-collections/blob/master/CONTRIBUTING.md&quot;&gt;Contribution Guide&lt;/a&gt; in Eclipse Collections.&lt;/li&gt;&lt;li&gt;What will you need to get started? &lt;strong&gt;1)&lt;/strong&gt; GitHub Account &lt;strong&gt;2)&lt;/strong&gt; Read, Understand and Sign Eclipse Foundation Contributor Agreement electronically &lt;strong&gt;3)&lt;/strong&gt; Git Client &lt;strong&gt;4) &lt;/strong&gt;JDK 8 &lt;strong&gt;5)&lt;/strong&gt; Maven &lt;strong&gt;6)&lt;/strong&gt; a Java IDE. The instructions in the &lt;a href=&quot;https://github.com/eclipse/eclipse-collections/blob/master/CONTRIBUTING.md&quot;&gt;contribution guide&lt;/a&gt; can help you on some of these things.&lt;/li&gt;&lt;li&gt;Find something you’d like to work on. This could come from the &lt;a href=&quot;https://github.com/eclipse/eclipse-collections/issues&quot;&gt;issue log&lt;/a&gt; or may be something you would like added based on a use case you have that hasn’t been addressed before.&lt;/li&gt;&lt;/ol&gt;&lt;p&gt;What types of things can you work on that are potentially low cost?&lt;/p&gt;&lt;ol&gt;&lt;li&gt;Documentation — You could add or update something in the Reference Guide which is in this &lt;a href=&quot;https://github.com/eclipse/eclipse-collections/blob/master/docs/guide.md&quot;&gt;Markdown file&lt;/a&gt;.&lt;/li&gt;&lt;li&gt;Test Coverage — If you find missing test coverage, adding test cases is a noble and much appreciated addition to any project.&lt;/li&gt;&lt;li&gt;Static Utility — Static utility methods are isolated, easy to test and can be a great place to start experimenting with new API ideas.&lt;/li&gt;&lt;li&gt;Bug Fixes — This is a great contribution which will include some investigation, a little coding in the library and maybe some additional testing to make sure the bug never comes back.&lt;/li&gt;&lt;/ol&gt;&lt;p&gt;Beyond these low cost, low complexity options there is a table that shows the cost and complexity of different things that can be contributed to Eclipse Collections. &lt;a href=&quot;https://medium.com/u/4285d8a2ca86&quot;&gt;Nikhil&lt;/a&gt; and I gave a talk on a Eclipse Foundation virtual meet-up which is now on &lt;a href=&quot;https://www.youtube.com/watch?v=Xrx_407Dt-I&quot;&gt;YouTube&lt;/a&gt;.&lt;/p&gt;&lt;a href=&quot;https://medium.com/media/2ab2cb59ae47379914362745e7bbc2ee/href&quot;&gt;https://medium.com/media/2ab2cb59ae47379914362745e7bbc2ee/href&lt;/a&gt;&lt;p&gt;The talk included the following table that we displayed from our slide content.&lt;/p&gt;&lt;figure&gt;&lt;img alt=&quot;&quot; src=&quot;https://cdn-images-1.medium.com/max/1024/1*-VEtsFPSrTA2f01sylzvrA.png&quot; /&gt;&lt;/figure&gt;&lt;p&gt;&lt;a href=&quot;http://eclipse.github.io/eclipse-collections-kata/api-design/#/4&quot;&gt;API Deep Dive: Designing Eclipse Collections&lt;/a&gt;&lt;/p&gt;&lt;p&gt;As you gain more experience and confidence, you might want to tackle problems with increasing levels of complexity. All of the infrastructural skills you learn while contributing to Eclipse Collections will help you on any open source project you want to contribute to in the future.&lt;/p&gt;&lt;h4&gt;Help is wanted and available&lt;/h4&gt;&lt;p&gt;Not only will you be helping an open source project and community by contributing, but there are committers on the project who will help you grow and learn as a developer by providing feedback on any issues and pull requests you submit. I always look forward to code reviews and feedback from the community of Eclipse Collections project leads, committers and contributors. I have learned so much over the years from all of them. They continue to help me grow as a professional software developer.&lt;/p&gt;&lt;p&gt;&lt;a href=&quot;https://github.com/eclipse/eclipse-collections&quot;&gt;&lt;em&gt;Eclipse Collections&lt;/em&gt;&lt;/a&gt;&lt;em&gt; is open for &lt;/em&gt;&lt;a href=&quot;https://github.com/eclipse/eclipse-collections/blob/master/CONTRIBUTING.md&quot;&gt;&lt;em&gt;contributions&lt;/em&gt;&lt;/a&gt;&lt;em&gt;. If you like the library, you can let us know by starring it on GitHub.&lt;/em&gt;&lt;/p&gt;&lt;img height=&quot;1&quot; src=&quot;https://medium.com/_/stat?event=post.clientViewed&amp;amp;referrerSource=full_rss&amp;amp;postId=b1acf25d8c8d&quot; width=&quot;1&quot; /&gt;</description>
+	<pubDate>Fri, 23 Feb 2018 19:56:40 +0000</pubDate>
+</item>
+<item>
+	<title>Melanie Bats: Modeling tools go up to the cloud</title>
+	<guid isPermaLink="true">http://melb.enix.org/2018/02/22/up-to-the-cloud/</guid>
+	<link>http://melb.enix.org/2018/02/22/up-to-the-cloud/</link>
+	<description>&lt;p&gt;TLDR; at &lt;a href=&quot;https://www.obeo.fr/en&quot;&gt;Obeo&lt;/a&gt;, we have done the first steps to &lt;strong&gt;bring Sirius to the web&lt;/strong&gt;. Today we are ready to work with you to bring &lt;strong&gt;your own modeling tool up to the cloud&lt;/strong&gt;.&lt;/p&gt;
+
+&lt;p&gt;If you are curious about details, this is the longer story…&lt;/p&gt;
+
+&lt;p&gt;As you know, at Obeo, we have been working on modeling tools for a long time now, and we therefore have a lot of experience developing graphical tools. Obeo is a key player in the Modeling ecosystem: we are involved in open source through numerous Eclipse projects: &lt;a href=&quot;https://www.eclipse.org/sirius/&quot;&gt;Sirius&lt;/a&gt;, &lt;a href=&quot;https://www.eclipse.org/acceleo/&quot;&gt;Acceleo&lt;/a&gt;, EMF/GMF, &lt;a href=&quot;https://www.eclipse.org/ecoretools/&quot;&gt;EcoreTools&lt;/a&gt;, &lt;a href=&quot;https://www.eclipse.org/emf/compare/&quot;&gt;EMF Compare&lt;/a&gt;…
+One of our great success is Sirius: a framework to easily and quickly create a modeling workbench dedicated to your domain.&lt;/p&gt;
+
+&lt;p&gt;Today, Sirius relies on the Eclipse platform, consequently the graphical modelers based on it are desktop applications.&lt;/p&gt;
+
+&lt;p&gt;You know that &lt;strong&gt;Desktop&lt;/strong&gt; vs &lt;strong&gt;Web&lt;/strong&gt; applications are in war since time immemorial…&lt;/p&gt;
+
+&lt;p&gt;In the past, we already won some battles, by mixing both approaches, switching from one to another. 
+For instance, our Enterprise Architecture solution &lt;a href=&quot;https://www.obeosmartea.com/en/solution&quot;&gt;Obeo SmartEA&lt;/a&gt;, provides :&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;light client experience to explore a model,
+&lt;img alt=&quot;Explore model with light client&quot; src=&quot;https://www.obeosmartea.com/images/my_gallery/10-details-page.png&quot; /&gt;&lt;/li&gt;
+  &lt;li&gt;and a rich application to edit it.
+&lt;img alt=&quot;Edit model with rich application&quot; src=&quot;https://www.obeosmartea.com/images/my_gallery/05-graphical-modeling-workbench.png&quot; /&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Since December, you already know that we are working to reconcile the two worlds… For Sirius 6, we are developing a new solution to &lt;strong&gt;use Sirius definition with HTML Renderer within Eclipse workbenches&lt;/strong&gt;. We will use an hybrid model to be able to get the best of both worlds and make them coexist in the same rich application. In collaboration with Thales, we are prototyping what would be a &lt;a href=&quot;http://www.polarsys.org/capella/&quot;&gt;Capella&lt;/a&gt; graphical modeler using the dynamic visualisation capabilities offered by &lt;a href=&quot;https://github.com/theia-ide/sprotty&quot;&gt;Sprotty&lt;/a&gt; and &lt;a href=&quot;https://www.eclipse.org/elk/&quot;&gt;Eclipse Layout Kernel&lt;/a&gt;. I really appreciate that the &lt;a href=&quot;https://typefox.io/&quot;&gt;TypeFox&lt;/a&gt; guys lent us a hand about that, this was truly in the open source spirit!&lt;/p&gt;
+
+&lt;p&gt;&lt;img alt=&quot;HTML renderer within Sirius workbenches&quot; src=&quot;http://melb.enix.org/img/dear-santa/HTMLRendererInSirius.png&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;I am really happy to announce that now we are going one step further: we are making Sirius evolve to &lt;strong&gt;bring modeling tools up to the cloud&lt;/strong&gt;.&lt;/p&gt;
+
+&lt;p&gt;&lt;img alt=&quot;Up&quot; src=&quot;http://static.alfabetajuega.com/abj_public_files/multimedia/imagenes/201501/95918.alfabetajuega-up-10012015.jpg&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Modeling tools based on Sirius today look like this. You have a graphical editor with a palette to manage elements.
+&lt;img alt=&quot;Modeling tool today&quot; src=&quot;http://melb.enix.org/img/up-to-the-cloud/Today.png&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Modeling tools based on Sirius tomorrow could look like this. You still have a graphical editor with a palette to manage elements.
+&lt;img alt=&quot;Modeling tool tomorrow&quot; src=&quot;http://melb.enix.org/img/up-to-the-cloud/Tomorrow.png&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;The main difference is that tomorrow Sirius applications will be based on web technologies, and therefore the graphical modelers will be cloud applications. With a cloud application :&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;you &lt;strong&gt;no&lt;/strong&gt; longer &lt;strong&gt;need to install&lt;/strong&gt; it, it simply do not require any installation process,&lt;/li&gt;
+  &lt;li&gt;it does not occupy extra space on your hard drive,&lt;/li&gt;
+  &lt;li&gt;your graphical workbench is &lt;strong&gt;easy to access&lt;/strong&gt; from any browser and you can use it from any device,&lt;/li&gt;
+  &lt;li&gt;it adapts to the workload increase.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;There is still a long way to go.
+&lt;img alt=&quot;Path to go&quot; src=&quot;http://melb.enix.org/img/up-to-the-cloud/Architecture.png&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;As said before, today our modeling tools are based on Eclipse RCP technologies.
+We are working on a new architecture to make this work in a client/server world. 
+Sirius will be split in different pieces providing services to clients rendering the modeling tool in the browser.&lt;/p&gt;
+
+&lt;p&gt;To bring those technologies further to the web, from day 1 we were convinced that we needed a standard communication protocol.
+A few months ago, an impressive community effort was started around the Language Server Protocol to ease the integration of languages to textual editors. 
+We found that inspiring and that’s why we decided to start working on a &lt;a href=&quot;https://github.com/ObeoNetwork/GraphicalServerProtocol&quot;&gt;Graphical Server Protocol&lt;/a&gt;.
+This initiative defines the protocol between an editor or an IDE and a graphical server that provides graphical features like tools, mappings, layout, layers…
+We based our work on what was done by Typefox in Sprotty.&lt;/p&gt;
+
+&lt;p&gt;I am glad to reveal our &lt;a href=&quot;https://www.youtube.com/watch?v=cOxQtBwKhow&quot;&gt;first prototypes&lt;/a&gt; of Sirius exposing its services through the Graphical Server Protocol to render diagrams specified in a browser.
+Today we can take any existing graphical workbench specified with Sirius and render it in a browser. Not only we render the graphical elements but also we interpret at runtime the creation tools available in the palette according to the one defined in the Sirius specification. And as we can see on the following video, it is possible to create new model elements thanks to those tools from the palette.&lt;/p&gt;
+
+
+&lt;p&gt;In the next &lt;a href=&quot;https://www.youtube.com/watch?v=S1cyefHKOjU&quot;&gt;video&lt;/a&gt;, just by updating the Sirius specification as usual, you can see in the browser how the elements are rendered and you can work on the look and feel of your modeler iteratively.
+Here at the beginning all the edges and labels are black. One can update the Sirius specification to set the men labels and edges in blue. Immediately when the configuration is saved you see that the colors changed in the browser.&lt;/p&gt;
+
+
+&lt;p&gt;A diagram can provide different layers. This &lt;a href=&quot;https://www.youtube.com/watch?v=Pms9pvdzxCY&quot;&gt;demo&lt;/a&gt; shows the capability to enable/disable layers.
+It will filter accordingly the graphical elements visible in the diagram and the tools available in the palette. 
+You see that the layout is automatically recalculated every time a layer is enabled to provide a smart layout for the diagram at all times.&lt;/p&gt;
+
+
+&lt;p&gt;I believe that both desktop and web applications will continue to coexist for a long time.
+While both desktop and web applications have their pros and cons, what is important is that the application fits users needs. Users don’t care whether your app is native or web based as long as it does the job properly.
+We do not give up one world for another, we are making what is needed to get the best of the two worlds.&lt;/p&gt;
+
+&lt;p&gt;That’s why we are really excited by the fact that Eclipse Che decided to replace its GWT IDE by a new one relying on modern technologies: &lt;a href=&quot;https://github.com/theia-ide/theia&quot;&gt;Theia&lt;/a&gt;. Pursuing the same line as Eclipse RCP, Theia is an open framework that allows users to compose their own applications. I believe that this extensibility model should foster the emergence of a new ecosystem.Thanks to the extensibility offered by Theia, we can envision in the future the development of modeling tools for both desktop and web applications equally and even going further by integrating such tools to cloud frameworks such as Che.
+&lt;img alt=&quot;Mockup of Sirius based modeler integrated in Che&quot; src=&quot;http://melb.enix.org/img/up-to-the-cloud/SiriusInChe.png&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;One of the expectation of the modeling community is to be able to simplify deployment, that’s one of our initial goal by going to cloud based applications.&lt;/p&gt;
+
+&lt;p&gt;As you saw in our videos, we are making Sirius evolve to bring modeling tools to the cloud.&lt;/p&gt;
+
+&lt;p&gt;We need you to go beyond.&lt;/p&gt;
+
+&lt;p&gt;As open source is in our DNA, most of these changes will be contributed to Sirius. The actual Sirius project will evolve to a client/server architecture.
+Let’s work together to bring your tooling to this new platform !&lt;/p&gt;
+
+&lt;p&gt;We would also like to invite all of you to participate to the Graphical Server Protocol initiative to make this an open collaboration providing a common protocol for graphical editors.&lt;/p&gt;
+
+&lt;p&gt;Finally remember that we are available to work with other organizations to bring modeling tools to the Web, including integration with web &amp;amp; cloud tooling such as Theia &amp;amp; Che.&lt;/p&gt;
+
+&lt;p&gt;Contact us, join us, support us!&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;We’re gonna get it, get it together
+I know, we’re gonna get it, get it together and flow
+We’re gonna get it, get it together and go
+Up, and up, and up&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://youtu.be/BPNTC7uZYrI&quot;&gt;Coldplay up &amp;amp; up&lt;/a&gt;&lt;/p&gt;</description>
+	<pubDate>Thu, 22 Feb 2018 10:00:00 +0000</pubDate>
+</item>
+<item>
+	<title>Eclipse Announcements: Eclipse Newsletter | Boot &amp; Build Eclipse Projects</title>
+	<guid isPermaLink="true">http://feedproxy.google.com/~r/eclipse/fnews/~3/bCrdt0F33Sc/</guid>
+	<link>http://feedproxy.google.com/~r/eclipse/fnews/~3/bCrdt0F33Sc/</link>
+	<description>Featuring articles about Spring Tools, Gradle plugin (Buildship), Dirigible cloud platform, and EMF Parsley.&lt;img alt=&quot;&quot; height=&quot;1&quot; src=&quot;http://feeds.feedburner.com/~r/eclipse/fnews/~4/bCrdt0F33Sc&quot; width=&quot;1&quot; /&gt;</description>
+	<pubDate>Thu, 22 Feb 2018 08:51:00 +0000</pubDate>
+</item>
+<item>
+	<title>Eclipse Announcements: Countdown: 2 weeks | Complete IoT Developer Survey</title>
+	<guid isPermaLink="true">http://feedproxy.google.com/~r/eclipse/fnews/~3/iqMjTYobxp8/eclipseorg</guid>
+	<link>http://feedproxy.google.com/~r/eclipse/fnews/~3/iqMjTYobxp8/eclipseorg</link>
+	<description>Take 10 minutes to complete the fourth annual IoT Developer survey!&lt;img alt=&quot;&quot; height=&quot;1&quot; src=&quot;http://feeds.feedburner.com/~r/eclipse/fnews/~4/iqMjTYobxp8&quot; width=&quot;1&quot; /&gt;</description>
+	<pubDate>Tue, 20 Feb 2018 09:27:00 +0000</pubDate>
+</item>
+<item>
+	<title>JBoss Tools Team: Integration Tooling for Eclipse Oxygen</title>
+	<guid isPermaLink="true">https://tools.jboss.org/blog/integration-stack-4.5.2.Final.html</guid>
+	<link>https://tools.jboss.org/blog/integration-stack-4.5.2.Final.html</link>
+	<description>&lt;div&gt;&lt;div id=&quot;preamble&quot;&gt;
+      &lt;div class=&quot;sectionbody&quot;&gt;
+      &lt;div class=&quot;paragraph&quot;&gt;
+      &lt;p&gt;&lt;strong&gt;Try our complete Eclipse Oxygen and Red Hat JBoss Developer Studio 11 compatible integration tooling.&lt;/strong&gt;&lt;/p&gt;
+      &lt;/div&gt;
+      &lt;div class=&quot;imageblock&quot;&gt;
+      &lt;div class=&quot;content&quot;&gt;
+      &lt;img alt=&quot;jbosstools jbdevstudio blog header&quot; src=&quot;https://tools.jboss.org/blog/images/jbosstools-jbdevstudio-blog-header.png&quot; /&gt;
+      &lt;/div&gt;
+      &lt;/div&gt;
+      &lt;div class=&quot;paragraph&quot;&gt;
+      &lt;p&gt;&lt;strong&gt;JBoss Tools Integration Stack 4.5.2.Final / Developer Studio Integration Stack 11.2.0.GA&lt;/strong&gt;&lt;/p&gt;
+      &lt;/div&gt;
+      &lt;div class=&quot;admonitionblock note&quot;&gt;
+      &lt;table&gt;
+      &lt;tbody&gt;&lt;tr&gt;
+      &lt;td class=&quot;icon&quot;&gt;
+      &lt;i class=&quot;fa icon-note&quot; title=&quot;Note&quot;&gt;&lt;/i&gt;
+      &lt;/td&gt;
+      &lt;td class=&quot;content&quot;&gt;
+      All of the Integration Stack components have been verified to work with the same dependencies as JBoss Tools 4.5 and Developer Studio 11.
+      &lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;/tbody&gt;&lt;/table&gt;
+      &lt;/div&gt;
+      &lt;/div&gt;
+      &lt;/div&gt;
+      &lt;div class=&quot;sect1&quot;&gt;
+      &lt;h2 id=&quot;what-s-new-for-this-release&quot;&gt;&lt;a class=&quot;anchor&quot; href=&quot;http://tools.jboss.org/blog/news.atom#what-s-new-for-this-release&quot;&gt;&lt;/a&gt;What’s new for this release?&lt;/h2&gt;
+      &lt;div class=&quot;sectionbody&quot;&gt;
+      &lt;div class=&quot;paragraph&quot;&gt;
+      &lt;p&gt;This release provides full Teiid Designer tooling support for JBoss Data Virtualization 6.4 runtime.  It provides an updated BPMN2 Modeler and jBPM/Drools for our Business Process Modeling friends.  It also provides full synchronization with Devstudio 11.2.0.GA, JBoss Tools 4.5.2.Final and Eclipse Oxygen.2.  Please note that SwitchYard is deprecated in this release.&lt;/p&gt;
+      &lt;/div&gt;
+      &lt;div class=&quot;sect2&quot;&gt;
+      &lt;h3 id=&quot;released-tooling-highlights&quot;&gt;&lt;a class=&quot;anchor&quot; href=&quot;http://tools.jboss.org/blog/news.atom#released-tooling-highlights&quot;&gt;&lt;/a&gt;Released Tooling Highlights&lt;/h3&gt;
+      &lt;div class=&quot;sect3&quot;&gt;
+      &lt;h4 id=&quot;jboss-business-process-and-rules-development&quot;&gt;&lt;a class=&quot;anchor&quot; href=&quot;http://tools.jboss.org/blog/news.atom#jboss-business-process-and-rules-development&quot;&gt;&lt;/a&gt;JBoss Business Process and Rules Development&lt;/h4&gt;
+      &lt;div class=&quot;sect4&quot;&gt;
+      &lt;h5 id=&quot;bpmn2-modeler-known-issues&quot;&gt;&lt;a class=&quot;anchor&quot; href=&quot;http://tools.jboss.org/blog/news.atom#bpmn2-modeler-known-issues&quot;&gt;&lt;/a&gt;BPMN2 Modeler Known Issues&lt;/h5&gt;
+      &lt;div class=&quot;paragraph&quot;&gt;
+      &lt;p&gt;See the &lt;a href=&quot;https://access.redhat.com/documentation/en-us/red_hat_jboss_developer_studio_integration_stack/11.2/html/11.2.0_release_notes_and_known_issues/resolved_issues#bpmn2_1_4_2_final&quot;&gt;BPMN2 1.4.2.Final Known Issues Section&lt;/a&gt; of the Integration Stack 11.2.0.GA release notes.&lt;/p&gt;
+      &lt;/div&gt;
+      &lt;/div&gt;
+      &lt;div class=&quot;sect4&quot;&gt;
+      &lt;h5 id=&quot;drools-jbpm6-known-issues&quot;&gt;&lt;a class=&quot;anchor&quot; href=&quot;http://tools.jboss.org/blog/news.atom#drools-jbpm6-known-issues&quot;&gt;&lt;/a&gt;Drools/jBPM6 Known Issues&lt;/h5&gt;
+      &lt;div class=&quot;paragraph&quot;&gt;
+      &lt;p&gt;See the &lt;a href=&quot;https://access.redhat.com/documentation/en-us/red_hat_jboss_developer_studio_integration_stack/11.2/html/11.2.0_release_notes_and_known_issues/resolved_issues#drools_7_5_0_final&quot;&gt;Drools 7.5.0.Final Known Issues Section&lt;/a&gt; of the Integration Stack 11.2.0.GA release notes.&lt;/p&gt;
+      &lt;/div&gt;
+      &lt;/div&gt;
+      &lt;div class=&quot;sect4&quot;&gt;
+      &lt;h5 id=&quot;switchyard-highlights&quot;&gt;&lt;a class=&quot;anchor&quot; href=&quot;http://tools.jboss.org/blog/news.atom#switchyard-highlights&quot;&gt;&lt;/a&gt;SwitchYard Highlights&lt;/h5&gt;
+      &lt;div class=&quot;paragraph&quot;&gt;
+      &lt;p&gt;See the &lt;a href=&quot;https://access.redhat.com/documentation/en-us/red_hat_jboss_developer_studio_integration_stack/11.2/html/11.2.0_release_notes_and_known_issues/resolved_issues#switchyard_2_4_1_final&quot;&gt;SwitchYard 2.4.1.Final Resolved Issues Section&lt;/a&gt; of the Integration Stack 11.2.0.GA release notes.&lt;/p&gt;
+      &lt;/div&gt;
+      &lt;/div&gt;
+      &lt;/div&gt;
+      &lt;div class=&quot;sect3&quot;&gt;
+      &lt;h4 id=&quot;data-virtualization-highlights&quot;&gt;&lt;a class=&quot;anchor&quot; href=&quot;http://tools.jboss.org/blog/news.atom#data-virtualization-highlights&quot;&gt;&lt;/a&gt;Data Virtualization Highlights&lt;/h4&gt;
+      &lt;div class=&quot;sect4&quot;&gt;
+      &lt;h5 id=&quot;teiid-designer&quot;&gt;&lt;a class=&quot;anchor&quot; href=&quot;http://tools.jboss.org/blog/news.atom#teiid-designer&quot;&gt;&lt;/a&gt;Teiid Designer&lt;/h5&gt;
+      &lt;div class=&quot;paragraph&quot;&gt;
+      &lt;p&gt;See the &lt;a href=&quot;https://access.redhat.com/documentation/en-us/red_hat_jboss_developer_studio_integration_stack/11.2/html/11.2.0_release_notes_and_known_issues/resolved_issues#teiid_designer_11_1_1_final&quot;&gt;Teiid Designer 11.1.1.Final Resolved Issues Section&lt;/a&gt; of the Integration Stack 11.2.0.GA release notes.&lt;/p&gt;
+      &lt;/div&gt;
+      &lt;/div&gt;
+      &lt;/div&gt;
+      &lt;/div&gt;
+      &lt;/div&gt;
+      &lt;/div&gt;
+      &lt;div class=&quot;sect1&quot;&gt;
+      &lt;h2 id=&quot;what-s-an-integration-stack&quot;&gt;&lt;a class=&quot;anchor&quot; href=&quot;http://tools.jboss.org/blog/news.atom#what-s-an-integration-stack&quot;&gt;&lt;/a&gt;What’s an Integration Stack?&lt;/h2&gt;
+      &lt;div class=&quot;sectionbody&quot;&gt;
+      &lt;div class=&quot;paragraph&quot;&gt;
+      &lt;p&gt;Red Hat JBoss Developer Studio Integration Stack is a set of Eclipse-based development tools. It further enhances the IDE functionality provided by JBoss Developer Studio, with plug-ins specifically for use when developing for other Red Hat JBoss products.  It’s where DataVirt Tooling, SOA tooling and BRMS tooling are aggregated.  The following frameworks are supported:&lt;/p&gt;
+      &lt;/div&gt;
+      &lt;div class=&quot;sect2&quot;&gt;
+      &lt;h3 id=&quot;jboss-business-process-and-rules-development-2&quot;&gt;&lt;a class=&quot;anchor&quot; href=&quot;http://tools.jboss.org/blog/news.atom#jboss-business-process-and-rules-development-2&quot;&gt;&lt;/a&gt;JBoss Business Process and Rules Development&lt;/h3&gt;
+      &lt;div class=&quot;paragraph&quot;&gt;
+      &lt;p&gt;JBoss Business Process and Rules Development plug-ins provide design, debug and testing tooling for developing business processes for Red Hat JBoss BRMS and Red Hat JBoss BPM Suite.&lt;/p&gt;
+      &lt;/div&gt;
+      &lt;div class=&quot;ulist&quot;&gt;
+      &lt;ul&gt;
+      &lt;li&gt;
+      &lt;p&gt;&lt;a href=&quot;https://tools.jboss.org/features/bpel.html&quot;&gt;BPEL Designer&lt;/a&gt; - Orchestrating your business processes.&lt;/p&gt;
+      &lt;/li&gt;
+      &lt;li&gt;
+      &lt;p&gt;&lt;a href=&quot;https://tools.jboss.org/features/bpmn2.html&quot;&gt;BPMN2 Modeler&lt;/a&gt; - A graphical modeling tool which allows creation and editing of Business Process Modeling Notation diagrams using graphiti.&lt;/p&gt;
+      &lt;/li&gt;
+      &lt;li&gt;
+      &lt;p&gt;&lt;a href=&quot;https://tools.jboss.org/features/drools.html&quot;&gt;Drools&lt;/a&gt; - A Business Logic integration Platform which provides a unified and integrated platform for Rules, Workflow and Event Processing including KIE.&lt;/p&gt;
+      &lt;/li&gt;
+      &lt;li&gt;
+      &lt;p&gt;&lt;a href=&quot;https://tools.jboss.org/features/jbpm.html&quot;&gt;jBPM&lt;/a&gt; - A flexible Business Process Management (BPM) suite.&lt;/p&gt;
+      &lt;/li&gt;
+      &lt;/ul&gt;
+      &lt;/div&gt;
+      &lt;/div&gt;
+      &lt;div class=&quot;sect2&quot;&gt;
+      &lt;h3 id=&quot;jboss-data-virtualization-development&quot;&gt;&lt;a class=&quot;anchor&quot; href=&quot;http://tools.jboss.org/blog/news.atom#jboss-data-virtualization-development&quot;&gt;&lt;/a&gt;JBoss Data Virtualization Development&lt;/h3&gt;
+      &lt;div class=&quot;paragraph&quot;&gt;
+      &lt;p&gt;JBoss Data Virtualization Development plug-ins provide a graphical interface to manage various aspects of Red Hat JBoss Data Virtualization instances, including the ability to design virtual databases and interact with associated governance repositories.&lt;/p&gt;
+      &lt;/div&gt;
+      &lt;div class=&quot;ulist&quot;&gt;
+      &lt;ul&gt;
+      &lt;li&gt;
+      &lt;p&gt;&lt;a href=&quot;https://tools.jboss.org/features/teiiddesigner.html&quot;&gt;Teiid Designer&lt;/a&gt; - A visual tool that enables rapid, model-driven definition, integration, management and testing of data services without programming using the Teiid runtime framework.&lt;/p&gt;
+      &lt;/li&gt;
+      &lt;/ul&gt;
+      &lt;/div&gt;
+      &lt;/div&gt;
+      &lt;div class=&quot;sect2&quot;&gt;
+      &lt;h3 id=&quot;jboss-integration-and-soa-development&quot;&gt;&lt;a class=&quot;anchor&quot; href=&quot;http://tools.jboss.org/blog/news.atom#jboss-integration-and-soa-development&quot;&gt;&lt;/a&gt;JBoss Integration and SOA Development&lt;/h3&gt;
+      &lt;div class=&quot;paragraph&quot;&gt;
+      &lt;p&gt;JBoss Integration and SOA Development plug-ins provide tooling for developing, configuring and deploying BRMS and SwitchYard to Red Hat JBoss Fuse and Fuse Fabric containers.&lt;/p&gt;
+      &lt;/div&gt;
+      &lt;div class=&quot;ulist&quot;&gt;
+      &lt;ul&gt;
+      &lt;li&gt;
+      &lt;p&gt;All of the Business Process and Rules Development plugins plus SwitchYard. Switchyard is deprecated as of this release.&lt;/p&gt;
+      &lt;/li&gt;
+      &lt;li&gt;
+      &lt;p&gt;&lt;a href=&quot;https://tools.jboss.org/features/fusetools.html&quot;&gt;Fuse Tooling&lt;/a&gt; has moved out of the Integration Stack to be a core part of JBoss Tools and Developer Studio.&lt;/p&gt;
+      &lt;/li&gt;
+      &lt;/ul&gt;
+      &lt;/div&gt;
+      &lt;/div&gt;
+      &lt;div class=&quot;sect2&quot;&gt;
+      &lt;h3 id=&quot;the-jboss-tools-website-features-tab&quot;&gt;&lt;a class=&quot;anchor&quot; href=&quot;http://tools.jboss.org/blog/news.atom#the-jboss-tools-website-features-tab&quot;&gt;&lt;/a&gt;The JBoss Tools website features tab&lt;/h3&gt;
+      &lt;div class=&quot;paragraph&quot;&gt;
+      &lt;p&gt;Don’t miss the &lt;a href=&quot;https://tools.jboss.org/features&quot;&gt;Features tab&lt;/a&gt; for up to date information on your favorite Integration Stack components.&lt;/p&gt;
+      &lt;/div&gt;
+      &lt;/div&gt;
+      &lt;/div&gt;
+      &lt;/div&gt;
+      &lt;div class=&quot;sect1&quot;&gt;
+      &lt;h2 id=&quot;installation&quot;&gt;&lt;a class=&quot;anchor&quot; href=&quot;http://tools.jboss.org/blog/news.atom#installation&quot;&gt;&lt;/a&gt;Installation&lt;/h2&gt;
+      &lt;div class=&quot;sectionbody&quot;&gt;
+      &lt;div class=&quot;paragraph&quot;&gt;
+      &lt;p&gt;The easiest way to install the Integration Stack components is through the &lt;a href=&quot;https://access.redhat.com/jbossnetwork/restricted/listSoftware.html?downloadType=distributions&amp;amp;product=jbossdeveloperstudio&amp;amp;version=11.2.0&quot;&gt;stand-alone installer&lt;/a&gt; or through our &lt;a href=&quot;http://tools.jboss.org/downloads/overview.html&quot;&gt;JBoss Tools Download Site&lt;/a&gt;.&lt;/p&gt;
+      &lt;/div&gt;
+      &lt;div class=&quot;paragraph&quot;&gt;
+      &lt;p&gt;For a complete set of Integration Stack installation instructions, see &lt;a href=&quot;https://access.redhat.com/documentation/en-us/red_hat_jboss_developer_studio_integration_stack/11.2/html/installation_guide/&quot;&gt;Integration Stack Installation Guide&lt;/a&gt;&lt;/p&gt;
+      &lt;/div&gt;
+      &lt;div class=&quot;paragraph&quot;&gt;
+      &lt;p&gt;&lt;em&gt;Let us know how it goes!&lt;/em&gt;&lt;/p&gt;
+      &lt;/div&gt;
+      &lt;div class=&quot;paragraph&quot;&gt;
+      &lt;p&gt;Paul Leacu.&lt;/p&gt;
+      &lt;/div&gt;
+      &lt;/div&gt;
+      &lt;/div&gt;&lt;/div&gt;</description>
+	<pubDate>Mon, 19 Feb 2018 14:13:29 +0000</pubDate>
+</item>
+<item>
+	<title>EclipseCon France 2018: Is your JUG an EclipseCon France partner?</title>
+	<guid isPermaLink="false">https://www.eclipsecon.org/france2018/news/3672 at https://www.eclipsecon.org/france2018</guid>
+	<link>https://www.eclipsecon.org/france2018/news/your-jug-eclipsecon-france-partner</link>
+	<description>&lt;div class=&quot;field field-name-body field-type-text-with-summary field-label-hidden&quot;&gt;&lt;div class=&quot;field-items&quot;&gt;&lt;div class=&quot;field-item even&quot;&gt;&lt;p&gt;JUG partners are helping to spread the word about EclipseCon France. Find out more about the program on the &lt;a href=&quot;https://www.eclipsecon.org/france2018/jugs&quot;&gt;JUG partner page&lt;/a&gt;. And, welcome our first partners from Nantes, Paris, Toulouse and Bordeaux!&lt;/p&gt;
+&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;&lt;div class=&quot;field field-name-field-news-image field-type-image field-label-hidden&quot;&gt;&lt;div class=&quot;field-items&quot;&gt;&lt;div class=&quot;field-item even&quot;&gt;&lt;a href=&quot;https://www.eclipsecon.org/france2018/news/your-jug-eclipsecon-france-partner&quot;&gt;&lt;img alt=&quot;&quot; class=&quot;img-responsive block-center&quot; height=&quot;250&quot; src=&quot;https://www.eclipsecon.org/france2018/sites/default/files/styles/solstice_news_-_default_-_thumbnail/public/news/Duke360x360.png?itok=v85YbLha&quot; width=&quot;250&quot; /&gt;&lt;/a&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;</description>
+	<pubDate>Mon, 19 Feb 2018 11:36:44 +0000</pubDate>
+</item>
+<item>
+	<title>Melanie Bats: CheConf18</title>
+	<guid isPermaLink="true">http://melb.enix.org/2018/02/16/che-conf/</guid>
+	<link>http://melb.enix.org/2018/02/16/che-conf/</link>
+	<description>&lt;p&gt;A small post to announce that I will be speaking at &lt;a href=&quot;https://www.eclipse.org/che/checonf18/index.html&quot;&gt;CheConf18&lt;/a&gt;, a one day conference dedicated to &lt;a href=&quot;https://eclipse.org/che/&quot;&gt;Eclipse Che&lt;/a&gt; an extensible cloud development platform. I am really excited to participate to this event! I will co speak with Stevan Le Meur, Che maintainer from RedHat about &lt;strong&gt;Building Extensibility and Community for Che&lt;/strong&gt;. During our session, you’ll get a preview of the work we prototyped at &lt;a href=&quot;https://www.obeo.fr/en&quot;&gt;Obeo&lt;/a&gt; to bring the modeling stack to the web and what class of tools one can envision.&lt;/p&gt;
+
+&lt;p&gt;Perhaps you hadn’t hear about CheConf so far ? No problem: it’s not too late to participate. Indeed, there’s no need to negotiate with your boss, no need to book a flight and an hotel: this conference happens entirely online and is free!&lt;/p&gt;
+
+&lt;p&gt;You just need to &lt;a href=&quot;https://visitor.r20.constantcontact.com/d.jsp?llr=7kv7dn9ab&amp;amp;p=oi&amp;amp;m=1127869207900&amp;amp;sit=dqf8xmplb&amp;amp;f=ab2389bc-9888-4ff7-978e-f922c1210d52&quot;&gt;subscribe&lt;/a&gt; on the web site, and you’ll be able to join the conference when you want.
+Have a look at the great &lt;a href=&quot;https://www.eclipse.org/che/checonf18/sessions.html&quot;&gt;schedule&lt;/a&gt;.
+And do not forget our session &lt;strong&gt;Wednesday February 21, 2018 17:30-18:00 Paris Time&lt;/strong&gt; or &lt;strong&gt;wherever you are&lt;/strong&gt; in the world!&lt;/p&gt;
+
+&lt;p&gt;Stay tuned!&lt;/p&gt;</description>
+	<pubDate>Fri, 16 Feb 2018 12:00:00 +0000</pubDate>
+</item>
+<item>
+	<title>Chris Aniszczyk: Cloud Native and Serverless Landscape</title>
+	<guid isPermaLink="false">http://aniszczyk.org/?p=4200</guid>
+	<link>http://aniszczyk.org/2018/02/16/cloud-native-and-serverless-landscape/</link>
+	<description>&lt;p&gt;For the last year or so, the CNCF has been &lt;a href=&quot;https://www.cncf.io/blog/2018/02/14/cncf-takes-first-step-towards-serverless-computing/&quot;&gt;exploring&lt;/a&gt; the intersection of cloud native and serverless through the &lt;a href=&quot;https://github.com/cncf/wg-serverless&quot;&gt;CNCF Serverless WG&lt;/a&gt;:&lt;/p&gt;
+&lt;blockquote class=&quot;twitter-tweet&quot;&gt;
+&lt;p dir=&quot;ltr&quot; lang=&quot;en&quot;&gt;[NEWS] &lt;a href=&quot;https://twitter.com/CloudNativeFdn?ref_src=twsrc%5Etfw&quot;&gt;@CloudNativeFdn&lt;/a&gt; takes steps toward &lt;a href=&quot;https://twitter.com/hashtag/serverless?src=hash&amp;amp;ref_src=twsrc%5Etfw&quot;&gt;#serverless&lt;/a&gt; computing, in collaboration w/ &lt;a href=&quot;https://twitter.com/AstasiaMyers?ref_src=twsrc%5Etfw&quot;&gt;@AstasiaMyers&lt;/a&gt;, &lt;a href=&quot;https://twitter.com/sraney?ref_src=twsrc%5Etfw&quot;&gt;@SRaney&lt;/a&gt; &amp;amp; &lt;a href=&quot;https://twitter.com/redpointvc?ref_src=twsrc%5Etfw&quot;&gt;@RedpointVC&lt;/a&gt; &lt;img alt=&quot;➡&quot; class=&quot;wp-smiley&quot; src=&quot;https://s.w.org/images/core/emoji/2.4/72x72/27a1.png&quot; style=&quot;height: 1em;&quot; /&gt; &lt;a href=&quot;https://t.co/BHg9lgPIFu&quot;&gt;https://t.co/BHg9lgPIFu&lt;/a&gt; &lt;a href=&quot;https://t.co/sbOO85rZqT&quot;&gt;pic.twitter.com/sbOO85rZqT&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;— CNCF (@CloudNativeFdn) &lt;a href=&quot;https://twitter.com/CloudNativeFdn/status/963822190356348928?ref_src=twsrc%5Etfw&quot;&gt;February 14, 2018&lt;/a&gt;&lt;/p&gt;&lt;/blockquote&gt;
+&lt;p&gt;&lt;/p&gt;
+&lt;p&gt;As the first artifacts of the working group, we are happy to announce a &lt;a href=&quot;https://github.com/cncf/wg-serverless/tree/master/whitepaper&quot;&gt;whitepaper&lt;/a&gt; and &lt;a href=&quot;https://github.com/cncf/wg-serverless#landscape&quot;&gt;landscape&lt;/a&gt; to bring some clarity to this early and evolving technology space. The CNCF Serverless WG is also working on a &lt;a href=&quot;https://github.com/cloudevents/spec&quot;&gt;draft specification&lt;/a&gt; for describing event data in a common way to ease event declaration and delivery, focused on the serverless space. The goal is to eventually present this project to the CNCF TOC to formalize it as an official CNCF project:&lt;/p&gt;
+&lt;blockquote class=&quot;twitter-tweet&quot;&gt;
+&lt;p dir=&quot;ltr&quot; lang=&quot;en&quot;&gt;the CloudEvents draft specification finally has a logo, so we're a bit more legitimate as an open source project &lt;img alt=&quot;🙂&quot; class=&quot;wp-smiley&quot; src=&quot;https://s.w.org/images/core/emoji/2.4/72x72/1f642.png&quot; style=&quot;height: 1em;&quot; /&gt; &lt;a href=&quot;https://t.co/FlO8q8eHT3&quot;&gt;https://t.co/FlO8q8eHT3&lt;/a&gt; &lt;a href=&quot;https://t.co/6LlfPpX3v0&quot;&gt;pic.twitter.com/6LlfPpX3v0&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;— Chris Aniszczyk (@cra) &lt;a href=&quot;https://twitter.com/cra/status/964440866604703744?ref_src=twsrc%5Etfw&quot;&gt;February 16, 2018&lt;/a&gt;&lt;/p&gt;&lt;/blockquote&gt;
+&lt;p&gt;&lt;/p&gt;
+&lt;p&gt;We’re still early days, but in my opinion, serverless is one application/programming built on cloud native technology. There are some open source efforts out there for serverless but they tend to be focused on specific projects (e.g., &lt;a href=&quot;https://github.com/openfaas/faas&quot;&gt;OpenFaaS&lt;/a&gt;, &lt;a href=&quot;https://github.com/kubeless/kubeless&quot;&gt;kubeless&lt;/a&gt;) versus collaboration across cloud providers and startups. The CNCF is looking to enable collaboration/projects in this space that adhere to our values. What are our values? See these from our &lt;a href=&quot;https://www.cncf.io/about/charter/&quot;&gt;charter&lt;/a&gt;:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;Fast is better than slow&lt;/strong&gt;. The foundation enables projects to progress at high velocity to support aggressive adoption by users.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Open&lt;/strong&gt;. The foundation is open and accessible, and operates independently of specific partisan interests. The foundation accepts all contributors based on the merit of their contributions, and the foundation’s technology must be available to all according to open source values. The technical community and its decisions shall be transparent.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Fair&lt;/strong&gt;. The foundation will avoid undue influence, bad behavior or “pay-to-play” decision-making.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Strong technical identity&lt;/strong&gt;. The foundation will achieve and maintain a high degree of its own technical identify that is shared across the projects.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Clear boundaries&lt;/strong&gt;. The foundation shall establish clear goals, and in some cases, what the non-goals of the foundation are to allow projects to effectively co-exist, and to help the ecosystem understand where to focus for new innovation.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Scalable&lt;/strong&gt;. Ability to support all scales of deployment, from small developer centric environments to the scale of enterprises and service providers. This implies that in some deployments some optional components may not be deployed, but the overall design and architecture should still be applicable.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Platform agnostic&lt;/strong&gt;. The specifications developed will not be platform specific such that they can be implemented on a variety of architectures and operating systems.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Anyways, if you’re interested in this space, I highly recommend you attend the &lt;a href=&quot;https://github.com/cncf/wg-serverless&quot;&gt;CNCF Serverless WG meetings&lt;/a&gt; which are public and currently happen on a weekly basis.&lt;/p&gt;</description>
+	<pubDate>Fri, 16 Feb 2018 10:21:03 +0000</pubDate>
+</item>
+<item>
+	<title>InfoQ Eclipse feed: Presentation: Spring Tools 4 - Eclipse and Beyond</title>
+	<guid isPermaLink="true">http://www.infoq.com/presentations/sts4-eclipse-vscode-atom?utm_campaign=infoq_content&amp;utm_source=infoq&amp;utm_medium=feed&amp;utm_term=Eclipse</guid>
+	<link>http://www.infoq.com/presentations/sts4-eclipse-vscode-atom?utm_campaign=infoq_content&amp;utm_source=infoq&amp;utm_medium=feed&amp;utm_term=Eclipse</link>
+	<description>&lt;img src=&quot;https://res.infoq.com/presentations/sts4-eclipse-vscode-atom/en/mediumimage/Marbig-1518831517981.JPG&quot; /&gt;&lt;p&gt;Martin Lippert and Kris De Volder introduce and demo a new generation of Spring tools including Spring Tool Suite for Eclipse (STS4), STS4 VS Code and STS4 Atom.&lt;/p&gt; &lt;i&gt;By Martin Lippert&lt;/i&gt;</description>
+	<pubDate>Thu, 15 Feb 2018 18:27:00 +0000</pubDate>
+</item>
+<item>
 	<title>JBoss Tools Team: JBoss Tools 4.5.3.AM1 for Eclipse Oxygen.2</title>
 	<guid isPermaLink="true">https://tools.jboss.org/blog/4.5.3.am1-for-oxygen.2.html</guid>
 	<link>https://tools.jboss.org/blog/4.5.3.am1-for-oxygen.2.html</link>
@@ -276,7 +630,7 @@ when you want before calling &lt;code&gt;getRouter()&lt;/code&gt;.&lt;/p&gt;
 	<pubDate>Tue, 13 Feb 2018 00:00:00 +0000</pubDate>
 </item>
 <item>
-	<title>Eclipse Announcements: EclipseCon France 2018 Call for Papers</title>
+	<title>Eclipse Announcements: EclipseCon France 2018 | Call for Papers</title>
 	<guid isPermaLink="true">http://feedproxy.google.com/~r/eclipse/fnews/~3/P-OCvrydq2E/france2018</guid>
 	<link>http://feedproxy.google.com/~r/eclipse/fnews/~3/P-OCvrydq2E/france2018</link>
 	<description>Call for paper submissions are now open until March 19. We'll see you June 13 - 14 in Toulouse!&lt;img alt=&quot;&quot; height=&quot;1&quot; src=&quot;http://feeds.feedburner.com/~r/eclipse/fnews/~4/P-OCvrydq2E&quot; width=&quot;1&quot; /&gt;</description>
@@ -340,7 +694,7 @@ when you want before calling &lt;code&gt;getRouter()&lt;/code&gt;.&lt;/p&gt;
 	<author>dietrich@itemis.de (Christian Dietrich)</author>
 </item>
 <item>
-	<title>Eclipse Announcements: EE.next working group - community review process</title>
+	<title>Eclipse Announcements: EE.next working group | Community review process</title>
 	<guid isPermaLink="true">http://feedproxy.google.com/~r/eclipse/fnews/~3/s5OSPunAH5k/</guid>
 	<link>http://feedproxy.google.com/~r/eclipse/fnews/~3/s5OSPunAH5k/</link>
 	<description>Announcing the EE.next working group to support the EE4J projects. Join the review process of the charter.&lt;img alt=&quot;&quot; height=&quot;1&quot; src=&quot;http://feeds.feedburner.com/~r/eclipse/fnews/~4/s5OSPunAH5k&quot; width=&quot;1&quot; /&gt;</description>
@@ -427,985 +781,6 @@ when you want before calling &lt;code&gt;getRouter()&lt;/code&gt;.&lt;/p&gt;
 &lt;/tbody&gt;
 &lt;/table&gt;</description>
 	<pubDate>Mon, 05 Feb 2018 19:43:02 +0000</pubDate>
-</item>
-<item>
-	<title>itemis: In 5 Minuten zur DSL mit transitiven Importen in Xtext</title>
-	<guid isPermaLink="true">https://blogs.itemis.com/de/in-5-minuten-zur-dsl-mit-transitiven-importen-in-xtext</guid>
-	<link>https://blogs.itemis.com/de/in-5-minuten-zur-dsl-mit-transitiven-importen-in-xtext</link>
-	<description>&lt;p&gt;&lt;span style=&quot;font-weight: 400;&quot;&gt;Xtext ermöglicht das Referenzieren von Elementen in DSLs auf mehrere Arten. Eine Möglichkeit sieht den Import von Elementen über Namensräume vor. Dies geschieht über die Verwendung des &lt;/span&gt;&lt;code&gt;ImportedNamespaceAwareLocalScopeProvider&lt;/code&gt;&lt;span style=&quot;font-weight: 400;&quot;&gt; und erlaubt den &quot;Import&quot; einzelner oder, unter Einsatz von Wildcards (&lt;/span&gt;&lt;span style=&quot;font-weight: 400;&quot;&gt;.*&lt;/span&gt;&lt;span style=&quot;font-weight: 400;&quot;&gt;), aller Elemente eines Namensraumes.&lt;/span&gt;&lt;/p&gt;  
-&lt;p&gt;&lt;span style=&quot;font-weight: 400;&quot;&gt;Es kann aber Sprachen geben, in denen dieses Verhalten nicht gewünscht ist. In diesen Sprachen importiert der Nutzer explizit eine oder mehrere Ressource-Dateien, um auf deren Inhalte zugreifen zu können.&lt;/span&gt;&lt;/p&gt; 
-&lt;h2&gt;&lt;span style=&quot;font-weight: 400;&quot;&gt;Eine einfache DSL mit Import-Verhalten dank Xtext&lt;/span&gt;&lt;/h2&gt; 
-&lt;p&gt;&lt;span style=&quot;font-weight: 400;&quot;&gt;Eine DSL mit einem solchen Import-Verhalten lässt sich mit https://www.itemis.com/en/xtext/ recht einfach erstellen, indem man eine Parser-Regel mit dem speziellen Attributnamen &lt;a href=&quot;https://www.itemis.com/en/xtext/&quot;&gt;Xtext&lt;/a&gt;&lt;/span&gt;&lt;code&gt;importURI&lt;/code&gt;&lt;span style=&quot;font-weight: 400;&quot;&gt; in die DSL einbaut. Das folgende Beispiel stellt eine einfache DSL dar, die es erlaubt, in beliebigen Ressourcen Namen zu definieren und diese in Grußbotschaften zu verwenden.&lt;br /&gt;&lt;br /&gt;&lt;/span&gt;&lt;/p&gt; 
-&lt;pre class=&quot;prettyprint&quot;&gt;grammar org.xtext.example.mydsl.MyDsl with org.eclipse.xtext.common.Terminals
-generate myDsl &quot;http://www.xtext.org/example/mydsl/MyDsl&quot;
-Model:
-	includes+=Include*
-	names+=Name*
-	greetings+=Greeting*;
-Include:
-	'import' importURI=STRING
-	;
-Name:
-	'def' name=ID
-	;
-Greeting:
-	'Hallo' name=[Name] '!'
-	;&lt;/pre&gt; 
-&lt;br /&gt; 
-&lt;p&gt;&lt;span style=&quot;font-weight: 400;&quot;&gt;Wir möchten Kollegen aus unserer Firma Grußbotschaften schicken. Da die Firma aber groß ist und aus vielen Kollegen besteht, die in unterschiedlichen Bereichen arbeiten, möchten wir für jeden Firmenbereich eine eigene Datei erstellen, die die Namen der jeweiligen Kollegen enthält. Dies erhöht die Übersicht und Wartbarkeit.&lt;/span&gt;&lt;/p&gt; 
-&lt;p&gt;&lt;span style=&quot;font-weight: 400;&quot;&gt;Nur durch einen expliziten Import einer Ressource wollen wir die enthaltenen Namensdefinitionen in den Scope aufnehmen. Dabei soll dies möglichst schnell und ressourcenschonend erfolgen.&lt;/span&gt;&lt;/p&gt; 
-&lt;p&gt;&lt;span style=&quot;font-weight: 400;&quot;&gt;Der Ansatz ist hierbei, die Verwendung des Index, die das unnötige und (bei großen Modellen) zeitaufwendige Laden von Ressourcen überflüssig macht. Als ersten Schritt müssen wir die Informationen bzgl. der importierten Ressourcen in den Index schreiben. Dazu implementieren wir eine Klasse &lt;/span&gt;&lt;code&gt;MyDslResourceDescriptionStrategy&lt;/code&gt;&lt;span style=&quot;font-weight: 400;&quot;&gt;, die von &lt;/span&gt;&lt;code&gt;DefaultResourceDescriptionStrategy&lt;/code&gt;&lt;span style=&quot;font-weight: 400;&quot;&gt; ableitet. Die Strings mit den URIs, der in der Parser-Regel &lt;/span&gt;&lt;i&gt;&lt;span style=&quot;font-weight: 400;&quot;&gt;Model&lt;/span&gt;&lt;/i&gt;&lt;span style=&quot;font-weight: 400;&quot;&gt; importierten Ressourcen, werden in einen durch Kommas getrennten String zusammengeführt und unter dem Schlüssel &lt;/span&gt;&lt;i&gt;&lt;span style=&quot;font-weight: 400;&quot;&gt;includes&lt;/span&gt;&lt;/i&gt;&lt;span style=&quot;font-weight: 400;&quot;&gt; in der &lt;/span&gt;&lt;i&gt;&lt;span style=&quot;font-weight: 400;&quot;&gt;userData&lt;/span&gt;&lt;/i&gt;&lt;span style=&quot;font-weight: 400;&quot;&gt; Map der Objektbeschreibung im Index gespeichert.&lt;br /&gt;&lt;br /&gt;&lt;/span&gt;&lt;/p&gt; 
-&lt;pre class=&quot;prettyprint&quot;&gt;package org.xtext.example.mydsl
-
-import com.google.inject.Inject
-import java.util.HashMap
-import org.eclipse.xtext.naming.QualifiedName
-import org.eclipse.xtext.resource.EObjectDescription
-import org.eclipse.xtext.resource.IEObjectDescription
-import org.eclipse.xtext.resource.impl.DefaultResourceDescriptionStrategy
-import org.eclipse.xtext.scoping.impl.ImportUriResolver
-import org.eclipse.xtext.util.IAcceptor
-import org.xtext.example.mydsl.myDsl.Model
-import org.eclipse.emf.ecore.EObject
-
-class MyDslResourceDescriptionStrategy extends DefaultResourceDescriptionStrategy {
-	public static final String INCLUDES = &quot;includes&quot;
-	@Inject
-	ImportUriResolver uriResolver
-
-	override createEObjectDescriptions(EObject eObject, IAcceptor acceptor) {
-		if(eObject instanceof Model) {
-			this.createEObjectDescriptionForModel(eObject, acceptor)
-			return true
-		}
-		else {
-			super.createEObjectDescriptions(eObject, acceptor)
-		}
-	}
-
-	def void createEObjectDescriptionForModel(Model model, IAcceptor acceptor) {
-		val uris = newArrayList()
-		model.includes.forEach[uris.add(uriResolver.apply(it))]
-		val userData = new HashMap&amp;lt;string,string&amp;gt;
-		userData.put(INCLUDES, uris.join(&quot;,&quot;))
-		acceptor.accept(EObjectDescription.create(QualifiedName.create(model.eResource.URI.toString), model, userData))
-	}
-}&lt;/pre&gt; 
-&lt;br /&gt; Um unsere ResourceDescriptionStrategy nutzen zu können, müssen wir sie noch im MyDslRuntimeModule binden. 
-&lt;p&gt;&lt;span style=&quot;font-weight: 400;&quot;&gt; &lt;/span&gt;&lt;/p&gt; 
-&lt;pre class=&quot;prettyprint&quot;&gt;package org.xtext.example.mydsl&lt;br /&gt;&lt;br /&gt;import org.eclipse.xtext.resource.IDefaultResourceDescriptionStrategy&lt;br /&gt;import org.eclipse.xtext.scoping.IGlobalScopeProvider&lt;br /&gt;import org.xtext.example.mydsl.scoping.MyDslGlobalScopeProvider&lt;br /&gt;&lt;br /&gt;class MyDslRuntimeModule extends AbstractMyDslRuntimeModule {&lt;br /&gt; def Class&amp;lt;? extends IDefaultResourceDescriptionStrategy&amp;gt; bindIDefaultResourceDescriptionStrategy() {&lt;br /&gt; MyDslResourceDescriptionStrategy&lt;br /&gt; }&lt;br /&gt;}&lt;/pre&gt; 
-&lt;p&gt;&lt;span style=&quot;font-weight: 400;&quot;&gt;&lt;br /&gt;Bisher haben wir nur Informationen gesammelt und im Index gespeichert. Um sie verwenden zu können, benötigen wir zusätzlich einen eigenen &lt;/span&gt;&lt;code&gt;IGlobalScopeProvider&lt;/code&gt;&lt;span style=&quot;font-weight: 400;&quot;&gt;. Dazu implementieren wir eine Klasse &lt;/span&gt;&lt;code&gt;MyDslGlobalScopeProvider&lt;/code&gt;&lt;span style=&quot;font-weight: 400;&quot;&gt;, die von &lt;/span&gt;&lt;code&gt;ImportUriGlobalScopeProvider&lt;/code&gt;&lt;span style=&quot;font-weight: 400;&quot;&gt; ableitet, und überschreiben die Methode &lt;/span&gt;&lt;code&gt;getImportedUris(Resource resource)&lt;/code&gt;&lt;span style=&quot;font-weight: 400;&quot;&gt;. Diese Methode liefert ein &lt;/span&gt;&lt;code&gt;LinkedHashSet&lt;/code&gt;&lt;span style=&quot;font-weight: 400;&quot;&gt; zurück, das letztendlich alle URIs enthält, die in der Ressource importiert werden sollen.&lt;/span&gt;&lt;/p&gt; 
-&lt;p&gt;&lt;span style=&quot;font-weight: 400;&quot;&gt;Das Auslesen der importierten Ressourcen aus dem Index wird von der Methode &lt;/span&gt;&lt;code&gt;collectImportUris&lt;/code&gt;&lt;span style=&quot;font-weight: 400;&quot;&gt; erledigt. Die Methode fragt den &lt;/span&gt;&lt;code&gt;IResourceDescription.Manager&lt;/code&gt;&lt;span style=&quot;font-weight: 400;&quot;&gt; nach der &lt;/span&gt;&lt;code&gt;IResourceDescription&lt;/code&gt;&lt;span style=&quot;font-weight: 400;&quot;&gt; der Ressource. Aus dieser wird für jedes &lt;/span&gt;&lt;i&gt;&lt;span style=&quot;font-weight: 400;&quot;&gt;Model&lt;/span&gt;&lt;/i&gt;&lt;span style=&quot;font-weight: 400;&quot;&gt;-Element aus der &lt;/span&gt;&lt;i&gt;&lt;span style=&quot;font-weight: 400;&quot;&gt;userData&lt;/span&gt;&lt;/i&gt;&lt;span style=&quot;font-weight: 400;&quot;&gt; Map der unter dem Schlüssel &lt;/span&gt;&lt;i&gt;&lt;span style=&quot;font-weight: 400;&quot;&gt;includes&lt;/span&gt;&lt;/i&gt;&lt;span style=&quot;font-weight: 400;&quot;&gt; gespeicherte String mit den URIs der importierten Ressourcen ausgelesen, zerlegt und die einzelnen URIs in einem Set gespeichert.&lt;/span&gt;&lt;/p&gt; 
-&lt;br /&gt; 
-&lt;pre class=&quot;prettyprint&quot;&gt;package org.xtext.example.mydsl.scoping
-
-import com.google.common.base.Splitter
-import com.google.inject.Inject
-import com.google.inject.Provider
-import java.util.LinkedHashSet
-import org.eclipse.emf.common.util.URI
-import org.eclipse.emf.ecore.resource.Resource
-import org.eclipse.xtext.EcoreUtil2
-import org.eclipse.xtext.resource.IResourceDescription
-import org.eclipse.xtext.scoping.impl.ImportUriGlobalScopeProvider
-import org.eclipse.xtext.util.IResourceScopeCache
-import org.xtext.example.mydsl.MyDslResourceDescriptionStrategy
-import org.xtext.example.mydsl.myDsl.MyDslPackage
-
-class MyDslGlobalScopeProvider extends ImportUriGlobalScopeProvider {
-	private static final Splitter SPLITTER = Splitter.on(',');
-
-	@Inject
-	IResourceDescription.Manager descriptionManager;
-
-	@Inject
-	IResourceScopeCache cache;
-
-	override protected getImportedUris(Resource resource) {
-		return cache.get(MyDslGlobalScopeProvider.getSimpleName(), resource, new Provider&amp;lt;linkedhashset&amp;gt;() {
-			override get() {
-				val uniqueImportURIs = collectImportUris(resource, new LinkedHashSet(5))
-
-				val uriIter = uniqueImportURIs.iterator()
-				while(uriIter.hasNext()) {
-					if (!EcoreUtil2.isValidUri(resource, uriIter.next()))
-						uriIter.remove()
-				}
-				return uniqueImportURIs
-			}
-
-			def LinkedHashSet collectImportUris(Resource resource, LinkedHashSet uniqueImportURIs) {
-				val resourceDescription = descriptionManager.getResourceDescription(resource)
-				val models = resourceDescription.getExportedObjectsByType(MyDslPackage.Literals.MODEL)
-				
-				models.forEach[
-					val userData = getUserData(MyDslResourceDescriptionStrategy.INCLUDES)
-					if(userData !== null) {
-						SPLITTER.split(userData).forEach[uri |
-							var includedUri = URI.createURI(uri)
-							includedUri = includedUri.resolve(resource.URI)
-							uniqueImportURIs.add(includedUri)
-						]
-					}
-				]
-				return uniqueImportURIs
-			}
-		});
-	}
-}
-&lt;/pre&gt; 
-&lt;p&gt;&lt;span style=&quot;font-weight: 400;&quot;&gt;&lt;br /&gt;Um unseren &lt;/span&gt;&lt;code&gt;MyDslGlobalScopeProvider&lt;/code&gt;&lt;span style=&quot;font-weight: 400;&quot;&gt; nutzen zu können, müssen wir diesen wiederum im &lt;/span&gt;&lt;code&gt;MyDslRuntimeModule&lt;/code&gt;&lt;span style=&quot;font-weight: 400;&quot;&gt; binden.&lt;br /&gt;&lt;br /&gt;&lt;/span&gt;&lt;/p&gt; 
-&lt;pre class=&quot;prettyprint&quot;&gt;package org.xtext.example.mydsl
-
-import org.eclipse.xtext.resource.IDefaultResourceDescriptionStrategy
-import org.eclipse.xtext.scoping.IGlobalScopeProvider
-import org.xtext.example.mydsl.scoping.MyDslGlobalScopeProvider
-
-class MyDslRuntimeModule extends AbstractMyDslRuntimeModule {
-	def Class bindIDefaultResourceDescriptionStrategy() {
-		MyDslResourceDescriptionStrategy
-	}
-	override Class bindIGlobalScopeProvider() {
-		MyDslGlobalScopeProvider;
-	}
-}&lt;/pre&gt; 
-&lt;p&gt;&lt;span style=&quot;font-weight: 400;&quot;&gt;&lt;br /&gt;Wir starten den Editor für unsere kleine Sprache und beginnen die Modell-Dateien zu erstellen. Dabei haben wir die Idee, die Ressourcen der unterschiedlichen Firmenbereiche nicht einzeln zu importieren, sondern eine Ressource zu erstellen, die alle Importe enthält, und diese dann zu importieren. Dazu erstellen wir folgende Ressourcen:&lt;br /&gt;&lt;br /&gt;&lt;/span&gt;&lt;/p&gt; 
-&lt;p&gt;&lt;span style=&quot;font-weight: 400;&quot;&gt;&lt;img alt=&quot;Ressourcen-Agile.png&quot; height=&quot;85&quot; src=&quot;https://blogs.itemis.com/hs-fs/hubfs/Blog/Software%20Development/Ressourcen-Agile.png?t=1517941087956&amp;amp;width=724&amp;amp;height=85&amp;amp;name=Ressourcen-Agile.png&quot; width=&quot;724&quot; /&gt;&lt;/span&gt;&lt;/p&gt; 
-&lt;p&gt; &lt;img alt=&quot;Ressourcen-Xtext.png&quot; height=&quot;84&quot; src=&quot;https://blogs.itemis.com/hs-fs/hubfs/Blog/Software%20Development/Ressourcen-Xtext.png?t=1517941087956&amp;amp;width=724&amp;amp;height=84&amp;amp;name=Ressourcen-Xtext.png&quot; width=&quot;724&quot; /&gt;&lt;/p&gt; 
-&lt;p&gt;&lt;img alt=&quot;Ressource-Kollegen.png&quot; height=&quot;87&quot; src=&quot;https://blogs.itemis.com/hs-fs/hubfs/Blog/Software%20Development/Ressource-Kollegen.png?t=1517941087956&amp;amp;width=724&amp;amp;height=87&amp;amp;name=Ressource-Kollegen.png&quot; width=&quot;724&quot; /&gt;&lt;/p&gt; 
-&lt;p&gt;&lt;span style=&quot;font-weight: 400;&quot;&gt;&lt;br /&gt;Beim Erstellen der Ressource mit den Grußbotschaften stellen wir fest, dass die Namen nicht aufgelößt werden können.&lt;br /&gt;&lt;br /&gt;&lt;/span&gt;&lt;/p&gt; 
-&lt;p&gt;&lt;span style=&quot;font-weight: 400;&quot;&gt;&lt;img alt=&quot;Ressource-Greetings.png&quot; height=&quot;200&quot; src=&quot;https://blogs.itemis.com/hs-fs/hubfs/Blog/Software%20Development/Ressource-Greetings.png?t=1517941087956&amp;amp;width=724&amp;amp;height=200&amp;amp;name=Ressource-Greetings.png&quot; width=&quot;724&quot; /&gt;&lt;/span&gt;&lt;/p&gt; 
-&lt;p&gt;&lt;span style=&quot;font-weight: 400;&quot;&gt;&lt;br /&gt;Woran liegt das? Wir haben doch alle importierten Ressourcen in den Index geschrieben.&lt;/span&gt;&lt;/p&gt; 
-&lt;p&gt;&lt;span style=&quot;font-weight: 400;&quot;&gt;Das ist soweit richtig. Alle direkt importieren Ressourcen werden in den Index geschrieben. Die Importe in einer importierten Ressource jedoch werden ignoriert. Das von uns gewünschte Feature bezeichnet man als transitive Importe. Mit dem Import einer Ressource werden implizit alle von ihr importierten Ressourcen mit importiert.&lt;/span&gt;&lt;/p&gt; 
-&lt;p&gt;&lt;span style=&quot;font-weight: 400;&quot;&gt;Um in unserer Sprache transitive Importe zu ermöglichen, müssen wir unseren &lt;/span&gt;&lt;code&gt;MyDslGlobalScopeProvider&lt;/code&gt;&lt;span style=&quot;font-weight: 400;&quot;&gt; anpassen. Statt die URI einer importierten Ressource nur in dem Set zu speichern, rufen wir zusätzlich die Methode &lt;/span&gt;&lt;code&gt;collectImportUris&lt;/code&gt;&lt;span style=&quot;font-weight: 400;&quot;&gt; auf und übergeben die URI als Parameter, sodass deren importierte Ressourcen ebenfalls verarbeitet werden.&lt;br /&gt;&lt;br /&gt;&lt;/span&gt;&lt;/p&gt; 
-&lt;pre class=&quot;prettyprint&quot;&gt;package org.xtext.example.mydsl.scoping
-
-import com.google.common.base.Splitter
-import com.google.inject.Inject
-import com.google.inject.Provider
-import java.util.LinkedHashSet
-import org.eclipse.emf.common.util.URI
-import org.eclipse.emf.ecore.resource.Resource
-import org.eclipse.xtext.EcoreUtil2
-import org.eclipse.xtext.resource.IResourceDescription
-import org.eclipse.xtext.scoping.impl.ImportUriGlobalScopeProvider
-import org.eclipse.xtext.util.IResourceScopeCache
-import org.xtext.example.mydsl.MyDslResourceDescriptionStrategy
-import org.xtext.example.mydsl.myDsl.MyDslPackage
-
-class MyDslGlobalScopeProvider extends ImportUriGlobalScopeProvider {
-	private static final Splitter SPLITTER = Splitter.on(',');
-
-	@Inject
-	IResourceDescription.Manager descriptionManager;
-
-	@Inject
-	IResourceScopeCache cache;
-
-	override protected getImportedUris(Resource resource) {
-		return cache.get(MyDslGlobalScopeProvider.getSimpleName(), resource, new Provider&amp;lt;linkedhashset&amp;gt;() {
-			override get() {
-				val uniqueImportURIs = collectImportUris(resource, new LinkedHashSet(5))
-
-				val uriIter = uniqueImportURIs.iterator()
-				while(uriIter.hasNext()) {
-					if (!EcoreUtil2.isValidUri(resource, uriIter.next()))
-						uriIter.remove()
-				}
-				return uniqueImportURIs
-			}
-
-			def LinkedHashSet collectImportUris(Resource resource, LinkedHashSet uniqueImportURIs) {
-				val resourceDescription = descriptionManager.getResourceDescription(resource)
-				val models = resourceDescription.getExportedObjectsByType(MyDslPackage.Literals.MODEL)
-				
-				models.forEach[
-					val userData = getUserData(MyDslResourceDescriptionStrategy.INCLUDES)
-					if(userData !== null) {
-						SPLITTER.split(userData).forEach[uri |
-							var includedUri = URI.createURI(uri)
-							includedUri = includedUri.resolve(resource.URI)
-							if(uniqueImportURIs.add(includedUri)) {
-								collectImportUris(resource.getResourceSet().getResource(includedUri, true), uniqueImportURIs)
-							}
-						]
-					}
-				]
-				
-				return uniqueImportURIs
-			}
-		});
-	}
-}&lt;/pre&gt; 
-&lt;p&gt;&lt;span style=&quot;font-weight: 400;&quot;&gt;&lt;br /&gt;Wenn wir nach dieser kleinen Anpassung unsere Ressource mit den Grußbotschaften erneut öffnen sehen wir, dass die Namen durch die transitiven Importe aufgelöst werden können.&lt;/span&gt;&lt;/p&gt; 
-&lt;p&gt;&lt;span style=&quot;font-weight: 400;&quot;&gt;Das Beispielprojekt kann &lt;/span&gt;&lt;a href=&quot;https://github.com/itemis/itemis-blog/tree/transitive_imports/sources&quot;&gt;&lt;span style=&quot;font-weight: 400;&quot;&gt;hier&lt;/span&gt;&lt;/a&gt;&lt;span style=&quot;font-weight: 400;&quot;&gt; heruntergeladen werden.&lt;/span&gt;&lt;/p&gt;  
-&lt;img alt=&quot;&quot; height=&quot;1&quot; src=&quot;https://track.hubspot.com/__ptq.gif?a=761475&amp;amp;k=14&amp;amp;r=https%3A%2F%2Fblogs.itemis.com%2Fde%2Fin-5-minuten-zur-dsl-mit-transitiven-importen-in-xtext&amp;amp;bu=https%253A%252F%252Fblogs.itemis.com&amp;amp;bvt=rss&quot; style=&quot;width: 1px!important;&quot; width=&quot;1&quot; /&gt;</description>
-	<pubDate>Mon, 05 Feb 2018 14:51:00 +0000</pubDate>
-	<author>cwehrheim@itemis.de (Christian Wehrheim)</author>
-</item>
-<item>
-	<title>Jeremie Bresson: Use the eclipse-settings-maven-plugin to synchronize prefs files across projects</title>
-	<guid isPermaLink="true">http://jmini.github.io/blog/2018/2018-02-05_eclipse-settings-maven-plugin.html</guid>
-	<link>http://jmini.github.io/blog/2018/2018-02-05_eclipse-settings-maven-plugin.html</link>
-	<description>&lt;div class=&quot;paragraph&quot;&gt; 
- &lt;p&gt;The question « &lt;em&gt;Should the meta files related to an IDE be committed in the git repository?&lt;/em&gt; » is a never-ending fight. According to &lt;a href=&quot;https://twitter.com/apupier&quot;&gt;Aurelien Pupier&lt;/a&gt;, the answer to this question is YES (&lt;a href=&quot;https://www.eclipsecon.org/europe2015/comment/628.html&quot;&gt;Talk&lt;/a&gt; from 2015 - &lt;a href=&quot;https://www.slideshare.net/AurelienPupier/committing-ide-meta-files-misconceptions-misunderstandings-and-solutions&quot;&gt;slides&lt;/a&gt; and &lt;a href=&quot;https://www.youtube.com/watch?v=J5RzSbpNLM4&quot;&gt;video&lt;/a&gt;). I totally agree with him, because settings files like &lt;code&gt;org.eclipse.core.resources.prefs&lt;/code&gt;, &lt;code&gt;org.eclipse.jdt.core.prefs&lt;/code&gt;, &lt;code&gt;org.eclipse.jdt.ui.prefs&lt;/code&gt; or &lt;code&gt;org.eclipse.m2e.core.prefs&lt;/code&gt; can contain valuable configuration information that will be shared between all Eclipse IDE users working on the project: code formatting rules, save actions, automated code cleanup tasks, compiler settings…&lt;/p&gt; 
-&lt;/div&gt; 
-&lt;div class=&quot;imageblock&quot;&gt; 
- &lt;div class=&quot;content&quot;&gt; 
-  &lt;img alt=&quot;Enable project specific settings&quot; src=&quot;http://jmini.github.io/blog/2018/2018-02-05_enable_project_specific_settings.png&quot; /&gt; 
- &lt;/div&gt; 
-&lt;/div&gt; 
-&lt;div class=&quot;paragraph&quot;&gt; 
- &lt;p&gt;Even today a lot of people still prefer not to have the IDE metadata files in their git Repository. This means that every coworker needs to configure his IDE and more important everybody needs to keep the configuration in sync with the team over the time.&lt;/p&gt; 
-&lt;/div&gt; 
-&lt;div class=&quot;paragraph&quot;&gt; 
- &lt;p&gt;In both cases (having the settings files in your repo or not), the &lt;a href=&quot;https://github.com/BSI-Business-Systems-Integration-AG/eclipse-settings-maven-plugin&quot;&gt;eclipse-settings-maven-plugin&lt;/a&gt; can be interesting for you. The idea is to use maven in order to replicate the same prefs files across multiple maven modules. This way you can distribute the prefs file if they are missing in the git repository. An other use case is the distribution accros multiple teams (for example at organization level).&lt;/p&gt; 
-&lt;/div&gt; 
-&lt;div class=&quot;paragraph&quot;&gt; 
- &lt;p&gt;The source for the settings file is a simple maven artifact located in a maven repository. With a single maven command, you can synchronize the prefs files.&lt;/p&gt; 
-&lt;/div&gt; 
-&lt;div class=&quot;imageblock&quot;&gt; 
- &lt;div class=&quot;content&quot;&gt; 
-  &lt;img alt=&quot;Using eclipse-settings-maven-plugin to copy prefs files&quot; src=&quot;http://jmini.github.io/blog/2018/2018-02-05_sync_eclipse-settings.png&quot; /&gt; 
- &lt;/div&gt; 
-&lt;/div&gt; 
-&lt;div class=&quot;paragraph&quot;&gt; 
- &lt;p&gt;If you wants to see how the setup looks like, you can refer to my &lt;a href=&quot;https://jmini.github.io/sync-eclipse-settings-example/&quot;&gt;sync-eclipse-settings-example&lt;/a&gt; page and the associated GitHub project. I have updated it in order to use the latest version published last week by my former colleagues at BSI Business Systems Integration AG.&lt;/p&gt; 
-&lt;/div&gt;</description>
-	<pubDate>Sun, 04 Feb 2018 23:00:00 +0000</pubDate>
-</item>
-<item>
-	<title>Eclipse Announcements: Last Week to Submit for FOSS4G NA 2018!</title>
-	<guid isPermaLink="true">http://feedproxy.google.com/~r/eclipse/fnews/~3/djLr8W3gbZQ/cfp</guid>
-	<link>http://feedproxy.google.com/~r/eclipse/fnews/~3/djLr8W3gbZQ/cfp</link>
-	<description>Submissions close Feb 8, so propose your talk now for FOSS4G NA 2018, May 14-16 in St. Louis&lt;img alt=&quot;&quot; height=&quot;1&quot; src=&quot;http://feeds.feedburner.com/~r/eclipse/fnews/~4/djLr8W3gbZQ&quot; width=&quot;1&quot; /&gt;</description>
-	<pubDate>Fri, 02 Feb 2018 13:30:00 +0000</pubDate>
-</item>
-<item>
-	<title>Donald Raab: The Sum of all Reductions</title>
-	<guid isPermaLink="false">https://medium.com/p/d46dfd334704</guid>
-	<link>https://medium.com/@donraab/the-sum-of-all-reductions-d46dfd334704?source=rss-df39b86e9f04------2</link>
-	<description>&lt;p&gt;The reduction of all sums&lt;/p&gt;&lt;figure&gt;&lt;img alt=&quot;&quot; src=&quot;https://cdn-images-1.medium.com/max/1024/1*4V0JpvDWE8rlqhN2A21u5w.png&quot; /&gt;Belmar, NJ during the Deep Freeze of 2018&lt;/figure&gt;&lt;p&gt;During the Deep Freeze of 2018, everything in the world seemed to be reduced to ice and snow, including the sky. Even the sun seemed to be reduced as it ran away from my camera with a shiver.&lt;/p&gt;&lt;p&gt;This got me thinking about different kinds of reductions we have available in Java with &lt;a href=&quot;https://github.com/eclipse/eclipse-collections&quot;&gt;Eclipse Collections&lt;/a&gt; and Java Streams. I wondered how many ways we could define &lt;em&gt;sum&lt;/em&gt; with the various methods available.&lt;/p&gt;&lt;h4&gt;Summing an array of ints&lt;/h4&gt;&lt;p&gt;Let’s consider several ways we can sum the values in an int array in Java.&lt;/p&gt;&lt;p&gt;Here is the data we will use.&lt;/p&gt;&lt;pre&gt;int[] ints = {1, 2, 3, 4, 5};&lt;/pre&gt;&lt;pre&gt;// This supplier will generate an IntStream on demand&lt;br /&gt;Supplier&amp;lt;IntStream&amp;gt; intStream = () -&amp;gt; Arrays.&lt;em&gt;stream&lt;/em&gt;(&lt;em&gt;ints&lt;/em&gt;);&lt;/pre&gt;&lt;pre&gt;// This creates an IntList from Eclipse Collections&lt;br /&gt;IntList intList = IntLists.&lt;strong&gt;&lt;em&gt;immutable&lt;/em&gt;&lt;/strong&gt;.with(ints);&lt;/pre&gt;&lt;p&gt;&lt;strong&gt;For Loop&lt;/strong&gt;&lt;/p&gt;&lt;pre&gt;int &lt;strong&gt;sumForLoop &lt;/strong&gt;= 0;&lt;br /&gt;for (int &lt;strong&gt;i &lt;/strong&gt;= 0; &lt;strong&gt;i &lt;/strong&gt;&amp;lt; ints.length; &lt;strong&gt;i&lt;/strong&gt;++)&lt;br /&gt;{&lt;br /&gt;    &lt;strong&gt;sumForLoop &lt;/strong&gt;+= ints[&lt;strong&gt;i&lt;/strong&gt;];&lt;br /&gt;}&lt;/pre&gt;&lt;pre&gt;Assert.&lt;em&gt;assertEquals&lt;/em&gt;(15, &lt;strong&gt;sumForLoop&lt;/strong&gt;);&lt;/pre&gt;&lt;p&gt;&lt;strong&gt;forEach&lt;/strong&gt; (IntStream) / &lt;strong&gt;each&lt;/strong&gt; (IntList)&lt;/p&gt;&lt;pre&gt;// sumForEach will be effectively final&lt;br /&gt;int[] sumForEach = {0};&lt;br /&gt;intStream.get().forEach(e -&amp;gt; &lt;em&gt;sumForEach&lt;/em&gt;[0] += e);&lt;/pre&gt;&lt;pre&gt;Assert.&lt;em&gt;assertEquals&lt;/em&gt;(15, sumForEach[0]);&lt;/pre&gt;&lt;pre&gt;// sumEach will be effectively final&lt;br /&gt;int[] sumEach = {0};&lt;br /&gt;intList.each(e -&amp;gt; &lt;em&gt;sumEach&lt;/em&gt;[0] += e);&lt;/pre&gt;&lt;pre&gt;Assert.&lt;em&gt;assertEquals&lt;/em&gt;(15, sumEach[0]);&lt;/pre&gt;&lt;p&gt;&lt;strong&gt;injectInto&lt;/strong&gt; (IntList)&lt;/p&gt;&lt;pre&gt;// injectInto boxes on IntList as there is no primitive version&lt;br /&gt;int sumInject = &lt;br /&gt;    intList.injectInto(Integer.&lt;em&gt;valueOf&lt;/em&gt;(0), Integer::&lt;em&gt;sum&lt;/em&gt;).intValue();&lt;/pre&gt;&lt;pre&gt;Assert.&lt;em&gt;assertEquals&lt;/em&gt;(15, sumInject);&lt;/pre&gt;&lt;p&gt;&lt;strong&gt;reduce&lt;/strong&gt; (IntStream)&lt;/p&gt;&lt;pre&gt;// reduce does not box on IntStream&lt;br /&gt;int sumReduce = &lt;br /&gt;    intStream.get().reduce(Integer::&lt;em&gt;sum&lt;/em&gt;).getAsInt();&lt;/pre&gt;&lt;pre&gt;Assert.&lt;em&gt;assertEquals&lt;/em&gt;(15, sumReduce);&lt;/pre&gt;&lt;p&gt;&lt;strong&gt;sum&lt;/strong&gt; (IntStream / IntList)&lt;/p&gt;&lt;pre&gt;int sum1 = intStream.get().sum();&lt;/pre&gt;&lt;pre&gt;Assert.&lt;em&gt;assertEquals&lt;/em&gt;(15, sum1);&lt;br /&gt;&lt;br /&gt;long sum2 = intList.sum();&lt;/pre&gt;&lt;pre&gt;Assert.&lt;em&gt;assertEquals&lt;/em&gt;(15, sum2);&lt;/pre&gt;&lt;p&gt;Clearly, the &lt;em&gt;sum&lt;/em&gt; methods available on IntStream and IntList are the simplest solutions. The minor difference with IntList is that the result is widened to a long which means you can add very large ints without overflowing.&lt;/p&gt;&lt;h4&gt;Summarizing an array of ints&lt;/h4&gt;&lt;p&gt;When we summarize using the IntSummaryStatistics class that was added in Java 8, we get the count, sum, min, max and average calculated at the same time. This saves you from iterating multiple times. We will use the same data as before.&lt;/p&gt;&lt;p&gt;&lt;strong&gt;For Loop&lt;/strong&gt;&lt;/p&gt;&lt;pre&gt;IntSummaryStatistics statsForLoop = new IntSummaryStatistics();&lt;br /&gt;for (int &lt;strong&gt;i &lt;/strong&gt;= 0; &lt;strong&gt;i &lt;/strong&gt;&amp;lt; ints.length; &lt;strong&gt;i&lt;/strong&gt;++)&lt;br /&gt;{&lt;br /&gt;    statsForLoop.accept(ints[&lt;strong&gt;i&lt;/strong&gt;]);&lt;br /&gt;}&lt;/pre&gt;&lt;pre&gt;Assert.&lt;em&gt;assertEquals&lt;/em&gt;(15, statsForLoop.getSum());&lt;br /&gt;Assert.&lt;em&gt;assertEquals&lt;/em&gt;(1, statsForLoop.getMin());&lt;br /&gt;Assert.&lt;em&gt;assertEquals&lt;/em&gt;(5, statsForLoop.getMax());&lt;/pre&gt;&lt;p&gt;&lt;strong&gt;forEach&lt;/strong&gt; (IntStream) / &lt;strong&gt;each&lt;/strong&gt; (IntList)&lt;/p&gt;&lt;pre&gt;IntSummaryStatistics statsForEach = new IntSummaryStatistics();&lt;br /&gt;intStream.get().forEach(statsForEach::accept);&lt;br /&gt;&lt;br /&gt;Assert.&lt;em&gt;assertEquals&lt;/em&gt;(15, statsForEach.getSum());&lt;br /&gt;Assert.&lt;em&gt;assertEquals&lt;/em&gt;(1, statsForEach.getMin());&lt;br /&gt;Assert.&lt;em&gt;assertEquals&lt;/em&gt;(5, statsForEach.getMax());&lt;br /&gt;&lt;br /&gt;IntSummaryStatistics statsEach = new IntSummaryStatistics();&lt;br /&gt;intList.each(statsEach::accept);&lt;br /&gt;&lt;br /&gt;Assert.&lt;em&gt;assertEquals&lt;/em&gt;(15, statsEach.getSum());&lt;br /&gt;Assert.&lt;em&gt;assertEquals&lt;/em&gt;(1, statsEach.getMin());&lt;br /&gt;Assert.&lt;em&gt;assertEquals&lt;/em&gt;(5, statsEach.getMax());&lt;/pre&gt;&lt;p&gt;&lt;strong&gt;injectInto&lt;/strong&gt; (IntList)&lt;/p&gt;&lt;pre&gt;IntSummaryStatistics statsInject =&lt;br /&gt;        intList.injectInto(&lt;br /&gt;            new IntSummaryStatistics(), &lt;br /&gt;            (iss, each) -&amp;gt; {iss.accept(each); return iss;});&lt;br /&gt;&lt;br /&gt;Assert.&lt;em&gt;assertEquals&lt;/em&gt;(15, statsInject.getSum());&lt;br /&gt;Assert.&lt;em&gt;assertEquals&lt;/em&gt;(1, statsInject.getMin());&lt;br /&gt;Assert.&lt;em&gt;assertEquals&lt;/em&gt;(5, statsInject.getMax());&lt;/pre&gt;&lt;p&gt;&lt;strong&gt;collect&lt;/strong&gt; (IntStream)&lt;/p&gt;&lt;pre&gt;IntSummaryStatistics statsCollect =&lt;br /&gt;        intStream.get().collect(&lt;br /&gt;            IntSummaryStatistics::new, &lt;br /&gt;            IntSummaryStatistics::accept, &lt;br /&gt;            IntSummaryStatistics::combine);&lt;br /&gt;&lt;br /&gt;Assert.&lt;em&gt;assertEquals&lt;/em&gt;(15, statsCollect.getSum());&lt;br /&gt;Assert.&lt;em&gt;assertEquals&lt;/em&gt;(1, statsCollect.getMin());&lt;br /&gt;Assert.&lt;em&gt;assertEquals&lt;/em&gt;(5, statsCollect.getMax());&lt;/pre&gt;&lt;p&gt;&lt;strong&gt;Note:&lt;/strong&gt; I could not use reduce because both parameters have to be the same type. I had to use collect instead, which is a mutable reduction. The collect method on primitive Streams does not take a Collector, but instead takes a Supplier, ObjectIntConsumer (accumulator) and a BiConsumer (combiner).&lt;/p&gt;&lt;p&gt;&lt;strong&gt;summaryStatistics&lt;/strong&gt; (IntStream / IntList)&lt;/p&gt;&lt;pre&gt;IntSummaryStatistics stats1 = intStream.get().summaryStatistics();&lt;br /&gt;&lt;br /&gt;Assert.&lt;em&gt;assertEquals&lt;/em&gt;(15, stats1.getSum());&lt;br /&gt;Assert.&lt;em&gt;assertEquals&lt;/em&gt;(1, stats1.getMin());&lt;br /&gt;Assert.&lt;em&gt;assertEquals&lt;/em&gt;(5, stats1.getMax());&lt;br /&gt;&lt;br /&gt;IntSummaryStatistics stats2 = intList.summaryStatistics();&lt;br /&gt;&lt;br /&gt;Assert.&lt;em&gt;assertEquals&lt;/em&gt;(15, stats2.getSum());&lt;br /&gt;Assert.&lt;em&gt;assertEquals&lt;/em&gt;(1, stats2.getMin());&lt;br /&gt;Assert.&lt;em&gt;assertEquals&lt;/em&gt;(5, stats2.getMax());&lt;/pre&gt;&lt;p&gt;Again, the &lt;em&gt;summaryStatistics&lt;/em&gt; methods are the simplest solutions.&lt;/p&gt;&lt;h4&gt;Summing the lengths of an array of Strings&lt;/h4&gt;&lt;p&gt;Let’s say we want to sum the lengths of Strings in an array. This approach could be used for summing any int attribute of an object.&lt;/p&gt;&lt;p&gt;Here is the data we will use.&lt;/p&gt;&lt;pre&gt;String[] words = {&lt;strong&gt;&quot;The&quot;&lt;/strong&gt;, &lt;strong&gt;&quot;Quick&quot;&lt;/strong&gt;, &lt;strong&gt;&quot;Brown&quot;&lt;/strong&gt;, &lt;strong&gt;&quot;Fox&quot;&lt;/strong&gt;, &lt;strong&gt;&quot;jumps&quot;&lt;/strong&gt;, &lt;strong&gt;&quot;over&quot;&lt;/strong&gt;, &lt;strong&gt;&quot;the&quot;&lt;/strong&gt;, &lt;strong&gt;&quot;lazy&quot;&lt;/strong&gt;, &lt;strong&gt;&quot;dog&quot;&lt;/strong&gt;};&lt;br /&gt;&lt;br /&gt;Supplier&amp;lt;Stream&amp;lt;String&amp;gt;&amp;gt; stream = () -&amp;gt; Stream.&lt;em&gt;of&lt;/em&gt;(&lt;em&gt;words&lt;/em&gt;);&lt;/pre&gt;&lt;pre&gt;ImmutableList&amp;lt;String&amp;gt; list = Lists.&lt;strong&gt;&lt;em&gt;immutable&lt;/em&gt;&lt;/strong&gt;.with(words);&lt;/pre&gt;&lt;p&gt;&lt;strong&gt;For&lt;/strong&gt; &lt;strong&gt;Loop&lt;/strong&gt;&lt;/p&gt;&lt;pre&gt;int &lt;strong&gt;sumForLoop &lt;/strong&gt;= 0;&lt;br /&gt;for (int &lt;strong&gt;i &lt;/strong&gt;= 0; &lt;strong&gt;i &lt;/strong&gt;&amp;lt; words.length; &lt;strong&gt;i&lt;/strong&gt;++)&lt;br /&gt;{&lt;br /&gt;    &lt;strong&gt;sumForLoop &lt;/strong&gt;+= words[&lt;strong&gt;i&lt;/strong&gt;].length();&lt;br /&gt;}&lt;/pre&gt;&lt;pre&gt;Assert.&lt;em&gt;assertEquals&lt;/em&gt;(35, &lt;strong&gt;sumForLoop&lt;/strong&gt;);&lt;/pre&gt;&lt;p&gt;&lt;strong&gt;For&lt;/strong&gt; &lt;strong&gt;Each&lt;/strong&gt; (Stream) / &lt;strong&gt;each&lt;/strong&gt; (ImmutableList)&lt;/p&gt;&lt;pre&gt;int[] sumForEach = {0};&lt;br /&gt;stream.get().forEach(e -&amp;gt; &lt;em&gt;sumForEach&lt;/em&gt;[0] += e.length());&lt;/pre&gt;&lt;pre&gt;Assert.&lt;em&gt;assertEquals&lt;/em&gt;(35, sumForEach[0]);&lt;br /&gt;&lt;br /&gt;int[] sumEach = {0};&lt;br /&gt;list.each(e -&amp;gt; &lt;em&gt;sumEach&lt;/em&gt;[0] += e.length());&lt;/pre&gt;&lt;pre&gt;Assert.&lt;em&gt;assertEquals&lt;/em&gt;(35, sumEach[0]);&lt;/pre&gt;&lt;p&gt;&lt;strong&gt;collectInt&lt;/strong&gt; (ImmutableList)+ &lt;strong&gt;injectInto&lt;/strong&gt; (IntList)&lt;/p&gt;&lt;pre&gt;int sumInject = list&lt;br /&gt;        .collectInt(String::length)&lt;br /&gt;        .injectInto(Integer.&lt;em&gt;valueOf&lt;/em&gt;(0), Integer::&lt;em&gt;sum&lt;/em&gt;)&lt;br /&gt;        .intValue();&lt;/pre&gt;&lt;pre&gt;Assert.&lt;em&gt;assertEquals&lt;/em&gt;(35, sumInject);&lt;/pre&gt;&lt;p&gt;&lt;strong&gt;collect&lt;/strong&gt; (Stream) + &lt;strong&gt;reducing&lt;/strong&gt; (Collectors)&lt;/p&gt;&lt;pre&gt;int sumReducing = stream.get()&lt;br /&gt;        .collect(Collectors.&lt;em&gt;reducing&lt;/em&gt;(0,&lt;br /&gt;                String::length,&lt;br /&gt;                Integer::&lt;em&gt;sum&lt;/em&gt;)).intValue();&lt;/pre&gt;&lt;pre&gt;Assert.&lt;em&gt;assertEquals&lt;/em&gt;(35, sumReduce);&lt;/pre&gt;&lt;p&gt;&lt;strong&gt;mapToInt&lt;/strong&gt; (Stream) + &lt;strong&gt;Reduce&lt;/strong&gt; (IntStream)&lt;/p&gt;&lt;pre&gt;int sumReduce = stream.get()&lt;br /&gt;        .mapToInt(String::length)&lt;br /&gt;        .reduce(Integer::&lt;em&gt;sum&lt;/em&gt;)&lt;br /&gt;        .getAsInt();&lt;/pre&gt;&lt;pre&gt;Assert.&lt;em&gt;assertEquals&lt;/em&gt;(35, sumReduce);&lt;/pre&gt;&lt;p&gt;&lt;strong&gt;mapToInt&lt;/strong&gt; (Stream) + &lt;strong&gt;sum&lt;/strong&gt; (IntStream)&lt;/p&gt;&lt;pre&gt;int sum1 = stream.get()&lt;br /&gt;        .mapToInt(String::length)&lt;br /&gt;        .sum();&lt;/pre&gt;&lt;pre&gt;Assert.&lt;em&gt;assertEquals&lt;/em&gt;(35, sum1);&lt;/pre&gt;&lt;p&gt;&lt;strong&gt;collectInt&lt;/strong&gt; (ImmutableList) + &lt;strong&gt;sum &lt;/strong&gt;(IntList)&lt;/p&gt;&lt;pre&gt;long sum2 = list&lt;br /&gt;        .collectInt(String::length)&lt;br /&gt;        .sum();&lt;/pre&gt;&lt;pre&gt;Assert.&lt;em&gt;assertEquals&lt;/em&gt;(35, sum2);&lt;/pre&gt;&lt;p&gt;&lt;strong&gt;collect&lt;/strong&gt; (Stream) + &lt;strong&gt;summingInt&lt;/strong&gt; (Collectors)&lt;/p&gt;&lt;pre&gt;Integer summingInt = stream.get()&lt;br /&gt;    .collect(Collectors.&lt;em&gt;summingInt&lt;/em&gt;(String::length));&lt;/pre&gt;&lt;pre&gt;Assert.&lt;em&gt;assertEquals&lt;/em&gt;(35, summingInt.intValue());&lt;/pre&gt;&lt;p&gt;&lt;strong&gt;sumOfInt&lt;/strong&gt; (ImmutableList)&lt;/p&gt;&lt;pre&gt;long sumOfInt = list.sumOfInt(String::length);&lt;/pre&gt;&lt;pre&gt;Assert.&lt;em&gt;assertEquals&lt;/em&gt;(35, sumOfInt);&lt;/pre&gt;&lt;p&gt;I think in these examples, sumOfInt is the simplest solution.&lt;/p&gt;&lt;h4&gt;Summing the lengths of Strings grouped by the first character&lt;/h4&gt;&lt;p&gt;In this problem we will group Strings by their first character and sum the length of the Strings for each character. I will prefer to use use primitive maps here for the grouping if possible.&lt;/p&gt;&lt;p&gt;Here is the data.&lt;/p&gt;&lt;pre&gt;String[] words = {&lt;strong&gt;&quot;The&quot;&lt;/strong&gt;, &lt;strong&gt;&quot;Quick&quot;&lt;/strong&gt;, &lt;strong&gt;&quot;Brown&quot;&lt;/strong&gt;, &lt;strong&gt;&quot;Fox&quot;&lt;/strong&gt;, &lt;strong&gt;&quot;jumps&quot;&lt;/strong&gt;, &lt;strong&gt;&quot;over&quot;&lt;/strong&gt;, &lt;strong&gt;&quot;the&quot;&lt;/strong&gt;, &lt;strong&gt;&quot;lazy&quot;&lt;/strong&gt;, &lt;strong&gt;&quot;dog&quot;&lt;/strong&gt;};&lt;br /&gt;&lt;br /&gt;Supplier&amp;lt;Stream&amp;lt;String&amp;gt;&amp;gt; stream = &lt;br /&gt;    () -&amp;gt; Stream.&lt;em&gt;of&lt;/em&gt;(&lt;em&gt;words&lt;/em&gt;).map(String::toLowerCase);&lt;/pre&gt;&lt;pre&gt;ImmutableList&amp;lt;String&amp;gt; list =&lt;br /&gt;    Lists.&lt;strong&gt;&lt;em&gt;immutable&lt;/em&gt;&lt;/strong&gt;.with(words).collect(String::toLowerCase);&lt;/pre&gt;&lt;p&gt;The Stream and ImmutableList strings are converted to lowercase using map and collect, respectively. We will do this manually in the for loop example.&lt;/p&gt;&lt;p&gt;&lt;strong&gt;For&lt;/strong&gt; &lt;strong&gt;Loop&lt;/strong&gt;&lt;/p&gt;&lt;pre&gt;MutableCharIntMap sumByForLoop = new CharIntHashMap();&lt;br /&gt;for (int &lt;strong&gt;i &lt;/strong&gt;= 0; &lt;strong&gt;i &lt;/strong&gt;&amp;lt; words.length; &lt;strong&gt;i&lt;/strong&gt;++)&lt;br /&gt;{&lt;br /&gt;    String word = words[&lt;strong&gt;i&lt;/strong&gt;].toLowerCase();&lt;br /&gt;    sumByForLoop.addToValue(word.charAt(0), word.length());&lt;br /&gt;}&lt;/pre&gt;&lt;pre&gt;Assert.&lt;em&gt;assertEquals&lt;/em&gt;(35, sumByForLoop.values().sum());&lt;br /&gt;Assert.&lt;em&gt;assertEquals&lt;/em&gt;(6, sumByForLoop.get(&lt;strong&gt;'t'&lt;/strong&gt;));&lt;/pre&gt;&lt;p&gt;&lt;strong&gt;for&lt;/strong&gt; &lt;strong&gt;Each&lt;/strong&gt; (Stream) / &lt;strong&gt;each&lt;/strong&gt; (ImmutableList)&lt;/p&gt;&lt;pre&gt;MutableCharIntMap sumByForEach = new CharIntHashMap();&lt;br /&gt;stream.get().forEach(&lt;br /&gt;    e -&amp;gt; &lt;em&gt;sumByForEach&lt;/em&gt;.addToValue(e.charAt(0), e.length()));&lt;/pre&gt;&lt;pre&gt;Assert.&lt;em&gt;assertEquals&lt;/em&gt;(35, sumByForEach.values().sum());&lt;br /&gt;Assert.&lt;em&gt;assertEquals&lt;/em&gt;(6, sumByForEach.get(&lt;strong&gt;'t'&lt;/strong&gt;));&lt;br /&gt;&lt;br /&gt;MutableCharIntMap sumByEach = new CharIntHashMap();&lt;br /&gt;list.each(&lt;br /&gt;    e -&amp;gt; &lt;em&gt;sumByEach&lt;/em&gt;.addToValue(e.charAt(0), e.length()));&lt;/pre&gt;&lt;pre&gt;Assert.&lt;em&gt;assertEquals&lt;/em&gt;(35, sumByEach.values().sum());&lt;br /&gt;Assert.&lt;em&gt;assertEquals&lt;/em&gt;(6, sumByEach.get(&lt;strong&gt;'t'&lt;/strong&gt;));&lt;/pre&gt;&lt;p&gt;&lt;strong&gt;injectInto&lt;/strong&gt; (ImmutableList)&lt;/p&gt;&lt;pre&gt;MutableCharIntMap sumByInject =&lt;br /&gt;        list.injectInto(&lt;br /&gt;                new CharIntHashMap(),&lt;br /&gt;                (map, each) -&amp;gt; {&lt;br /&gt;                    map.addToValue(each.charAt(0), each.length());&lt;br /&gt;                    return map;&lt;br /&gt;                });&lt;/pre&gt;&lt;pre&gt;Assert.&lt;em&gt;assertEquals&lt;/em&gt;(35, sumByInject.values().sum());&lt;br /&gt;Assert.&lt;em&gt;assertEquals&lt;/em&gt;(6, sumByInject.get(&lt;strong&gt;'t'&lt;/strong&gt;));&lt;/pre&gt;&lt;p&gt;&lt;strong&gt;reduce&lt;/strong&gt; (Stream)&lt;/p&gt;&lt;pre&gt;MutableCharIntMap sumByReduce = stream.get()&lt;br /&gt;        .reduce(&lt;br /&gt;                new CharIntHashMap(),&lt;br /&gt;                (map, e) -&amp;gt; {&lt;br /&gt;                    map.addToValue(e.charAt(0), e.length());&lt;br /&gt;                    return map;&lt;br /&gt;                },&lt;br /&gt;                (map1, map2) -&amp;gt; {&lt;br /&gt;                    map1.putAll(map2);&lt;br /&gt;                    return map1;&lt;br /&gt;                });&lt;br /&gt;&lt;br /&gt;Assert.&lt;em&gt;assertEquals&lt;/em&gt;(35, sumByReduce.values().sum());&lt;br /&gt;Assert.&lt;em&gt;assertEquals&lt;/em&gt;(6, sumByReduce.get(&lt;strong&gt;'t'&lt;/strong&gt;));&lt;/pre&gt;&lt;p&gt;&lt;strong&gt;aggregateBy&lt;/strong&gt; (ImmutableList)&lt;/p&gt;&lt;pre&gt;ImmutableMap&amp;lt;Character, Long&amp;gt; aggregateBy = list.aggregateBy(&lt;br /&gt;        word -&amp;gt; word.charAt(0),&lt;br /&gt;        () -&amp;gt; new Long(0),&lt;br /&gt;        (sum, each) -&amp;gt; sum + each.length());&lt;/pre&gt;&lt;pre&gt;Assert.&lt;em&gt;assertEquals&lt;/em&gt;(35,&lt;br /&gt;    aggregateBy.valuesView().sumOfLong(Long::longValue));&lt;br /&gt;Assert.&lt;em&gt;assertEquals&lt;/em&gt;(6, aggregateBy.get(&lt;strong&gt;'t'&lt;/strong&gt;).longValue());&lt;/pre&gt;&lt;p&gt;&lt;strong&gt;aggregateInPlaceBy&lt;/strong&gt; (ImmutableList)&lt;/p&gt;&lt;pre&gt;ImmutableMap&amp;lt;Character, LongAdder&amp;gt; aggregateInPlaceBy = &lt;br /&gt;        list.aggregateInPlaceBy(&lt;br /&gt;                word -&amp;gt; word.charAt(0),&lt;br /&gt;                LongAdder::new,&lt;br /&gt;                (adder, each) -&amp;gt; adder.add(each.length()));&lt;/pre&gt;&lt;pre&gt;Assert.&lt;em&gt;assertEquals&lt;/em&gt;(35,&lt;br /&gt;    aggregateInPlaceBy.valuesView()&lt;br /&gt;        .sumOfLong(LongAdder::longValue));&lt;br /&gt;Assert.&lt;em&gt;assertEquals&lt;/em&gt;(6, aggregateInPlaceBy.get(&lt;strong&gt;'t'&lt;/strong&gt;).longValue());&lt;/pre&gt;&lt;p&gt;&lt;strong&gt;collect&lt;/strong&gt; (Stream)&lt;/p&gt;&lt;pre&gt;MutableCharIntMap sumByCollect = stream.get().collect(&lt;br /&gt;        CharIntHashMap::new,&lt;br /&gt;        (map, e) -&amp;gt; map.addToValue(e.charAt(0), e.length()),&lt;br /&gt;        CharIntHashMap::putAll);&lt;br /&gt;&lt;br /&gt;Assert.&lt;em&gt;assertEquals&lt;/em&gt;(35, sumByCollect.values().sum());&lt;br /&gt;Assert.&lt;em&gt;assertEquals&lt;/em&gt;(6, sumByCollect.get(&lt;strong&gt;'t'&lt;/strong&gt;));&lt;/pre&gt;&lt;p&gt;&lt;strong&gt;collect&lt;/strong&gt; (Stream) + &lt;strong&gt;groupingBy&lt;/strong&gt; (Collectors) + &lt;strong&gt;summingInt&lt;/strong&gt; (Collectors)&lt;/p&gt;&lt;pre&gt;Map&amp;lt;Character, Integer&amp;gt; sumByCollectSummingInt =&lt;br /&gt;        stream.get()&lt;br /&gt;                .collect(Collectors.&lt;em&gt;groupingBy&lt;/em&gt;(&lt;br /&gt;                        word -&amp;gt; word.charAt(0),&lt;br /&gt;                        Collectors.&lt;em&gt;summingInt&lt;/em&gt;(String::length)));&lt;br /&gt;Assert.&lt;em&gt;assertEquals&lt;/em&gt;(&lt;br /&gt;    35,&lt;br /&gt;    sumByCollectSummingInt&lt;br /&gt;        .values().stream().mapToInt(Integer::intValue).sum());&lt;/pre&gt;&lt;pre&gt;Assert.&lt;em&gt;assertEquals&lt;/em&gt;(&lt;br /&gt;    Integer.&lt;em&gt;valueO&lt;/em&gt;(6), sumByCollectSummingInt.get(&lt;strong&gt;'t'&lt;/strong&gt;));&lt;/pre&gt;&lt;p&gt;&lt;strong&gt;collect&lt;/strong&gt; (Stream) + &lt;strong&gt;sumByInt&lt;/strong&gt; (Collectors2)&lt;/p&gt;&lt;pre&gt;ObjectLongMap&amp;lt;Character&amp;gt; sumByCollectors2 =&lt;br /&gt;        stream.get().collect(&lt;br /&gt;                Collectors2.&lt;em&gt;sumByInt&lt;/em&gt;(&lt;br /&gt;                    word -&amp;gt; word.charAt(0), String::length));&lt;/pre&gt;&lt;pre&gt;Assert.&lt;em&gt;assertEquals&lt;/em&gt;(35, sumByCollectors2.values().sum());&lt;br /&gt;Assert.&lt;em&gt;assertEquals&lt;/em&gt;(6, sumByCollectors2.get(&lt;strong&gt;'t'&lt;/strong&gt;));&lt;/pre&gt;&lt;p&gt;&lt;strong&gt;reduceInPlace&lt;/strong&gt; (ImmutableList)+ &lt;strong&gt;sumByInt &lt;/strong&gt;(Collectors2)&lt;/p&gt;&lt;pre&gt;ObjectLongMap&amp;lt;Character&amp;gt; reduceInPlaceCollectors2 =&lt;br /&gt;        list.reduceInPlace(&lt;br /&gt;                Collectors2.&lt;em&gt;sumByInt&lt;/em&gt;(&lt;br /&gt;                    e -&amp;gt; e.charAt(0), String::length));&lt;/pre&gt;&lt;pre&gt;Assert.&lt;em&gt;assertEquals&lt;/em&gt;(35, reduceInPlaceCollectors2.values().sum());&lt;br /&gt;Assert.&lt;em&gt;assertEquals&lt;/em&gt;(6, reduceInPlaceCollectors2.get(&lt;strong&gt;'t'&lt;/strong&gt;));&lt;/pre&gt;&lt;p&gt;&lt;strong&gt;sumByInt&lt;/strong&gt; (ImmutableList)&lt;/p&gt;&lt;pre&gt;ObjectLongMap&amp;lt;Character&amp;gt; sumByInt =&lt;br /&gt;        list.sumByInt(e -&amp;gt; e.charAt(0), String::length);&lt;/pre&gt;&lt;pre&gt;Assert.&lt;em&gt;assertEquals&lt;/em&gt;(35, sumByInt.values().sum());&lt;br /&gt;Assert.&lt;em&gt;assertEquals&lt;/em&gt;(6, sumByInt.get(&lt;strong&gt;'t'&lt;/strong&gt;));&lt;/pre&gt;&lt;p&gt;The simplest solution here is sumByInt.&lt;/p&gt;&lt;h3&gt;Conclusion&lt;/h3&gt;&lt;p&gt;We’ve covered a lot of different approaches you can use to sum or summarize values using Java and Eclipse Collections. In the case of summing, using a method with sum in the name will probably give you the simplest solution. You can solve almost any problem using methods like injectInto and reduceInPlace (Eclipse Collections) or collect (Java Stream). Methods like reduce are less useful when your result needs to be different than your input. Methods like aggregateBy and aggregateInPlaceBy give you a more specific result than collect because they always return a Map. Using Collectors2 can be helpful if you want to iterate over a Stream and get a primitive map result easily using collect.&lt;/p&gt;&lt;p&gt;&lt;a href=&quot;https://github.com/eclipse/eclipse-collections&quot;&gt;&lt;em&gt;Eclipse Collections&lt;/em&gt;&lt;/a&gt;&lt;em&gt; is open for &lt;/em&gt;&lt;a href=&quot;https://github.com/eclipse/eclipse-collections/blob/master/CONTRIBUTING.md&quot;&gt;&lt;em&gt;contributions&lt;/em&gt;&lt;/a&gt;&lt;em&gt;. If you like the library, you can let us know by starring it on GitHub.&lt;/em&gt;&lt;/p&gt;&lt;img height=&quot;1&quot; src=&quot;https://medium.com/_/stat?event=post.clientViewed&amp;amp;referrerSource=full_rss&amp;amp;postId=d46dfd334704&quot; width=&quot;1&quot; /&gt;</description>
-	<pubDate>Fri, 02 Feb 2018 02:46:27 +0000</pubDate>
-</item>
-<item>
-	<title>Geniutec: Eclipse — Still the Best IDE!</title>
-	<guid isPermaLink="false">https://www.genuitec.com/?p=548306</guid>
-	<link>https://www.genuitec.com/eclipse-still-best-ide/</link>
-	<description>&lt;p&gt;As a developer, you’ve probably grown to love using an IDE — but in the modern coding universe of choices, how do you choose the best IDE? While some might try to convince you that the “cool kids” are using IntelliJ, whether you’re looking for your first IDE, or being pressured into switching, here are some reasons […]&lt;/p&gt;
-&lt;p&gt;The post &lt;a href=&quot;https://www.genuitec.com/eclipse-still-best-ide/&quot; rel=&quot;nofollow&quot;&gt;Eclipse — Still the Best IDE!&lt;/a&gt; appeared first on &lt;a href=&quot;https://www.genuitec.com&quot; rel=&quot;nofollow&quot;&gt;Genuitec&lt;/a&gt;.&lt;/p&gt;</description>
-	<pubDate>Wed, 31 Jan 2018 07:07:38 +0000</pubDate>
-</item>
-<item>
-	<title>David Bosschaert: Blockchain Smart Contracts are the new Serverless!</title>
-	<guid isPermaLink="false">tag:blogger.com,1999:blog-9210566578097047576.post-2723035785943132788</guid>
-	<link>http://coderthoughts.blogspot.com/2018/01/blockchain-smart-contracts-are-new.html</link>
-	<description>&lt;div class=&quot;separator&quot; style=&quot;clear: both; text-align: center;&quot;&gt;&lt;/div&gt;&lt;div style=&quot;text-align: right;&quot;&gt;&lt;/div&gt;&lt;table cellpadding=&quot;0&quot; cellspacing=&quot;0&quot; class=&quot;tr-caption-container&quot; style=&quot;float: right; margin-left: 1em; text-align: right;&quot;&gt;&lt;tbody&gt;&lt;tr&gt;&lt;td style=&quot;text-align: center;&quot;&gt;&lt;a href=&quot;https://1.bp.blogspot.com/-AqbgUS9H8WY/Wm-OGt3a9UI/AAAAAAAAD_k/9HoNVNQsAVADMnuBZ3N0AYyuo5eXD9jRACEwYBhgL/s1600/Michael_Bacina_how-smart-contracts-work.png&quot; style=&quot;clear: right; margin-bottom: 1em; margin-left: auto; margin-right: auto;&quot;&gt;&lt;img border=&quot;0&quot; height=&quot;89&quot; src=&quot;https://1.bp.blogspot.com/-AqbgUS9H8WY/Wm-OGt3a9UI/AAAAAAAAD_k/9HoNVNQsAVADMnuBZ3N0AYyuo5eXD9jRACEwYBhgL/s200/Michael_Bacina_how-smart-contracts-work.png&quot; width=&quot;200&quot; /&gt;&lt;/a&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td class=&quot;tr-caption&quot; style=&quot;text-align: center;&quot;&gt;Smart Contracts (thanks to Michael Bacina)&lt;/td&gt;&lt;/tr&gt;&lt;/tbody&gt;&lt;/table&gt;Over the recent past I've been experimenting with Smart Contracts for block chain implementations. Smart Contracts are essentially programs running on the block chain infrastructure. For example Ethereum supports Smart Contracts written in Solidity. EOS is another example of a blockchain that will support smart contracts. I've been looking at EOS an its smart contracts in more detail, here the smart contracts can be written in C/C++ so you don't have to learn a new language for it.&lt;br /&gt;&lt;br /&gt;&lt;div class=&quot;separator&quot; style=&quot;clear: both; text-align: center;&quot;&gt;&lt;/div&gt;&lt;br /&gt;&lt;table cellpadding=&quot;0&quot; cellspacing=&quot;0&quot; class=&quot;tr-caption-container&quot; style=&quot;float: left; margin-right: 1em; text-align: left;&quot;&gt;&lt;tbody&gt;&lt;tr&gt;&lt;td style=&quot;text-align: center;&quot;&gt;&lt;a href=&quot;https://3.bp.blogspot.com/-8TtRjuAJaww/WnDhfzAXmBI/AAAAAAAAEAE/0DLIr0S5amsCsQYbuciOWcuCmczNj3a0wCLcBGAs/s1600/Ethereum.png_1512566634.jpg&quot; style=&quot;clear: left; margin-bottom: 1em; margin-left: auto; margin-right: auto;&quot;&gt;&lt;img border=&quot;0&quot; height=&quot;200&quot; src=&quot;https://3.bp.blogspot.com/-8TtRjuAJaww/WnDhfzAXmBI/AAAAAAAAEAE/0DLIr0S5amsCsQYbuciOWcuCmczNj3a0wCLcBGAs/s200/Ethereum.png_1512566634.jpg&quot; width=&quot;200&quot; /&gt;&lt;/a&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td class=&quot;tr-caption&quot; style=&quot;text-align: center;&quot;&gt;A CryptoKitty&lt;/td&gt;&lt;/tr&gt;&lt;/tbody&gt;&lt;/table&gt;So what can you do with a smart contract? Smart contracts are designed to provide some sort of computation and store the result (immutably) on the blockchain. The computation is a custom program that applies to your domain, so for example you could be renting out holiday accommodation and your website might store the holiday home rental contract including the price, optional extras, insurance etc for a given period of time, after having computed it, on the blockchain. In most cases smart contracts can also handle the payment, so let's say the rental home costs 500 Euro per week, then the equivalent in Ether (ETH) or whatever the current blockchain/crypto is, can be transferred to the owner as part of the smart contract execution.&lt;br /&gt;&lt;div style=&quot;text-align: left;&quot;&gt;&lt;/div&gt;Or, more creatively as has been done on the ethereum network, your contract could compute a unique CryptoKitty for you that is a cute looking creature created just for you to look at and store the result on the blockchain.&lt;br /&gt;&lt;br /&gt;You can even take this a little bit further. As shown with the CryptoKitty the smart contract does not need to have anything to do with transferring money from &lt;i&gt;a&lt;/i&gt; to &lt;i&gt;b&lt;/i&gt; or writing some sort of financial contract. In theory you could use the smart contract to do anything you might be able to use asynchronous computing power for.&lt;br /&gt;&lt;br /&gt;&lt;div class=&quot;separator&quot; style=&quot;clear: both; text-align: center;&quot;&gt;&lt;/div&gt;After playing briefly with Solidity, the smart contract language for Ethereum I moved to play a bit more with EOS smart contracts. Why EOS? EOS as a blockchain is still in it's early phase and under heavy development although they do have a test network up and running at this stage. However I find EOS interesting because it has a couple of interesting aspects:&lt;br /&gt;&lt;div class=&quot;separator&quot; style=&quot;clear: both; text-align: center;&quot;&gt;&lt;/div&gt;&lt;div&gt;&lt;div class=&quot;separator&quot; style=&quot;clear: both; text-align: center;&quot;&gt;&lt;a href=&quot;https://eos.io/images/dawn_2.0-logo.png&quot; style=&quot;clear: left; float: left; margin-bottom: 1em; margin-right: 1em;&quot;&gt;&lt;img border=&quot;0&quot; height=&quot;200&quot; src=&quot;https://eos.io/images/dawn_2.0-logo.png&quot; width=&quot;133&quot; /&gt;&lt;/a&gt;&lt;/div&gt;&lt;ul&gt;&lt;li&gt;First of all it's quite easy to run a test EOS node on your own machine which allows you as a developer to play with it and understand it in a sandbox type environment.&lt;/li&gt;&lt;li&gt;EOS aims to provide much higher transaction rates than the current major block chains can provide. It promises up to 50000 transactions per second which all of a sudden is big enough to handle amounts of payments similar to major credit card companies like Visa and Mastercard.&lt;/li&gt;&lt;li&gt;Smart contracts on EOS can be written in C/C++ which is really nice, as you don't need to learn a new programming language for it.&lt;/li&gt;&lt;/ul&gt;&lt;div class=&quot;separator&quot; style=&quot;clear: both; text-align: center;&quot;&gt;&lt;/div&gt;&lt;div class=&quot;separator&quot; style=&quot;clear: both; text-align: center;&quot;&gt;&lt;/div&gt;&lt;div&gt;So let's take a look at how I got my example EOS contract deployed to my own test EOS node.&lt;br /&gt;&lt;br /&gt;&lt;h3&gt;Build the EOS code&lt;/h3&gt;I tried this on Ubuntu 16.04. Compile the EOS code base:&lt;br /&gt;&lt;br /&gt;First, clone the EOS code&lt;br /&gt;&lt;span&gt;  ~$ git clone https://github.com/eosio/eos ~/eos&lt;br /&gt;  &lt;/span&gt;&lt;span&gt;~$ &lt;/span&gt;&lt;span&gt;cd eos&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;br /&gt;&lt;/div&gt;&lt;div&gt;Then build the whole lot:&lt;/div&gt;&lt;div&gt;&lt;span&gt;  ~/eos$ ./build.sh ubuntu full&lt;/span&gt;&lt;br /&gt;This takes a while but once it's finished you should be able to run your EOS node:&lt;br /&gt;&lt;span&gt;  ~/eos/build/programs/eosiod$ ./&lt;/span&gt;&lt;span&gt;eosiod&lt;/span&gt;&lt;br /&gt;&lt;br /&gt;It now exits with an error. You need to set up &lt;span&gt;data-dir/config.ini&lt;/span&gt; as described in the EOS docs: &lt;a href=&quot;https://github.com/EOSIO/eos&quot;&gt;https://github.com/EOSIO/eos&lt;/a&gt;&lt;br /&gt;&lt;br /&gt;At this point your EOS node should be happily up and running. Which is really neat. You've got a EOS block chain node running for development purposes on your local machine!&lt;br /&gt;&lt;br /&gt;&lt;span&gt;~/eos/build/programs/eosiod $ ./eosiod &lt;/span&gt;&lt;br /&gt;&lt;div class=&quot;separator&quot; style=&quot;clear: both; text-align: center;&quot;&gt;&lt;a href=&quot;https://4.bp.blogspot.com/-5ozj96C3noA/Wm-Q9Yn2tpI/AAAAAAAAD_0/rx2h9zXzJMkqNdqew15Hj28OxelKm7OBwCEwYBhgL/s1600/eosnode.jpg&quot; style=&quot;margin-left: 1em; margin-right: 1em;&quot;&gt;&lt;img border=&quot;0&quot; height=&quot;130&quot; src=&quot;https://4.bp.blogspot.com/-5ozj96C3noA/Wm-Q9Yn2tpI/AAAAAAAAD_0/rx2h9zXzJMkqNdqew15Hj28OxelKm7OBwCEwYBhgL/s400/eosnode.jpg&quot; width=&quot;400&quot; /&gt;&lt;/a&gt;&lt;/div&gt;&lt;br /&gt;&lt;br /&gt;Before you can use your EOS node you need to create a wallet and an account. Since our smart contract will be computing the Fibonacci sequence, I'm going to call the account &lt;b&gt;fibonacci&lt;/b&gt;. The following commands do that for you. They use a demo account &lt;b&gt;inita&lt;/b&gt; that is created in the &lt;span&gt;config.ini&lt;/span&gt; file when its set up as above.&lt;br /&gt;&lt;br /&gt;Here we use the &lt;span&gt;eosioc&lt;/span&gt; program which is a client to the EOS network:&lt;br /&gt;&lt;span&gt;~/eos/build/programs/eosioc $ ./eosioc wallet create&lt;/span&gt;&lt;br /&gt;&lt;span&gt;~/eos/build/programs/eosioc $ ./eosioc wallet open&lt;/span&gt;&lt;br /&gt;&lt;br /&gt;Import the inita demo key:&lt;br /&gt;&lt;span&gt;~/eos/build/programs/eosioc $ ./eosioc wallet import 5KQwrPbwdL6PhXujxW37FSSQZ1JiwsST4cqQzDeyXtP79zkvFD3&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;br /&gt;&lt;/div&gt;&lt;div&gt;Create two private keys for the fibonacci account:&lt;br /&gt;&lt;div&gt;&lt;span&gt;~/eos/build/programs/eosioc $ ./eosioc create key&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span&gt;Private key:###&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span&gt;Public key: ###&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;div&gt;&lt;span&gt;~/eos/build/programs/eosioc $ ./eosioc create key&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span&gt;Private key:###&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span&gt;Public key: ###&lt;/span&gt;&lt;/div&gt;&lt;/div&gt;&lt;div&gt;&lt;br /&gt;&lt;/div&gt;Create the fibonacci account:&lt;br /&gt;&lt;span&gt;~/eos/build/programs/eosioc $ ./eosioc create account inita fibonacci  {private key1} {private key2}&lt;/span&gt;&lt;br /&gt;&lt;br /&gt;&lt;h3&gt;Create the smart contract&lt;/h3&gt;I created a little testproject called &lt;i&gt;fibonacci&lt;/i&gt; which computes the fibonacci sequence to a certain iteration in the EOS smart contract and stores the result in the EOS database.&lt;br /&gt;&lt;br /&gt;The code can be found in github here: &lt;a href=&quot;https://github.com/coderthoughts/fibonacci&quot;&gt;https://github.com/coderthoughts/fibonacci&lt;/a&gt;&lt;br /&gt;&lt;br /&gt;It exists of two components: an external contract, in the &lt;a href=&quot;https://github.com/coderthoughts/fibonacci/blob/master/fibonacci.abi&quot;&gt;fibonacci.abi file&lt;/a&gt; which defines how the application communicates with the outside world. The actual communication typically happens in JSON:&lt;/div&gt;&lt;div&gt;&lt;div&gt;&lt;br /&gt;&lt;/div&gt;&lt;div&gt;&lt;span&gt;{&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span&gt;  &quot;structs&quot;: [{&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span&gt;      &quot;name&quot;: &quot;compute&quot;,&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span&gt;      &quot;base&quot;: &quot;&quot;,&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span&gt;      &quot;fields&quot;: {&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span&gt;        &quot;iterations&quot;: &quot;uint64&quot;&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span&gt;      }&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span&gt;  },{&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span&gt;   &lt;/span&gt;&lt;span&gt; &lt;/span&gt;&lt;span&gt;&quot;name&quot;: &quot;result&quot;,&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span&gt;   &lt;/span&gt;&lt;span&gt; &lt;/span&gt;&lt;span&gt;&quot;base&quot;: &quot;&quot;,&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span&gt;   &lt;/span&gt;&lt;span&gt; &lt;/span&gt;&lt;span&gt;&quot;fields&quot;: {&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span&gt;     &lt;/span&gt;&lt;span&gt; &lt;/span&gt;&lt;span&gt;&quot;id&quot;: &quot;name&quot;,&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span&gt;     &lt;/span&gt;&lt;span&gt; &lt;/span&gt;&lt;span&gt;&quot;value&quot;: &quot;uint64&quot;&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span&gt;    }&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span&gt;  }],&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span&gt;  &quot;actions&quot;: [{&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span&gt;    &quot;action_name&quot;: &quot;compute&quot;,&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span&gt;    &quot;type&quot;: &quot;compute&quot;&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span&gt;  }],&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span&gt;  &quot;tables&quot;: [{&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span&gt;    &quot;table_name&quot;: &quot;results&quot;,&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span&gt;    &quot;type&quot;: &quot;result&quot;,&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span&gt;    &quot;index_type&quot;: &quot;i64&quot;,&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span&gt;    &quot;key_names&quot;: [&quot;id&quot;],&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span&gt;    &quot;key_types&quot;: [&quot;name&quot;]&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span&gt;  }]&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span&gt;}&lt;/span&gt;&lt;/div&gt;&lt;br /&gt;And there is the &lt;a href=&quot;https://github.com/coderthoughts/fibonacci/blob/master/fibonacci.cpp&quot;&gt;fibonacci.cpp file&lt;/a&gt; that contains the source code in C++ of the contract. The main bit of the C++ contract is just the apply() method that gets invoked when the EOS Smart Contract receives a message:&lt;/div&gt;&lt;div&gt;&lt;div&gt;&lt;span&gt;    uint64_t fibonacci(uint64_t iterations) {&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span&gt;        uint64_t first = 0;&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span&gt;        uint64_t second = 1;&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span&gt;&lt;br /&gt;&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span&gt;        if (iterations == 0)&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span&gt;            return 0;&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span&gt;&lt;br /&gt;&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span&gt;        eosio::print(&quot;1 &quot;);&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span&gt;        for (uint64_t i=1; i &amp;lt; iterations; i++) {&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span&gt;            uint64_t res = first + second;&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span&gt;            first = second;&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span&gt;            second = res;&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span&gt;            eosio::print(res, &quot; &quot;);&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span&gt;        }&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span&gt;        return second;&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span&gt;    }&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span&gt;&lt;br /&gt;&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span&gt;    /// The apply method implements the dispatch of events to this contract&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span&gt;    void apply(uint64_t code, uint64_t action) {&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span&gt;        if (action == N(compute)) {&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span&gt;            auto message = eosio::current_message&amp;lt;compute&amp;gt;();&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span&gt;            eosio::print(&quot;Calling fibonacci\n&quot;);&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span&gt;            uint64_t num = fibonacci(message.iterations);&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span&gt;&lt;br /&gt;&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span&gt;            result res(eosio::name(code), num);&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span&gt;            Results::store(res, res.id);&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span&gt;            eosio::print(&quot;Stored result in database\n&quot;);&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span&gt;        }&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span&gt;    }&lt;/span&gt;&lt;/div&gt;&lt;/div&gt;&lt;div&gt;&lt;br /&gt;&lt;/div&gt;&lt;div&gt;There are also specific EOS libraries available, the documentation is here: &lt;a href=&quot;https://eosio.github.io/eos/group__contractdev.html&quot;&gt;https://eosio.github.io/eos/group__contractdev.html&lt;/a&gt;&lt;/div&gt;&lt;div&gt;&lt;br /&gt;&lt;h3&gt;Deploy your own smart contract&lt;/h3&gt;An interesting part of the EOS smart contract development lifecycle is that these contract don't get compiled in regular machine language, what C++ compilers normally do, but it gets compiles into a WebAssembly .wast file. This file is some sort of assembler language but then platform independent and this is what EOS uses at runtime. &lt;br /&gt;&lt;br /&gt;Once deployed, you can execute your contract by sending a message to it. The contract executes and can write its output to a database location for later retrieval by a client.&lt;br /&gt;&lt;br /&gt;The easiest way to compile the fibonacci source is to put the files with the other example smart contracts in the EOS codebase, in the &lt;i&gt;contracts &lt;/i&gt;directory. Then you've got everything in the path as the compiler expects it:&lt;br /&gt;&lt;br /&gt;Compile the project:&lt;br /&gt;&lt;span&gt;~/eos/contracts$ ../build/tools/eoscpp -o fibonacci/fibonacci.wast fibonacci/fibonacci.cpp&lt;/span&gt;&lt;br /&gt;Upload the fibonacci smart contract to the EOS node:&lt;br /&gt;&lt;span&gt;~/eos/contracts$ eosioc set contract fibonacci fibonacci/fibonacci.wast fibonacci/fibonacci.abi&lt;/span&gt;&lt;br /&gt;Now we can start executing it. Lets run the fibonacci compute for 8 iterations and store the result:&lt;br /&gt;&lt;span&gt;~/eos/contracts$ eosioc push message fibonacci compute '{&quot;iterations&quot;:8}' -S fibonacci&lt;/span&gt;&lt;br /&gt;&lt;br /&gt;On the EOS demon console you can see some debug output from the smart contract&lt;br /&gt;&lt;br /&gt;&lt;span&gt;&amp;gt; Calling fibonacci&lt;br /&gt;&amp;gt; 1 1 2 3 5 8 13 21 Stored result&lt;/span&gt;&lt;br /&gt;However a real user will obviously never be able to see this. So to obtain the result of the computation, we'll look it up in the EOS database:&lt;br /&gt;&lt;br /&gt;&lt;span&gt;/build/programs/eosioc$ ./eosioc get table  fibonacci fibonacci &lt;/span&gt;&lt;span&gt;results &lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span&gt;&lt;br /&gt;&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span&gt;&lt;/span&gt;&lt;br /&gt;&lt;div&gt;&lt;span&gt;{&lt;/span&gt;&lt;/div&gt;&lt;span&gt;&lt;div&gt;  &quot;rows&quot;: [{&lt;/div&gt;&lt;div&gt;      &quot;id&quot;: &quot;fibonacci&quot;,&lt;/div&gt;&lt;div&gt;      &quot;value&quot;: 21&lt;/div&gt;&lt;div&gt;    }&lt;/div&gt;&lt;div&gt;  ],&lt;/div&gt;&lt;div&gt;  &quot;more&quot;: false&lt;/div&gt;&lt;div&gt;}&lt;/div&gt;&lt;div&gt;&lt;br /&gt;&lt;/div&gt;&lt;/span&gt;&lt;br /&gt;So the result is 21. We've executed our smart contract and obtained the result on the EOS blockchain!&lt;/div&gt;&lt;div&gt;&lt;br /&gt;&lt;h3&gt;Conclusion&lt;/h3&gt;I'm pretty excited by the possibilities of smart contracts with regard to the possibilities that these, once matured, can provide. It becomes similar to what today is labeled 'serverless' computing. Things that are at the moment possible through large providers such as Amazon Lambda and Microsoft Azure Functions will also be provided via block chain networks. One difference is that the computation is not done by a single cloud entity, but rather by a collection of nodes that are run by individuals who have mining machines for that crypto. In my eyes it's still early days and certain things in the contracts can certainly be improved, e.g. the available APIs usable from within the smart contracts are still fairly limited, but that will probably improve over time. The fun thing is: it's pretty easy to get started experimenting and writing smart contracts, even from a simple Linux box, so you can learn and develop your smart contracts while the blockchain teams are working on maturing the infrastructure.&lt;/div&gt;&lt;/div&gt;</description>
-	<pubDate>Tue, 30 Jan 2018 21:20:37 +0000</pubDate>
-	<author>noreply@blogger.com (David Bosschaert)</author>
-</item>
-<item>
-	<title>Chris Aniszczyk: Winding Down an Open Source Project</title>
-	<guid isPermaLink="false">http://aniszczyk.org/?p=4182</guid>
-	<link>http://aniszczyk.org/2018/01/30/winding-down-an-open-source-project/</link>
-	<description>&lt;p&gt;For 2018, I’ve made a &lt;strong&gt;commitment to myself to simply WRITE AND SHARE more&lt;/strong&gt;. I used to be really good at cranking out posts but I’ve been so heads down in running and building out open source foundations that I’ve neglected sharing what I’ve learned over the years. I recently wrote a post about the process of starting an open source program for your company:&lt;/p&gt;
-&lt;blockquote class=&quot;twitter-tweet&quot;&gt;
-&lt;p dir=&quot;ltr&quot; lang=&quot;en&quot;&gt;wrote about creating an open source program for your company and linked to a bunch of resources from the &lt;a href=&quot;https://twitter.com/todogroup?ref_src=twsrc%5Etfw&quot;&gt;@todogroup&lt;/a&gt; &lt;a href=&quot;https://t.co/nWC5wwjire&quot;&gt;https://t.co/nWC5wwjire&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;— Chris Aniszczyk (@cra) &lt;a href=&quot;https://twitter.com/cra/status/956565395749654529?ref_src=twsrc%5Etfw&quot;&gt;January 25, 2018&lt;/a&gt;&lt;/p&gt;&lt;/blockquote&gt;
-&lt;p&gt;&lt;/p&gt;
-&lt;p&gt;Also yesterday we posted a new open source program guide in the &lt;a href=&quot;http://todogroup.org&quot;&gt;TODO Group&lt;/a&gt; about what to do when you unfortunately wind down an open source project:&lt;/p&gt;
-&lt;blockquote class=&quot;twitter-tweet&quot;&gt;
-&lt;p dir=&quot;ltr&quot; lang=&quot;en&quot;&gt;new open source program guide: &quot;Shutting Down An Open Source Project&quot; &lt;a href=&quot;https://t.co/vLLpcTrokw&quot;&gt;https://t.co/vLLpcTrokw&lt;/a&gt; &lt;a href=&quot;https://t.co/rVt3jlb7V9&quot;&gt;pic.twitter.com/rVt3jlb7V9&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;— TODO Group (@todogroup) &lt;a href=&quot;https://twitter.com/todogroup/status/958020764862746624?ref_src=twsrc%5Etfw&quot;&gt;January 29, 2018&lt;/a&gt;&lt;/p&gt;&lt;/blockquote&gt;
-&lt;p&gt;&lt;/p&gt;
-&lt;p&gt;While some open source foundations have well defined project lifecycles with notions of an “attic” or “archive” – many companies who open source projects generally do not.&lt;/p&gt;
-&lt;p&gt;Anyways, I hope these articles are useful to you and you learn something new &lt;img alt=&quot;🙂&quot; class=&quot;wp-smiley&quot; src=&quot;https://s.w.org/images/core/emoji/2.4/72x72/1f642.png&quot; style=&quot;height: 1em;&quot; /&gt;&lt;/p&gt;</description>
-	<pubDate>Tue, 30 Jan 2018 14:29:46 +0000</pubDate>
-</item>
-<item>
-	<title>InfoQ Eclipse feed: Public Review of Java MVC 1.0 Specification is Now Open</title>
-	<guid isPermaLink="true">http://www.infoq.com/news/2018/01/mvc-1.0-public-review?utm_campaign=infoq_content&amp;utm_source=infoq&amp;utm_medium=feed&amp;utm_term=Eclipse</guid>
-	<link>http://www.infoq.com/news/2018/01/mvc-1.0-public-review?utm_campaign=infoq_content&amp;utm_source=infoq&amp;utm_medium=feed&amp;utm_term=Eclipse</link>
-	<description>&lt;img src=&quot;http://www.infoq.com/styles/i/logo_bigger.jpg&quot; /&gt;&lt;p&gt;Public review of JSR-371, Model-View-Controller (MVC) version 1.0 specification, is now open. The latest features include support for data binding and internationalization. Eclipse Ozark, a full implementation of MVC 1.0, is expected to release version 1.0 in conjunction with the final release of JSR-371. Ivar Grimstad, principal consultant for the Cybercom Group, spoke to InfoQ about MVC 1.0.
-&lt;/p&gt; &lt;i&gt;By Michael Redlich&lt;/i&gt;</description>
-	<pubDate>Mon, 29 Jan 2018 08:00:00 +0000</pubDate>
-</item>
-<item>
-	<title>JBoss Tools Team: JBoss Tools and Red Hat Developer Studio for Eclipse Oxygen.2</title>
-	<guid isPermaLink="true">https://tools.jboss.org/blog/11.2.0.ga-for-oxygen.2.html</guid>
-	<link>https://tools.jboss.org/blog/11.2.0.ga-for-oxygen.2.html</link>
-	<description>&lt;div&gt;&lt;div id=&quot;preamble&quot;&gt;
-      &lt;div class=&quot;sectionbody&quot;&gt;
-      &lt;div class=&quot;paragraph&quot;&gt;
-      &lt;p&gt;&lt;a href=&quot;https://tools.jboss.org/downloads/jbosstools/oxygen/4.5.2.Final.html&quot;&gt;JBoss Tools 4.5.2&lt;/a&gt; and &lt;a href=&quot;https://tools.jboss.org/downloads/devstudio/oxygen/11.2.0.GA.html&quot;&gt;Red Hat JBoss Developer Studio 11.2&lt;/a&gt; for Eclipse Oxygen.2 are here waiting for you. Check it out!&lt;/p&gt;
-      &lt;/div&gt;
-      &lt;div class=&quot;imageblock&quot;&gt;
-      &lt;div class=&quot;content&quot;&gt;
-      &lt;img alt=&quot;devstudio11&quot; src=&quot;https://tools.jboss.org/blog/images/devstudio11.png&quot; /&gt;
-      &lt;/div&gt;
-      &lt;/div&gt;
-      &lt;/div&gt;
-      &lt;/div&gt;
-      &lt;div class=&quot;sect1&quot;&gt;
-      &lt;h2 id=&quot;installation&quot;&gt;&lt;a class=&quot;anchor&quot; href=&quot;http://tools.jboss.org/blog/news.atom#installation&quot;&gt;&lt;/a&gt;Installation&lt;/h2&gt;
-      &lt;div class=&quot;sectionbody&quot;&gt;
-      &lt;div class=&quot;paragraph&quot;&gt;
-      &lt;p&gt;JBoss Developer Studio comes with everything pre-bundled in its installer. Simply download it from our &lt;a href=&quot;https://www.jboss.org/products/devstudio.html&quot;&gt;JBoss Products page&lt;/a&gt; and run it like this:&lt;/p&gt;
-      &lt;/div&gt;
-      &lt;div class=&quot;literalblock&quot;&gt;
-      &lt;div class=&quot;content&quot;&gt;
-      &lt;pre&gt;java -jar jboss-devstudio-&amp;lt;installername&amp;gt;.jar&lt;/pre&gt;
-      &lt;/div&gt;
-      &lt;/div&gt;
-      &lt;div class=&quot;paragraph&quot;&gt;
-      &lt;p&gt;JBoss Tools or Bring-Your-Own-Eclipse (BYOE) JBoss Developer Studio require a bit more:&lt;/p&gt;
-      &lt;/div&gt;
-      &lt;div class=&quot;paragraph&quot;&gt;
-      &lt;p&gt;This release requires at least Eclipse 4.7 (Oxygen) but we recommend
-      using the latest &lt;a href=&quot;http://www.eclipse.org/downloads/packages/eclipse-ide-java-ee-developers/oxygen2&quot;&gt;Eclipse 4.7.2 Oxygen JEE Bundle&lt;/a&gt; since then you get most of the dependencies preinstalled.&lt;/p&gt;
-      &lt;/div&gt;
-      &lt;div class=&quot;paragraph&quot;&gt;
-      &lt;p&gt;Once you have installed Eclipse, you can either find us on the Eclipse Marketplace under &quot;JBoss Tools&quot; or &quot;Red Hat JBoss Developer Studio&quot;.&lt;/p&gt;
-      &lt;/div&gt;
-      &lt;div class=&quot;paragraph&quot;&gt;
-      &lt;p&gt;For JBoss Tools, you can also use our update site directly.&lt;/p&gt;
-      &lt;/div&gt;
-      &lt;div class=&quot;literalblock&quot;&gt;
-      &lt;div class=&quot;content&quot;&gt;
-      &lt;pre&gt;http://download.jboss.org/jbosstools/oxygen/stable/updates/&lt;/pre&gt;
-      &lt;/div&gt;
-      &lt;/div&gt;
-      &lt;/div&gt;
-      &lt;/div&gt;
-      &lt;div class=&quot;sect1&quot;&gt;
-      &lt;h2 id=&quot;what-is-new&quot;&gt;&lt;a class=&quot;anchor&quot; href=&quot;http://tools.jboss.org/blog/news.atom#what-is-new&quot;&gt;&lt;/a&gt;What is new?&lt;/h2&gt;
-      &lt;div class=&quot;sectionbody&quot;&gt;
-      &lt;div class=&quot;paragraph&quot;&gt;
-      &lt;p&gt;Our main focus for this release was on adoption of Java9, improvements for container based development and bug fixing.
-      Eclipse Oxygen itself has &lt;a href=&quot;https://www.youtube.com/playlist?list=PLy7t4z5SYNaTM66CahSlkMh5YkndYXMUq&quot;&gt;a lot of new cool stuff&lt;/a&gt; but let me highlight just a few updates in both Eclipse Oxygen and JBoss Tools plugins that I think are worth mentioning.&lt;/p&gt;
-      &lt;/div&gt;
-      &lt;div class=&quot;sect2&quot;&gt;
-      &lt;h3 id=&quot;openshift-3&quot;&gt;&lt;a class=&quot;anchor&quot; href=&quot;http://tools.jboss.org/blog/news.atom#openshift-3&quot;&gt;&lt;/a&gt;OpenShift 3&lt;/h3&gt;
-      &lt;div class=&quot;sect3&quot;&gt;
-      &lt;h4 id=&quot;spring-boot-applications-support-in-openshift-server-adapter&quot;&gt;&lt;a class=&quot;anchor&quot; href=&quot;http://tools.jboss.org/blog/news.atom#spring-boot-applications-support-in-openshift-server-adapter&quot;&gt;&lt;/a&gt;Spring Boot applications support in OpenShift server adapter&lt;/h4&gt;
-      &lt;div class=&quot;paragraph&quot;&gt;
-      &lt;p&gt;The OpenShift server adapter allowed hotdeploy and debugging for JEE and NodeJS based applications.
-      It now supports Spring Boot applications with some limitations: the Spring Boot devtools module must be added to your application as it monitors code changes and as the application must be launched in exploded mode, you must use the upstream image (docker.io/fabric8/s2i-java) rather than the downstream image builder fis-java-openshift.&lt;/p&gt;
-      &lt;/div&gt;
-      &lt;div class=&quot;paragraph&quot;&gt;
-      &lt;p&gt;As an example, we’ve provided an OpenShift template that will create an OpenShift application based on the upstream application and a Git repository that added the Spring Boot devtools to the Fabric8 Spring Boot quickstart.&lt;/p&gt;
-      &lt;/div&gt;
-      &lt;div class=&quot;listingblock&quot;&gt;
-      &lt;div class=&quot;content&quot;&gt;
-      &lt;pre class=&quot;prettyprint highlight&quot;&gt;&lt;code class=&quot;language-json&quot;&gt;{
-        &quot;apiVersion&quot;: &quot;v1&quot;,
-        &quot;kind&quot;: &quot;Template&quot;,
-        &quot;metadata&quot;: {
-          &quot;annotations&quot;: {
-            &quot;description&quot;: &quot;Spring-Boot and CXF JAXRS QuickStart. This example demonstrates how you can use Apache CXF JAXRS with Spring Boot on Openshift. The quickstart uses Spring Boot to configure a little application that includes a CXF JAXRS endpoint with Swagger enabled.&quot;,
-            &quot;tags&quot;: &quot;quickstart,java,springboot,fis&quot;,
-            &quot;iconClass&quot;: &quot;icon-jboss&quot;,
-            &quot;version&quot;: &quot;2.0&quot;
-          },
-          &quot;name&quot;: &quot;s2i-spring-boot-cxf-jaxrs&quot;
-        },
-        &quot;labels&quot;: {
-          &quot;template&quot;: &quot;s2i-spring-boot-cxf-jaxrs&quot;
-        },
-        &quot;parameters&quot;: [
-          {
-            &quot;name&quot;: &quot;APP_NAME&quot;,
-            &quot;displayName&quot;: &quot;Application Name&quot;,
-            &quot;required&quot;: true,
-            &quot;value&quot;: &quot;s2i-spring-boot-cxf-jaxrs&quot;,
-            &quot;description&quot;: &quot;The name assigned to the application.&quot;
-          },
-          {
-            &quot;name&quot;: &quot;GIT_REPO&quot;,
-            &quot;displayName&quot;: &quot;Git Repository URL&quot;,
-            &quot;required&quot;: true,
-            &quot;value&quot;: &quot;https://github.com/jeffmaury/spring-boot-cxf-jaxrs.git&quot;,
-            &quot;description&quot;: &quot;The URL of the repository with your application source code.&quot;
-          },
-          {
-            &quot;name&quot;: &quot;GIT_REF&quot;,
-            &quot;displayName&quot;: &quot;Git Reference&quot;,
-            &quot;value&quot;: &quot;hotdeploy&quot;,
-            &quot;description&quot;: &quot;Set this to a branch name, tag or other ref of your repository if you are not using the default branch.&quot;
-          },
-          {
-            &quot;name&quot;: &quot;SERVICE_NAME&quot;,
-            &quot;displayName&quot;: &quot;Service Name&quot;,
-            &quot;value&quot;: &quot;cxf-jaxrs&quot;,
-            &quot;description&quot;: &quot;Exposed service name.&quot;
-          },
-          {
-            &quot;name&quot;: &quot;BUILDER_VERSION&quot;,
-            &quot;displayName&quot;: &quot;Builder version&quot;,
-            &quot;value&quot;: &quot;2.0&quot;,
-            &quot;description&quot;: &quot;The version of the FIS S2I builder image to use.&quot;
-          },
-          {
-            &quot;name&quot;: &quot;APP_VERSION&quot;,
-            &quot;displayName&quot;: &quot;Application Version&quot;,
-            &quot;value&quot;: &quot;1.0.0.redhat-000014&quot;,
-            &quot;description&quot;: &quot;The application version.&quot;
-          },
-          {
-            &quot;name&quot;: &quot;MAVEN_ARGS&quot;,
-            &quot;displayName&quot;: &quot;Maven Arguments&quot;,
-            &quot;value&quot;: &quot;package -DskipTests -Dfabric8.skip -e -B&quot;,
-            &quot;description&quot;: &quot;Arguments passed to mvn in the build.&quot;
-          },
-          {
-            &quot;name&quot;: &quot;MAVEN_ARGS_APPEND&quot;,
-            &quot;displayName&quot;: &quot;Extra Maven Arguments&quot;,
-            &quot;description&quot;: &quot;Extra arguments passed to mvn, e.g. for multi-module builds.&quot;
-          },
-          {
-            &quot;name&quot;: &quot;ARTIFACT_DIR&quot;,
-            &quot;displayName&quot;: &quot;Maven build directory&quot;,
-            &quot;description&quot;: &quot;Directory of the artifact to be built, e.g. for multi-module builds.&quot;
-          },
-          {
-            &quot;name&quot;: &quot;IMAGE_STREAM_NAMESPACE&quot;,
-            &quot;displayName&quot;: &quot;Image Stream Namespace&quot;,
-            &quot;value&quot;: &quot;openshift&quot;,
-            &quot;required&quot;: true,
-            &quot;description&quot;: &quot;Namespace in which the Fuse ImageStreams are installed. These ImageStreams are normally installed in the openshift namespace. You should only need to modify this if you&amp;amp;aposve installed the ImageStreams in a different namespace/project.&quot;
-          },
-          {
-            &quot;name&quot;: &quot;BUILD_SECRET&quot;,
-            &quot;displayName&quot;: &quot;Git Build Secret&quot;,
-            &quot;generate&quot;: &quot;expression&quot;,
-            &quot;description&quot;: &quot;The secret needed to trigger a build.&quot;,
-            &quot;from&quot;: &quot;[a-zA-Z0-9]{40}&quot;
-          },
-          {
-            &quot;name&quot;: &quot;CPU_REQUEST&quot;,
-            &quot;displayName&quot;: &quot;CPU request&quot;,
-            &quot;value&quot;: &quot;0.2&quot;,
-            &quot;required&quot;: true,
-            &quot;description&quot;: &quot;The amount of CPU to requests.&quot;
-          },
-          {
-            &quot;name&quot;: &quot;CPU_LIMIT&quot;,
-            &quot;displayName&quot;: &quot;CPU limit&quot;,
-            &quot;value&quot;: &quot;1.0&quot;,
-            &quot;required&quot;: true,
-            &quot;description&quot;: &quot;The amount of CPU the container is limited to use.&quot;
-          }
-        ],
-        &quot;objects&quot;: [
-          {
-            &quot;apiVersion&quot;: &quot;v1&quot;,
-            &quot;kind&quot;: &quot;Route&quot;,
-            &quot;metadata&quot;: {
-              &quot;labels&quot;: {
-                &quot;component&quot;: &quot;${APP_NAME}&quot;,
-                &quot;provider&quot;: &quot;s2i&quot;,
-                &quot;project&quot;: &quot;${APP_NAME}&quot;,
-                &quot;version&quot;: &quot;${APP_VERSION}&quot;,
-                &quot;group&quot;: &quot;quickstarts&quot;
-              },
-              &quot;name&quot;: &quot;${SERVICE_NAME}-route&quot;
-            },
-            &quot;spec&quot;: {
-              &quot;to&quot;: {
-                &quot;kind&quot;: &quot;Service&quot;,
-                &quot;name&quot;: &quot;${SERVICE_NAME}&quot;
-              }
-            }
-          },
-          {
-            &quot;apiVersion&quot;: &quot;v1&quot;,
-            &quot;kind&quot;: &quot;Service&quot;,
-            &quot;metadata&quot;: {
-              &quot;annotations&quot;: {
-              },
-              &quot;labels&quot;: {
-                &quot;component&quot;: &quot;${APP_NAME}&quot;,
-                &quot;provider&quot;: &quot;s2i&quot;,
-                &quot;project&quot;: &quot;${APP_NAME}&quot;,
-                &quot;version&quot;: &quot;${APP_VERSION}&quot;,
-                &quot;group&quot;: &quot;quickstarts&quot;
-              },
-              &quot;name&quot;: &quot;${SERVICE_NAME}&quot;
-            },
-            &quot;spec&quot;: {
-              &quot;clusterIP&quot;: &quot;None&quot;,
-              &quot;deprecatedPublicIPs&quot;: [],
-              &quot;ports&quot;: [
-                {
-                  &quot;port&quot;: 9413,
-                  &quot;protocol&quot;: &quot;TCP&quot;,
-                  &quot;targetPort&quot;: 8080
-                }
-              ],
-              &quot;selector&quot;: {
-                &quot;project&quot;: &quot;${APP_NAME}&quot;,
-                &quot;component&quot;: &quot;${APP_NAME}&quot;,
-                &quot;provider&quot;: &quot;s2i&quot;,
-                &quot;group&quot;: &quot;quickstarts&quot;
-              }
-            }
-          },
-          {
-            &quot;kind&quot;: &quot;ImageStream&quot;,
-            &quot;apiVersion&quot;: &quot;v1&quot;,
-            &quot;metadata&quot;: {
-              &quot;name&quot;: &quot;${APP_NAME}&quot;,
-              &quot;creationTimestamp&quot;: null,
-              &quot;labels&quot;: {
-                &quot;component&quot;: &quot;${APP_NAME}&quot;,
-                &quot;group&quot;: &quot;quickstarts&quot;,
-                &quot;project&quot;: &quot;${APP_NAME}&quot;,
-                &quot;provider&quot;: &quot;s2i&quot;,
-                &quot;version&quot;: &quot;${APP_VERSION}&quot;
-              }
-            },
-            &quot;spec&quot;: {},
-            &quot;status&quot;: {
-              &quot;dockerImageRepository&quot;: &quot;&quot;
-            }
-          },
-          {
-            &quot;kind&quot;: &quot;BuildConfig&quot;,
-            &quot;apiVersion&quot;: &quot;v1&quot;,
-            &quot;metadata&quot;: {
-              &quot;name&quot;: &quot;${APP_NAME}&quot;,
-              &quot;creationTimestamp&quot;: null,
-              &quot;labels&quot;: {
-                &quot;component&quot;: &quot;${APP_NAME}&quot;,
-                &quot;group&quot;: &quot;quickstarts&quot;,
-                &quot;project&quot;: &quot;${APP_NAME}&quot;,
-                &quot;provider&quot;: &quot;s2i&quot;,
-                &quot;version&quot;: &quot;${APP_VERSION}&quot;
-              }
-            },
-            &quot;spec&quot;: {
-              &quot;triggers&quot;: [
-                {
-                  &quot;type&quot;: &quot;GitHub&quot;,
-                  &quot;github&quot;: {
-                    &quot;secret&quot;: &quot;${BUILD_SECRET}&quot;
-                  }
-                },
-                {
-                  &quot;type&quot;: &quot;Generic&quot;,
-                  &quot;generic&quot;: {
-                    &quot;secret&quot;: &quot;${BUILD_SECRET}&quot;
-                  }
-                },
-                {
-                  &quot;type&quot;: &quot;ConfigChange&quot;
-                },
-                {
-                  &quot;type&quot;: &quot;ImageChange&quot;,
-                  &quot;imageChange&quot;: {}
-                }
-              ],
-              &quot;source&quot;: {
-                &quot;type&quot;: &quot;Git&quot;,
-                &quot;git&quot;: {
-                  &quot;uri&quot;: &quot;${GIT_REPO}&quot;,
-                  &quot;ref&quot;: &quot;${GIT_REF}&quot;
-                }
-              },
-              &quot;strategy&quot;: {
-                &quot;type&quot;: &quot;Source&quot;,
-                &quot;sourceStrategy&quot;: {
-                  &quot;from&quot;: {
-                    &quot;kind&quot;: &quot;DockerImage&quot;,
-                    &quot;name&quot;: &quot;fabric8/s2i-java:${BUILDER_VERSION}&quot;
-                  },
-                  &quot;forcePull&quot;: true,
-                  &quot;incremental&quot;: true,
-                  &quot;env&quot;: [
-                    {
-                      &quot;name&quot;: &quot;BUILD_LOGLEVEL&quot;,
-                      &quot;value&quot;: &quot;5&quot;
-                    },
-                    {
-                      &quot;name&quot;: &quot;ARTIFACT_DIR&quot;,
-                      &quot;value&quot;: &quot;${ARTIFACT_DIR}&quot;
-                    },
-                    {
-                      &quot;name&quot;: &quot;MAVEN_ARGS&quot;,
-                      &quot;value&quot;: &quot;${MAVEN_ARGS}&quot;
-                    },
-                    {
-                      &quot;name&quot;: &quot;MAVEN_ARGS_APPEND&quot;,
-                      &quot;value&quot;: &quot;${MAVEN_ARGS_APPEND}&quot;
-                    }
-                  ]
-                }
-              },
-              &quot;output&quot;: {
-                &quot;to&quot;: {
-                  &quot;kind&quot;: &quot;ImageStreamTag&quot;,
-                  &quot;name&quot;: &quot;${APP_NAME}:latest&quot;
-                }
-              },
-              &quot;resources&quot;: {}
-            },
-            &quot;status&quot;: {
-              &quot;lastVersion&quot;: 0
-            }
-          },
-          {
-            &quot;kind&quot;: &quot;DeploymentConfig&quot;,
-            &quot;apiVersion&quot;: &quot;v1&quot;,
-            &quot;metadata&quot;: {
-              &quot;name&quot;: &quot;${APP_NAME}&quot;,
-              &quot;creationTimestamp&quot;: null,
-              &quot;labels&quot;: {
-                &quot;component&quot;: &quot;${APP_NAME}&quot;,
-                &quot;group&quot;: &quot;quickstarts&quot;,
-                &quot;project&quot;: &quot;${APP_NAME}&quot;,
-                &quot;provider&quot;: &quot;s2i&quot;,
-                &quot;version&quot;: &quot;${APP_VERSION}&quot;
-              }
-            },
-            &quot;spec&quot;: {
-              &quot;strategy&quot;: {
-                &quot;resources&quot;: {}
-              },
-              &quot;triggers&quot;: [
-                {
-                  &quot;type&quot;: &quot;ConfigChange&quot;
-                },
-                {
-                  &quot;type&quot;: &quot;ImageChange&quot;,
-                  &quot;imageChangeParams&quot;: {
-                    &quot;automatic&quot;: true,
-                    &quot;containerNames&quot;: [
-                      &quot;${APP_NAME}&quot;
-                    ],
-                    &quot;from&quot;: {
-                      &quot;kind&quot;: &quot;ImageStreamTag&quot;,
-                      &quot;name&quot;: &quot;${APP_NAME}:latest&quot;
-                    }
-                  }
-                }
-              ],
-              &quot;replicas&quot;: 1,
-              &quot;selector&quot;: {
-                &quot;component&quot;: &quot;${APP_NAME}&quot;,
-                &quot;deploymentconfig&quot;: &quot;${APP_NAME}&quot;,
-                &quot;group&quot;: &quot;quickstarts&quot;,
-                &quot;project&quot;: &quot;${APP_NAME}&quot;,
-                &quot;provider&quot;: &quot;s2i&quot;,
-                &quot;version&quot;: &quot;${APP_VERSION}&quot;
-              },
-              &quot;template&quot;: {
-                &quot;metadata&quot;: {
-                  &quot;creationTimestamp&quot;: null,
-                  &quot;labels&quot;: {
-                    &quot;component&quot;: &quot;${APP_NAME}&quot;,
-                    &quot;deploymentconfig&quot;: &quot;${APP_NAME}&quot;,
-                    &quot;group&quot;: &quot;quickstarts&quot;,
-                    &quot;project&quot;: &quot;${APP_NAME}&quot;,
-                    &quot;provider&quot;: &quot;s2i&quot;,
-                    &quot;version&quot;: &quot;${APP_VERSION}&quot;
-                  }
-                },
-                &quot;spec&quot;: {
-                  &quot;containers&quot;: [
-                    {
-                      &quot;name&quot;: &quot;${APP_NAME}&quot;,
-                      &quot;image&quot;: &quot;library/${APP_NAME}:latest&quot;,
-                      &quot;readinessProbe&quot; : {
-                        &quot;httpGet&quot; : {
-                          &quot;path&quot; : &quot;/health&quot;,
-                          &quot;port&quot; : 8081
-                        },
-                        &quot;initialDelaySeconds&quot; : 10
-                      },
-                      &quot;livenessProbe&quot; : {
-                        &quot;httpGet&quot; : {
-                          &quot;path&quot; : &quot;/health&quot;,
-                          &quot;port&quot; : 8081
-                        },
-                        &quot;initialDelaySeconds&quot; : 180
-                      },
-                      &quot;ports&quot;: [
-                        {
-                          &quot;containerPort&quot;: 8778,
-                          &quot;name&quot;: &quot;jolokia&quot;
-                        }
-                      ],
-                      &quot;env&quot; : [ {
-                        &quot;name&quot; : &quot;KUBERNETES_NAMESPACE&quot;,
-                        &quot;valueFrom&quot; : {
-                          &quot;fieldRef&quot; : {
-                            &quot;fieldPath&quot; : &quot;metadata.namespace&quot;
-                          }
-                        }
-                      } ],
-                      &quot;resources&quot;: {
-                        &quot;requests&quot;: {
-                          &quot;cpu&quot;: &quot;${CPU_REQUEST}&quot;
-                        },
-                        &quot;limits&quot;: {
-                          &quot;cpu&quot;: &quot;${CPU_LIMIT}&quot;
-                        }
-                      }
-                    }
-                  ]
-                }
-              }
-            },
-            &quot;status&quot;: {}
-          }
-        ]
-      }&lt;/code&gt;&lt;/pre&gt;
-      &lt;/div&gt;
-      &lt;/div&gt;
-      &lt;div class=&quot;paragraph&quot;&gt;
-      &lt;p&gt;You can see a demo of the OpenShift server adapter for Spring Boot application here:&lt;/p&gt;
-      &lt;/div&gt;
-      &lt;div class=&quot;videoblock&quot;&gt;
-      &lt;div class=&quot;content&quot;&gt;
-      
-      &lt;/div&gt;
-      &lt;/div&gt;
-      &lt;/div&gt;
-      &lt;div class=&quot;sect3&quot;&gt;
-      &lt;h4 id=&quot;support-for-route-timeouts-and-liveness-probe-for-openshift-server-adapter-debugging-configurations&quot;&gt;&lt;a class=&quot;anchor&quot; href=&quot;http://tools.jboss.org/blog/news.atom#support-for-route-timeouts-and-liveness-probe-for-openshift-server-adapter-debugging-configurations&quot;&gt;&lt;/a&gt;Support for route timeouts and liveness probe for OpenShift Server Adapter debugging configurations&lt;/h4&gt;
-      &lt;div class=&quot;paragraph&quot;&gt;
-      &lt;p&gt;While debugging your OpenShift deployment, you may face two different issues:&lt;/p&gt;
-      &lt;/div&gt;
-      &lt;div class=&quot;ulist&quot;&gt;
-      &lt;ul&gt;
-      &lt;li&gt;
-      &lt;p&gt;if you launch your test through a Web browser, then it’s likely that you will access your OpenShift deployment through an OpenShift
-      route. The problem is that, by default, OpenShift routes have a 30 seconds timeout for each request. So if you’re stepping through one
-      of your breakpoints, you will get a timeout error message in the browser window even if you can still debug your OpenShift deployment.
-      And you’re now stuck will the navigation of your OpenShift application.&lt;/p&gt;
-      &lt;/li&gt;
-      &lt;li&gt;
-      &lt;p&gt;if your OpenShift deployment has a liveness probe configured, depending on your virtual machine capabilities or how your debugger is
-      configured, if your stepping into one of your breakpoints, the liveness probe may fail thus OpenShift so OpenShift will restart your
-      container and your debugging session will be destroyed.&lt;/p&gt;
-      &lt;/li&gt;
-      &lt;/ul&gt;
-      &lt;/div&gt;
-      &lt;div class=&quot;paragraph&quot;&gt;
-      &lt;p&gt;So, from now, when the OpenShift server adapter is started in &lt;code&gt;debug&lt;/code&gt; mode, the following action are being performed:&lt;/p&gt;
-      &lt;/div&gt;
-      &lt;div class=&quot;ulist&quot;&gt;
-      &lt;ul&gt;
-      &lt;li&gt;
-      &lt;p&gt;if an OpenShift route is found that is linked to the OpenShift deployment you want to debug, the route timeout will be
-      set or increased to 1 hour. The original or default value will be restored when the OpenShift server adapter will be restarted
-      in &lt;code&gt;run&lt;/code&gt; mode.&lt;/p&gt;
-      &lt;/li&gt;
-      &lt;li&gt;
-      &lt;p&gt;if your OpenShift deployment has a liveness probe configured, the &lt;code&gt;initialDelay&lt;/code&gt; field will be increased to 1 hour if the defined
-      value for this field is lower than 1 hour. If the value of this field is defined to a value greater than 1 hour, it is left intact.
-      The original value will be restored when the OpenShift server adapter will be restarted
-      in &lt;code&gt;run&lt;/code&gt; mode&lt;/p&gt;
-      &lt;/li&gt;
-      &lt;/ul&gt;
-      &lt;/div&gt;
-      &lt;/div&gt;
-      &lt;/div&gt;
-      &lt;div class=&quot;sect2&quot;&gt;
-      &lt;h3 id=&quot;enhanced-command-to-delete-resource-s&quot;&gt;&lt;a class=&quot;anchor&quot; href=&quot;http://tools.jboss.org/blog/news.atom#enhanced-command-to-delete-resource-s&quot;&gt;&lt;/a&gt;Enhanced command to delete resource(s)&lt;/h3&gt;
-      &lt;div class=&quot;paragraph&quot;&gt;
-      &lt;p&gt;When it comes to delete OpenShift resources, you had two different choices:&lt;/p&gt;
-      &lt;/div&gt;
-      &lt;div class=&quot;ulist&quot;&gt;
-      &lt;ul&gt;
-      &lt;li&gt;
-      &lt;p&gt;individually delete each resource but as some resources are hidden by the OpenShift explorer, it may become troublesome&lt;/p&gt;
-      &lt;/li&gt;
-      &lt;li&gt;
-      &lt;p&gt;delete the containing OpenShift project but you are then deleting more resources than required&lt;/p&gt;
-      &lt;/li&gt;
-      &lt;/ul&gt;
-      &lt;/div&gt;
-      &lt;div class=&quot;paragraph&quot;&gt;
-      &lt;p&gt;There is now a new enhanced command to delete resources. It is available at the OpenShift project level and it will first
-      list all the available OpenShift resources for the selected OpenShift project. You can now select the ones you want to delete
-      and you can also filter the list using a filter that will be applied to the labels for each retrieved OpenShift resource.&lt;/p&gt;
-      &lt;/div&gt;
-      &lt;div class=&quot;paragraph&quot;&gt;
-      &lt;p&gt;So if you have two different deployments in a single OpenShift project (if you using OpenShift Online Starter for example) or if
-      you have different kind of resources in a single deployment, you can now distinct them.&lt;/p&gt;
-      &lt;/div&gt;
-      &lt;div class=&quot;paragraph&quot;&gt;
-      &lt;p&gt;Let’s see this in action:&lt;/p&gt;
-      &lt;/div&gt;
-      &lt;div class=&quot;paragraph&quot;&gt;
-      &lt;p&gt;In this example, I have deployed an EAP6.4 based application and an EAP7.0 based one. Here is what you  can see from the OpenShift explorer:&lt;/p&gt;
-      &lt;/div&gt;
-      &lt;div class=&quot;imageblock&quot;&gt;
-      &lt;div class=&quot;content&quot;&gt;
-      &lt;img alt=&quot;new delete resources explorer&quot; src=&quot;https://tools.jboss.org/documentation/whatsnew/openshift/images/new-delete-resources-explorer.png&quot; /&gt;
-      &lt;/div&gt;
-      &lt;/div&gt;
-      &lt;div class=&quot;paragraph&quot;&gt;
-      &lt;p&gt;Now, let’s invoke the new delete command on the &lt;em&gt;eap&lt;/em&gt; OpenShift project: right click the OpenShift project and select &lt;strong&gt;Delete Resources…​&lt;/strong&gt;:&lt;/p&gt;
-      &lt;/div&gt;
-      &lt;div class=&quot;imageblock&quot;&gt;
-      &lt;div class=&quot;content&quot;&gt;
-      &lt;img alt=&quot;new delete resources dialog&quot; src=&quot;https://tools.jboss.org/documentation/whatsnew/openshift/images/new-delete-resources-dialog.png&quot; /&gt;
-      &lt;/div&gt;
-      &lt;/div&gt;
-      &lt;div class=&quot;paragraph&quot;&gt;
-      &lt;p&gt;Let suppose that we want to delete the EAP6.4 deployement. Enter &lt;em&gt;eap=6.4&lt;/em&gt; in the filter field:&lt;/p&gt;
-      &lt;/div&gt;
-      &lt;div class=&quot;imageblock&quot;&gt;
-      &lt;div class=&quot;content&quot;&gt;
-      &lt;img alt=&quot;new delete resources dialog1&quot; src=&quot;https://tools.jboss.org/documentation/whatsnew/openshift/images/new-delete-resources-dialog1.png&quot; /&gt;
-      &lt;/div&gt;
-      &lt;/div&gt;
-      &lt;div class=&quot;paragraph&quot;&gt;
-      &lt;p&gt;Push the &lt;strong&gt;Select All&lt;/strong&gt; button:&lt;/p&gt;
-      &lt;/div&gt;
-      &lt;div class=&quot;imageblock&quot;&gt;
-      &lt;div class=&quot;content&quot;&gt;
-      &lt;img alt=&quot;new delete resources dialog2&quot; src=&quot;https://tools.jboss.org/documentation/whatsnew/openshift/images/new-delete-resources-dialog2.png&quot; /&gt;
-      &lt;/div&gt;
-      &lt;/div&gt;
-      &lt;div class=&quot;paragraph&quot;&gt;
-      &lt;p&gt;Close this dialog by pushing the &lt;strong&gt;OK&lt;/strong&gt; button. The resources will be deleted and the OpenShift explorer will be updated accordingly:&lt;/p&gt;
-      &lt;/div&gt;
-      &lt;div class=&quot;imageblock&quot;&gt;
-      &lt;div class=&quot;content&quot;&gt;
-      &lt;img alt=&quot;new delete resources explorer1&quot; src=&quot;https://tools.jboss.org/documentation/whatsnew/openshift/images/new-delete-resources-explorer1.png&quot; /&gt;
-      &lt;/div&gt;
-      &lt;/div&gt;
-      &lt;/div&gt;
-      &lt;div class=&quot;sect2&quot;&gt;
-      &lt;h3 id=&quot;server-tools&quot;&gt;&lt;a class=&quot;anchor&quot; href=&quot;http://tools.jboss.org/blog/news.atom#server-tools&quot;&gt;&lt;/a&gt;Server tools&lt;/h3&gt;
-      &lt;div class=&quot;sect3&quot;&gt;
-      &lt;h4 id=&quot;eap-7-1-server-adapter&quot;&gt;&lt;a class=&quot;anchor&quot; href=&quot;http://tools.jboss.org/blog/news.atom#eap-7-1-server-adapter&quot;&gt;&lt;/a&gt;EAP 7.1 Server Adapter&lt;/h4&gt;
-      &lt;div class=&quot;paragraph&quot;&gt;
-      &lt;p&gt;A server adapter has been added to work with EAP 7.1 and Wildfly 11. It’s based on WildFly 11. This new server adapter includes support for incremental management
-      deployment like it’s upstream WildFly 11 counterpart.&lt;/p&gt;
-      &lt;/div&gt;
-      &lt;/div&gt;
-      &lt;/div&gt;
-      &lt;div class=&quot;sect2&quot;&gt;
-      &lt;h3 id=&quot;fuse-tooling&quot;&gt;&lt;a class=&quot;anchor&quot; href=&quot;http://tools.jboss.org/blog/news.atom#fuse-tooling&quot;&gt;&lt;/a&gt;Fuse Tooling&lt;/h3&gt;
-      &lt;div class=&quot;sect3&quot;&gt;
-      &lt;h4 id=&quot;fuse-7-karaf-based-runtime-server-adapter&quot;&gt;&lt;a class=&quot;anchor&quot; href=&quot;http://tools.jboss.org/blog/news.atom#fuse-7-karaf-based-runtime-server-adapter&quot;&gt;&lt;/a&gt;Fuse 7 Karaf-based runtime Server adapter&lt;/h4&gt;
-      &lt;div class=&quot;paragraph&quot;&gt;
-      &lt;p&gt;Fuse 7 is cooking and preliminary versions are already available on &lt;a href=&quot;http://origin-repository.jboss.org/nexus/content/groups/ea/org/jboss/fuse/jboss-fuse-karaf&quot;&gt;early-access repository&lt;/a&gt;. Fuse Tooling is ready to leverage them so that you can try the upcoming major Fuse version.&lt;/p&gt;
-      &lt;/div&gt;
-      &lt;div class=&quot;imageblock&quot;&gt;
-      &lt;div class=&quot;content&quot;&gt;
-      &lt;img alt=&quot;Fuse 7 Server Adapter&quot; src=&quot;https://tools.jboss.org/documentation/whatsnew/fusetools/images/Fuse7-ServerAdapter.png&quot; /&gt;
-      &lt;/div&gt;
-      &lt;/div&gt;
-      &lt;div class=&quot;paragraph&quot;&gt;
-      &lt;p&gt;Classical functionalities with server adapters are available: automatic redeploy, Java debug, Graphical Camel debug through created JMX connection.
-      Please note:
-      - you can’t retrieve the Fuse 7 Runtime yet directly from Fuse tooling, it is required to download it on your machine and point to it when creating the Server adapter.
-      - the provided templates requires some modifications to have them working with Fuse 7, mainly adapting the bom. Please see work related to it in this &lt;a href=&quot;https://issues.jboss.org/browse/FUSETOOLS-2578&quot;&gt;JIRA task&lt;/a&gt; and its children.&lt;/p&gt;
-      &lt;/div&gt;
-      &lt;/div&gt;
-      &lt;div class=&quot;sect3&quot;&gt;
-      &lt;h4 id=&quot;display-routes-defined-inside-routecontext-in-camel-graphical-editor-design-tab&quot;&gt;&lt;a class=&quot;anchor&quot; href=&quot;http://tools.jboss.org/blog/news.atom#display-routes-defined-inside-routecontext-in-camel-graphical-editor-design-tab&quot;&gt;&lt;/a&gt;Display routes defined inside &quot;routeContext&quot; in Camel Graphical Editor (Design tab)&lt;/h4&gt;
-      &lt;div class=&quot;paragraph&quot;&gt;
-      &lt;p&gt;&quot;routeContext&quot; tag is a special tag used in Camel to provide the ability to reuse routes and to split them across different files. This is very useful on large projects. See Camel &lt;a href=&quot;http://camel.apache.org/how-do-i-import-routes-from-other-xml-files.html&quot;&gt;documentation&lt;/a&gt; for more information.
-      Since this version, the Design of the routes defined in &quot;routeContext&quot; tags are now displayed.&lt;/p&gt;
-      &lt;/div&gt;
-      &lt;/div&gt;
-      &lt;div class=&quot;sect3&quot;&gt;
-      &lt;h4 id=&quot;usability-improvement-progress-bar-when-changing-the-camel-version&quot;&gt;&lt;a class=&quot;anchor&quot; href=&quot;http://tools.jboss.org/blog/news.atom#usability-improvement-progress-bar-when-changing-the-camel-version&quot;&gt;&lt;/a&gt;Usability improvement: Progress bar when &quot;Changing the Camel version&quot;&lt;/h4&gt;
-      &lt;div class=&quot;paragraph&quot;&gt;
-      &lt;p&gt;Since Fuse Tooling 10.1.0, it is possible to change the Camel version. In case the Camel version was not cached locally yet and for slow internet connections, this operation can take a while. There is now a progress bar to see the progress.&lt;/p&gt;
-      &lt;/div&gt;
-      &lt;div class=&quot;imageblock&quot;&gt;
-      &lt;div class=&quot;content&quot;&gt;
-      &lt;img alt=&quot;Switch Camel Version with Progress Bar&quot; src=&quot;https://tools.jboss.org/documentation/whatsnew/fusetools/images/switchCamelVersionWithProgressBar.png&quot; /&gt;
-      &lt;/div&gt;
-      &lt;/div&gt;
-      &lt;/div&gt;
-      &lt;div class=&quot;sect3&quot;&gt;
-      &lt;h4 id=&quot;support-for-creating-fuse-ignite-technical-extensions&quot;&gt;&lt;a class=&quot;anchor&quot; href=&quot;http://tools.jboss.org/blog/news.atom#support-for-creating-fuse-ignite-technical-extensions&quot;&gt;&lt;/a&gt;Support for creating Fuse Ignite Technical Extensions&lt;/h4&gt;
-      &lt;div class=&quot;paragraph&quot;&gt;
-      &lt;p&gt;We are happy to announce the addition of support for creating Technical Extension projects for &lt;strong&gt;Fuse Ignite&lt;/strong&gt;*. That includes the creation of the project using the &lt;em&gt;&quot;New Fuse Ignite Extension Project&quot;&lt;/em&gt; wizard as well as support for building the deployable artifact directly from inside the Eclipse environment.&lt;/p&gt;
-      &lt;/div&gt;
-      &lt;div class=&quot;paragraph&quot;&gt;
-      &lt;p&gt;&lt;em&gt;*&lt;strong&gt;Fuse Ignite&lt;/strong&gt; is a JBoss Fuse feature that provides a web interface for integrating applications. Without writing code, a business expert can use Ignite to connect to applications and optionally operate on data between connections to different applications. In Ignite, a data operation is referred to as a step in an integration.
-      Ignite provides steps for operations such as filtering and mapping data. To operate on data in ways that are not provided by Ignite built-in steps, you can develop an Ignite extension to define one or more custom steps.
-      Fuse Ignite comes as part of &lt;a href=&quot;https://developers.redhat.com/products/fuse/overview/&quot;&gt;Fuse&lt;/a&gt; and &lt;a href=&quot;https://www.redhat.com/en/explore/fuse-online&quot;&gt;Fuse Online&lt;/a&gt;. Please refer to the &lt;a href=&quot;https://access.redhat.com/documentation/en-us/red_hat_jboss_fuse/6.3/html-single/tooling_user_guide/#IgniteExtension&quot;&gt;online documentation&lt;/a&gt; for more information on how to create and configure technical extensions for Fuse Ignite.&lt;/em&gt;&lt;/p&gt;
-      &lt;/div&gt;
-      &lt;div class=&quot;imageblock&quot;&gt;
-      &lt;div class=&quot;content&quot;&gt;
-      &lt;img alt=&quot;Fuse Ignite Technical Extension Wizard&quot; src=&quot;https://tools.jboss.org/documentation/whatsnew/fusetools/images/igniteExtensionWizard.png&quot; /&gt;
-      &lt;/div&gt;
-      &lt;/div&gt;
-      &lt;div class=&quot;paragraph&quot;&gt;
-      &lt;p&gt;The provided project template allows you to define an &lt;a href=&quot;http://camel.apache.org&quot;&gt;Apache Camel&lt;/a&gt; route as the base flow of your new technical extension.&lt;/p&gt;
-      &lt;/div&gt;
-      &lt;div class=&quot;imageblock&quot;&gt;
-      &lt;div class=&quot;content&quot;&gt;
-      &lt;img alt=&quot;Fuse Ignite Technical Extension Route&quot; src=&quot;https://tools.jboss.org/documentation/whatsnew/fusetools/images/igniteExtensionRoute.png&quot; /&gt;
-      &lt;/div&gt;
-      &lt;/div&gt;
-      &lt;div class=&quot;paragraph&quot;&gt;
-      &lt;p&gt;To configure your new technical extension you can use the JSON file created with the new project.&lt;/p&gt;
-      &lt;/div&gt;
-      &lt;div class=&quot;imageblock&quot;&gt;
-      &lt;div class=&quot;content&quot;&gt;
-      &lt;img alt=&quot;Fuse Ignite Technical Extension Configuration&quot; src=&quot;https://tools.jboss.org/documentation/whatsnew/fusetools/images/igniteExtensionConfig.png&quot; /&gt;
-      &lt;/div&gt;
-      &lt;/div&gt;
-      &lt;/div&gt;
-      &lt;/div&gt;
-      &lt;div class=&quot;sect2&quot;&gt;
-      &lt;h3 id=&quot;forge-tools&quot;&gt;&lt;a class=&quot;anchor&quot; href=&quot;http://tools.jboss.org/blog/news.atom#forge-tools&quot;&gt;&lt;/a&gt;Forge Tools&lt;/h3&gt;
-      &lt;div class=&quot;sect3&quot;&gt;
-      &lt;h4 id=&quot;forge-runtime-updated-to-3-8-1-final&quot;&gt;&lt;a class=&quot;anchor&quot; href=&quot;http://tools.jboss.org/blog/news.atom#forge-runtime-updated-to-3-8-1-final&quot;&gt;&lt;/a&gt;Forge Runtime updated to 3.8.1.Final&lt;/h4&gt;
-      &lt;div class=&quot;paragraph&quot;&gt;
-      &lt;p&gt;The included Forge runtime is now 3.8.1.Final. Read the official announcement &lt;a href=&quot;http://forge.jboss.org/news/jboss-forge-3.8.1.final-is-here&quot;&gt;here&lt;/a&gt;.&lt;/p&gt;
-      &lt;/div&gt;
-      &lt;/div&gt;
-      &lt;/div&gt;
-      &lt;div class=&quot;sect2&quot;&gt;
-      &lt;h3 id=&quot;and-more&quot;&gt;&lt;a class=&quot;anchor&quot; href=&quot;http://tools.jboss.org/blog/news.atom#and-more&quot;&gt;&lt;/a&gt;And more…​&lt;/h3&gt;
-      &lt;div class=&quot;paragraph&quot;&gt;
-      &lt;p&gt;You can find more noteworthy updates in on &lt;a href=&quot;https://tools.jboss.org/documentation/whatsnew/jbosstools/4.5.2.Final.html&quot;&gt;this page&lt;/a&gt;.&lt;/p&gt;
-      &lt;/div&gt;
-      &lt;/div&gt;
-      &lt;/div&gt;
-      &lt;/div&gt;
-      &lt;div class=&quot;sect1&quot;&gt;
-      &lt;h2 id=&quot;what-is-next&quot;&gt;&lt;a class=&quot;anchor&quot; href=&quot;http://tools.jboss.org/blog/news.atom#what-is-next&quot;&gt;&lt;/a&gt;What is next?&lt;/h2&gt;
-      &lt;div class=&quot;sectionbody&quot;&gt;
-      &lt;div class=&quot;paragraph&quot;&gt;
-      &lt;p&gt;Having JBoss Tools 4.5.2 and Developer Studio 11.2 out we are already working on the next maintenance release for Eclipse Oxygen.&lt;/p&gt;
-      &lt;/div&gt;
-      &lt;div class=&quot;paragraph&quot;&gt;
-      &lt;p&gt;Enjoy!&lt;/p&gt;
-      &lt;/div&gt;
-      &lt;div class=&quot;paragraph&quot;&gt;
-      &lt;p&gt;Jeff Maury&lt;/p&gt;
-      &lt;/div&gt;
-      &lt;/div&gt;
-      &lt;/div&gt;&lt;/div&gt;</description>
-	<pubDate>Mon, 29 Jan 2018 07:07:14 +0000</pubDate>
-</item>
-<item>
-	<title>Doug Schaefer: What makes a good C++ IDE?</title>
-	<guid isPermaLink="false">https://cdtdoug.ca/tag/eclipse/rss/5a6d3cee3ad93a43a56d3ae4</guid>
-	<link>https://cdtdoug.ca/what-makes-a-good-c-ide/</link>
-	<description>&lt;div class=&quot;kg-card-markdown&quot;&gt;&lt;img alt=&quot;What makes a good C++ IDE?&quot; src=&quot;https://cdtdoug.ca/content/images/2018/01/cdt_screenshot.png&quot; /&gt;&lt;p&gt;When I started working on C code many years ago, I was a big fan of emacs. It didn't have the weird modes that vi did. You just typed and code showed up. emacs has a rich extension system, if you don't mind writing LISP code, and soon we had fancy features such as running builds and navigating through compile errors. There's even a gdb integration that gives you what you need to debug your program. And then along came ctags and we started getting source navigation.&lt;/p&gt;
-&lt;p&gt;But what was good for C started to fade with C++. We also started bringing in code coverage and profiling tools and even modeling and code generation tools. Simple editors like emacs couldn't keep up. We needed much more powerful platforms that provided a richer environment for tools as well as the promise of standard interfaces that allowed us to integrate tools to provide functionality greater than the whole. The IDE was born.&lt;/p&gt;
-&lt;p&gt;But somewhere along the way it seems we failed. We didn't provide enough value that warranted the opinionated structures that IDEs enforce that enable the standard APIs to work. As I've stated many times, we have paid dearly with Eclipse trying to force C/C++ projects into the Eclipse resource system. What is a project in C/C++ world? Are projects the root of a recursive make tree, or the individual nodes that represent executable things and libraries? Neither works well, especially in complex systems embedded systems developers are building.&lt;/p&gt;
-&lt;p&gt;So after years of trying to convert die hards and working hard to support those who want to use our IDEs, we need to take a step back try again. Get back to emacs, or more modern editors like Visual Studio Code, and see how we can bring our users forward again. This time we need to do it in a way that doesn't enforce a paradigm on them yet provides a path back towards the valuable features we can provide through integration.&lt;/p&gt;
-&lt;p&gt;Anyway, that was a long preamble towards the real topic of this post, remembering what made CDT successful and providing at least that first step forward. What is the minimal feature set that meets expectations of today's developers. As I was using Visual Studio Code to hack Visual Studio Code, you get a real sense of what that is. You also get a good sense at what's missing from these editors.&lt;/p&gt;
-&lt;p&gt;First of all is source navigation, being able to control click to find definitions of symbols and to be able to search for references to them. And, of course, along with that comes content assist. I spent most of my early years on CDT figuring out how to do this properly and quickly. For those that remember, the quickly took a long time and in the end exchanging perfect answers for speed was our path to success. To make this work we hand built C and C++ parsers that referenced a symbol database called the index. You also need to know the toolchain and build system to know how the code is built to do a reasonable job at it. Integration with the build system is a must.&lt;/p&gt;
-&lt;p&gt;It's hard to imagine how editors like VS Code can be a good CDT replacement without replicating the magic. I'm not convinced the current front runner clangd and it's use of the clang parser which has perfection as it's number one requirement, will get us there without a lot of hacking. And editors usually don't deal with builds other than to invoke them and give you error navigation to feed it the info it needs.&lt;/p&gt;
-&lt;p&gt;And I'm not even touching on launching where you really need to match build configs with launch configs to make sure launches do what you want. So while editors are all the rage right now because they are lightweight and flexible, users still expect them to more than the editors of old. It will be an interesting challenge for those who go that road to walk that balancing line. If you get it right though, I can imagine a lot of happy users.&lt;/p&gt;
-&lt;/div&gt;</description>
-	<pubDate>Sun, 28 Jan 2018 18:31:34 +0000</pubDate>
 </item>
 
 </channel>

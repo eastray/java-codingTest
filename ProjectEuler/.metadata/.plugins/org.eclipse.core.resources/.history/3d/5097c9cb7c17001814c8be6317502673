@@ -1,0 +1,190 @@
+package problem17;
+
+import java.util.HashMap;
+
+public class GetFirstSundayOfEveryMonth {
+
+	static int[] months = { 31, 28, 31, 30, 31, 30, 31, 31, 30, 31, 30, 31 };
+	static String[] dayOfTheWeek = { "sum", "mon", "tue", "wed", "thu", "fri", "sat" };
+
+	private int getFirstSundayOfEveryMonth(String n, String m, HashMap<String, Integer> map) {
+
+		if (!vaild(n) || !vaild(m))
+			return -1;
+
+		int start = Integer.parseInt(n.substring(0, 4)) + 1;
+		int end = Integer.parseInt(m.substring(0, 4)) - 1;
+
+		int result = getNAndM(n, m, getDayOfTheWeekByYear(n, map), getDayOfTheWeekByYear(m, map));
+		//int result = 0;
+		
+		for (int i = start; i <= end; i++) {
+			System.out.println("i: " + i);
+
+			String temp = Integer.toString(i) + n.substring(4, n.length());
+
+			result += getFirstSundayOfMonth(temp, m, getDayOfTheWeekByYear(temp, map));
+
+		}
+
+		return result;
+	}
+
+	private int getNAndM(String n, String m, int dayOfWeekN, int dayOfWeekM) {
+
+		int count = (dayOfWeekN == 0) ? 1 : 0;
+		int start = Integer.parseInt(n.substring(0, 4));
+		int temp = 0;
+		int diff = 0;
+
+		for (int i = start-1; i < 12; i++) {
+
+			if (i == 1 && isLeapYears(Integer.parseInt(n.substring(0, 4))))
+				temp += 1;
+
+			temp += months[i];
+			diff = temp % 7 + dayOfWeekN;
+
+			if (diff > 6) {
+				while (true) {
+
+					diff -= 7;
+
+					if (diff < 7)
+						break;
+
+				}
+			}
+
+			if (diff == 0)
+				count++;
+		}
+		
+	System.out.println("ccccccccccc: " + count);
+
+		count += (dayOfWeekM == 0) ? 1 : 0;
+		int end = Integer.parseInt(m.substring(4, 6));
+
+		for (int i = 0; i < end; i++) {
+
+			if (i == 1 && isLeapYears(Integer.parseInt(m.substring(0, 4))))
+				temp += 1;
+
+			temp += months[i];
+			diff = temp % 7 + dayOfWeekM;
+
+			if (diff > 6) {
+				while (true) {
+
+					diff -= 7;
+
+					if (diff < 7)
+						break;
+
+				}
+			}
+
+			if (diff == 0)
+				count++;
+		}
+
+		return count;
+	}
+
+	private int getFirstSundayOfMonth(String n, String m, int dayOfWeek) {
+
+		int count = (dayOfWeek == 0) ? 1 : 0;
+		int temp = 0;
+		int diff = 0;
+
+		System.out.println("dayOfWeek: " + dayOfWeek);
+
+		for (int i = 0; i < 11; i++) {
+
+			if (i == 1 && isLeapYears(Integer.parseInt(n.substring(0, 4))))
+				temp += 1;
+
+			temp += months[i];
+
+			diff = temp % 7 + dayOfWeek;
+
+			if (diff > 6) {
+				while (true) {
+
+					diff -= 7;
+
+					if (diff < 7)
+						break;
+
+				}
+			}
+
+			if (diff == 0)
+				count++;
+
+		}
+
+		System.out.println("count: " + count);
+		return count;
+
+	}
+
+	private int getDayOfTheWeekByYear(String n, HashMap<String, Integer> map) {
+
+		if (!vaild(n))
+			return -1;
+
+		int standard = 1900;
+		int days = 365;
+		int temp = 0;
+
+		for (int i = standard; i < Integer.parseInt(n.substring(0, 4)); i++)
+			temp += (isLeapYears(i)) ? days + 1 : days;
+
+		temp = map.get("19000101") + (temp % 7);
+
+		return (temp == 7) ? 0 : temp;
+
+	}
+
+	private boolean vaild(String str) {
+
+		if (str.length() != 8) {
+			System.out.println("getDayOfTheWeekByYear: not equals string length");
+			return false;
+		}
+
+		return true;
+
+	}
+
+	private boolean isLeapYears(int n) {
+
+		if (n % 4 == 0) {
+			if (n % 100 == 0)
+				return false;
+
+			if (n % 400 == 0)
+				return true;
+
+			return true;
+		}
+
+		return false;
+	}
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+		HashMap<String, Integer> map = new HashMap<String, Integer>();
+		map.put("19000101", 1);
+
+		GetFirstSundayOfEveryMonth getSunday = new GetFirstSundayOfEveryMonth();
+
+		System.out.println("result: " + getSunday.getFirstSundayOfEveryMonth("19010101", "20001231", map));
+		// System.out.println(getSunday.getFirstSundayOfEveryMonth("19010101",
+		// "19010303", map));
+
+	}
+
+}

@@ -1,0 +1,23 @@
+package problem16;
+
+public class Pow {
+
+	private int pow(int n) {
+
+		return 0;
+	}
+
+	private int sumOfPow(int n) {
+
+		return 0;
+	}
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+		Pow pow = new Pow();
+
+		System.out.println(pow.sumOfPow(15));
+	}
+
+}

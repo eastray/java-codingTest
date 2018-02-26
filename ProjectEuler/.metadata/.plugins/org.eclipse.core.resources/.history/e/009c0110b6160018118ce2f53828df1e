@@ -1,0 +1,42 @@
+package problem16;
+
+import java.math.BigInteger;
+
+public class Pow {
+
+	private Long sumOfPow(int n) {
+
+		// BigInteger result = BigInteger.ZERO;
+		Long result = (long) 0;
+
+		// String str = Integer.toString((int) Math.pow(2, n));
+
+		// for (int i = 0; i < str.length(); i++)
+		// result += Character.getNumericValue(str.charAt(i));
+
+		// System.out.println("2^" + n + ": " + str);
+		BigInteger str = new BigInteger("2");
+		BigInteger str2 = new BigInteger("2");
+		
+		for(int i = 0; i < n; i++){
+			str.multiply(BigInteger.valueOf(2));
+		}
+		
+		
+		System.out.println("BigInteger: " + str);
+		System.out.println("Math.pow: " + Math.pow(2, n));
+
+		return result;
+
+	}
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+		Pow pow = new Pow();
+
+		System.out.println(pow.sumOfPow(15));
+		System.out.println(pow.sumOfPow(1000));
+	}
+
+}
