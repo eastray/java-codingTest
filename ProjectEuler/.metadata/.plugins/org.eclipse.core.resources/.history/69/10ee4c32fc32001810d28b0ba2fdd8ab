@@ -1,0 +1,45 @@
+package problem36;
+
+import java.math.BigInteger;
+
+public class Palindrome {
+
+	public int sumOfPalindrome() {
+
+		// BigInteger result = BigInteger.ZERO;
+		int result = 0;
+
+		for (int i = 1; i <= 1000000; i++) {
+
+			boolean flag = true;
+			StringBuilder index = new StringBuilder(Integer.toString(i));
+
+			if (!index.substring(0, index.length() / 2).equals(index.reverse().subSequence(0, index.length() / 2)))
+				continue;
+				//flag = false;
+
+		//	if (flag) {
+
+				StringBuilder sb = new StringBuilder(Integer.toBinaryString(i));
+
+				if (!sb.substring(0, sb.length() / 2).equals(sb.reverse().substring(0, sb.length() / 2)))
+					continue;
+				
+				result += i;
+
+		//	}
+		}
+
+		return result;
+	}
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+		Palindrome pd = new Palindrome();
+
+		System.out.println(pd.sumOfPalindrome());
+		System.out.println(872187);
+	}
+
+}

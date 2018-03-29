@@ -1,0 +1,55 @@
+package problem36;
+
+import java.math.BigInteger;
+
+public class Palindrome {
+
+	public BigInteger sumOfPalindrome() {
+		
+		BigInteger result = BigInteger.ZERO;
+		
+		for (int i = 1; i <= 1000000; i++) {
+
+			boolean flag = true;
+			String index = Integer.toString(i);
+
+			for (int j = 0; j < index.length() / 2; j++) {
+				if (!index.substring(j, j + 1).equals(index.substring(index.length() - 1 - j, index.length() - j)))
+					flag = false;
+			}
+
+			if (flag) {
+				boolean subFlag = true;
+				String binary = Integer.toBinaryString(i);
+				StringBuilder sb = new StringBuilder(binary);
+				
+				int temp = binary.length()/2;
+				
+				if(!sb.substring(0, temp).equals(sb.reverse().substring(0, temp)))
+					subFlag = false;
+				
+				//if(binary.substring(0, temp).equals(binary.substring(binary.length()-temp, binary.length()).re)))
+				
+//				for (int j = 0; j < binary.length() / 2; j++) 
+//					if (!binary.substring(j, j + 1).equals(binary.substring(binary.length() - 1 - j, binary.length() - j))) 
+//						subFlag = false;
+				
+				if (subFlag)
+					result = result.add(BigInteger.valueOf(i));
+
+			}
+		}
+
+		return result;
+	}
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+		Palindrome pd = new Palindrome();
+
+		System.out.println(pd.sumOfPalindrome());
+		System.out.println(872187);
+	}
+
+}

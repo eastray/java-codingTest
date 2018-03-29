@@ -1,0 +1,45 @@
+package problem36;
+
+public class Palindrome {
+
+	public int sumOfPalindrome() {
+		for (int i = 1; i <= 100; i++) {
+
+			boolean flag = true;
+			String index = Integer.toString(i);
+
+			for (int j = 0; j < index.length() / 2; j++) {
+				if (index.substring(j, j + 1) != index.substring(index.length() - 1 - j, index.length() - j))
+					flag = false;
+			}
+
+			if (flag) {
+				boolean subFlag = true;
+				String binary = Integer.toBinaryString(i);
+				for (int j = 0; j < binary.length() / 2; j++) {
+					if (binary.substring(j, j + 1).equals(binary.substring(binary.length() - 1 - j, binary.length() - j))) {
+						System.out.println(binary);
+						System.out.println(binary.substring(j, j + 1));
+						System.out.println(binary.substring(binary.length() - 1 - j, binary.length() - j));
+						System.out.println();
+						subFlag = false;
+					}
+				}
+				if (subFlag)
+					System.out.println(binary);
+
+			}
+		}
+
+		return 0;
+	}
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+		Palindrome pd = new Palindrome();
+
+		System.out.println(pd.sumOfPalindrome());
+	}
+
+}
