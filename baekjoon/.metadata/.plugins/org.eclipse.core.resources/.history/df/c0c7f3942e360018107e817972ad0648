@@ -1,0 +1,22 @@
+package deliverySugar;
+
+import java.util.Scanner;
+
+public class DeliverySugar {
+	
+	public int countOfDeliverySugar(int n){
+		
+		
+		return 0;
+	}
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+		Scanner sc = new Scanner(System.in);
+		DeliverySuggar = new DeliverySugar();
+		
+		
+	}
+
+}

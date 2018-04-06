@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename package &apos;toamto&apos; to &apos;tomato&apos;&#x0A;- Original project: &apos;Q001_7576_Tomato&apos;&#x0A;- Original element: &apos;Q001_7576_Tomato/src/toamto&apos;&#x0A;- Renamed element: &apos;Q001_7576_Tomato/src/tomato&apos;&#x0A;- Update references to refactored element&#x0A;- Update textual occurrences in comments and strings" description="Rename package &apos;toamto&apos;" flags="589830" hierarchical="false" id="org.eclipse.jdt.ui.rename.package" input="/src&lt;toamto" name="tomato" qualified="false" references="true" stamp="1522404599168" textual="false" version="1.0"/>
+</session>

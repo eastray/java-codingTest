@@ -1,0 +1,68 @@
+package maze;
+
+import java.util.Arrays;
+import java.util.Scanner;
+
+public class Maze {
+
+	static int[] xArr = new int[100];
+	static int[] yArr = new int[100];
+	static int[] hArr = new int[100];
+	static int count = 0;
+
+	public void enqueue(int x, int y, int h) {
+		xArr[count] = x;
+		yArr[count] = y;
+		hArr[count] = h;
+		count++;
+	}
+
+	public int maze(int[][] arr) {
+
+		int n = arr.length;
+		int m = arr[0].length;
+		int pos = 0;
+
+		enqueue(0, 0, 1);
+
+		while (pos < count && (xArr[pos] != n - 1) || (yArr[pos] != m - 1)) {
+
+			arr[xArr[pos]][yArr[pos]] = 0;
+
+			if (xArr[pos] > 0 && arr[xArr[pos] - 1][yArr[pos]] == 1)
+				enqueue(xArr[pos] - 1, yArr[pos], hArr[pos] + 1);
+
+			if (xArr[pos] < n - 1 && arr[xArr[pos] + 1][yArr[pos]] == 1)
+				enqueue(xArr[pos] + 1, yArr[pos], hArr[pos] + 1);
+
+			if (yArr[pos] > 0 && arr[xArr[pos]][yArr[pos] - 1] == 1)
+				enqueue(xArr[pos], yArr[pos] - 1, hArr[pos] + 1);
+
+			if (yArr[pos] < m - 1 && arr[xArr[pos]][yArr[pos] + 1] == 1)
+				enqueue(xArr[pos], yArr[pos] + 1, hArr[pos] + 1);
+
+			pos++;
+
+		}
+		
+		System.out.println(Arrays.toString(xArr));
+		System.out.println(Arrays.toString(yArr));
+		System.out.println(Arrays.toString(hArr));
+
+
+		if (pos < count)
+			return hArr[pos];
+
+		return count;
+	}
+
+	public static void main(String[] args) {
+
+		int[][] arr = { { 1, 0, 1, 1, 1, 1 }, { 1, 0, 1, 0, 1, 0 }, { 1, 0, 1, 0, 1, 1 }, { 1, 1, 1, 0, 1, 1 } };
+
+		Maze maze = new Maze();
+
+		System.out.println(maze.maze(arr));
+	}
+
+}

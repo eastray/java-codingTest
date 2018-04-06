@@ -1,7 +1,5 @@
 package problem36;
 
-import java.math.BigInteger;
-
 public class Palindrome {
 
 	public boolean isPalindrome(StringBuilder sb) {
@@ -30,7 +28,7 @@ public class Palindrome {
 		Palindrome pd = new Palindrome();
 
 		System.out.println(pd.sumOfPalindrome());
-		System.out.println(872187);
+		
 	}
 
 }

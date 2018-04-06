@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename compilation unit &apos;add.Addder.java&apos; to &apos;Adder.java&apos;&#x0A;- Original project: &apos;Q004_1000_AAddB&apos;&#x0A;- Original element: &apos;add.Addder.java&apos;&#x0A;- Renamed element: &apos;add.Adder.java&apos;" description="Rename compilation unit &apos;Addder.java&apos;" flags="2" id="org.eclipse.jdt.ui.rename.compilationunit" input="/src&lt;add{Addder.java" name="Adder.java" references="false" stamp="1522653178378" version="1.0"/>
+</session>

@@ -1,0 +1,16 @@
+package distributedComputing;
+
+import static org.junit.Assert.*;
+
+import org.junit.Test;
+
+public class TestDistributedComputing {
+
+	DistributedComputing dc = new DistributedComputing();
+
+	@Test
+	public void testDistributed() {
+		fail("Not yet implemented");
+	}
+
+}

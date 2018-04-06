@@ -1,0 +1,17 @@
+package deliverySugar;
+
+import static org.junit.Assert.*;
+
+import org.junit.Test;
+
+public class DeliverySugarTest {
+
+	@Test
+	public void testCountOfDeliverySugar() {
+		DeliverySugar ds = new DeliverySugar();
+		
+		assertEquals(-1, 4);
+		
+	}
+
+}
