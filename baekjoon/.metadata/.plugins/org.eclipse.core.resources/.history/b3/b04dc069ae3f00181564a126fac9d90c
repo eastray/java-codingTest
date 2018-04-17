@@ -1,0 +1,251 @@
+package organicCabbage;
+
+import java.util.*;
+
+public class OrganicCabbage {
+
+	public void printArr(int[][] arr) {
+		System.out.println();
+
+		for (int[] element : arr) {
+			for (int ele : element)
+				System.out.print(ele + " ");
+
+			System.out.println();
+		}
+	}
+
+	public int countMatrixOne(int[] arr) {
+		int count = 0;
+
+		// System.out.println(Arrays.toString(arr));
+
+		for (int ele : arr)
+			if (ele == 1)
+				count++;
+
+		return count;
+
+	}
+
+	public int[] findPoint(int[][] arr) {
+
+		for (int i = 0; i < arr.length; i++) {
+			for (int j = 0; j < arr[i].length; j++) {
+				if (arr[i][j] == 1)
+					return new int[] { i, j };
+			}
+		}
+
+		return new int[] { -1, -1 };
+	}
+
+	public int countNeedEarthworm(int[][] arr, int[][] input) {
+
+		printArr(arr);
+		
+		int pos = 0;
+		int count = 0;
+
+		int[] xArr = new int[100];
+		int[] yArr = new int[100];
+		int[] hArr = new int[100];
+
+		while (true) {
+
+			int[] point = findPoint(arr);
+
+			if (point[0] == -1 || point[1] == -1)
+				break;
+
+			xArr[pos] = point[0];
+			yArr[pos] = point[1];
+			hArr[pos] = 1;
+
+			//if (hArr[pos] == 1 && pos != 0)
+				count++;
+
+				System.out.println("first while");
+			while (true) {
+				boolean flag = true;
+
+				arr[xArr[pos]][yArr[pos]] = 0;
+
+				if (xArr[pos] > 0 && arr[xArr[pos] - 1][yArr[pos]] == 1) {
+					xArr[count] = xArr[pos] - 1;
+					yArr[count] = yArr[pos];
+					hArr[count] = hArr[pos] + 1;
+					count++;
+					flag = false;
+				}
+
+				if (xArr[pos] < arr.length - 1 && arr[xArr[pos] + 1][yArr[pos]] == 1) {
+					System.out.println("here");
+					System.out.println("count: "+ count + ", pos: " + pos);
+					System.out.println(Arrays.toString(xArr));
+					System.out.println(Arrays.toString(yArr));
+					System.out.println(Arrays.toString(hArr));
+					xArr[count] = xArr[pos] + 1;
+					yArr[count] = yArr[pos];
+					hArr[count] = hArr[pos] + 1;
+					count++;
+					flag = false;
+				}
+
+				if (yArr[pos] > 0 && arr[xArr[pos]][yArr[pos] - 1] == 1) {
+					xArr[count] = xArr[pos];
+					yArr[count] = yArr[pos] - 1;
+					hArr[count] = hArr[pos] + 1;
+					count++;
+					flag = false;
+				}
+
+				if (yArr[pos] < arr[0].length - 1 && arr[xArr[pos]][yArr[pos] + 1] == 1) {
+					System.out.println("///////////////////");
+					System.out.println(Arrays.toString(xArr));
+					System.out.println(Arrays.toString(yArr));
+					System.out.println(Arrays.toString(hArr));
+					System.out.println("count: "+ count + ", pos: " + pos);
+					xArr[count] = xArr[pos];
+					yArr[count] = yArr[pos] + 1;
+					hArr[count] = hArr[pos] + 1;
+					count++;
+					flag = false;
+					System.out.println(Arrays.toString(xArr));
+					System.out.println(Arrays.toString(yArr));
+					System.out.println(Arrays.toString(hArr));
+					System.out.println("count: "+ count + ", pos: " + pos);
+				}
+
+				pos++;
+
+				if (flag)
+					break;
+
+			}
+
+			printArr(arr);
+		}
+
+		System.out.println(Arrays.toString(xArr));
+		System.out.println(Arrays.toString(yArr));
+		System.out.println(Arrays.toString(hArr));
+		return countMatrixOne(hArr);
+
+	}
+
+	public int[][] creatMatrix(int x, int y, int[][] input) {
+
+		int[][] arr = new int[x][y];
+
+		for (int i = 0; i < input[0].length; i++)
+			arr[input[1][i]][input[0][i]] = 1;
+
+		return arr;
+	}
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+		Scanner sc = new Scanner(System.in);
+
+		OrganicCabbage oc = new OrganicCabbage();
+
+		int testcase = sc.nextInt();
+
+		for (int j = 0; j < testcase; j++) {
+
+			int x = sc.nextInt();
+			int y = sc.nextInt();
+			int n = sc.nextInt();
+
+			int[][] input = new int[2][n];
+
+			for (int i = 0; i < n; i++) {
+				input[0][i] = sc.nextInt();
+				input[1][i] = sc.nextInt();
+			}
+
+			int[][] arr = oc.creatMatrix(y, x, input);
+			System.out.println(oc.countNeedEarthworm(arr, input));
+		}
+
+	}
+
+}
+
+// 3
+// 10 8 17
+// 0 0
+// 1 0
+// 1 1
+// 4 2
+// 4 3
+// 4 5
+// 2 4
+// 3 4
+// 7 4
+// 8 4
+// 9 4
+// 7 5
+// 8 5
+// 9 5
+// 7 6
+// 8 6
+// 9 6
+// 10 8 17
+// 0 0
+// 1 0
+// 1 1
+// 4 2
+// 4 3
+// 4 5
+// 2 4
+// 3 4
+// 7 3
+// 9 3
+// 7 4
+// 9 4
+// 7 5
+// 8 5
+// 9 5
+// 7 6
+// 9 6
+// 10 8 17
+// 0 0
+// 1 0
+// 1 1
+// 4 2
+// 4 3
+// 4 5
+// 2 4
+// 3 4
+// 6 4
+// 7 4
+// 8 4
+// 9 4
+// 8 5
+// 6 6
+// 7 6
+// 8 6
+// 9 6
+
+// 1
+// 10 8 17
+// 0 0
+// 1 0
+// 1 1
+// 4 2
+// 4 3
+// 4 5
+// 2 4
+// 3 4
+// 7 3
+// 9 3
+// 7 4
+// 9 4
+// 7 5
+// 8 5
+// 9 5
+// 7 6
+// 9 6

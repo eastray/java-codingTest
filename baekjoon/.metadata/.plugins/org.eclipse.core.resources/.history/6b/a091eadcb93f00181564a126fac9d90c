@@ -1,0 +1,10 @@
+package sequenceSorted;
+
+public class SequenceSorted {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+
+}
