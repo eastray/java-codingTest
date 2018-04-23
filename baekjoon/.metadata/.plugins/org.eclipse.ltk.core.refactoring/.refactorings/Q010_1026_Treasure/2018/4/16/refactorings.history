@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename local variable &apos;x&apos; in &apos;treasure.Treasure.minTreasure(...)&apos; to &apos;sequence&apos;&#x0A;- Original project: &apos;Q010_1026_Treasure&apos;&#x0A;- Original element: &apos;treasure.Treasure.minTreasure(int[], int[]).x&apos;&#x0A;- Renamed element: &apos;x&apos;&#x0A;- Update references to refactored element" description="Rename local variable &apos;x&apos;" id="org.eclipse.jdt.ui.rename.local.variable" input="/src&lt;treasure{Treasure.java[Treasure~minTreasure~\[I~\[I@x!162!189!168!168!\[I!0!false" name="sequence" references="true" stamp="1524188943497" version="1.0"/>
+</session>
