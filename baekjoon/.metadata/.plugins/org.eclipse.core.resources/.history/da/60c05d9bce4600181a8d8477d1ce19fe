@@ -1,0 +1,34 @@
+package printSwirl;
+
+import java.util.Scanner;
+
+public class PrintSwirl {
+
+	public void printSwirl(int x, int y, int n, int m) {
+
+		int max = Math.max(Math.max(Math.abs(x), Math.abs(y)), Math.max(Math.abs(n), Math.abs(m)));
+
+		int[][] arr = createMatrix(max);
+
+	}
+
+	private int[][] createMatrix(int max) {
+
+		int size = max * 2 + 1;
+		int[][] arr = new int[size][size];
+		int count = (int) Math.pow(size, 2);
+
+	}
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+		Scanner sc = new Scanner(System.in);
+
+		PrintSwirl ps = new PrintSwirl();
+
+		ps.printSwirl(sc.nextInt(), sc.nextInt(), sc.nextInt(), sc.nextInt());
+
+	}
+
+}

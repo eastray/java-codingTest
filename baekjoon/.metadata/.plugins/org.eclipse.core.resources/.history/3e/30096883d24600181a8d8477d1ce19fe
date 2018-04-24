@@ -1,0 +1,75 @@
+package printSwirl;
+
+import java.util.Arrays;
+import java.util.Scanner;
+
+public class PrintSwirl {
+
+	public void printSwirl(int x, int y, int n, int m) {
+
+		int max = Math.max(Math.max(Math.abs(x), Math.abs(y)), Math.max(Math.abs(n), Math.abs(m)));
+
+		int[][] arr = createMatrix(max);
+
+		for (int[] elements : arr)
+			System.out.println(Arrays.toString(elements));
+
+	}
+
+	private int[][] createMatrix(int max) {
+
+		int size = max * 2 + 1;
+		int[][] arr = new int[size][size];
+		int count = (int) Math.pow(size, 2);
+		int x = size - 1;
+		int y = size - 1;
+		
+		arr[x][y] = count;
+		count--;
+
+		while (count != 0) {
+			while (y > 0 && arr[x][y - 1] == 0) {
+				y--;
+				arr[x][y] = count;
+				count--;
+				System.out.println("1");
+			}
+			while (x > 0 && arr[x - 1][y] == 0) {
+				x--;
+				arr[x][y] = count;
+				count--;
+				System.out.println("11");
+			}
+			while (y < arr[x].length && arr[x][y+1] == 0) {
+				y++;
+				arr[x][y] = count;
+				count--;
+				System.out.println("111");
+			}
+			while (x < arr.length && arr[x+1][y] == 0) {
+				x++;
+				arr[x][y] = count;
+				count--;
+				System.out.println("1111");
+			}
+
+			if (count == 0)
+				break;
+			System.out.println("here: " + count);
+		}
+
+		return arr;
+	}
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+		Scanner sc = new Scanner(System.in);
+
+		PrintSwirl ps = new PrintSwirl();
+
+		ps.printSwirl(sc.nextInt(), sc.nextInt(), sc.nextInt(), sc.nextInt());
+
+	}
+
+}
